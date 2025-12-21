@@ -89,10 +89,12 @@ const Blog = () => {
                     key={article.id}
                     className="bg-card rounded-xl shadow-card overflow-hidden group hover:shadow-elevated transition-shadow duration-300"
                   >
-                    <div className="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                      <span className="text-primary-foreground font-display text-2xl px-6 text-center">
-                        {article.category}
-                      </span>
+                    <div className="h-48 overflow-hidden">
+                      <img 
+                        src={article.image} 
+                        alt={article.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
                     </div>
                     
                     <div className="p-6">

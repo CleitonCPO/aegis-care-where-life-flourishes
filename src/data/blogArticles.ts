@@ -1,3 +1,10 @@
+import beneficiosCuidadoDomiciliar from "@/assets/blog/beneficios-cuidado-domiciliar.jpg";
+import comoEscolherCuidador from "@/assets/blog/como-escolher-cuidador.jpg";
+import sinaisIdosoPrecisaAjuda from "@/assets/blog/sinais-idoso-precisa-ajuda.jpg";
+import cuidadoDomiciliarVsCasaRepouso from "@/assets/blog/cuidado-domiciliar-vs-casa-repouso.jpg";
+import alimentacaoSaudavelTerceiraIdade from "@/assets/blog/alimentacao-saudavel-terceira-idade.jpg";
+import prevencaoQuedasIdosos from "@/assets/blog/prevencao-quedas-idosos.jpg";
+
 export interface BlogArticle {
   id: string;
   slug: string;
@@ -8,7 +15,7 @@ export interface BlogArticle {
   publishedAt: string;
   readTime: string;
   category: string;
-  image?: string;
+  image: string;
 }
 
 export const blogArticles: BlogArticle[] = [
@@ -21,6 +28,7 @@ export const blogArticles: BlogArticle[] = [
     author: "Equipe Aegis Care",
     publishedAt: "2024-12-15",
     readTime: "8 min",
+    image: beneficiosCuidadoDomiciliar,
     content: `
 ## Introdução
 
@@ -91,6 +99,7 @@ O cuidado domiciliar não é apenas uma alternativa, mas muitas vezes a melhor e
     author: "Equipe Aegis Care",
     publishedAt: "2024-12-10",
     readTime: "10 min",
+    image: comoEscolherCuidador,
     content: `
 ## Introdução
 
@@ -203,6 +212,7 @@ A escolha do cuidador ideal é um processo que demanda atenção, mas o resultad
     author: "Equipe Aegis Care",
     publishedAt: "2024-12-05",
     readTime: "7 min",
+    image: sinaisIdosoPrecisaAjuda,
     content: `
 ## Introdução
 
@@ -342,6 +352,7 @@ Identificar esses sinais precocemente permite uma intervenção mais suave e efi
     author: "Equipe Aegis Care",
     publishedAt: "2024-11-28",
     readTime: "9 min",
+    image: cuidadoDomiciliarVsCasaRepouso,
     content: `
 ## Introdução
 
@@ -474,6 +485,7 @@ Não existe escolha universalmente correta. O mais importante é que a decisão 
     author: "Equipe Aegis Care",
     publishedAt: "2024-11-20",
     readTime: "8 min",
+    image: alimentacaoSaudavelTerceiraIdade,
     content: `
 ## Introdução
 
@@ -622,6 +634,7 @@ Uma alimentação adequada é pilar fundamental da qualidade de vida na terceira
     author: "Equipe Aegis Care",
     publishedAt: "2024-11-15",
     readTime: "7 min",
+    image: prevencaoQuedasIdosos,
     content: `
 ## Introdução
 

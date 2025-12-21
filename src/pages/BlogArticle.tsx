@@ -95,6 +95,15 @@ const BlogArticle = () => {
         <Header />
         
         <main className="pt-24 pb-16">
+          {/* Article Hero Image */}
+          <div className="w-full h-64 md:h-96 overflow-hidden">
+            <img 
+              src={article.image} 
+              alt={article.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+
           {/* Article Header */}
           <header className="py-12 bg-cream">
             <div className="container mx-auto px-4">
