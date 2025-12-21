@@ -1,5 +1,5 @@
 import { Target, Eye, Heart } from "lucide-react";
-import founderImage from "@/assets/founder.jpg";
+import founderImage from "@/assets/cleiton-oliveira.png";
 
 const MissionSection = () => {
   return (
@@ -10,11 +10,11 @@ const MissionSection = () => {
           <div className="bg-card rounded-3xl p-8 md:p-12 shadow-card overflow-hidden">
             <div className="grid md:grid-cols-[auto_1fr] gap-8 items-center">
               <div className="relative mx-auto md:mx-0">
-                <div className="w-48 h-48 rounded-2xl overflow-hidden shadow-elevated">
+                <div className="w-48 h-56 rounded-2xl overflow-hidden shadow-elevated">
                   <img
                     src={founderImage}
-                    alt="Cleiton - Fundador da Aegis Care"
-                    className="w-full h-full object-cover"
+                    alt="Cleiton Oliveira - Fundador da Aegis Care"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 <div className="absolute -bottom-3 -right-3 w-16 h-16 gradient-cta rounded-xl flex items-center justify-center shadow-soft">
@@ -26,7 +26,7 @@ const MissionSection = () => {
                   Fundador
                 </span>
                 <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
-                  Cleiton
+                  Cleiton Oliveira
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Enfermeiro e empreendedor, movido pela convicção de que o cuidado 
