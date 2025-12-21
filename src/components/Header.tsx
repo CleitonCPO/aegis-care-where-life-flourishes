@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-aegis-care.png";
@@ -7,7 +8,8 @@ const navLinks = [
   { href: "#sobre", label: "Sobre" },
   { href: "#servicos", label: "Serviços" },
   { href: "#diferenciais", label: "Diferenciais" },
-  { href: "#depoimentos", label: "Depoimentos" },
+  { href: "#faq", label: "FAQ" },
+  { href: "/blog", label: "Blog", isRoute: true },
   { href: "#contato", label: "Contato" },
 ];
 
@@ -43,15 +45,27 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={`font-medium transition-colors duration-200 hover:text-secondary ${
-                isScrolled ? "text-foreground" : "text-foreground"
-              }`}
-            >
-              {link.label}
-            </a>
+            link.isRoute ? (
+              <Link
+                key={link.href}
+                to={link.href}
+                className={`font-medium transition-colors duration-200 hover:text-secondary ${
+                  isScrolled ? "text-foreground" : "text-foreground"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                className={`font-medium transition-colors duration-200 hover:text-secondary ${
+                  isScrolled ? "text-foreground" : "text-foreground"
+                }`}
+              >
+                {link.label}
+              </a>
+            )
           ))}
         </nav>
 
@@ -83,14 +97,25 @@ const Header = () => {
         <div className="lg:hidden absolute top-full left-0 right-0 bg-card shadow-elevated animate-slide-up">
           <nav className="container mx-auto px-4 py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="font-medium text-foreground hover:text-secondary py-2 transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.label}
-              </a>
+              link.isRoute ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="font-medium text-foreground hover:text-secondary py-2 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="font-medium text-foreground hover:text-secondary py-2 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              )
             ))}
             <a
               href="https://wa.me/5511920067183"
