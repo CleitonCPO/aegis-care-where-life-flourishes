@@ -34,13 +34,13 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img
             src={logo}
             alt="Aegis Care - Cuidado Domiciliar"
             className="h-12 md:h-14 w-auto"
           />
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-8">

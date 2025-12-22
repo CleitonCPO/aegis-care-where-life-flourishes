@@ -1,7 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Shield, Heart, Home, Users, Eye, Target, CheckCircle } from "lucide-react";
+import { Shield, Heart, Home, Users, Target, CheckCircle } from "lucide-react";
+import cuidadorCaminhando from "@/assets/quem-somos/cuidador-caminhando-idoso.jpg";
+import atividadesRecreativas from "@/assets/quem-somos/atividades-recreativas.jpg";
+import cuidadoAlimentacao from "@/assets/quem-somos/cuidado-alimentacao.jpg";
 
 const QuemSomos = () => {
   return (
@@ -66,20 +69,29 @@ const QuemSomos = () => {
             </div>
           </section>
 
-          {/* Intro Section */}
+          {/* Intro Section with Image */}
           <section className="py-16 lg:py-24 bg-background">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <div className="bg-card rounded-3xl p-8 md:p-12 shadow-card">
-                  <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-                    A Aegis Care é uma empresa de cuidado domiciliar criada para proteger a permanência da pessoa em seu lar.
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    Acreditamos que a casa não é apenas um espaço físico, mas o lugar onde a história, os vínculos e a identidade permanecem vivos.
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Nosso trabalho existe para que o cuidado em saúde aconteça onde a vida acontece: em casa, com segurança, dignidade e continuidade.
-                  </p>
+              <div className="max-w-5xl mx-auto">
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                  <div className="rounded-2xl overflow-hidden shadow-elevated">
+                    <img 
+                      src={cuidadorCaminhando} 
+                      alt="Cuidador caminhando com idoso feliz em jardim" 
+                      className="w-full h-80 lg:h-96 object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
+                      A Aegis Care é uma empresa de cuidado domiciliar criada para proteger a permanência da pessoa em seu lar.
+                    </p>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                      Acreditamos que a casa não é apenas um espaço físico, mas o lugar onde a história, os vínculos e a identidade permanecem vivos.
+                    </p>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      Nosso trabalho existe para que o cuidado em saúde aconteça onde a vida acontece: em casa, com segurança, dignidade e continuidade.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -88,7 +100,7 @@ const QuemSomos = () => {
           {/* Cuidado com Critério */}
           <section className="py-16 lg:py-24 bg-cream">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
+              <div className="max-w-5xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                   <div>
                     <span className="inline-block px-4 py-1.5 bg-teal-light rounded-full text-secondary text-sm font-semibold mb-4">
@@ -105,20 +117,12 @@ const QuemSomos = () => {
                     </p>
                   </div>
                   <div className="relative">
-                    <div className="bg-card rounded-2xl p-8 shadow-card">
-                      <div className="space-y-4">
-                        {[
-                          "Avaliação clínica individual",
-                          "Escuta ativa e planejamento",
-                          "Análise do ambiente domiciliar",
-                          "Atendimento às necessidades reais"
-                        ].map((item, index) => (
-                          <div key={index} className="flex items-center gap-3">
-                            <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
-                            <span className="text-foreground font-medium">{item}</span>
-                          </div>
-                        ))}
-                      </div>
+                    <div className="rounded-2xl overflow-hidden shadow-elevated">
+                      <img 
+                        src={atividadesRecreativas} 
+                        alt="Idoso e cuidadora realizando atividades recreativas juntos" 
+                        className="w-full h-80 object-cover"
+                      />
                     </div>
                     <div className="absolute -z-10 -bottom-4 -right-4 w-full h-full bg-teal-light rounded-2xl" />
                   </div>
@@ -130,19 +134,15 @@ const QuemSomos = () => {
           {/* Presença Profissional */}
           <section className="py-16 lg:py-24 bg-background">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
+              <div className="max-w-5xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                   <div className="order-2 lg:order-1 relative">
-                    <div className="bg-card rounded-2xl p-8 shadow-card">
-                      <div className="w-14 h-14 rounded-xl gradient-hero flex items-center justify-center mb-6">
-                        <Users className="w-7 h-7 text-primary-foreground" />
-                      </div>
-                      <h3 className="font-display text-xl font-semibold text-foreground mb-4">
-                        Supervisão contínua
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed">
-                        A Aegis Care não delega o cuidado sem controle. Nós acompanhamos, orientamos e ajustamos continuamente. Isso garante segurança clínica, previsibilidade e tranquilidade para quem confia em nós.
-                      </p>
+                    <div className="rounded-2xl overflow-hidden shadow-elevated">
+                      <img 
+                        src={cuidadoAlimentacao} 
+                        alt="Cuidadora servindo refeição saudável para idosa feliz" 
+                        className="w-full h-80 object-cover"
+                      />
                     </div>
                     <div className="absolute -z-10 -bottom-4 -left-4 w-full h-full bg-secondary/20 rounded-2xl" />
                   </div>
@@ -153,9 +153,22 @@ const QuemSomos = () => {
                     <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
                       Presença profissional e acompanhamento contínuo
                     </h2>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed mb-6">
                       Todos os cuidados são supervisionados por enfermeiros, com acompanhamento sistemático e comunicação clara com a família.
                     </p>
+                    <div className="bg-card rounded-2xl p-6 shadow-soft">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-12 h-12 rounded-xl gradient-hero flex items-center justify-center">
+                          <Users className="w-6 h-6 text-primary-foreground" />
+                        </div>
+                        <h3 className="font-display text-lg font-semibold text-foreground">
+                          Supervisão contínua
+                        </h3>
+                      </div>
+                      <p className="text-muted-foreground leading-relaxed">
+                        A Aegis Care não delega o cuidado sem controle. Nós acompanhamos, orientamos e ajustamos continuamente. Isso garante segurança clínica, previsibilidade e tranquilidade para quem confia em nós.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -210,6 +223,39 @@ const QuemSomos = () => {
                     </p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </section>
+
+          {/* O que nos diferencia - Lista */}
+          <section className="py-16 lg:py-24 bg-background">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <div className="text-center mb-12">
+                  <span className="inline-block px-4 py-1.5 bg-teal-light rounded-full text-secondary text-sm font-semibold mb-4">
+                    Nossa Estrutura
+                  </span>
+                  <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
+                    O que nos diferencia
+                  </h2>
+                </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {[
+                    "Avaliação clínica individual",
+                    "Escuta ativa e planejamento",
+                    "Análise do ambiente domiciliar",
+                    "Atendimento às necessidades reais",
+                    "Supervisão por enfermeiros",
+                    "Comunicação clara com a família",
+                    "Acompanhamento sistemático",
+                    "Ajustes contínuos no cuidado"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center gap-4 bg-card rounded-xl p-5 shadow-soft">
+                      <CheckCircle className="w-6 h-6 text-secondary flex-shrink-0" />
+                      <span className="text-foreground font-medium">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </section>
