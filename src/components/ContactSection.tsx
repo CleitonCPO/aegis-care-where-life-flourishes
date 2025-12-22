@@ -18,7 +18,7 @@ const ContactSection = () => {
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Entre em contato e descubra como podemos cuidar com carinho, 
-                presença e excelência — onde a vida foi construída.
+                presença e excelência, onde a vida foi construída.
               </p>
 
               <div className="space-y-5 mb-8">

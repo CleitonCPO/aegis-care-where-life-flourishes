@@ -56,7 +56,7 @@ const faqData = [
   },
   {
     question: "O cuidado interfere na liberdade do idoso?",
-    answer: "Não. Pelo contrário: ele existe para preservar autonomia e ampliar o bem-estar."
+    answer: "Não. Pelo contrário, ele existe para preservar autonomia e ampliar o bem-estar."
   },
   {
     question: "O cuidado domiciliar substitui o convívio familiar?",

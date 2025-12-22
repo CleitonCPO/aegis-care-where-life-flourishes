@@ -32,7 +32,7 @@ const AboutSection = () => {
               icon: Heart,
               title: "Acolhimento",
               description:
-                "Nosso cuidado acontece onde a vida floresceu: no lar. É ali que estão as memórias, os afetos, as conquistas e a identidade de cada pessoa.",
+                "Nosso cuidado acontece onde a vida floresceu, no lar. É ali que estão as memórias, os afetos, as conquistas e a identidade de cada pessoa.",
             },
             {
               icon: Home,
@@ -75,11 +75,11 @@ const AboutSection = () => {
                 </p>
                 <p>
                   Ao longo dos anos, aprendemos que o cuidado verdadeiro não se limita 
-                  a técnicas — ele se constrói com escuta, presença, sensibilidade 
+                  a técnicas. Ele se constrói com escuta, presença, sensibilidade 
                   e respeito ao tempo de cada pessoa.
                 </p>
                 <p>
-                  A evolução natural desse caminho nos levou à Aegis Care: uma marca 
+                  A evolução natural desse caminho nos levou à Aegis Care, uma marca 
                   que traduz maturidade, solidez e a certeza de que o melhor cuidado 
                   é aquele que preserva a alegria de viver.
                 </p>

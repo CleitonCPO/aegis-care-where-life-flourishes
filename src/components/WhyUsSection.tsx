@@ -21,10 +21,10 @@ const WhyUsSection = () => {
             <span className="inline-block px-4 py-1.5 bg-primary-foreground/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-semibold mb-4">
               Por que a Aegis Care
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-primary-foreground font-bold mb-6">
-              Aqui, o cuidado não invade —{" "}
-              <span className="text-teal-glow">ele acolhe.</span>
-            </h2>
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-primary-foreground font-bold mb-6">
+            Aqui, o cuidado não invade.{" "}
+            <span className="text-teal-glow">Ele acolhe.</span>
+          </h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
