@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-aegis-care.png";
 
 const navLinks = [
-  { href: "#sobre", label: "Sobre" },
+  { href: "/quem-somos", label: "Quem Somos", isRoute: true },
   { href: "#servicos", label: "Serviços" },
   { href: "#diferenciais", label: "Diferenciais" },
   { href: "#faq", label: "FAQ" },

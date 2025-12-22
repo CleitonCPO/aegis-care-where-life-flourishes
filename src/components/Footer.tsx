@@ -1,4 +1,5 @@
 import { Phone, Mail, Instagram, Linkedin, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo-aegis-care.png";
 
 const Footer = () => {
@@ -41,8 +42,15 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold text-lg mb-5">Links Rápidos</h4>
             <ul className="space-y-3">
+              <li>
+                <Link
+                  to="/quem-somos"
+                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                >
+                  Quem Somos
+                </Link>
+              </li>
               {[
-                { href: "#sobre", label: "Sobre Nós" },
                 { href: "#servicos", label: "Serviços" },
                 { href: "#diferenciais", label: "Diferenciais" },
                 { href: "#depoimentos", label: "Depoimentos" },

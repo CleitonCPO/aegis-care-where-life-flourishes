@@ -33,7 +33,7 @@ const MissionSection = () => {
                   precisa ser humano, elegante e respeitoso. Com experiência clínica, 
                   gestão de pessoas e atuação direta no cuidado domiciliar, Cleiton 
                   construiu a empresa com um olhar sensível para o idoso e estratégico 
-                  para as famílias — unindo ciência, empatia e visão de futuro.
+                  para as famílias, unindo ciência, empatia e visão de futuro.
                 </p>
               </div>
             </div>
