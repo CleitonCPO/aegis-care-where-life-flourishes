@@ -1,16 +1,16 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { Calendar, Clock, User, ArrowLeft, Share2 } from "lucide-react";
+import { Calendar, Clock, User, ArrowLeft, Share2, Home, MessageCircle } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getArticleBySlug, getRecentArticles } from "@/data/blogArticles";
+import { getArticleBySlug, getRelatedArticles, blogArticles } from "@/data/blogArticles";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
   const article = slug ? getArticleBySlug(slug) : undefined;
-  const recentArticles = getRecentArticles(3).filter(a => a.slug !== slug);
+  const relatedArticles = slug ? getRelatedArticles(slug, 2) : [];
 
   if (!article) {
     return <Navigate to="/blog" replace />;
@@ -24,33 +24,62 @@ const BlogArticle = () => {
     });
   };
 
-  // Schema.org Article structured data
+  // Schema.org Article structured data with BreadcrumbList
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": article.title,
-    "description": article.excerpt,
-    "datePublished": article.publishedAt,
-    "dateModified": article.publishedAt,
-    "author": {
-      "@type": "Organization",
-      "name": article.author,
-      "url": "https://aegiscare.com.br"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Aegis Care",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://aegiscare.com.br/logo.png"
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": article.title,
+        "description": article.excerpt,
+        "image": `https://aegiscare.com.br${article.image}`,
+        "datePublished": article.publishedAt,
+        "dateModified": article.publishedAt,
+        "author": {
+          "@type": "Organization",
+          "name": article.author,
+          "url": "https://aegiscare.com.br"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Aegis Care",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://aegiscare.com.br/logo.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `https://aegiscare.com.br/blog/${article.slug}`
+        },
+        "articleSection": article.category,
+        "wordCount": article.content.split(/\s+/).length,
+        "keywords": ["cuidado domiciliar", "cuidado ao idoso em casa", "envelhecimento saudável", "segurança clínica", "assistência domiciliar", article.category.toLowerCase()]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://aegiscare.com.br"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://aegiscare.com.br/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": article.title,
+            "item": `https://aegiscare.com.br/blog/${article.slug}`
+          }
+        ]
       }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://aegiscare.com.br/blog/${article.slug}`
-    },
-    "articleSection": article.category,
-    "wordCount": article.content.split(/\s+/).length
+    ]
   };
 
   const handleShare = async () => {
@@ -75,12 +104,13 @@ const BlogArticle = () => {
       <Helmet>
         <title>{article.title} | Blog Aegis Care</title>
         <meta name="description" content={article.excerpt} />
-        <meta name="keywords" content={`${article.category}, cuidado domiciliar, idoso, terceira idade, Aegis Care`} />
+        <meta name="keywords" content={`${article.category}, cuidado domiciliar, cuidado ao idoso em casa, envelhecimento saudável, segurança clínica, assistência domiciliar, Aegis Care`} />
         <link rel="canonical" href={`https://aegiscare.com.br/blog/${article.slug}`} />
         <meta property="og:title" content={article.title} />
         <meta property="og:description" content={article.excerpt} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://aegiscare.com.br/blog/${article.slug}`} />
+        <meta property="og:image" content={`https://aegiscare.com.br${article.image}`} />
         <meta property="article:published_time" content={article.publishedAt} />
         <meta property="article:author" content={article.author} />
         <meta property="article:section" content={article.category} />
@@ -95,6 +125,28 @@ const BlogArticle = () => {
         <Header />
         
         <main className="pt-24 pb-16">
+          {/* Breadcrumb Navigation */}
+          <nav className="container mx-auto px-4 py-4" aria-label="Breadcrumb">
+            <ol className="flex items-center gap-2 text-sm text-muted-foreground">
+              <li>
+                <Link to="/" className="hover:text-secondary transition-colors flex items-center gap-1">
+                  <Home className="w-4 h-4" />
+                  Início
+                </Link>
+              </li>
+              <li>/</li>
+              <li>
+                <Link to="/blog" className="hover:text-secondary transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>/</li>
+              <li className="text-foreground font-medium truncate max-w-[200px]">
+                {article.title}
+              </li>
+            </ol>
+          </nav>
+
           {/* Article Hero Image */}
           <div className="w-full h-64 md:h-96 overflow-hidden">
             <img 
@@ -159,15 +211,54 @@ const BlogArticle = () => {
           <article className="py-12">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <div className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-a:text-secondary hover:prose-a:text-secondary/80">
+                <div className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-foreground prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-a:text-secondary hover:prose-a:text-secondary/80">
                   <ReactMarkdown>{article.content}</ReactMarkdown>
+                </div>
+
+                {/* Internal Links to Related Content */}
+                <div className="mt-12 p-6 bg-cream rounded-xl">
+                  <h3 className="font-display text-lg font-semibold text-foreground mb-4">
+                    Continue lendo sobre cuidado domiciliar
+                  </h3>
+                  <div className="flex flex-wrap gap-3">
+                    {blogArticles
+                      .filter(a => a.slug !== article.slug)
+                      .slice(0, 3)
+                      .map(relatedArticle => (
+                        <Link
+                          key={relatedArticle.id}
+                          to={`/blog/${relatedArticle.slug}`}
+                          className="text-sm text-secondary hover:text-secondary/80 underline underline-offset-2"
+                        >
+                          {relatedArticle.title.length > 50 
+                            ? relatedArticle.title.substring(0, 50) + '...' 
+                            : relatedArticle.title}
+                        </Link>
+                      ))}
+                  </div>
+                </div>
+
+                {/* Discrete CTA */}
+                <div className="mt-8 p-6 border border-border rounded-xl bg-card">
+                  <p className="text-muted-foreground mb-4">
+                    Precisa de orientação especializada sobre cuidado domiciliar para seu familiar?
+                  </p>
+                  <a
+                    href="https://wa.me/5511920067183"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-secondary font-medium hover:text-secondary/80 transition-colors"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Fale com a Aegis Care pelo WhatsApp
+                  </a>
                 </div>
               </div>
             </div>
           </article>
 
-          {/* Related Articles */}
-          {recentArticles.length > 0 && (
+          {/* Related Articles - Silo Architecture */}
+          {relatedArticles.length > 0 && (
             <section className="py-12 bg-cream">
               <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto">
@@ -176,7 +267,7 @@ const BlogArticle = () => {
                   </h2>
                   
                   <div className="grid md:grid-cols-2 gap-6">
-                    {recentArticles.slice(0, 2).map((relatedArticle) => (
+                    {relatedArticles.map((relatedArticle) => (
                       <Link
                         key={relatedArticle.id}
                         to={`/blog/${relatedArticle.slug}`}
@@ -194,32 +285,20 @@ const BlogArticle = () => {
                       </Link>
                     ))}
                   </div>
+
+                  {/* Link back to Home */}
+                  <div className="mt-8 text-center">
+                    <Link
+                      to="/"
+                      className="text-muted-foreground hover:text-secondary transition-colors text-sm"
+                    >
+                      ← Voltar para a página inicial da Aegis Care
+                    </Link>
+                  </div>
                 </div>
               </div>
             </section>
           )}
-
-          {/* CTA */}
-          <section className="py-12">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto bg-primary rounded-2xl p-8 md:p-12 text-center">
-                <h2 className="font-display text-2xl md:text-3xl text-primary-foreground mb-4">
-                  Precisa de Orientação Personalizada?
-                </h2>
-                <p className="text-primary-foreground/80 mb-6">
-                  Nossa equipe está pronta para ajudar sua família a encontrar a melhor solução de cuidado.
-                </p>
-                <a
-                  href="https://wa.me/5511920067183"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-card text-foreground px-6 py-3 rounded-lg font-medium hover:shadow-elevated transition-all"
-                >
-                  Fale com a Aegis Care
-                </a>
-              </div>
-            </div>
-          </section>
         </main>
 
         <Footer />

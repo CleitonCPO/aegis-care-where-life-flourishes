@@ -782,3 +782,28 @@ export const getRecentArticles = (count: number = 3): BlogArticle[] => {
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
     .slice(0, count);
 };
+
+export const getRelatedArticles = (currentSlug: string, count: number = 2): BlogArticle[] => {
+  const currentArticle = getArticleBySlug(currentSlug);
+  if (!currentArticle) return getRecentArticles(count);
+  
+  // Primeiro, artigos da mesma categoria
+  const sameCategory = blogArticles.filter(
+    article => article.slug !== currentSlug && article.category === currentArticle.category
+  );
+  
+  // Depois, outros artigos
+  const otherArticles = blogArticles.filter(
+    article => article.slug !== currentSlug && article.category !== currentArticle.category
+  );
+  
+  return [...sameCategory, ...otherArticles].slice(0, count);
+};
+
+export const getArticlesByCategory = (category: string): BlogArticle[] => {
+  return blogArticles.filter(article => article.category === category);
+};
+
+export const getAllCategories = (): string[] => {
+  return [...new Set(blogArticles.map(article => article.category))];
+};
