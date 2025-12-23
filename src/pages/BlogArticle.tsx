@@ -1,11 +1,30 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { Calendar, Clock, User, ArrowLeft, Share2, Home, MessageCircle } from "lucide-react";
+import { Calendar, Clock, User, ArrowLeft, Share2, Home, MessageCircle, BookOpen, Award } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getArticleBySlug, getRelatedArticles, blogArticles } from "@/data/blogArticles";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
+
+// References for EEAT
+const references = [
+  {
+    name: "Organização Mundial da Saúde (OMS)",
+    url: "https://www.who.int/pt",
+    description: "Diretrizes sobre envelhecimento saudável e cuidados de longa duração"
+  },
+  {
+    name: "Ministério da Saúde - Brasil",
+    url: "https://www.gov.br/saude/pt-br",
+    description: "Políticas públicas de saúde do idoso"
+  },
+  {
+    name: "Sociedade Brasileira de Geriatria e Gerontologia (SBGG)",
+    url: "https://sbgg.org.br",
+    description: "Referência em geriatria e gerontologia no Brasil"
+  }
+];
 
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -24,7 +43,7 @@ const BlogArticle = () => {
     });
   };
 
-  // Schema.org Article structured data with BreadcrumbList
+  // Schema.org Article structured data with BreadcrumbList and Author
   const articleSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -54,7 +73,12 @@ const BlogArticle = () => {
         },
         "articleSection": article.category,
         "wordCount": article.content.split(/\s+/).length,
-        "keywords": ["cuidado domiciliar", "cuidado ao idoso em casa", "envelhecimento saudável", "segurança clínica", "assistência domiciliar", article.category.toLowerCase()]
+        "keywords": ["cuidado domiciliar", "cuidado ao idoso em casa", "envelhecimento saudável", "segurança clínica", "assistência domiciliar", article.category.toLowerCase()],
+        "citation": references.map(ref => ({
+          "@type": "Organization",
+          "name": ref.name,
+          "url": ref.url
+        }))
       },
       {
         "@type": "BreadcrumbList",
@@ -210,17 +234,72 @@ const BlogArticle = () => {
           {/* Article Content */}
           <article className="py-12">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <div className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-foreground prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-a:text-secondary hover:prose-a:text-secondary/80">
+              <div className="max-w-3xl mx-auto">
+                {/* Article body with proper typography */}
+                <div className="prose prose-lg max-w-none 
+                  prose-headings:font-display prose-headings:text-foreground prose-headings:text-left
+                  prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:leading-tight
+                  prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:leading-snug
+                  prose-p:text-muted-foreground prose-p:text-base prose-p:md:text-lg prose-p:leading-relaxed prose-p:mb-6 prose-p:text-left
+                  prose-strong:text-foreground 
+                  prose-li:text-muted-foreground prose-li:text-base prose-li:md:text-lg prose-li:leading-relaxed prose-li:mb-2
+                  prose-ul:my-6 prose-ul:pl-6
+                  prose-ol:my-6 prose-ol:pl-6
+                  prose-a:text-secondary hover:prose-a:text-secondary/80 prose-a:underline prose-a:underline-offset-2
+                  prose-blockquote:border-l-4 prose-blockquote:border-secondary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-muted-foreground">
                   <ReactMarkdown>{article.content}</ReactMarkdown>
                 </div>
 
+                {/* Authorship and Technical Review */}
+                <div className="mt-12 p-6 bg-cream rounded-xl border border-border/50">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                      <Award className="w-6 h-6 text-secondary" />
+                    </div>
+                    <div>
+                      <h3 className="font-display text-lg font-semibold text-foreground mb-2">
+                        Revisão Técnica
+                      </h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        Este conteúdo foi elaborado pela <strong className="text-foreground">Equipe Aegis Care</strong>, 
+                        com base em experiência profissional em cuidado domiciliar e supervisão de enfermeiros especializados 
+                        em geriatria e gerontologia.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* References Section - EEAT */}
+                <div className="mt-8 p-6 bg-card rounded-xl border border-border">
+                  <div className="flex items-center gap-3 mb-4">
+                    <BookOpen className="w-5 h-5 text-secondary" />
+                    <h3 className="font-display text-lg font-semibold text-foreground">
+                      Referências
+                    </h3>
+                  </div>
+                  <ul className="space-y-3">
+                    {references.map((ref, index) => (
+                      <li key={index} className="text-sm">
+                        <a
+                          href={ref.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-secondary hover:text-secondary/80 font-medium underline underline-offset-2"
+                        >
+                          {ref.name}
+                        </a>
+                        <span className="text-muted-foreground"> — {ref.description}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
                 {/* Internal Links to Related Content */}
-                <div className="mt-12 p-6 bg-cream rounded-xl">
+                <div className="mt-8 p-6 bg-cream rounded-xl">
                   <h3 className="font-display text-lg font-semibold text-foreground mb-4">
                     Continue lendo sobre cuidado domiciliar
                   </h3>
-                  <div className="flex flex-wrap gap-3">
+                  <div className="flex flex-col sm:flex-row flex-wrap gap-3">
                     {blogArticles
                       .filter(a => a.slug !== article.slug)
                       .slice(0, 3)
@@ -261,8 +340,8 @@ const BlogArticle = () => {
           {relatedArticles.length > 0 && (
             <section className="py-12 bg-cream">
               <div className="container mx-auto px-4">
-                <div className="max-w-4xl mx-auto">
-                  <h2 className="font-display text-2xl md:text-3xl text-foreground mb-8">
+                <div className="max-w-3xl mx-auto">
+                  <h2 className="font-display text-2xl md:text-3xl text-foreground mb-8 text-left">
                     Artigos Relacionados
                   </h2>
                   
