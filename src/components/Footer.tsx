@@ -50,21 +50,38 @@ const Footer = () => {
                   Quem Somos
                 </Link>
               </li>
-              {[
-                { href: "#servicos", label: "Serviços" },
-                { href: "#diferenciais", label: "Diferenciais" },
-                { href: "#depoimentos", label: "Depoimentos" },
-                { href: "#contato", label: "Contato" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="/#servicos"
+                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                >
+                  Serviços
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/#diferenciais"
+                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                >
+                  Diferenciais
+                </a>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="/#contato"
+                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                >
+                  Contato
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -102,9 +119,17 @@ const Footer = () => {
             <p className="text-primary-foreground/60 text-sm text-center md:text-left">
               © {currentYear} Aegis Care. Todos os direitos reservados.
             </p>
-            <p className="text-primary-foreground/60 text-sm flex items-center gap-1">
-              Feito com <Heart className="w-4 h-4 text-accent fill-accent" /> para quem cuida
-            </p>
+            <div className="flex items-center gap-6">
+              <Link
+                to="/politica-privacidade"
+                className="text-primary-foreground/60 hover:text-primary-foreground text-sm transition-colors"
+              >
+                Política de Privacidade
+              </Link>
+              <p className="text-primary-foreground/60 text-sm flex items-center gap-1">
+                Feito com <Heart className="w-4 h-4 text-accent fill-accent" /> para quem cuida
+              </p>
+            </div>
           </div>
         </div>
       </div>
