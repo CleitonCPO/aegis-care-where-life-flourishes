@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-aegis-care.png";
 
@@ -69,7 +69,7 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-3">
           <a
             href="https://wa.me/5511920067183"
             target="_blank"
@@ -78,6 +78,16 @@ const Header = () => {
             <Button variant="cta" size="lg" className="gap-2">
               <Phone className="w-4 h-4" />
               Fale Conosco
+            </Button>
+          </a>
+          <a
+            href="https://app-aegis-care.base44.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="outline" size="lg" className="gap-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <ClipboardList className="w-4 h-4" />
+              Prontuário
             </Button>
           </a>
         </div>
@@ -126,6 +136,17 @@ const Header = () => {
               <Button variant="cta" size="lg" className="w-full gap-2">
                 <Phone className="w-4 h-4" />
                 Fale Conosco
+              </Button>
+            </a>
+            <a
+              href="https://app-aegis-care.base44.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2"
+            >
+              <Button variant="outline" size="lg" className="w-full gap-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                <ClipboardList className="w-4 h-4" />
+                Prontuário
               </Button>
             </a>
           </nav>
