@@ -4,6 +4,11 @@ import sinaisIdosoPrecisaAjuda from "@/assets/blog/sinais-idoso-precisa-ajuda.jp
 import cuidadoDomiciliarVsCasaRepouso from "@/assets/blog/cuidado-domiciliar-vs-casa-repouso.jpg";
 import alimentacaoSaudavelTerceiraIdade from "@/assets/blog/alimentacao-saudavel-terceira-idade.jpg";
 import prevencaoQuedasIdosos from "@/assets/blog/prevencao-quedas-idosos.jpg";
+import cuidadorIdososTatuape from "@/assets/blog/cuidador-idosos-tatuape.jpg";
+import homeCareZonaLeste from "@/assets/blog/home-care-zona-leste-sp.jpg";
+import exerciciosIdososZonaLeste from "@/assets/blog/exercicios-idosos-zona-leste.jpg";
+import cuidadorNoturnoIdoso from "@/assets/blog/cuidador-noturno-idoso.jpg";
+import cuidadorAlzheimerDomiciliar from "@/assets/blog/cuidador-alzheimer-domiciliar.jpg";
 
 export interface BlogArticle {
   id: string;
@@ -769,7 +774,694 @@ Prevenir quedas é um investimento na qualidade de vida e na independência do i
 ---
 
 *A Aegis Care realiza avaliação de segurança domiciliar gratuita, identificando riscos e sugerindo adaptações necessárias. Agende uma visita.*
-    `
+    \`
+  },
+  {
+    id: "7",
+    slug: "cuidador-de-idosos-tatuape-zona-leste-sp",
+    title: "Cuidador de Idosos no Tatuapé: Atendimento Especializado na Zona Leste de SP",
+    excerpt: "Conheça os serviços de cuidadores profissionais no Tatuapé e região. Atendimento humanizado para idosos na Zona Leste de São Paulo.",
+    category: "Zona Leste",
+    author: "Equipe Aegis Care",
+    publishedAt: "2024-12-20",
+    readTime: "7 min",
+    image: cuidadorIdososTatuape,
+    content: \`
+## Cuidado Domiciliar de Qualidade no Tatuapé
+
+O **Tatuapé** é um dos bairros mais tradicionais da **Zona Leste de São Paulo**, conhecido por sua excelente infraestrutura, parques e qualidade de vida. Para os idosos que residem nesta região, a **Aegis Care** oferece serviços especializados de cuidado domiciliar.
+
+## Por que Escolher Cuidadores no Tatuapé?
+
+### Conhecimento da Região
+
+Nossos cuidadores conhecem profundamente o Tatuapé e arredores:
+
+- **Hospitais próximos**: Hospital Santa Marcelina, Hospital Vitória
+- **UBS e UPAs**: Unidades de saúde da região para emergências
+- **Farmácias e laboratórios**: Rede completa de apoio à saúde
+- **Parques para caminhadas**: Parque Piqueri, Parque Ceret
+
+### Atendimento Personalizado
+
+Oferecemos modalidades flexíveis:
+
+1. **Cuidador diurno**: Acompanhamento durante o dia
+2. **Cuidador noturno**: Vigília e cuidados noturnos
+3. **Cuidador 24 horas**: Assistência integral
+4. **Acompanhante hospitalar**: Para internações na região
+
+## Bairros Atendidos
+
+Além do Tatuapé, atendemos toda a região:
+
+- **Anália Franco**
+- **Vila Carrão**
+- **Vila Formosa**
+- **Água Rasa**
+- **Belenzinho**
+- **Mooca**
+
+## Diferenciais na Zona Leste
+
+### Profissionais Capacitados
+
+Todos os nossos cuidadores possuem:
+
+- Formação técnica em cuidados de idosos
+- Experiência comprovada na região
+- Treinamento em primeiros socorros
+- Referências verificadas
+
+### Supervisão Contínua
+
+Oferecemos:
+
+- Visitas de supervisão técnica
+- Relatórios semanais para a família
+- Canal direto para emergências
+- Substituição imediata quando necessário
+
+## Condições Atendidas
+
+Nossos profissionais estão preparados para cuidar de idosos com:
+
+- **Alzheimer e demências**
+- **Parkinson**
+- **Pós-operatório**
+- **AVC e sequelas**
+- **Diabetes e hipertensão**
+- **Mobilidade reduzida**
+
+## Como Contratar
+
+O processo é simples:
+
+1. Entre em contato via WhatsApp
+2. Agendamos uma visita de avaliação gratuita
+3. Apresentamos o profissional ideal
+4. Iniciamos o cuidado com período de adaptação
+
+## Conclusão
+
+Moradores do **Tatuapé** e região da **Zona Leste** podem contar com a Aegis Care para oferecer o melhor cuidado aos seus familiares idosos. Nossa equipe conhece a região e está preparada para atender com excelência.
+
+---
+
+*Solicite uma avaliação gratuita no Tatuapé e conheça nossos serviços de cuidado domiciliar.*
+    \`
+  },
+  {
+    id: "8",
+    slug: "home-care-analia-franco-vila-prudente",
+    title: "Home Care na Anália Franco e Vila Prudente: Cuidado Profissional em Casa",
+    excerpt: "Serviços de home care de qualidade na Anália Franco e Vila Prudente. Cuidadores especializados para idosos na Zona Leste de São Paulo.",
+    category: "Zona Leste",
+    author: "Equipe Aegis Care",
+    publishedAt: "2024-12-18",
+    readTime: "8 min",
+    image: homeCareZonaLeste,
+    content: \`
+## Home Care de Excelência na Zona Leste
+
+A **Anália Franco** e a **Vila Prudente** são bairros nobres da Zona Leste paulistana, com moradores que buscam serviços de saúde de alta qualidade. O **home care** representa a evolução do cuidado ao idoso, trazendo profissionalismo e humanização ao ambiente doméstico.
+
+## O que é Home Care?
+
+### Definição
+
+Home care é o conjunto de serviços de saúde realizados no domicílio do paciente:
+
+- **Cuidados de enfermagem**
+- **Acompanhamento de cuidadores**
+- **Fisioterapia domiciliar**
+- **Suporte nutricional**
+- **Assistência médica quando necessário**
+
+### Vantagens do Home Care
+
+1. **Conforto do lar**: O idoso permanece em seu ambiente
+2. **Atenção individualizada**: Cuidado exclusivo
+3. **Menor risco de infecções**: Ambiente controlado
+4. **Participação familiar**: Família presente no cuidado
+
+## Atendimento na Anália Franco
+
+### Infraestrutura de Apoio
+
+A região conta com excelente estrutura:
+
+- Shopping Anália Franco com farmácias e serviços
+- Hospitais de referência próximos
+- Parques para atividades ao ar livre
+- Fácil acesso a especialistas
+
+### Perfil dos Moradores
+
+Entendemos que moradores da Anália Franco buscam:
+
+- Serviços premium de saúde
+- Profissionais altamente qualificados
+- Flexibilidade no atendimento
+- Comunicação constante com a família
+
+## Atendimento na Vila Prudente
+
+### Tradição e Cuidado
+
+A Vila Prudente combina tradição com modernidade:
+
+- Bairro residencial com tranquilidade
+- Proximidade ao metrô Vila Prudente
+- Hospitais e clínicas acessíveis
+- Comunidade acolhedora
+
+### Serviços Disponíveis
+
+Na Vila Prudente oferecemos:
+
+- Cuidadores por período ou 24 horas
+- Acompanhamento a consultas
+- Suporte para atividades diárias
+- Estímulo cognitivo e social
+
+## Equipe Especializada
+
+### Formação dos Profissionais
+
+Nossos cuidadores possuem:
+
+- Curso técnico de cuidador (mínimo 160h)
+- Especialização em cuidados geriátricos
+- Treinamento em primeiros socorros
+- Capacitação em comunicação com idosos
+
+### Supervisão Técnica
+
+Oferecemos:
+
+- Enfermeiro supervisor disponível
+- Visitas regulares de acompanhamento
+- Relatórios detalhados para famílias
+- Ajustes no plano de cuidados conforme necessidade
+
+## Como Funciona
+
+### Avaliação Inicial
+
+1. Contato inicial via WhatsApp ou telefone
+2. Visita domiciliar para avaliação gratuita
+3. Elaboração do plano de cuidados
+4. Seleção do profissional adequado
+5. Início do atendimento com período de adaptação
+
+### Acompanhamento Contínuo
+
+- Relatórios semanais de evolução
+- Reuniões periódicas com a família
+- Canal de comunicação 24 horas
+- Ajustes conforme necessidade
+
+## Conclusão
+
+Moradores da **Anália Franco** e **Vila Prudente** podem contar com a Aegis Care para serviços de **home care** de excelência. Nossa equipe está preparada para oferecer o cuidado que seu familiar merece.
+
+---
+
+*Agende uma visita gratuita na Anália Franco ou Vila Prudente e conheça nossos serviços de home care.*
+    \`
+  },
+  {
+    id: "9",
+    slug: "exercicios-fisicos-idosos-domicilio-zona-leste",
+    title: "Exercícios Físicos para Idosos em Casa: Guia para Moradores da Zona Leste SP",
+    excerpt: "Aprenda exercícios seguros para idosos fazerem em casa. Dicas de fisioterapia domiciliar para moradores da Zona Leste de São Paulo.",
+    category: "Saúde",
+    author: "Equipe Aegis Care",
+    publishedAt: "2024-12-16",
+    readTime: "9 min",
+    image: exerciciosIdososZonaLeste,
+    content: \`
+## A Importância dos Exercícios na Terceira Idade
+
+Para idosos que residem na **Zona Leste de São Paulo**, manter uma rotina de exercícios físicos é fundamental para a qualidade de vida. Este guia apresenta atividades seguras que podem ser realizadas no conforto do lar.
+
+## Benefícios dos Exercícios para Idosos
+
+### Saúde Física
+
+Os exercícios regulares proporcionam:
+
+- **Fortalecimento muscular**: Previne quedas e fraturas
+- **Melhora da flexibilidade**: Facilita movimentos do dia a dia
+- **Saúde cardiovascular**: Coração mais forte e saudável
+- **Controle de peso**: Metabolismo mais ativo
+- **Melhora do equilíbrio**: Mais segurança ao caminhar
+
+### Saúde Mental
+
+Benefícios cognitivos e emocionais:
+
+- **Redução da ansiedade**: Liberação de endorfinas
+- **Melhora do humor**: Combate à depressão
+- **Estímulo cognitivo**: Memória mais ativa
+- **Melhor sono**: Descanso de qualidade
+
+## Exercícios Seguros em Casa
+
+### Alongamentos Básicos
+
+**Pescoço e ombros** (5 minutos):
+1. Incline a cabeça para cada lado, mantendo 10 segundos
+2. Gire os ombros para frente e para trás
+3. Entrelace as mãos atrás das costas e estique
+
+**Braços e mãos** (5 minutos):
+1. Abra e feche as mãos lentamente
+2. Gire os pulsos em círculos
+3. Estenda os braços à frente e para os lados
+
+### Fortalecimento Sentado
+
+Exercícios na cadeira são seguros e eficazes:
+
+**Pernas**:
+1. Sentado, levante uma perna esticada e segure 5 segundos
+2. Repita 10 vezes com cada perna
+3. Faça movimentos de pedalar no ar
+
+**Braços com peso leve** (garrafa de água):
+1. Flexione o cotovelo trazendo o peso ao ombro
+2. Repita 10 vezes com cada braço
+3. Levante os braços acima da cabeça
+
+### Equilíbrio
+
+**Com apoio em cadeira ou parede**:
+1. Fique em um pé só por 10 segundos
+2. Caminhe em linha reta, um pé na frente do outro
+3. Levante-se e sente-se sem usar as mãos
+
+## Parques na Zona Leste para Caminhadas
+
+Para dias ao ar livre, a região oferece excelentes opções:
+
+### Parque do Piqueri (Tatuapé)
+- Pista de caminhada plana
+- Áreas sombreadas
+- Banheiros acessíveis
+
+### Parque Ceret (Anália Franco)
+- Estrutura completa
+- Academia ao ar livre para terceira idade
+- Segurança e iluminação
+
+### Parque Linear Tiquatira (Penha)
+- Ciclovia e pista de caminhada
+- Natureza exuberante
+- Espaços de descanso
+
+## O Papel do Cuidador nos Exercícios
+
+### Supervisão e Segurança
+
+O cuidador profissional pode:
+
+- Auxiliar na execução correta dos movimentos
+- Garantir a segurança durante os exercícios
+- Motivar e incentivar a prática regular
+- Monitorar sinais de fadiga ou desconforto
+
+### Adaptação Individual
+
+Cada idoso tem suas necessidades:
+
+- Condições de saúde pré-existentes
+- Limitações físicas específicas
+- Preferências e interesses
+- Ritmo e capacidade de evolução
+
+## Cuidados Importantes
+
+### Antes de Iniciar
+
+- Consulte o médico do idoso
+- Comece com intensidade leve
+- Use roupas e calçados confortáveis
+- Tenha água por perto
+
+### Durante os Exercícios
+
+- Respeite os limites do corpo
+- Pare se sentir dor ou tontura
+- Mantenha a respiração regular
+- Faça pausas quando necessário
+
+## Conclusão
+
+Exercícios físicos regulares são essenciais para a saúde dos idosos na **Zona Leste de São Paulo**. Com orientação adequada e supervisão de um cuidador profissional, é possível manter uma rotina ativa e segura no conforto do lar.
+
+---
+
+*A Aegis Care oferece cuidadores capacitados para auxiliar na prática de exercícios domiciliares. Entre em contato para saber mais.*
+    \`
+  },
+  {
+    id: "10",
+    slug: "cuidador-noturno-idosos-sao-paulo",
+    title: "Cuidador Noturno para Idosos em São Paulo: Quando e Por que Contratar",
+    excerpt: "Entenda a importância do cuidador noturno para idosos e quando é necessário contratar este serviço em São Paulo.",
+    category: "Orientação",
+    author: "Equipe Aegis Care",
+    publishedAt: "2024-12-14",
+    readTime: "8 min",
+    image: cuidadorNoturnoIdoso,
+    content: \`
+## O Papel do Cuidador Noturno
+
+O período noturno pode ser especialmente desafiador para idosos e suas famílias. O **cuidador noturno** é o profissional que garante segurança e assistência durante as horas de descanso.
+
+## Quando Contratar um Cuidador Noturno?
+
+### Situações que Indicam Necessidade
+
+**Problemas de sono**:
+- Insônia frequente
+- Agitação noturna
+- Pesadelos recorrentes
+- Síndrome do pôr-do-sol (comum em demências)
+
+**Necessidades médicas**:
+- Medicamentos em horários noturnos
+- Controle de glicemia
+- Monitoramento de sinais vitais
+- Uso de equipamentos (CPAP, oxigênio)
+
+**Risco de quedas**:
+- Idas frequentes ao banheiro
+- Desorientação ao acordar
+- Dificuldade de mobilidade
+- Histórico de quedas noturnas
+
+**Demências**:
+- Perambulação noturna
+- Confusão de horários
+- Agitação e ansiedade
+- Necessidade de supervisão constante
+
+## Funções do Cuidador Noturno
+
+### Vigilância e Segurança
+
+- Monitorar o sono do idoso
+- Atender chamados durante a noite
+- Prevenir quedas e acidentes
+- Acionar emergências se necessário
+
+### Cuidados Ativos
+
+- Auxiliar nas idas ao banheiro
+- Trocar fraldas geriátricas
+- Administrar medicamentos
+- Reposicionar para evitar escaras
+
+### Suporte Emocional
+
+- Acalmar em momentos de agitação
+- Fazer companhia em noites de insônia
+- Tranquilizar após pesadelos
+- Manter ambiente sereno
+
+## Modalidades de Cuidado Noturno
+
+### Plantão Noturno (12 horas)
+
+- Geralmente das 19h às 7h
+- Cuidador exclusivo para o período
+- Ideal para idosos que precisam de atenção constante
+
+### Pernoite com Descanso
+
+- Cuidador dorme no local
+- Acorda para atender necessidades
+- Opção mais econômica
+- Adequado para idosos mais independentes
+
+### Plantão 24 Horas
+
+- Revezamento entre cuidador diurno e noturno
+- Cobertura integral
+- Indicado para casos mais complexos
+
+## Benefícios para a Família
+
+### Descanso dos Familiares
+
+- Noites de sono tranquilas
+- Redução do estresse e ansiedade
+- Mais energia para o dia a dia
+- Qualidade de vida preservada
+
+### Segurança Garantida
+
+- Profissional capacitado presente
+- Resposta rápida a emergências
+- Monitoramento constante
+- Comunicação com a família
+
+## Custo-Benefício
+
+### Investimento x Consequências
+
+Considere os custos de:
+- Emergências por quedas noturnas
+- Internações hospitalares
+- Desgaste físico e emocional da família
+- Perda de produtividade no trabalho
+
+### Modalidades Flexíveis
+
+A Aegis Care oferece:
+- Pacotes mensais com desconto
+- Contratação por diárias
+- Cobertura para finais de semana
+- Plantões para ocasiões específicas
+
+## Atendimento na Zona Leste
+
+Atendemos toda a **Zona Leste de São Paulo**:
+
+- Tatuapé
+- Anália Franco
+- Vila Prudente
+- Mooca
+- Penha
+- Belém
+- Carrão
+- E região
+
+## Como Contratar
+
+1. Entre em contato via WhatsApp
+2. Descreva as necessidades do idoso
+3. Agendamos visita de avaliação
+4. Apresentamos profissionais qualificados
+5. Iniciamos o cuidado noturno
+
+## Conclusão
+
+O **cuidador noturno** é essencial para garantir segurança e tranquilidade durante a noite. Famílias de **São Paulo**, especialmente da **Zona Leste**, podem contar com a Aegis Care para oferecer este serviço com excelência.
+
+---
+
+*Solicite uma avaliação gratuita e conheça nossos cuidadores noturnos. Seu familiar merece noites tranquilas.*
+    \`
+  },
+  {
+    id: "11",
+    slug: "cuidador-alzheimer-domiciliar-sao-paulo",
+    title: "Cuidador Especializado em Alzheimer: Cuidado Domiciliar em São Paulo",
+    excerpt: "Saiba como um cuidador especializado em Alzheimer pode ajudar seu familiar. Atendimento domiciliar na Zona Leste de São Paulo.",
+    category: "Saúde",
+    author: "Equipe Aegis Care",
+    publishedAt: "2024-12-12",
+    readTime: "10 min",
+    image: cuidadorAlzheimerDomiciliar,
+    content: \`
+## Entendendo o Alzheimer
+
+A **Doença de Alzheimer** é a forma mais comum de demência, afetando milhões de brasileiros. Para famílias de **São Paulo**, especialmente da **Zona Leste**, contar com um cuidador especializado faz toda a diferença.
+
+## O que é a Doença de Alzheimer?
+
+### Características Principais
+
+- Perda progressiva de memória
+- Dificuldade de raciocínio
+- Alterações de comportamento
+- Perda gradual de autonomia
+
+### Fases da Doença
+
+**Fase Inicial**:
+- Esquecimentos frequentes
+- Dificuldade com palavras
+- Desorientação leve
+- Mudanças sutis de humor
+
+**Fase Intermediária**:
+- Necessidade de supervisão
+- Dificuldade com atividades diárias
+- Alterações de personalidade
+- Perambulação e agitação
+
+**Fase Avançada**:
+- Dependência total
+- Dificuldade de comunicação
+- Imobilidade progressiva
+- Necessidade de cuidados integrais
+
+## Por que Cuidador Especializado?
+
+### Conhecimento Específico
+
+O cuidador de Alzheimer entende:
+
+- A progressão da doença
+- Estratégias de comunicação
+- Técnicas de manejo comportamental
+- Atividades de estimulação cognitiva
+
+### Habilidades Diferenciadas
+
+**Paciência extraordinária**:
+- Repetir informações sem irritação
+- Manter a calma em situações difíceis
+- Respeitar o ritmo do paciente
+
+**Comunicação adaptada**:
+- Frases curtas e claras
+- Tom de voz suave
+- Contato visual constante
+- Gestos e toques carinhosos
+
+## Atividades de Estimulação
+
+### Cognitiva
+
+- Jogos de memória adaptados
+- Músicas da época do paciente
+- Álbuns de fotos antigas
+- Conversas sobre lembranças
+
+### Física
+
+- Caminhadas supervisionadas
+- Exercícios leves sentado
+- Dança e movimentos rítmicos
+- Alongamentos suaves
+
+### Social
+
+- Visitas de familiares programadas
+- Atividades com outros idosos
+- Passeios em ambientes conhecidos
+- Participação em rotinas domésticas
+
+## Desafios Específicos
+
+### Perambulação
+
+Estratégias de segurança:
+- Portas e portões seguros
+- Identificação com contato
+- Rotina que reduza ansiedade
+- Ambiente calmo e organizado
+
+### Agitação
+
+Técnicas de acalmar:
+- Músicas relaxantes
+- Ambiente com iluminação suave
+- Rotina previsível
+- Atividades que ocupem as mãos
+
+### Recusa de Cuidados
+
+Abordagens eficazes:
+- Respeitar o tempo do paciente
+- Oferecer escolhas simples
+- Transformar cuidados em atividades prazerosas
+- Usar linguagem positiva
+
+## Apoio à Família
+
+### Orientação e Treinamento
+
+O cuidador especializado também:
+
+- Orienta familiares sobre a doença
+- Ensina técnicas de comunicação
+- Prepara para as fases seguintes
+- Oferece suporte emocional
+
+### Grupos de Apoio
+
+Indicamos recursos na região:
+
+- Associação Brasileira de Alzheimer (ABRAz)
+- Grupos de apoio em hospitais
+- Comunidades online
+- Palestras e workshops
+
+## Atendimento na Zona Leste
+
+### Áreas de Cobertura
+
+Atendemos moradores de:
+
+- **Tatuapé** e Anália Franco
+- **Vila Prudente** e Mooca
+- **Penha** e Vila Matilde
+- **Belém** e Brás
+- Toda a Zona Leste de SP
+
+### Modalidades
+
+- Cuidador por período
+- Cuidador 24 horas
+- Acompanhamento noturno
+- Cobertura de emergência
+
+## Recursos na Região
+
+### Hospitais com Geriatria
+
+- Hospital Santa Marcelina
+- Hospital Municipal Tide Setúbal
+- Hospital do Servidor Público Estadual
+
+### Centros de Referência
+
+- CEREDIC - Centro de Referência em Distúrbios Cognitivos
+- Ambulatórios especializados
+
+## Como Contratar
+
+1. Contato inicial via WhatsApp
+2. Avaliação gratuita no domicílio
+3. Entrevista com profissionais especializados
+4. Período de adaptação supervisionado
+5. Acompanhamento contínuo
+
+## Conclusão
+
+Famílias que enfrentam o **Alzheimer** precisam de apoio especializado. Na **Zona Leste de São Paulo**, a Aegis Care oferece cuidadores preparados para oferecer o melhor cuidado ao seu familiar.
+
+---
+
+*Entre em contato para uma avaliação gratuita. Entendemos as necessidades específicas de pacientes com Alzheimer.*
+    \`
   }
 ];
 
