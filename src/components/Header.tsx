@@ -94,9 +94,10 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-2 text-foreground"
+          className="lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center text-foreground touch-manipulation"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={isMobileMenuOpen}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -104,14 +105,14 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-card shadow-elevated animate-slide-up">
-          <nav className="container mx-auto px-4 py-6 flex flex-col gap-4">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-card shadow-elevated animate-fade-in max-h-[80vh] overflow-y-auto">
+          <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               link.isRoute ? (
                 <Link
                   key={link.href}
                   to={link.href}
-                  className="font-medium text-foreground hover:text-secondary py-2 transition-colors"
+                  className="font-medium text-foreground hover:text-secondary hover:bg-muted py-4 px-3 rounded-lg transition-colors touch-manipulation min-h-[48px] flex items-center"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
@@ -120,35 +121,35 @@ const Header = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="font-medium text-foreground hover:text-secondary py-2 transition-colors"
+                  className="font-medium text-foreground hover:text-secondary hover:bg-muted py-4 px-3 rounded-lg transition-colors touch-manipulation min-h-[48px] flex items-center"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
                 </a>
               )
             ))}
-            <a
-              href="https://wa.me/5511920067183"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2"
-            >
-              <Button variant="cta" size="lg" className="w-full gap-2">
-                <Phone className="w-4 h-4" />
-                Fale Conosco
-              </Button>
-            </a>
-            <a
-              href="https://app-aegis-care.base44.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2"
-            >
-              <Button variant="outline" size="lg" className="w-full gap-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <ClipboardList className="w-4 h-4" />
-                Prontuário
-              </Button>
-            </a>
+            <div className="border-t border-border mt-2 pt-4 flex flex-col gap-3">
+              <a
+                href="https://wa.me/5511920067183"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="cta" size="lg" className="w-full gap-2 min-h-[52px] text-base touch-manipulation">
+                  <Phone className="w-5 h-5" />
+                  Fale Conosco
+                </Button>
+              </a>
+              <a
+                href="https://app-aegis-care.base44.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="lg" className="w-full gap-2 min-h-[52px] text-base border-primary text-primary hover:bg-primary hover:text-primary-foreground touch-manipulation">
+                  <ClipboardList className="w-5 h-5" />
+                  Prontuário
+                </Button>
+              </a>
+            </div>
           </nav>
         </div>
       )}
