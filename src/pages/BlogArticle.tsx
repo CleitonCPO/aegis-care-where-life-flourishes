@@ -177,6 +177,10 @@ const BlogArticle = () => {
               src={article.image} 
               alt={article.title}
               className="w-full h-full object-cover"
+              loading="eager"
+              decoding="async"
+              width={1200}
+              height={384}
             />
           </div>
 

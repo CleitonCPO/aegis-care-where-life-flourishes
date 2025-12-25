@@ -1,13 +1,23 @@
+import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import MissionSection from "@/components/MissionSection";
-import ServicesSection from "@/components/ServicesSection";
-import WhyUsSection from "@/components/WhyUsSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import FAQSection from "@/components/FAQSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
+import LazySection from "@/components/LazySection";
+
+// Lazy load below-the-fold sections
+const MissionSection = lazy(() => import("@/components/MissionSection"));
+const ServicesSection = lazy(() => import("@/components/ServicesSection"));
+const WhyUsSection = lazy(() => import("@/components/WhyUsSection"));
+const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
+const FAQSection = lazy(() => import("@/components/FAQSection"));
+const ContactSection = lazy(() => import("@/components/ContactSection"));
+const Footer = lazy(() => import("@/components/Footer"));
+
+const SectionFallback = () => (
+  <div className="min-h-[300px] flex items-center justify-center">
+    <div className="w-8 h-8 border-2 border-secondary border-t-transparent rounded-full animate-spin" />
+  </div>
+);
 
 const Index = () => {
   return (
@@ -16,14 +26,49 @@ const Index = () => {
       <main>
         <HeroSection />
         <AboutSection />
-        <MissionSection />
-        <ServicesSection />
-        <WhyUsSection />
-        <TestimonialsSection />
-        <FAQSection />
-        <ContactSection />
+        
+        <LazySection>
+          <Suspense fallback={<SectionFallback />}>
+            <MissionSection />
+          </Suspense>
+        </LazySection>
+        
+        <LazySection>
+          <Suspense fallback={<SectionFallback />}>
+            <ServicesSection />
+          </Suspense>
+        </LazySection>
+        
+        <LazySection>
+          <Suspense fallback={<SectionFallback />}>
+            <WhyUsSection />
+          </Suspense>
+        </LazySection>
+        
+        <LazySection>
+          <Suspense fallback={<SectionFallback />}>
+            <TestimonialsSection />
+          </Suspense>
+        </LazySection>
+        
+        <LazySection>
+          <Suspense fallback={<SectionFallback />}>
+            <FAQSection />
+          </Suspense>
+        </LazySection>
+        
+        <LazySection>
+          <Suspense fallback={<SectionFallback />}>
+            <ContactSection />
+          </Suspense>
+        </LazySection>
       </main>
-      <Footer />
+      
+      <LazySection>
+        <Suspense fallback={<SectionFallback />}>
+          <Footer />
+        </Suspense>
+      </LazySection>
     </div>
   );
 };

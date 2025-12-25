@@ -14,6 +14,8 @@ const HeroSection = () => {
           loading="eager"
           fetchPriority="high"
           decoding="async"
+          width={1920}
+          height={1080}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />

@@ -146,6 +146,9 @@ const Blog = () => {
                         alt={`Ilustração sobre ${article.title.toLowerCase()}`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
+                        decoding="async"
+                        width={400}
+                        height={192}
                       />
                     </div>
                     
