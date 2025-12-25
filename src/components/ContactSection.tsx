@@ -21,12 +21,12 @@ const ContactSection = () => {
                 presença e excelência, onde a vida foi construída.
               </p>
 
-              <div className="space-y-5 mb-8">
+              <div className="space-y-4 mb-8">
                 <a
                   href="tel:+5511920067183"
-                  className="flex items-center gap-4 group"
+                  className="flex items-center gap-4 group p-3 -ml-3 rounded-xl hover:bg-muted transition-colors touch-manipulation"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-teal-light flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-teal-light flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0">
                     <Phone className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
@@ -37,25 +37,26 @@ const ContactSection = () => {
 
                 <a
                   href="mailto:contato@aegiscare.com.br"
-                  className="flex items-center gap-4 group"
+                  className="flex items-center gap-4 group p-3 -ml-3 rounded-xl hover:bg-muted transition-colors touch-manipulation"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-teal-light flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-teal-light flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0">
                     <Mail className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">E-mail</p>
-                    <p className="font-semibold text-foreground">contato@aegiscare.com.br</p>
+                    <p className="font-semibold text-foreground break-all">contato@aegiscare.com.br</p>
                   </div>
                 </a>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex">
                 <a
                   href="https://wa.me/5511920067183"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-full sm:w-auto"
                 >
-                  <Button variant="cta" size="xl" className="gap-2 w-full sm:w-auto">
+                  <Button variant="cta" size="xl" className="gap-2 w-full min-h-[52px] touch-manipulation">
                     <MessageCircle className="w-5 h-5" />
                     Fale pelo WhatsApp
                   </Button>

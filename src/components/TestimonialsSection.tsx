@@ -82,18 +82,18 @@ const TestimonialsSection = () => {
             }}
             className="w-full"
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-2 md:-ml-4">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="relative bg-card rounded-2xl p-8 shadow-soft hover:shadow-card transition-all duration-300 group flex flex-col h-full min-h-[320px]">
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-[85%] sm:basis-1/2 lg:basis-1/3">
+                  <div className="relative bg-card rounded-2xl p-6 md:p-8 shadow-soft hover:shadow-card transition-all duration-300 group flex flex-col h-full min-h-[280px] md:min-h-[320px]">
                     {/* Quote icon */}
-                    <div className="absolute -top-4 left-8">
-                      <div className="w-8 h-8 rounded-full gradient-cta flex items-center justify-center shadow-soft">
-                        <Quote className="w-4 h-4 text-primary-foreground" />
+                    <div className="absolute -top-3 left-6 md:-top-4 md:left-8">
+                      <div className="w-7 h-7 md:w-8 md:h-8 rounded-full gradient-cta flex items-center justify-center shadow-soft">
+                        <Quote className="w-3.5 h-3.5 md:w-4 md:h-4 text-primary-foreground" />
                       </div>
                     </div>
 
-                    <p className="font-body text-muted-foreground leading-relaxed mb-6 pt-4 flex-grow text-sm md:text-base">
+                    <p className="font-body text-muted-foreground leading-relaxed mb-6 pt-3 md:pt-4 flex-grow text-sm">
                       "{testimonial.text}"
                     </p>
 
@@ -119,9 +119,9 @@ const TestimonialsSection = () => {
             </CarouselContent>
             
             {/* Navigation arrows */}
-            <div className="flex justify-center gap-4 mt-8">
-              <CarouselPrevious className="static translate-y-0 bg-card hover:bg-secondary hover:text-primary-foreground border-border shadow-soft" />
-              <CarouselNext className="static translate-y-0 bg-card hover:bg-secondary hover:text-primary-foreground border-border shadow-soft" />
+            <div className="flex justify-center gap-3 mt-6 md:mt-8">
+              <CarouselPrevious className="static translate-y-0 bg-card hover:bg-secondary hover:text-primary-foreground border-border shadow-soft min-w-[48px] min-h-[48px] touch-manipulation" />
+              <CarouselNext className="static translate-y-0 bg-card hover:bg-secondary hover:text-primary-foreground border-border shadow-soft min-w-[48px] min-h-[48px] touch-manipulation" />
             </div>
           </Carousel>
         </div>
