@@ -774,7 +774,7 @@ Prevenir quedas é um investimento na qualidade de vida e na independência do i
 ---
 
 *A Aegis Care realiza avaliação de segurança domiciliar gratuita, identificando riscos e sugerindo adaptações necessárias. Agende uma visita.*
-    \`
+    `
   },
   {
     id: "7",
@@ -786,7 +786,7 @@ Prevenir quedas é um investimento na qualidade de vida e na independência do i
     publishedAt: "2024-12-20",
     readTime: "7 min",
     image: cuidadorIdososTatuape,
-    content: \`
+    content: `
 ## Cuidado Domiciliar de Qualidade no Tatuapé
 
 O **Tatuapé** é um dos bairros mais tradicionais da **Zona Leste de São Paulo**, conhecido por sua excelente infraestrutura, parques e qualidade de vida. Para os idosos que residem nesta região, a **Aegis Care** oferece serviços especializados de cuidado domiciliar.
@@ -869,7 +869,7 @@ Moradores do **Tatuapé** e região da **Zona Leste** podem contar com a Aegis C
 ---
 
 *Solicite uma avaliação gratuita no Tatuapé e conheça nossos serviços de cuidado domiciliar.*
-    \`
+    `
   },
   {
     id: "8",
@@ -881,7 +881,7 @@ Moradores do **Tatuapé** e região da **Zona Leste** podem contar com a Aegis C
     publishedAt: "2024-12-18",
     readTime: "8 min",
     image: homeCareZonaLeste,
-    content: \`
+    content: `
 ## Home Care de Excelência na Zona Leste
 
 A **Anália Franco** e a **Vila Prudente** são bairros nobres da Zona Leste paulistana, com moradores que buscam serviços de saúde de alta qualidade. O **home care** representa a evolução do cuidado ao idoso, trazendo profissionalismo e humanização ao ambiente doméstico.
@@ -989,7 +989,7 @@ Moradores da **Anália Franco** e **Vila Prudente** podem contar com a Aegis Car
 ---
 
 *Agende uma visita gratuita na Anália Franco ou Vila Prudente e conheça nossos serviços de home care.*
-    \`
+    `
   },
   {
     id: "9",
@@ -1001,7 +1001,7 @@ Moradores da **Anália Franco** e **Vila Prudente** podem contar com a Aegis Car
     publishedAt: "2024-12-16",
     readTime: "9 min",
     image: exerciciosIdososZonaLeste,
-    content: \`
+    content: `
 ## A Importância dos Exercícios na Terceira Idade
 
 Para idosos que residem na **Zona Leste de São Paulo**, manter uma rotina de exercícios físicos é fundamental para a qualidade de vida. Este guia apresenta atividades seguras que podem ser realizadas no conforto do lar.
@@ -1124,7 +1124,7 @@ Exercícios físicos regulares são essenciais para a saúde dos idosos na **Zon
 ---
 
 *A Aegis Care oferece cuidadores capacitados para auxiliar na prática de exercícios domiciliares. Entre em contato para saber mais.*
-    \`
+    `
   },
   {
     id: "10",
@@ -1136,7 +1136,7 @@ Exercícios físicos regulares são essenciais para a saúde dos idosos na **Zon
     publishedAt: "2024-12-14",
     readTime: "8 min",
     image: cuidadorNoturnoIdoso,
-    content: \`
+    content: `
 ## O Papel do Cuidador Noturno
 
 O período noturno pode ser especialmente desafiador para idosos e suas famílias. O **cuidador noturno** é o profissional que garante segurança e assistência durante as horas de descanso.
@@ -1275,7 +1275,7 @@ O **cuidador noturno** é essencial para garantir segurança e tranquilidade dur
 ---
 
 *Solicite uma avaliação gratuita e conheça nossos cuidadores noturnos. Seu familiar merece noites tranquilas.*
-    \`
+    `
   },
   {
     id: "11",
@@ -1287,7 +1287,7 @@ O **cuidador noturno** é essencial para garantir segurança e tranquilidade dur
     publishedAt: "2024-12-12",
     readTime: "10 min",
     image: cuidadorAlzheimerDomiciliar,
-    content: \`
+    content: `
 ## Entendendo o Alzheimer
 
 A **Doença de Alzheimer** é a forma mais comum de demência, afetando milhões de brasileiros. Para famílias de **São Paulo**, especialmente da **Zona Leste**, contar com um cuidador especializado faz toda a diferença.
@@ -1461,7 +1461,7 @@ Famílias que enfrentam o **Alzheimer** precisam de apoio especializado. Na **Zo
 ---
 
 *Entre em contato para uma avaliação gratuita. Entendemos as necessidades específicas de pacientes com Alzheimer.*
-    \`
+    `
   }
 ];
 
