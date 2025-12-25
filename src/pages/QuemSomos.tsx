@@ -79,6 +79,10 @@ const QuemSomos = () => {
                       src={cuidadorCaminhando} 
                       alt="Cuidador caminhando com idoso feliz em jardim" 
                       className="w-full h-80 lg:h-96 object-cover"
+                      loading="eager"
+                      decoding="async"
+                      width={600}
+                      height={384}
                     />
                   </div>
                   <div>
@@ -122,6 +126,10 @@ const QuemSomos = () => {
                         src={atividadesRecreativas} 
                         alt="Idoso e cuidadora realizando atividades recreativas juntos" 
                         className="w-full h-80 object-cover"
+                        loading="lazy"
+                        decoding="async"
+                        width={600}
+                        height={320}
                       />
                     </div>
                     <div className="absolute -z-10 -bottom-4 -right-4 w-full h-full bg-teal-light rounded-2xl" />
@@ -142,6 +150,10 @@ const QuemSomos = () => {
                         src={cuidadoAlimentacao} 
                         alt="Cuidadora servindo refeição saudável para idosa feliz" 
                         className="w-full h-80 object-cover"
+                        loading="lazy"
+                        decoding="async"
+                        width={600}
+                        height={320}
                       />
                     </div>
                     <div className="absolute -z-10 -bottom-4 -left-4 w-full h-full bg-secondary/20 rounded-2xl" />

@@ -39,6 +39,8 @@ const Header = () => {
             src={logo}
             alt="Aegis Care - Cuidado Domiciliar"
             className="h-12 md:h-14 w-auto"
+            width={120}
+            height={56}
           />
         </Link>
 

@@ -15,6 +15,9 @@ const Footer = () => {
               src={logo}
               alt="Aegis Care"
               className="h-14 w-auto mb-6 brightness-0 invert"
+              width={140}
+              height={56}
+              loading="lazy"
             />
             <p className="text-primary-foreground/80 leading-relaxed mb-6 max-w-md">
               Cuidar onde a vida foi construída. Mais do que assistência, 
