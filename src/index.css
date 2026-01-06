@@ -64,7 +64,7 @@
     --shadow-glow: 0 0 40px hsl(170 60% 70% / 0.3);
 
     /* Typography */
-    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Lora', Georgia, serif;
     --font-body: 'Source Sans 3', system-ui, sans-serif;
 
     /* Transitions */
