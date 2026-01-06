@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Phone, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-aegis-care.png";
@@ -16,6 +16,8 @@ const navLinks = [
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +26,21 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: targetId } });
+    } else {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <header
@@ -61,7 +78,8 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className={`font-medium transition-colors duration-200 hover:text-secondary ${
+                onClick={(e) => handleAnchorClick(e, link.href)}
+                className={`font-medium transition-colors duration-200 hover:text-secondary cursor-pointer ${
                   isScrolled ? "text-foreground" : "text-foreground"
                 }`}
               >
@@ -83,7 +101,7 @@ const Header = () => {
             </Button>
           </a>
           <a
-            href="https://app-aegis-care.base44.app"
+            href="https://app.aegiscare.com.br"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -123,8 +141,8 @@ const Header = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="font-medium text-foreground hover:text-secondary hover:bg-muted py-4 px-3 rounded-lg transition-colors touch-manipulation min-h-[48px] flex items-center"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => handleAnchorClick(e, link.href)}
+                  className="font-medium text-foreground hover:text-secondary hover:bg-muted py-4 px-3 rounded-lg transition-colors touch-manipulation min-h-[48px] flex items-center cursor-pointer"
                 >
                   {link.label}
                 </a>
@@ -142,7 +160,7 @@ const Header = () => {
                 </Button>
               </a>
               <a
-                href="https://app-aegis-care.base44.app"
+                href="https://app.aegiscare.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
               >
