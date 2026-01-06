@@ -6,7 +6,7 @@ import logo from "@/assets/logo-aegis-care.png";
 
 const navLinks = [
   { href: "/quem-somos", label: "Quem Somos", isRoute: true },
-  { href: "#servicos", label: "Serviços" },
+  { href: "/servicos", label: "Serviços", isRoute: true },
   { href: "#diferenciais", label: "Diferenciais" },
   { href: "#faq", label: "FAQ" },
   { href: "/blog", label: "Blog", isRoute: true },
