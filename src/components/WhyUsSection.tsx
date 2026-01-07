@@ -1,3 +1,4 @@
+import { motion, type Variants } from "framer-motion";
 import { Home, User, Award, MessageCircle, Heart, Check, Shield } from "lucide-react";
 
 const differentials = [
@@ -9,6 +10,19 @@ const differentials = [
   { icon: Shield, text: "Segurança clínica e acompanhamento contínuo" },
 ];
 
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1, delayChildren: 0.2 }
+  }
+};
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+};
+
 const WhyUsSection = () => {
   return (
     <section id="diferenciais" className="py-20 lg:py-28 relative overflow-hidden">
@@ -18,40 +32,74 @@ const WhyUsSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="inline-block px-4 py-1.5 bg-primary-foreground/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-semibold mb-4">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={containerVariants}
+            className="text-center mb-12"
+          >
+            <motion.span 
+              variants={itemVariants}
+              className="inline-block px-4 py-1.5 bg-primary-foreground/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-semibold mb-4"
+            >
               Por que a Aegis Care
-            </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-primary-foreground font-bold mb-6">
+            </motion.span>
+            <motion.h2 
+              variants={itemVariants}
+              className="font-display text-3xl md:text-4xl lg:text-5xl text-primary-foreground font-bold mb-6"
+            >
               Aqui, o cuidado não invade.{" "}
               <span className="text-teal-glow">Ele acolhe.</span>
-            </h2>
-          </div>
+            </motion.h2>
+          </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            variants={containerVariants}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+          >
             {differentials.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
+                variants={itemVariants}
+                whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
                 className="group bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20 hover:bg-primary-foreground/20 transition-all duration-300"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary-foreground/20 flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0">
+                  <motion.div 
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ duration: 0.3 }}
+                    className="w-12 h-12 rounded-xl bg-primary-foreground/20 flex items-center justify-center flex-shrink-0"
+                  >
                     <item.icon className="w-6 h-6 text-primary-foreground" />
-                  </div>
+                  </motion.div>
                   <span className="text-primary-foreground font-medium text-base leading-snug">
                     {item.text}
                   </span>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           {/* Extra highlight */}
-          <div className="mt-12 bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/20">
+          <motion.div 
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-12 bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/20"
+          >
             <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
-              <div className="w-16 h-16 rounded-2xl bg-teal-glow/30 flex items-center justify-center flex-shrink-0">
+              <motion.div 
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                className="w-16 h-16 rounded-2xl bg-teal-glow/30 flex items-center justify-center flex-shrink-0"
+              >
                 <Check className="w-8 h-8 text-primary-foreground" />
-              </div>
+              </motion.div>
               <div>
                 <h3 className="font-display text-xl font-semibold text-primary-foreground mb-2">
                   Compromisso com a excelência
@@ -62,7 +110,7 @@ const WhyUsSection = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

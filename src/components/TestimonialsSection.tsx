@@ -1,4 +1,5 @@
-import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import { Star, Quote } from "lucide-react";
+import { motion, type Variants } from "framer-motion";
 import {
   Carousel,
   CarouselContent,
@@ -60,21 +61,52 @@ const testimonials = [
   },
 ];
 
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1, delayChildren: 0.2 }
+  }
+};
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+};
+
 const TestimonialsSection = () => {
   return (
-    <section id="depoimentos" className="py-20 lg:py-28 bg-cream">
+    <section id="depoimentos" className="py-20 lg:py-28 bg-cream overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-teal-light rounded-full text-secondary text-sm font-semibold mb-4">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={containerVariants}
+          className="max-w-3xl mx-auto text-center mb-16"
+        >
+          <motion.span 
+            variants={itemVariants}
+            className="inline-block px-4 py-1.5 bg-teal-light rounded-full text-secondary text-sm font-semibold mb-4"
+          >
             Depoimentos
-          </span>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground font-bold mb-6">
+          </motion.span>
+          <motion.h2 
+            variants={itemVariants}
+            className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground font-bold mb-6"
+          >
             O que dizem as{" "}
             <span className="text-gradient">famílias</span>
-          </h2>
-        </div>
+          </motion.h2>
+        </motion.div>
 
-        <div className="max-w-6xl mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-6xl mx-auto"
+        >
           <Carousel
             opts={{
               align: "start",
@@ -85,12 +117,18 @@ const TestimonialsSection = () => {
             <CarouselContent className="-ml-2 md:-ml-4">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4 basis-[85%] sm:basis-1/2 lg:basis-1/3">
-                  <div className="relative bg-card rounded-2xl p-6 md:p-8 shadow-soft hover:shadow-card transition-all duration-300 group flex flex-col h-full min-h-[280px] md:min-h-[320px]">
+                  <motion.div 
+                    whileHover={{ y: -5, transition: { duration: 0.2 } }}
+                    className="relative bg-card rounded-2xl p-6 md:p-8 shadow-soft hover:shadow-card transition-all duration-300 group flex flex-col h-full min-h-[280px] md:min-h-[320px]"
+                  >
                     {/* Quote icon */}
                     <div className="absolute -top-3 left-6 md:-top-4 md:left-8">
-                      <div className="w-7 h-7 md:w-8 md:h-8 rounded-full gradient-cta flex items-center justify-center shadow-soft">
+                      <motion.div 
+                        whileHover={{ scale: 1.1, rotate: 10 }}
+                        className="w-7 h-7 md:w-8 md:h-8 rounded-full gradient-cta flex items-center justify-center shadow-soft"
+                      >
                         <Quote className="w-3.5 h-3.5 md:w-4 md:h-4 text-primary-foreground" />
-                      </div>
+                      </motion.div>
                     </div>
 
                     <p className="font-body text-muted-foreground leading-relaxed mb-6 pt-3 md:pt-4 flex-grow text-sm">
@@ -113,7 +151,7 @@ const TestimonialsSection = () => {
                         {testimonial.name}
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -124,7 +162,7 @@ const TestimonialsSection = () => {
               <CarouselNext className="static translate-y-0 bg-card hover:bg-secondary hover:text-primary-foreground border-border shadow-soft min-w-[48px] min-h-[48px] touch-manipulation" />
             </div>
           </Carousel>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
