@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { motion, type Variants, type Easing } from "framer-motion";
 import { 
   Home, 
   Stethoscope, 
@@ -19,6 +20,12 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
+// Images
+import heroImage from "@/assets/servicos/cuidado-domiciliar-hero.jpg";
+import enfermagemImage from "@/assets/servicos/enfermagem-domiciliar.jpg";
+import acompanhamentoImage from "@/assets/servicos/acompanhamento-diario.jpg";
+import hospitalImage from "@/assets/servicos/acompanhante-hospitalar.jpg";
+
 const services = [
   {
     icon: Home,
@@ -30,7 +37,8 @@ const services = [
       "Cuidadores certificados e treinados",
       "Supervisão de enfermagem",
       "Planos personalizados"
-    ]
+    ],
+    image: heroImage
   },
   {
     icon: Stethoscope,
@@ -42,7 +50,8 @@ const services = [
       "Monitoramento de sinais vitais",
       "Avaliação clínica periódica",
       "Relatórios detalhados para a família"
-    ]
+    ],
+    image: enfermagemImage
   },
   {
     icon: Bandage,
@@ -54,7 +63,8 @@ const services = [
       "Prevenção de úlceras de pressão",
       "Tratamento de feridas complexas",
       "Acompanhamento da evolução"
-    ]
+    ],
+    image: acompanhamentoImage
   },
   {
     icon: Syringe,
@@ -66,7 +76,8 @@ const services = [
       "Traqueostomias",
       "Ostomias",
       "Orientação familiar"
-    ]
+    ],
+    image: hospitalImage
   },
   {
     icon: Building2,
@@ -78,7 +89,8 @@ const services = [
       "Suporte emocional ao paciente",
       "Comunicação com equipe médica",
       "Relatórios para a família"
-    ]
+    ],
+    image: hospitalImage
   },
   {
     icon: Plane,
@@ -90,7 +102,8 @@ const services = [
       "Gestão de medicamentos",
       "Assistência em aeroportos",
       "Cuidados durante todo o trajeto"
-    ]
+    ],
+    image: acompanhamentoImage
   },
   {
     icon: UserCheck,
@@ -102,7 +115,8 @@ const services = [
       "Higiene e cuidados pessoais",
       "Acompanhamento de rotina",
       "Estímulo à independência"
-    ]
+    ],
+    image: heroImage
   },
   {
     icon: Brain,
@@ -114,9 +128,34 @@ const services = [
       "Estimulação cognitiva",
       "Prevenção de quedas",
       "Suporte à família e cuidadores"
-    ]
+    ],
+    image: enfermagemImage
   },
 ];
+
+// Animation variants with proper typing
+const easeOut: Easing = [0.16, 1, 0.3, 1];
+
+const fadeInUp: Variants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeOut } }
+};
+
+const staggerContainer: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.2
+    }
+  }
+};
+
+const scaleIn: Variants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: easeOut } }
+};
 
 const Servicos = () => {
   return (
@@ -136,23 +175,51 @@ const Servicos = () => {
 
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-          {/* Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary opacity-95" />
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-40" />
+          {/* Background Image */}
+          <motion.div 
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="absolute inset-0"
+          >
+            <img 
+              src={heroImage} 
+              alt="Cuidado domiciliar premium" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-secondary/80" />
+          </motion.div>
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-semibold mb-6">
+            <motion.div 
+              initial="hidden"
+              animate="visible"
+              variants={staggerContainer}
+              className="max-w-4xl mx-auto text-center"
+            >
+              <motion.span 
+                variants={fadeInUp}
+                className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-semibold mb-6"
+              >
                 Excelência em Cuidados
-              </span>
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              </motion.span>
+              <motion.h1 
+                variants={fadeInUp}
+                className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+              >
                 Serviços Premium de{" "}
                 <span className="text-teal-light">Cuidado Domiciliar</span>
-              </h1>
-              <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+              </motion.h1>
+              <motion.p 
+                variants={fadeInUp}
+                className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed"
+              >
                 Cada pessoa merece um cuidado único. Oferecemos soluções completas e personalizadas para proporcionar qualidade de vida, conforto e dignidade.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              </motion.p>
+              <motion.div 
+                variants={fadeInUp}
+                className="flex flex-col sm:flex-row gap-4 justify-center"
+              >
                 <a href="https://wa.me/5511920067183" target="_blank" rel="noopener noreferrer">
                   <Button variant="cta" size="xl" className="gap-2 w-full sm:w-auto">
                     <Phone className="w-5 h-5" />
@@ -169,8 +236,8 @@ const Servicos = () => {
                     <ArrowRight className="w-5 h-5" />
                   </Button>
                 </Link>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
 
           {/* Decorative wave */}
@@ -181,10 +248,55 @@ const Servicos = () => {
           </div>
         </section>
 
+        {/* Featured Images Section */}
+        <section className="py-16 lg:py-20 overflow-hidden">
+          <div className="container mx-auto px-4">
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={staggerContainer}
+              className="grid md:grid-cols-3 gap-6"
+            >
+              {[
+                { image: enfermagemImage, title: "Enfermagem Especializada", subtitle: "Cuidado técnico de excelência" },
+                { image: acompanhamentoImage, title: "Acompanhamento Diário", subtitle: "Qualidade de vida no lar" },
+                { image: hospitalImage, title: "Suporte Hospitalar", subtitle: "Companhia em todos os momentos" }
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  variants={scaleIn}
+                  whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                  className="group relative rounded-2xl overflow-hidden shadow-elevated"
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <p className="text-teal-light text-sm font-medium mb-1">{item.subtitle}</p>
+                    <h3 className="text-white font-display text-xl font-bold">{item.title}</h3>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </section>
+
         {/* Services Grid */}
         <section className="py-20 lg:py-28">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center mb-16">
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeInUp}
+              className="max-w-3xl mx-auto text-center mb-16"
+            >
               <span className="inline-block px-4 py-1.5 bg-teal-light rounded-full text-secondary text-sm font-semibold mb-4">
                 O Que Oferecemos
               </span>
@@ -195,108 +307,172 @@ const Servicos = () => {
               <p className="text-lg text-muted-foreground">
                 Da assistência diária aos cuidados mais especializados, nossa equipe está preparada para oferecer o melhor atendimento.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-50px" }}
+              variants={staggerContainer}
+              className="grid md:grid-cols-2 gap-8"
+            >
               {services.map((service, index) => (
-                <article
+                <motion.article
                   key={index}
-                  className="group relative bg-card rounded-3xl p-8 shadow-soft hover:shadow-elevated transition-all duration-500 overflow-hidden"
+                  variants={fadeInUp}
+                  whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                  className="group relative bg-card rounded-3xl overflow-hidden shadow-soft hover:shadow-elevated transition-shadow duration-500"
                 >
-                  {/* Background decoration */}
-                  <div className="absolute top-0 right-0 w-40 h-40 gradient-cta opacity-5 rounded-full blur-3xl group-hover:opacity-10 transition-opacity duration-500" />
-                  <div className="absolute bottom-0 left-0 w-32 h-32 bg-primary opacity-5 rounded-full blur-2xl group-hover:opacity-10 transition-opacity duration-500" />
-
-                  <div className="relative">
-                    {/* Icon */}
-                    <div className="w-16 h-16 rounded-2xl gradient-hero flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  {/* Image */}
+                  <div className="relative h-48 overflow-hidden">
+                    <motion.img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.6 }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
+                    
+                    {/* Icon floating over image */}
+                    <motion.div 
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      className="absolute bottom-4 left-8 w-16 h-16 rounded-2xl gradient-hero flex items-center justify-center shadow-lg"
+                    >
                       <service.icon className="w-8 h-8 text-white" />
-                    </div>
+                    </motion.div>
+                  </div>
 
-                    {/* Content */}
-                    <div className="mb-6">
+                  {/* Content */}
+                  <div className="relative p-8 pt-4">
+                    {/* Background decoration */}
+                    <div className="absolute top-0 right-0 w-40 h-40 gradient-cta opacity-5 rounded-full blur-3xl group-hover:opacity-10 transition-opacity duration-500" />
+
+                    <div className="relative">
                       <p className="text-secondary text-sm font-medium mb-1">{service.subtitle}</p>
                       <h3 className="font-display text-2xl font-bold text-foreground mb-3">
                         {service.title}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-muted-foreground leading-relaxed mb-6">
                         {service.description}
                       </p>
-                    </div>
 
-                    {/* Features */}
-                    <ul className="space-y-2">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center gap-3 text-sm text-foreground">
-                          <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
+                      {/* Features */}
+                      <ul className="space-y-2">
+                        {service.features.map((feature, idx) => (
+                          <motion.li 
+                            key={idx} 
+                            initial={{ opacity: 0, x: -10 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ delay: idx * 0.1 }}
+                            viewport={{ once: true }}
+                            className="flex items-center gap-3 text-sm text-foreground"
+                          >
+                            <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0" />
+                            {feature}
+                          </motion.li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </article>
+                </motion.article>
               ))}
-            </div>
+            </motion.div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 lg:py-28 bg-muted">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-6">
+        <section className="py-20 lg:py-28 bg-muted relative overflow-hidden">
+          {/* Animated background elements */}
+          <motion.div 
+            animate={{ 
+              scale: [1, 1.2, 1],
+              opacity: [0.05, 0.1, 0.05]
+            }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-20 -left-20 w-80 h-80 bg-primary rounded-full blur-3xl"
+          />
+          <motion.div 
+            animate={{ 
+              scale: [1.2, 1, 1.2],
+              opacity: [0.05, 0.1, 0.05]
+            }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute bottom-20 -right-20 w-96 h-96 bg-secondary rounded-full blur-3xl"
+          />
+
+          <div className="container mx-auto px-4 relative z-10">
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="max-w-4xl mx-auto text-center"
+            >
+              <motion.div 
+                variants={fadeInUp}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-6"
+              >
                 <Heart className="w-5 h-5 text-secondary" />
                 <span className="text-secondary font-medium">Cuidado Personalizado</span>
-              </div>
+              </motion.div>
               
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              <motion.h2 
+                variants={fadeInUp}
+                className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6"
+              >
                 Cada Família é Única.{" "}
                 <span className="text-gradient">Cada Plano Também.</span>
-              </h2>
+              </motion.h2>
               
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+              <motion.p 
+                variants={fadeInUp}
+                className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto"
+              >
                 Entre em contato para uma avaliação gratuita. Nossa equipe irá entender suas necessidades e criar um plano de cuidados sob medida.
-              </p>
+              </motion.p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <motion.div 
+                variants={fadeInUp}
+                className="flex flex-col sm:flex-row gap-4 justify-center"
+              >
                 <a href="https://wa.me/5511920067183" target="_blank" rel="noopener noreferrer">
                   <Button variant="cta" size="xl" className="gap-2 w-full sm:w-auto">
                     <Phone className="w-5 h-5" />
                     Fale com Nossa Equipe
                   </Button>
                 </a>
-              </div>
+              </motion.div>
 
-              <div className="mt-12 flex flex-wrap justify-center gap-8">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-card shadow-soft flex items-center justify-center">
-                    <Activity className="w-6 h-6 text-secondary" />
-                  </div>
-                  <div className="text-left">
-                    <p className="text-2xl font-bold text-foreground">24/7</p>
-                    <p className="text-sm text-muted-foreground">Atendimento</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-card shadow-soft flex items-center justify-center">
-                    <UserCheck className="w-6 h-6 text-secondary" />
-                  </div>
-                  <div className="text-left">
-                    <p className="text-2xl font-bold text-foreground">100%</p>
-                    <p className="text-sm text-muted-foreground">Profissionais Certificados</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-card shadow-soft flex items-center justify-center">
-                    <Home className="w-6 h-6 text-secondary" />
-                  </div>
-                  <div className="text-left">
-                    <p className="text-2xl font-bold text-foreground">Zona Leste</p>
-                    <p className="text-sm text-muted-foreground">São Paulo - SP</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <motion.div 
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="mt-12 flex flex-wrap justify-center gap-8"
+              >
+                {[
+                  { icon: Activity, value: "24/7", label: "Atendimento" },
+                  { icon: UserCheck, value: "100%", label: "Profissionais Certificados" },
+                  { icon: Home, value: "Zona Leste", label: "São Paulo - SP" }
+                ].map((stat, index) => (
+                  <motion.div 
+                    key={index}
+                    variants={scaleIn}
+                    whileHover={{ scale: 1.05 }}
+                    className="flex items-center gap-3"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-card shadow-soft flex items-center justify-center">
+                      <stat.icon className="w-6 h-6 text-secondary" />
+                    </div>
+                    <div className="text-left">
+                      <p className="text-2xl font-bold text-foreground">{stat.value}</p>
+                      <p className="text-sm text-muted-foreground">{stat.label}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </motion.div>
           </div>
         </section>
 
