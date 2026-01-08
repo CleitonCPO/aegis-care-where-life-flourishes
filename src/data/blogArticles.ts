@@ -225,7 +225,7 @@ Reconhecer quando um familiar idoso precisa de ajuda profissional pode ser desaf
 
 ## Os 10 Sinais de Alerta
 
-### 1. Dificuldade com Atividades Básicas
+## 1. Dificuldade com Atividades Básicas
 
 Observe se há problemas com:
 
@@ -234,7 +234,7 @@ Observe se há problemas com:
 - Preparar refeições simples
 - Manter a higiene pessoal
 
-### 2. Perda de Peso Inexplicada
+## 2. Perda de Peso Inexplicada
 
 A perda de peso pode indicar:
 
@@ -243,7 +243,7 @@ A perda de peso pode indicar:
 - Esquecimento de refeições
 - Problemas de saúde não diagnosticados
 
-### 3. Quedas Frequentes
+## 3. Quedas Frequentes
 
 Quedas recorrentes sugerem:
 
@@ -252,7 +252,7 @@ Quedas recorrentes sugerem:
 - Ambiente doméstico inadequado
 - Fraqueza muscular progressiva
 
-### 4. Esquecimentos Significativos
+## 4. Esquecimentos Significativos
 
 Diferente do esquecimento normal do envelhecimento:
 
@@ -261,7 +261,7 @@ Diferente do esquecimento normal do envelhecimento:
 - Não lembrar de tomar medicamentos
 - Confundir nomes de familiares próximos
 
-### 5. Mudanças de Humor Drásticas
+## 5. Mudanças de Humor Drásticas
 
 Fique atento a:
 
@@ -270,7 +270,7 @@ Fique atento a:
 - Isolamento social
 - Choro frequente
 
-### 6. Descuido com a Casa
+## 6. Descuido com a Casa
 
 Sinais visíveis incluem:
 
@@ -279,7 +279,7 @@ Sinais visíveis incluem:
 - Contas não pagas
 - Desordem generalizada
 
-### 7. Abandono de Atividades Prazerosas
+## 7. Abandono de Atividades Prazerosas
 
 Quando o idoso deixa de:
 
@@ -288,7 +288,7 @@ Quando o idoso deixa de:
 - Receber ou fazer visitas
 - Sair de casa
 
-### 8. Erros com Medicamentos
+## 8. Erros com Medicamentos
 
 Problemas como:
 
@@ -297,7 +297,7 @@ Problemas como:
 - Confundir horários
 - Misturar medicamentos inadequadamente
 
-### 9. Acidentes Domésticos
+## 9. Acidentes Domésticos
 
 Além das quedas:
 
@@ -306,7 +306,7 @@ Além das quedas:
 - Dificuldade com eletrodomésticos
 - Vazamentos não percebidos
 
-### 10. Alterações na Aparência
+## 10. Alterações na Aparência
 
 Mudanças notáveis:
 
