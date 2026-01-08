@@ -241,21 +241,20 @@ const BlogArticle = () => {
               <div className="max-w-3xl mx-auto">
                 {/* Article body with proper typography */}
                 <div className="prose prose-lg max-w-none 
-                  prose-headings:font-display prose-headings:text-foreground
-                  prose-h1:text-3xl prose-h1:md:text-4xl prose-h1:mt-0 prose-h1:mb-10 prose-h1:leading-tight prose-h1:text-center
-                  prose-h2:text-xl prose-h2:md:text-2xl prose-h2:mt-14 prose-h2:mb-6 prose-h2:leading-tight prose-h2:font-bold
-                  prose-h2:bg-secondary/10 prose-h2:px-5 prose-h2:py-3 prose-h2:rounded-lg prose-h2:border-l-4 prose-h2:border-secondary
-                  prose-h3:text-lg prose-h3:md:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:leading-snug prose-h3:text-secondary prose-h3:font-semibold
-                  prose-h4:text-base prose-h4:md:text-lg prose-h4:mt-6 prose-h4:mb-3 prose-h4:font-semibold prose-h4:text-foreground/90
-                  prose-p:text-muted-foreground prose-p:text-base prose-p:md:text-lg prose-p:leading-relaxed prose-p:mb-5 prose-p:text-justify prose-p:hyphens-auto
-                  prose-strong:text-foreground prose-strong:font-semibold
-                  prose-li:text-muted-foreground prose-li:text-base prose-li:md:text-lg prose-li:leading-relaxed prose-li:mb-2 prose-li:text-justify
+                  prose-headings:font-display
+                  prose-h1:text-3xl prose-h1:md:text-4xl prose-h1:mt-0 prose-h1:mb-10 prose-h1:leading-tight prose-h1:text-center prose-h1:text-[#1a365d]
+                  prose-h2:text-2xl prose-h2:md:text-[1.75rem] prose-h2:mt-12 prose-h2:mb-5 prose-h2:leading-snug prose-h2:font-bold prose-h2:text-[#1a365d]
+                  prose-h3:text-lg prose-h3:md:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:leading-snug prose-h3:text-[#1a365d] prose-h3:font-semibold
+                  prose-h4:text-base prose-h4:md:text-lg prose-h4:mt-6 prose-h4:mb-3 prose-h4:font-semibold prose-h4:text-[#1a365d]
+                  prose-p:text-[#374151] prose-p:text-base prose-p:md:text-[1.0625rem] prose-p:leading-[1.8] prose-p:mb-5 prose-p:text-justify
+                  prose-strong:text-[#1a365d] prose-strong:font-semibold
+                  prose-li:text-[#374151] prose-li:text-base prose-li:md:text-[1.0625rem] prose-li:leading-[1.8] prose-li:mb-2
                   prose-ul:my-5 prose-ul:pl-6 prose-ul:list-disc prose-ul:space-y-1
                   prose-ol:my-5 prose-ol:pl-6 prose-ol:list-decimal prose-ol:space-y-1
-                  prose-a:text-secondary hover:prose-a:text-secondary/80 prose-a:underline prose-a:underline-offset-2
-                  prose-blockquote:border-l-4 prose-blockquote:border-secondary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-muted-foreground prose-blockquote:my-8 prose-blockquote:bg-cream prose-blockquote:py-4 prose-blockquote:pr-4 prose-blockquote:rounded-r-lg
-                  prose-hr:my-12 prose-hr:border-border/50
-                  prose-em:text-foreground/80
+                  prose-a:text-[#2563eb] hover:prose-a:text-[#1d4ed8] prose-a:font-medium prose-a:no-underline hover:prose-a:underline
+                  prose-blockquote:border-l-4 prose-blockquote:border-[#2563eb] prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-[#4b5563] prose-blockquote:my-8 prose-blockquote:bg-slate-50 prose-blockquote:py-4 prose-blockquote:pr-4 prose-blockquote:rounded-r-lg
+                  prose-hr:my-12 prose-hr:border-slate-200
+                  prose-em:text-[#4b5563]
                   [&>*:first-child]:mt-0">
                   <ReactMarkdown>{article.content}</ReactMarkdown>
                 </div>
