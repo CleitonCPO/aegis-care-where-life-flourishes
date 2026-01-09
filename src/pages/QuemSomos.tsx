@@ -1,10 +1,12 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Shield, Heart, Home, Users, Target, CheckCircle } from "lucide-react";
+import { Shield, Heart, Home, Users, Target, CheckCircle, ArrowRight } from "lucide-react";
 import cuidadorCaminhando from "@/assets/quem-somos/cuidador-caminhando-idoso.jpg";
 import atividadesRecreativas from "@/assets/quem-somos/atividades-recreativas.jpg";
 import cuidadoAlimentacao from "@/assets/quem-somos/cuidado-alimentacao.jpg";
+import cleitonPhoto from "@/assets/cleiton-oliveira.png";
 
 const QuemSomos = () => {
   return (
@@ -267,6 +269,51 @@ const QuemSomos = () => {
                       <span className="text-foreground font-medium">{item}</span>
                     </div>
                   ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Fundador Section */}
+          <section className="py-16 lg:py-24 bg-cream">
+            <div className="container mx-auto px-4">
+              <div className="max-w-5xl mx-auto">
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                  <div className="relative max-w-sm mx-auto lg:max-w-none">
+                    <div className="rounded-2xl overflow-hidden shadow-elevated">
+                      <img 
+                        src={cleitonPhoto} 
+                        alt="Cleiton Oliveira - Fundador da Aegis Care" 
+                        className="w-full h-auto object-cover"
+                        loading="lazy"
+                        decoding="async"
+                        width={400}
+                        height={500}
+                      />
+                    </div>
+                    <div className="absolute -z-10 -bottom-4 -right-4 w-full h-full bg-secondary/20 rounded-2xl" />
+                  </div>
+                  <div>
+                    <span className="inline-block px-4 py-1.5 bg-secondary/10 rounded-full text-secondary text-sm font-semibold mb-4">
+                      Nosso Fundador
+                    </span>
+                    <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+                      Cleiton Oliveira
+                    </h2>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                      Enfermeiro formado pela Universidade Nove de Julho, com especialização em UTI, Gerontologia e Gestão de Pessoas.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Atuou na linha de frente do combate ao COVID-19 e dedicou anos ao atendimento domiciliar. A experiência de cuidar dos próprios avós e do pai o inspirou a criar a Aegis Care: um lugar onde o cuidado acontece com a mesma dedicação que damos a quem amamos.
+                    </p>
+                    <Link 
+                      to="/fundador"
+                      className="inline-flex items-center gap-2 text-secondary font-semibold hover:text-secondary/80 transition-colors group"
+                    >
+                      Conheça a história do Cleiton
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
