@@ -243,15 +243,15 @@ const BlogArticle = () => {
                 <div className="prose prose-lg max-w-none
                   prose-headings:font-display prose-headings:text-foreground
                   prose-h1:text-3xl prose-h1:md:text-4xl prose-h1:mt-0 prose-h1:mb-10 prose-h1:leading-tight prose-h1:text-center
-                  prose-h2:text-2xl prose-h2:md:text-[1.75rem] prose-h2:mt-12 prose-h2:mb-5 prose-h2:leading-snug prose-h2:font-bold
-                  prose-h3:text-lg prose-h3:md:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:leading-snug prose-h3:text-secondary prose-h3:font-semibold
+                  prose-h2:text-2xl prose-h2:md:text-[1.75rem] prose-h2:mt-12 prose-h2:mb-5 prose-h2:leading-snug prose-h2:font-bold prose-h2:text-navy
+                  prose-h3:text-lg prose-h3:md:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:leading-snug prose-h3:text-foreground prose-h3:font-semibold
                   prose-h4:text-base prose-h4:md:text-lg prose-h4:mt-6 prose-h4:mb-3 prose-h4:font-semibold
                   prose-p:text-muted-foreground prose-p:text-base prose-p:md:text-[1.0625rem] prose-p:leading-[1.8] prose-p:mb-5 prose-p:text-justify prose-p:hyphens-auto
                   prose-strong:text-foreground prose-strong:font-semibold
                   prose-li:text-muted-foreground prose-li:text-base prose-li:md:text-[1.0625rem] prose-li:leading-[1.8] prose-li:mb-2
                   prose-ul:my-5 prose-ul:pl-6 prose-ul:list-disc prose-ul:space-y-1
                   prose-ol:my-5 prose-ol:pl-6 prose-ol:list-decimal prose-ol:space-y-1
-                  prose-a:text-secondary hover:prose-a:text-secondary/80 prose-a:font-medium prose-a:underline prose-a:underline-offset-2
+                  prose-a:text-link hover:prose-a:text-link-hover prose-a:font-medium prose-a:underline prose-a:underline-offset-2
                   prose-blockquote:border-l-4 prose-blockquote:border-secondary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-muted-foreground prose-blockquote:my-8
                   prose-hr:my-12 prose-hr:border-border/50
                   prose-em:text-foreground/80
