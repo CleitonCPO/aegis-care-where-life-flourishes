@@ -58,6 +58,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link
+                  to="/fundador"
+                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                >
+                  Nosso Fundador
+                </Link>
+              </li>
+              <li>
                 <a
                   href="/#servicos"
                   className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
