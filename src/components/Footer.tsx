@@ -130,21 +130,21 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center">
-            <p className="text-primary-foreground/60 text-sm">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-primary-foreground/60 text-sm text-center md:text-left">
               © {currentYear} Aegis Care. Todos os direitos reservados.
             </p>
-            <span className="hidden md:inline text-primary-foreground/40">•</span>
-            <Link
-              to="/politica-privacidade"
-              className="text-primary-foreground/60 hover:text-primary-foreground text-sm transition-colors"
-            >
-              Política de Privacidade
-            </Link>
-            <span className="hidden md:inline text-primary-foreground/40">•</span>
-            <p className="text-primary-foreground/60 text-sm flex items-center gap-1">
-              Feito com <Heart className="w-4 h-4 text-accent fill-accent" /> para quem cuida
-            </p>
+            <div className="flex items-center gap-6">
+              <Link
+                to="/politica-privacidade"
+                className="text-primary-foreground/60 hover:text-primary-foreground text-sm transition-colors"
+              >
+                Política de Privacidade
+              </Link>
+              <p className="text-primary-foreground/60 text-sm flex items-center gap-1">
+                Feito com <Heart className="w-4 h-4 text-accent fill-accent" /> para quem cuida
+              </p>
+            </div>
           </div>
         </div>
       </div>
