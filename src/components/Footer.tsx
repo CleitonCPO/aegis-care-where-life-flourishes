@@ -1,4 +1,4 @@
-import { Phone, Mail, Instagram, Linkedin, Heart } from "lucide-react";
+import { Phone, Mail, Instagram, Linkedin, Heart, Facebook, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo-aegis-care.png";
 
@@ -41,6 +41,24 @@ const Footer = () => {
                 aria-label="LinkedIn Aegis Care"
               >
                 <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.facebook.com/aegiscaree"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                aria-label="Facebook Aegis Care"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UC-hh7PeemPC5dhemafbwXxg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                aria-label="YouTube Aegis Care"
+              >
+                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>
