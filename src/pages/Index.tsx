@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import FounderSection from "@/components/FounderSection";
 import AboutSection from "@/components/AboutSection";
 import LazySection from "@/components/LazySection";
 
@@ -41,6 +42,7 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <FounderSection />
         <AboutSection />
         
         <LazySection>
