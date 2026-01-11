@@ -147,21 +147,19 @@ const Footer = () => {
 
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-primary-foreground/60 text-sm text-center md:text-left">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            <p className="text-primary-foreground/60 text-sm">
               © {currentYear} Aegis Care. Todos os direitos reservados.
             </p>
-            <div className="flex items-center gap-6">
-              <Link
-                to="/politica-privacidade"
-                className="text-primary-foreground/60 hover:text-primary-foreground text-sm transition-colors"
-              >
-                Política de Privacidade
-              </Link>
-              <p className="text-primary-foreground/60 text-sm flex items-center gap-1">
-                Feito com <Heart className="w-4 h-4 text-accent fill-accent" /> para quem cuida
-              </p>
-            </div>
+            <Link
+              to="/politica-privacidade"
+              className="text-primary-foreground/60 hover:text-primary-foreground text-sm transition-colors"
+            >
+              Política de Privacidade
+            </Link>
+            <p className="text-primary-foreground/60 text-sm flex items-center gap-1">
+              Feito com <Heart className="w-4 h-4 text-accent fill-accent" /> para quem cuida
+            </p>
           </div>
         </div>
       </div>
