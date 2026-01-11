@@ -59,6 +59,26 @@ const testimonials = [
     text: "O atendimento da Aegis Care foi correto e humano. A sensação de ter alguém acompanhando o cuidado de perto nos deu mais confiança no dia a dia.",
     rating: 5,
   },
+  {
+    name: "Roberto Mendonça",
+    text: "Quando a Bruna nos atendeu pela primeira vez, senti que estávamos em boas mãos. Ela ouviu tudo sobre a rotina da minha mãe, fez perguntas que nem a gente tinha pensado e transmitiu uma segurança enorme. O Cleiton acompanhou todo o processo e sempre ligava para saber se estava tudo bem. Nunca imaginei que uma empresa pudesse cuidar com tanto carinho.",
+    rating: 5,
+  },
+  {
+    name: "Sandra Regina Oliveira",
+    text: "Meu sogro é bem difícil de lidar, mas a equipe da Aegis Care foi paciente desde o primeiro dia. O Cleiton foi pessoalmente na nossa casa para entender a situação e a Bruna encontrou uma cuidadora que conseguiu conquistar a confiança dele. Hoje ele até espera ansioso pelos dias de atendimento. Somos muito gratos.",
+    rating: 5,
+  },
+  {
+    name: "Eduardo Santana Lima",
+    text: "Estava receoso em contratar cuidadores para minha avó, mas o acolhimento que recebemos foi surpreendente. Na primeira ligação, a Bruna já me passou tranquilidade explicando todo o processo. O Cleiton fez a visita de avaliação e foi super respeitoso com minha avó. Me senti amparado do início ao fim.",
+    rating: 5,
+  },
+  {
+    name: "Mariana Costa Ferreira",
+    text: "O que diferencia a Aegis Care é o lado humano. Liguei chorando no primeiro contato, preocupada com meu pai que tinha acabado de receber um diagnóstico difícil. A Bruna me ouviu por quase uma hora, me acalmou e explicou como poderiam nos ajudar. O Cleiton foi incrível na coordenação do cuidado. Hoje meu pai tem qualidade de vida e nós, paz no coração.",
+    rating: 5,
+  },
 ];
 
 const containerVariants: Variants = {
