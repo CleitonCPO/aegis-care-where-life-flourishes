@@ -297,7 +297,7 @@ const BlogArticle = () => {
                         >
                           {ref.name}
                         </a>
-                        <span className="text-muted-foreground"> — {ref.description}</span>
+                        <span className="text-muted-foreground">: {ref.description}</span>
                       </li>
                     ))}
                   </ul>

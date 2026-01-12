@@ -58,7 +58,7 @@ const Fundador = () => {
   const valores = [
     {
       titulo: "O Lar como Centro do Cuidado",
-      descricao: "Acredito profundamente que o cuidado deve acontecer onde a vida foi construída — no lar, cercado por memórias, objetos queridos e pessoas amadas."
+      descricao: "Acredito profundamente que o cuidado deve acontecer onde a vida foi construída: no lar, cercado por memórias, objetos queridos e pessoas amadas."
     },
     {
       titulo: "Cada Paciente é Único",
@@ -205,11 +205,11 @@ const Fundador = () => {
             >
               <Quote className="w-16 h-16 mx-auto mb-8 opacity-30" />
               <blockquote className="font-display text-2xl md:text-3xl lg:text-4xl leading-relaxed mb-8">
-                "Acredito que o cuidado deve permanecer onde a vida foi construída — no lar, 
+                "Acredito que o cuidado deve permanecer onde a vida foi construída: no lar, 
                 cercado pelas pessoas que você ama, repleto de memórias e objetos que contam sua história."
               </blockquote>
               <p className="text-primary-foreground/70 text-lg">
-                — Cleiton Oliveira
+                Cleiton Oliveira
               </p>
             </motion.div>
           </div>
@@ -233,7 +233,7 @@ const Fundador = () => {
                 <p className="text-lg leading-relaxed mb-6">
                   Minha jornada no cuidado começou muito antes de eu me formar enfermeiro. 
                   Começou em casa, cuidando dos meus avós e do meu pai. Foi ali que entendi 
-                  que <strong className="text-foreground">cuidar é mais do que técnica — é presença, é amor, é estar junto 
+                  que <strong className="text-foreground">cuidar é mais do que técnica. É presença, é amor, é estar junto 
                   nos momentos difíceis</strong>.
                 </p>
                 
@@ -245,7 +245,7 @@ const Fundador = () => {
                 </p>
                 
                 <p className="text-lg leading-relaxed mb-6">
-                  Busquei me especializar em <strong className="text-foreground">UTI, Gestão de Pessoas e Gerontologia</strong> — 
+                  Busquei me especializar em <strong className="text-foreground">UTI, Gestão de Pessoas e Gerontologia</strong>, 
                   porque sabia que minha missão era unir a excelência técnica com o olhar 
                   humanizado para a terceira idade.
                 </p>
