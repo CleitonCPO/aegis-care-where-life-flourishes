@@ -1,6 +1,7 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { Calendar, Clock, User, ArrowLeft, Share2, Home, MessageCircle, BookOpen, Award } from "lucide-react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getArticleBySlug, getRelatedArticles, blogArticles } from "@/data/blogArticles";
@@ -255,8 +256,13 @@ const BlogArticle = () => {
                   prose-blockquote:border-l-4 prose-blockquote:border-secondary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-muted-foreground prose-blockquote:my-8
                   prose-hr:my-12 prose-hr:border-border/50
                   prose-em:text-foreground/80
+                  prose-table:my-8 prose-table:w-full prose-table:border-collapse
+                  prose-thead:bg-primary/10 prose-thead:text-foreground
+                  prose-th:border prose-th:border-border prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold
+                  prose-td:border prose-td:border-border prose-td:px-4 prose-td:py-3 prose-td:text-muted-foreground
+                  prose-tr:even:bg-muted/30
                   [&>*:first-child]:mt-0">
-                  <ReactMarkdown>{article.content}</ReactMarkdown>
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.content}</ReactMarkdown>
                 </div>
 
                 {/* Authorship and Technical Review */}
