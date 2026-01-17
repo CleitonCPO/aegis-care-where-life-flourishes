@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense, useEffect, memo } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
@@ -15,28 +15,31 @@ const FAQSection = lazy(() => import("@/components/FAQSection"));
 const ContactSection = lazy(() => import("@/components/ContactSection"));
 const Footer = lazy(() => import("@/components/Footer"));
 
-const SectionFallback = () => (
-  <div className="min-h-[300px] flex items-center justify-center">
-    <div className="w-8 h-8 border-2 border-secondary border-t-transparent rounded-full animate-spin" />
+const SectionFallback = memo(() => (
+  <div className="min-h-[200px] flex items-center justify-center">
+    <div className="w-6 h-6 border-2 border-secondary border-t-transparent rounded-full animate-spin" />
   </div>
-);
+));
 
-const Index = () => {
+SectionFallback.displayName = 'SectionFallback';
+
+const Index = memo(() => {
   const location = useLocation();
 
   useEffect(() => {
     const state = location.state as { scrollTo?: string } | null;
     if (state?.scrollTo) {
-      setTimeout(() => {
+      requestAnimationFrame(() => {
         const element = document.getElementById(state.scrollTo!);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
-      }, 100);
+      });
       // Clear the state
       window.history.replaceState({}, document.title);
     }
   }, [location.state]);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -89,6 +92,8 @@ const Index = () => {
       </LazySection>
     </div>
   );
-};
+});
+
+Index.displayName = 'Index';
 
 export default Index;

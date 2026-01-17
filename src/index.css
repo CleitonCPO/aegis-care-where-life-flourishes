@@ -168,7 +168,12 @@
   img {
     max-width: 100%;
     height: auto;
-    content-visibility: auto;
+  }
+
+  /* GPU acceleration for animations */
+  .gpu-accelerated {
+    will-change: transform;
+    transform: translateZ(0);
   }
 
   /* Reduce motion for users who prefer it */

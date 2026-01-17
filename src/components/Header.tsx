@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo, useCallback } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Phone, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,21 +13,28 @@ const navLinks = [
   { href: "#contato", label: "Contato" },
 ];
 
-const Header = () => {
+const Header = memo(() => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 20);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleAnchorClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const targetId = href.replace("#", "");
     
@@ -40,7 +47,15 @@ const Header = () => {
       }
     }
     setIsMobileMenuOpen(false);
-  };
+  }, [location.pathname, navigate]);
+
+  const closeMobileMenu = useCallback(() => {
+    setIsMobileMenuOpen(false);
+  }, []);
+
+  const toggleMobileMenu = useCallback(() => {
+    setIsMobileMenuOpen(prev => !prev);
+  }, []);
 
   return (
     <header
@@ -58,6 +73,8 @@ const Header = () => {
             className="h-12 md:h-14 w-auto"
             width={120}
             height={56}
+            loading="eager"
+            fetchPriority="high"
           />
         </Link>
 
@@ -68,9 +85,7 @@ const Header = () => {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`font-medium transition-colors duration-200 hover:text-secondary ${
-                  isScrolled ? "text-foreground" : "text-foreground"
-                }`}
+                className="font-medium text-foreground transition-colors duration-200 hover:text-secondary"
               >
                 {link.label}
               </Link>
@@ -79,9 +94,7 @@ const Header = () => {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleAnchorClick(e, link.href)}
-                className={`font-medium transition-colors duration-200 hover:text-secondary cursor-pointer ${
-                  isScrolled ? "text-foreground" : "text-foreground"
-                }`}
+                className="font-medium text-foreground transition-colors duration-200 hover:text-secondary cursor-pointer"
               >
                 {link.label}
               </a>
@@ -115,7 +128,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           className="lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center text-foreground touch-manipulation"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          onClick={toggleMobileMenu}
           aria-label="Toggle menu"
           aria-expanded={isMobileMenuOpen}
         >
@@ -133,7 +146,7 @@ const Header = () => {
                   key={link.href}
                   to={link.href}
                   className="font-medium text-foreground hover:text-secondary hover:bg-muted py-4 px-3 rounded-lg transition-colors touch-manipulation min-h-[48px] flex items-center"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={closeMobileMenu}
                 >
                   {link.label}
                 </Link>
@@ -175,6 +188,8 @@ const Header = () => {
       )}
     </header>
   );
-};
+});
+
+Header.displayName = 'Header';
 
 export default Header;

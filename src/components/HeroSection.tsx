@@ -1,17 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowDown } from "lucide-react";
-import { motion } from "framer-motion";
+import { memo, useEffect, useState } from "react";
 import heroImage from "@/assets/hero-elderly-care.jpg";
 
-const HeroSection = () => {
+const HeroSection = memo(() => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Trigger animations after mount
+    setIsLoaded(true);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <motion.div 
-        initial={{ scale: 1.1 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-        className="absolute inset-0 z-0"
+      {/* Background Image with Overlay - Optimized for LCP */}
+      <div 
+        className={`absolute inset-0 z-0 transition-transform duration-1000 ease-out ${isLoaded ? 'scale-100' : 'scale-105'}`}
       >
         <img
           src={heroImage}
@@ -25,54 +29,44 @@ const HeroSection = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
-      </motion.div>
+      </div>
 
-      {/* Content */}
+      {/* Content - CSS animations instead of framer-motion for initial load */}
       <div className="container mx-auto px-4 relative z-10 pt-20">
         <div className="max-w-2xl">
-          <motion.span 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-block px-4 py-2 bg-secondary/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-medium mb-6"
+          <span 
+            className={`inline-block px-4 py-2 bg-secondary/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-medium mb-6 transition-all duration-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
+            style={{ transitionDelay: '100ms' }}
           >
             Cuidado Domiciliar Especializado
-          </motion.span>
+          </span>
           
-          <motion.h1 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="font-display text-4xl md:text-5xl lg:text-6xl text-primary-foreground font-bold leading-tight mb-6"
+          <h1 
+            className={`font-display text-4xl md:text-5xl lg:text-6xl text-primary-foreground font-bold leading-tight mb-6 transition-all duration-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            style={{ transitionDelay: '200ms' }}
           >
             Cuidar onde a vida foi construída.
-          </motion.h1>
+          </h1>
           
-          <motion.p 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            className="text-lg md:text-xl text-primary-foreground/90 mb-4 font-light"
+          <p 
+            className={`text-lg md:text-xl text-primary-foreground/90 mb-4 font-light transition-all duration-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            style={{ transitionDelay: '300ms' }}
           >
             Um cuidado que acolhe a vida
-          </motion.p>
+          </p>
           
-          <motion.p 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            className="text-base md:text-lg text-primary-foreground/80 mb-8 leading-relaxed"
+          <p 
+            className={`text-base md:text-lg text-primary-foreground/80 mb-8 leading-relaxed transition-all duration-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            style={{ transitionDelay: '400ms' }}
           >
             Na Aegis Care, acreditamos que envelhecer é um privilégio. 
             É sinal de história vivida, de caminhos percorridos, de vínculos criados 
             e de um legado que merece ser respeitado.
-          </motion.p>
+          </p>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4"
+          <div 
+            className={`flex flex-col sm:flex-row gap-4 transition-all duration-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            style={{ transitionDelay: '500ms' }}
           >
             <a
               href="https://wa.me/5511920067183"
@@ -89,29 +83,25 @@ const HeroSection = () => {
                 Conheça Nossa História
               </Button>
             </a>
-          </motion.div>
+          </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <motion.a
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 1.2 }}
+      <a
         href="#sobre"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        className={`absolute bottom-8 left-1/2 -translate-x-1/2 z-10 transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+        style={{ transitionDelay: '800ms' }}
         aria-label="Ver mais sobre a Aegis Care"
       >
-        <motion.div 
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="flex flex-col items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-        >
+        <div className="flex flex-col items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors animate-bounce">
           <ArrowDown className="w-5 h-5" />
-        </motion.div>
-      </motion.a>
+        </div>
+      </a>
     </section>
   );
-};
+});
+
+HeroSection.displayName = 'HeroSection';
 
 export default HeroSection;
