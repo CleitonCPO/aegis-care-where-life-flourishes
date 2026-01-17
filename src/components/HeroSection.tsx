@@ -45,7 +45,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="font-display text-4xl md:text-5xl lg:text-6xl text-primary-foreground font-bold leading-tight mb-6"
           >
-            Cuidar onde a vida foi construída.
+            Cuidadores de Idosos na Zona Leste de São Paulo
           </motion.h1>
           
           <motion.p 
