@@ -1,8 +1,9 @@
 import { Heart, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { memo } from "react";
 import founderImage from "@/assets/cleiton-oliveira.png";
 
-const FounderSection = () => {
+const FounderSection = memo(() => {
   return (
     <section className="py-20 lg:py-28 gradient-soft">
       <div className="container mx-auto px-4">
@@ -15,6 +16,10 @@ const FounderSection = () => {
                     src={founderImage}
                     alt="Cleiton Oliveira - Fundador da Aegis Care"
                     className="w-full h-full object-cover object-top"
+                    loading="lazy"
+                    width={192}
+                    height={224}
+                    decoding="async"
                   />
                 </div>
                 <div className="absolute -bottom-3 -right-3 w-16 h-16 gradient-cta rounded-xl flex items-center justify-center shadow-soft">
@@ -49,6 +54,8 @@ const FounderSection = () => {
       </div>
     </section>
   );
-};
+});
+
+FounderSection.displayName = 'FounderSection';
 
 export default FounderSection;

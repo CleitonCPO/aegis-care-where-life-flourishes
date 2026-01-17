@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, ReactNode } from "react";
+import { useEffect, useRef, useState, ReactNode, memo } from "react";
 
 interface LazySectionProps {
   children: ReactNode;
@@ -6,7 +6,7 @@ interface LazySectionProps {
   rootMargin?: string;
 }
 
-const LazySection = ({ children, className = "", rootMargin = "100px" }: LazySectionProps) => {
+const LazySection = memo(({ children, className = "", rootMargin = "200px" }: LazySectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -30,9 +30,11 @@ const LazySection = ({ children, className = "", rootMargin = "100px" }: LazySec
 
   return (
     <div ref={ref} className={className}>
-      {isVisible ? children : <div className="min-h-[200px]" />}
+      {isVisible ? children : <div className="min-h-[100px]" aria-hidden="true" />}
     </div>
   );
-};
+});
+
+LazySection.displayName = 'LazySection';
 
 export default LazySection;
