@@ -59,23 +59,25 @@
       });
     </script>
 
-    <!-- Schema.org LocalBusiness - SEO Local -->
+    <!-- Schema.org HomeHealthCare - SEO Local -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Aegis Care - Cuidado Domiciliar",
-      "description": "Cuidado domiciliar humanizado para idosos na Zona Leste de São Paulo. Serviços de cuidadores profissionais em Tatuapé, Anália Franco, Vila Prudente, Mooca, Belém, Penha e região.",
+      "@type": "HomeHealthCare",
+      "name": "Aegis Care",
+      "alternateName": "Aegis Care - Cuidadores de Idosos",
+      "description": "Cuidado domiciliar humanizado para idosos na Zona Leste de São Paulo. Oferecemos cuidadores qualificados 24h para garantir segurança, conforto e qualidade de vida.",
       "image": "https://aegiscare.com.br/logo-aegis-care.png",
-      "url": "https://aegiscare.com.br",
-      "telephone": "+55-11-92006-7183",
+      "url": "https://www.aegiscare.com.br/",
+      "telephone": "+5511920067183",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Zona Leste de São Paulo",
         "addressLocality": "São Paulo",
         "addressRegion": "SP",
-        "addressCountry": "BR",
-        "postalCode": "03310-000"
+        "postalCode": "03310-000",
+        "addressCountry": "BR"
       },
       "geo": {
         "@type": "GeoCoordinates",
@@ -86,6 +88,10 @@
         {
           "@type": "City",
           "name": "São Paulo"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Zona Leste de São Paulo"
         },
         {
           "@type": "Place",
@@ -114,13 +120,20 @@
         {
           "@type": "Place",
           "name": "Carrão"
-        },
-        {
-          "@type": "Place",
-          "name": "Zona Leste"
         }
       ],
-      "openingHours": "Mo-Su 00:00-23:59",
+      "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+      "founder": {
+        "@type": "Person",
+        "name": "Cleiton Oliveira",
+        "jobTitle": "Fundador e Enfermeiro",
+        "knowsAbout": [
+          "Enfermagem",
+          "Cuidado de Idosos",
+          "Gestão de Pessoas",
+          "Cuidado Domiciliar"
+        ]
+      },
       "sameAs": [
         "https://www.instagram.com/aegis.care/"
       ],
@@ -132,24 +145,24 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Cuidador de Idosos",
-              "description": "Cuidadores profissionais para acompanhamento domiciliar de idosos"
+              "name": "Cuidador de Idosos 24h",
+              "description": "Acompanhamento contínuo por cuidadores profissionais para garantir a segurança e o bem-estar do idoso em tempo integral."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Home Care",
-              "description": "Serviços de saúde e assistência no conforto do lar"
+              "name": "Acompanhamento Domiciliar por Período",
+              "description": "Serviço de cuidador de idosos por períodos de 6, 8 ou 12 horas, adaptado à rotina da família."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Acompanhante Hospitalar",
-              "description": "Acompanhamento profissional durante internações"
+              "name": "Administração de Medicamentos",
+              "description": "Cuidadores treinados para administrar medicamentos nos horários corretos, conforme prescrição médica."
             }
           }
         ]
