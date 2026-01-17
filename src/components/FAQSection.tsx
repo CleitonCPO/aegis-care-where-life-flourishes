@@ -8,14 +8,6 @@ import {
 
 const faqData = [
   {
-    question: "O que é um serviço de cuidador de idosos domiciliar?",
-    answer: "Um serviço de cuidador de idosos domiciliar, como o oferecido pela Aegis Care, fornece assistência profissional para pessoas da terceira idade no conforto de suas próprias casas. As atividades incluem auxílio com higiene pessoal, administração de medicamentos, preparo de refeições, companhia e monitoramento da saúde, visando garantir segurança, bem-estar e qualidade de vida."
-  },
-  {
-    question: "Quais bairros a Aegis Care atende na Zona Leste de São Paulo?",
-    answer: "A Aegis Care foca seu atendimento de cuidadores de idosos na Zona Leste de São Paulo, cobrindo principalmente os bairros de Tatuapé, Anália Franco, Vila Prudente e Mooca, além de outras áreas na região. O objetivo é oferecer um serviço ágil e presente para as famílias locais."
-  },
-  {
     question: "Como o cuidado domiciliar pode tornar o dia a dia mais leve e feliz?",
     answer: "Quando o cuidado acontece no lar, tudo flui melhor. A rotina permanece familiar, as memórias são preservadas e o bem-estar se manifesta nos pequenos detalhes do dia a dia."
   },
@@ -151,35 +143,19 @@ const FAQSection = () => {
           viewport={{ once: true, margin: "-50px" }}
           variants={containerVariants}
           className="max-w-4xl mx-auto"
-          itemScope
-          itemType="https://schema.org/FAQPage"
         >
           <Accordion type="single" collapsible className="space-y-4">
             {faqData.map((item, index) => (
-              <motion.div 
-                key={index} 
-                variants={itemVariants}
-                itemScope
-                itemProp="mainEntity"
-                itemType="https://schema.org/Question"
-              >
+              <motion.div key={index} variants={itemVariants}>
                 <AccordionItem
                   value={`item-${index}`}
                   className="bg-card rounded-lg shadow-soft border-none px-6 hover:shadow-card transition-shadow duration-300"
                 >
-                  <AccordionTrigger 
-                    className="text-left font-display text-lg text-foreground hover:text-secondary py-6 hover:no-underline"
-                    itemProp="name"
-                  >
+                  <AccordionTrigger className="text-left font-display text-lg text-foreground hover:text-secondary py-6 hover:no-underline">
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent 
-                    className="text-muted-foreground text-base pb-6 leading-relaxed"
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                  >
-                    <span itemProp="text">{item.answer}</span>
+                  <AccordionContent className="text-muted-foreground text-base pb-6 leading-relaxed">
+                    {item.answer}
                   </AccordionContent>
                 </AccordionItem>
               </motion.div>
