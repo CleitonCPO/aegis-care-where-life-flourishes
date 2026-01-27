@@ -42,6 +42,13 @@
   
   <!-- Artigos do Blog -->
   <url>
+    <loc>https://www.aegiscare.com.br/blog/guia-completo-cuidador-idosos</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
     <loc>https://www.aegiscare.com.br/blog/envelhecimento-populacional-cuidador-supervisao-enfermagem</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
