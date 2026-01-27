@@ -10,6 +10,7 @@ import exerciciosIdososZonaLeste from "@/assets/blog/exercicios-idosos-zona-lest
 import cuidadorNoturnoIdoso from "@/assets/blog/cuidador-noturno-idoso.jpg";
 import cuidadorAlzheimerDomiciliar from "@/assets/blog/cuidador-alzheimer-domiciliar.jpg";
 import envelhecimentoPopulacionalCuidador from "@/assets/blog/envelhecimento-populacional-cuidador-enfermagem.jpg";
+import guiaCuidadorIdosos from "@/assets/blog/guia-cuidador-idosos.jpg";
 
 export interface BlogArticle {
   id: string;
@@ -25,6 +26,138 @@ export interface BlogArticle {
 }
 
 export const blogArticles: BlogArticle[] = [
+  {
+    id: "13",
+    slug: "guia-completo-cuidador-idosos",
+    title: "Guia Completo de Serviços e Funções do Cuidador de Idosos",
+    excerpt: "Conheça as funções, atribuições e limites legais do cuidador de idosos, com base no Estatuto da Pessoa Idosa e na legislação brasileira.",
+    category: "Legislação",
+    author: "Equipe Aegis Care",
+    publishedAt: "2026-01-27",
+    readTime: "12 min",
+    image: guiaCuidadorIdosos,
+    content: `
+## Introdução: O Papel do Cuidador na Sociedade Brasileira
+
+O envelhecimento da população é uma realidade global e brasileira, trazendo consigo a necessidade crescente de profissionais dedicados ao bem-estar da pessoa idosa. O cuidador de idosos surge como uma figura essencial, prestando suporte para a manutenção da autonomia, saúde e qualidade de vida.
+
+Este guia, fundamentado em diretrizes do Ministério da Saúde, no Estatuto da Pessoa Idosa e na legislação correlata, visa ser um manual de consulta para famílias, cuidadores e para a sociedade, detalhando as funções, os limites e a ética desta profissão vital.
+
+A **Política Nacional de Cuidados (Lei nº 15.069/2024)** define o cuidado como um direito de todos e um dever do Estado, em corresponsabilidade com as famílias e a sociedade. Nesse contexto, o cuidador é o profissional que "auxilia ou presta cuidados básicos e essenciais ao idoso, objetivando sua autonomia", atuando como um elo fundamental entre a pessoa cuidada, a família e a equipe de saúde.
+
+Segundo o Guia Prático do Cuidador do Ministério da Saúde, a função do cuidador é "acompanhar e auxiliar a pessoa a se cuidar, fazendo por ela somente as atividades que ela não consiga fazer sozinha". Este princípio é crucial para promover a independência e respeitar a dignidade do idoso.
+
+## Funções e Atribuições Detalhadas do Cuidador
+
+As atividades do cuidador são focadas no suporte às **Atividades de Vida Diária (AVDs)**, garantindo um ambiente seguro, confortável e estimulante. É importante distinguir o cuidador de outros profissionais: enquanto a acompanhante foca mais na socialização e lazer, e a equipe de enfermagem realiza procedimentos técnicos de saúde, o cuidador integra esses mundos, focando no cuidado integral e humanizado.
+
+### Apoio na Higiene Pessoal e Conforto
+
+A higiene é um pilar para a saúde e a autoestima. O cuidador deve auxiliar, sempre incentivando a autonomia do idoso.
+
+- **Banho**: Auxiliar no banho de chuveiro, cadeira de banho ou de leito, conforme a condição de mobilidade, garantindo a segurança para evitar quedas.
+- **Higiene Oral**: Ajudar na escovação dos dentes e na limpeza de próteses dentárias para prevenir doenças bucais.
+- **Cuidados com a Aparência**: Auxiliar no ato de vestir-se, pentear os cabelos e cuidar das unhas, respeitando as preferências do idoso.
+- **Troca de Fraldas**: Realizar a troca de fraldas geriátricas, se necessário, com a devida higienização para prevenir assaduras e infecções de pele.
+
+### Auxílio na Mobilidade e Atividades Físicas
+
+Manter o idoso ativo é fundamental para sua saúde física e mental. O cuidador tem um papel ativo nesse estímulo.
+
+- **Deslocamentos**: Ajudar o idoso a levantar-se, caminhar e sentar-se, utilizando técnicas corretas para não prejudicar a si mesmo ou ao idoso.
+- **Exercícios Leves**: Acompanhar em caminhadas e na realização de exercícios físicos leves, sempre sob orientação de um profissional de saúde (fisioterapeuta, médico).
+- **Acompanhamento Externo**: Acompanhar o idoso em consultas médicas, exames, fisioterapia e atividades de lazer como passeios em parques ou visitas a familiares.
+
+### Supervisão e Administração de Medicação
+
+Esta é uma área de grande responsabilidade, que exige atenção e rigor.
+
+- **Medicação Oral**: O cuidador é responsável por zelar pelo cumprimento dos horários e dosagens de remédios de via oral, conforme a prescrição médica.
+- **Organização**: Manter os medicamentos organizados, verificar a validade e comunicar à família a necessidade de reposição.
+- **Observação**: Estar atento a possíveis efeitos colaterais e reportá-los imediatamente à família e à equipe de saúde.
+
+### Acompanhamento, Estímulo Social e Cognitivo
+
+O bem-estar emocional é tão importante quanto a saúde física. O cuidador deve ser uma companhia solidária e atenta.
+
+- **Companhia e Escuta**: Conversar, ouvir com atenção e ser solidário, proporcionando um ambiente de confiança e afeto.
+- **Estímulo Cognitivo**: Incentivar atividades que exercitem a mente, como jogos de tabuleiro, leitura, palavras-cruzadas e conversas sobre o passado.
+- **Socialização**: Promover a interação com amigos, familiares e a participação em grupos da terceira idade, combatendo o isolamento.
+
+## Regras e Limitações Cruciais: O Que o Cuidador NÃO Pode Fazer
+
+Para a segurança jurídica de todos e, principalmente, para a proteção do idoso, é fundamental que os limites da atuação do cuidador sejam claros e rigorosamente respeitados.
+
+### Proibição de Assumir Responsabilidade Legal ou Financeira
+
+O cuidador é um profissional contratado para prestar serviços de cuidado, não sendo um tutor ou curador. A responsabilidade legal e primária pelo amparo ao idoso é da família, da sociedade e do Estado, conforme o Art. 3º do Estatuto da Pessoa Idosa. O cuidador **NÃO PODE** tomar decisões legais, financeiras ou de saúde de alta complexidade em nome do idoso.
+
+### Proibição de Assinar Documentos e Realizar Atos Jurídicos
+
+Um idoso com plena capacidade mental tem o direito de assinar seus próprios documentos. O cuidador **NÃO PODE, EM HIPÓTESE ALGUMA**, assinar contratos, cheques, procurações, ou realizar transações bancárias em nome da pessoa cuidada.
+
+> **Atenção**: Induzir um idoso sem discernimento a assinar documentos é crime previsto no Art. 71 do Estatuto da Pessoa Idosa.
+
+Se o idoso não puder gerir seus atos, a família deve buscar os meios legais apropriados, como uma procuração pública ou um processo de curatela, nos quais o cuidador não deve figurar como representante para evitar conflitos de interesse.
+
+### Alimentação: A Diferença Entre Auxiliar e Preparar
+
+Este é um ponto que gera dúvidas frequentes. A função primária do cuidador é **ofertar e auxiliar na alimentação**, garantindo que o idoso se alimente de forma segura e cumpra a dieta prescrita.
+
+O preparo das refeições, especialmente para toda a família, é considerado uma tarefa doméstica que extrapola o escopo do cuidado direto.
+
+Conforme a legislação do trabalho doméstico, que rege a contratação do cuidador, o preparo de alimentos pode ser incluído nas atribuições. No entanto, isso deve ser claramente acordado no contrato de trabalho, podendo caracterizar acúmulo de função e exigir remuneração adicional.
+
+A recomendação é que a atenção do cuidador esteja focada no idoso. O preparo de refeições leves e específicas para a pessoa cuidada pode ser combinado, mas cozinhar para a família não é sua obrigação.
+
+### Proibição de Realizar Procedimentos de Saúde Complexos
+
+O cuidador não é um profissional de enfermagem. Portanto, é **ESTRITAMENTE PROIBIDO** realizar procedimentos invasivos ou que exijam conhecimento técnico especializado. Isso inclui:
+
+- Aplicação de medicamentos injetáveis (intramusculares, subcutâneos, endovenosos)
+- Realização de curativos em feridas cirúrgicas ou profundas
+- Passagem de sondas ou manipulação de cateteres
+
+A execução dessas tarefas configura **exercício ilegal da profissão de enfermagem** e coloca a vida do idoso em grave risco.
+
+## Ética Profissional e a Relação com a Família
+
+A atuação do cuidador deve ser pautada pela ética, pelo respeito e pela comunicação transparente.
+
+- **Respeito à Dignidade**: Tratar o idoso com respeito, paciência e empatia, preservando sua privacidade e autonomia.
+- **Confidencialidade**: Manter sigilo sobre as informações pessoais e de saúde do idoso e de sua família.
+- **Comunicação com a Família**: Manter a família informada sobre a rotina, o estado de saúde, o comportamento e qualquer intercorrência. Um diário de atividades pode ser uma ferramenta útil.
+- **Limites Profissionais**: Manter uma relação profissional, evitando envolvimento excessivo em questões familiares que não dizem respeito ao cuidado direto.
+
+## Direitos do Idoso que o Cuidador Deve Ajudar a Preservar
+
+O cuidador é um agente na garantia dos direitos da pessoa idosa. Conhecer o Estatuto da Pessoa Idosa é fundamental.
+
+- **Direito ao Respeito e à Dignidade (Art. 10)**: Assegurar que o idoso seja tratado com dignidade, sem ser infantilizado ou desrespeitado.
+- **Direito à Liberdade (Art. 10)**: Respeitar o direito de ir e vir, suas opiniões, crenças e a escolha de suas atividades.
+- **Direito à Saúde (Art. 15)**: Garantir o acompanhamento em consultas e o acesso aos medicamentos prescritos.
+- **Direito à Convivência Familiar e Comunitária (Art. 3)**: Facilitar o contato com familiares e amigos, evitando o isolamento.
+- **Proteção Contra Negligência e Violência (Art. 4)**: O cuidador tem o dever de proteger o idoso de qualquer forma de negligência, discriminação ou violência, e comunicar às autoridades competentes qualquer suspeita.
+
+## Conclusão: Por um Cuidado Humanizado, Ético e Legal
+
+O cuidador de idosos desempenha um papel social de valor inestimável. Para que essa relação seja benéfica e segura, é imperativo que famílias e profissionais conheçam e respeitem as atribuições e os limites da função.
+
+A clareza nas responsabilidades, formalizada em um contrato de trabalho detalhado e o registro no eSocial, é a melhor forma de prevenir conflitos e garantir que o idoso receba o melhor cuidado possível, com dignidade, segurança e respeito.
+
+---
+
+**Revisão Técnica**: Este conteúdo foi elaborado com base no Estatuto da Pessoa Idosa (Lei nº 10.741/2003), na Política Nacional de Cuidados (Lei nº 15.069/2024) e no Guia Prático do Cuidador do Ministério da Saúde.
+
+## Referências
+
+1. Lei nº 10.741, de 1º de outubro de 2003 (Estatuto da Pessoa Idosa)
+2. Lei nº 15.069, de 23 de dezembro de 2024 (Política Nacional de Cuidados)
+3. Ministério da Saúde. Guia de Cuidados para a Pessoa Idosa (2023)
+4. Ministério da Saúde. Guia Prático do Cuidador
+5. Lei Complementar nº 150/2015 (Lei do Trabalho Doméstico)
+    `
+  },
   {
     id: "12",
     slug: "envelhecimento-populacional-cuidador-supervisao-enfermagem",
