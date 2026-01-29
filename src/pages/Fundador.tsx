@@ -137,7 +137,7 @@ const Fundador = () => {
                       </div>
                       <div>
                         <p className="font-display font-semibold text-foreground">Enfermeiro</p>
-                        <p className="text-sm text-muted-foreground">COREN Ativo</p>
+                        <p className="text-sm text-muted-foreground">Enfermeiro Gerontólogo</p>
                       </div>
                     </div>
                   </div>
