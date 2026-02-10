@@ -152,33 +152,14 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- Deferred Google Analytics - loaded after page is fully interactive -->
+    <!-- Google Ads (Performance Max) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17836033587"></script>
     <script>
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(function() {
-          var s = document.createElement('script');
-          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-TLM6LXCMRK';
-          s.async = true;
-          document.body.appendChild(s);
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          window.gtag = gtag;
-          gtag('js', new Date());
-          gtag('config', 'G-TLM6LXCMRK');
-        });
-      } else {
-        setTimeout(function() {
-          var s = document.createElement('script');
-          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-TLM6LXCMRK';
-          s.async = true;
-          document.body.appendChild(s);
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          window.gtag = gtag;
-          gtag('js', new Date());
-          gtag('config', 'G-TLM6LXCMRK');
-        }, 3000);
-      }
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17836033587');
+      gtag('config', 'G-TLM6LXCMRK');
     </script>
   </body>
 </html>
