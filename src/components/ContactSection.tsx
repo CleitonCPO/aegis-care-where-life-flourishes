@@ -1,6 +1,7 @@
 import { motion, type Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MessageCircle, ArrowRight } from "lucide-react";
+import { trackWhatsAppClick } from "@/lib/gtag";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -92,10 +93,11 @@ const ContactSection = () => {
 
               <motion.div variants={itemVariants} className="flex">
                 <a
-                  href="https://wa.me/5511920067183"
+                  href="https://api.whatsapp.com/send/?phone=5511920067183&text&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto"
+                  onClick={trackWhatsAppClick}
                 >
                   <Button variant="cta" size="xl" className="gap-2 w-full min-h-[52px] touch-manipulation">
                     <MessageCircle className="w-5 h-5" />

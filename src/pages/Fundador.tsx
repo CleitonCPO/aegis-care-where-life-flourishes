@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import cleitonPhoto from "@/assets/cleiton-oliveira.png";
+import { trackWhatsAppClick } from "@/lib/gtag";
 
 const Fundador = () => {
   const formacoes = [
@@ -423,9 +424,10 @@ const Fundador = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://wa.me/5511920067183"
+                  href="https://api.whatsapp.com/send/?phone=5511920067183&text&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={trackWhatsAppClick}
                 >
                   <Button 
                     variant="secondary" 
