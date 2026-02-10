@@ -1,12 +1,16 @@
 import { MessageCircle } from "lucide-react";
 import { memo } from "react";
+import { trackWhatsAppClick } from "@/lib/gtag";
+
+const WHATSAPP_URL = "https://api.whatsapp.com/send/?phone=5511920067183&text&type=phone_number&app_absent=0";
 
 const WhatsAppButton = memo(() => {
   return (
     <a
-      href="https://wa.me/5511920067183"
+      href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={trackWhatsAppClick}
       className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5C] text-white min-w-[56px] min-h-[56px] md:min-w-0 md:min-h-0 md:px-5 md:py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 touch-manipulation"
       aria-label="Fale conosco pelo WhatsApp"
     >
