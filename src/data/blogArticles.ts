@@ -1287,23 +1287,23 @@ Moradores do **Tatuapé** e região da **Zona Leste** podem contar com a Aegis C
     readTime: "8 min",
     image: homeCareZonaLeste,
     content: `
-## Home Care de Excelência na Zona Leste
+## Serviços de Cuidadores de Excelência na Zona Leste
 
-A **Anália Franco** e a **Vila Prudente** são bairros nobres da Zona Leste paulistana, com moradores que buscam serviços de saúde de alta qualidade. O **home care** representa a evolução do cuidado ao idoso, trazendo profissionalismo e humanização ao ambiente doméstico.
+A **Anália Franco** e a **Vila Prudente** são bairros nobres da Zona Leste paulistana, com moradores que buscam serviços de saúde de alta qualidade. Os **serviços de cuidadores de idosos** representam a evolução do cuidado ao idoso, trazendo profissionalismo e humanização ao ambiente doméstico.
 
-## O que é Home Care?
+## O que são os Serviços de Cuidadores?
 
 ### Definição
 
-Home care é o conjunto de serviços de saúde realizados no domicílio do paciente:
+Os serviços de cuidadores compreendem o conjunto de cuidados básicos e supervisão realizados no domicílio do paciente:
 
-- **Cuidados de enfermagem**
-- **Acompanhamento de cuidadores**
+- **Cuidados básicos de saúde**
+- **Acompanhamento de cuidadores e supervisores**
 - **Fisioterapia domiciliar**
 - **Suporte nutricional**
 - **Assistência médica quando necessário**
 
-### Vantagens do Home Care
+### Vantagens dos Serviços de Cuidadores
 
 1. **Conforto do lar**: O idoso permanece em seu ambiente
 2. **Atenção individualizada**: Cuidado exclusivo
