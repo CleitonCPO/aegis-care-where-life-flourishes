@@ -19,7 +19,7 @@ const QuemSomos = () => {
         />
         <meta 
           name="keywords" 
-          content="quem somos aegis care, cuidado domiciliar, cuidador de idosos, enfermagem domiciliar, sobre a aegis care"
+          content="quem somos aegis care, cuidado domiciliar, cuidador de idosos, agência de cuidadores, sobre a aegis care"
         />
         <link rel="canonical" href="https://aegiscare.com.br/quem-somos" />
         

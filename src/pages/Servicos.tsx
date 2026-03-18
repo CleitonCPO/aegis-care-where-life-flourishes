@@ -38,10 +38,10 @@ const services = [
     icon: Stethoscope,
     title: "Acompanhamento de Saúde",
     subtitle: "Monitoramento e bem-estar",
-    description: "Equipe qualificada para monitoramento contínuo da saúde do paciente. Realizamos avaliações periódicas, administração de medicamentos e acompanhamento de sinais vitais com toda a expertise necessária.",
+    description: "Cuidadores qualificados para acompanhamento contínuo da saúde do paciente. Realizamos monitoramento diário, auxílio com medicamentos e acompanhamento de bem-estar com toda a atenção necessária.",
     features: [
-      "Administração de medicamentos",
-      "Monitoramento de sinais vitais",
+      "Auxílio com medicamentos",
+      "Monitoramento diário de bem-estar",
       "Avaliação periódica",
       "Relatórios detalhados para a família"
     ],
@@ -188,7 +188,7 @@ const Servicos = () => {
               className="grid md:grid-cols-3 gap-6"
             >
               {[
-                { image: enfermagemImage, title: "Enfermagem Especializada", subtitle: "Cuidado técnico de excelência" },
+                { image: enfermagemImage, title: "Cuidadores Especializados", subtitle: "Profissionais capacitados" },
                 { image: acompanhamentoImage, title: "Acompanhamento Diário", subtitle: "Qualidade de vida no lar" },
                 { image: heroImage, title: "Cuidado no Lar", subtitle: "Companhia em todos os momentos" }
               ].map((item, index) => (
