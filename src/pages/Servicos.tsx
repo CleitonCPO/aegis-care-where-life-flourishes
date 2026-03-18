@@ -7,13 +7,7 @@ import {
   Home, 
   Stethoscope, 
   Heart, 
-  Plane, 
-  Building2, 
-  Activity,
-  Brain,
   UserCheck,
-  Bandage,
-  Syringe,
   Phone,
   ArrowRight,
   CheckCircle2
