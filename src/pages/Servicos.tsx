@@ -189,7 +189,7 @@ const Servicos = () => {
               {[
                 { image: enfermagemImage, title: "Enfermagem Especializada", subtitle: "Cuidado técnico de excelência" },
                 { image: acompanhamentoImage, title: "Acompanhamento Diário", subtitle: "Qualidade de vida no lar" },
-                { image: hospitalImage, title: "Suporte Hospitalar", subtitle: "Companhia em todos os momentos" }
+                { image: heroImage, title: "Cuidado no Lar", subtitle: "Companhia em todos os momentos" }
               ].map((item, index) => (
                 <motion.div
                   key={index}
