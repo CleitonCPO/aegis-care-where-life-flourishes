@@ -1278,9 +1278,9 @@ Moradores do **Tatuapé** e região da **Zona Leste** podem contar com a Aegis C
   },
   {
     id: "8",
-    slug: "home-care-analia-franco-vila-prudente",
-    title: "Home Care na Anália Franco e Vila Prudente: Cuidado Profissional em Casa",
-    excerpt: "Serviços de home care de qualidade na Anália Franco e Vila Prudente. Cuidadores especializados para idosos na Zona Leste de São Paulo.",
+    slug: "cuidadores-idosos-analia-franco-vila-prudente",
+    title: "Serviços de Cuidadores de Idosos na Anália Franco e Vila Prudente: Cuidado Profissional em Casa",
+    excerpt: "Serviços de cuidadores de idosos de qualidade na Anália Franco e Vila Prudente. Cuidadores especializados na Zona Leste de São Paulo.",
     category: "Zona Leste",
     author: "Equipe Aegis Care",
     publishedAt: "2024-12-18",
