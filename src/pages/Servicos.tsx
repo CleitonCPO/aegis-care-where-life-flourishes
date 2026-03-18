@@ -92,9 +92,9 @@ const Servicos = () => {
         <title>Serviços | Aegis Care - Cuidado Domiciliar Premium</title>
         <meta 
           name="description" 
-          content="Conheça nossos serviços de cuidado domiciliar: enfermagem, cuidado de feridas, acompanhante hospitalar, cuidados para Alzheimer, Parkinson e AVC. Atendemos Zona Leste SP." 
+          content="Conheça nossos serviços de cuidado domiciliar: cuidadores de idosos, acompanhamento 24h, cuidador para adultos. Atendemos Zona Leste SP." 
         />
-        <meta name="keywords" content="cuidado domiciliar, agência de cuidadores de idosos, serviços de cuidadores, enfermagem domiciliar, cuidador de idosos, Alzheimer, Parkinson, AVC, acompanhante hospitalar, zona leste SP" />
+        <meta name="keywords" content="cuidado domiciliar, agência de cuidadores de idosos, serviços de cuidadores, cuidador de idosos, acompanhamento domiciliar, zona leste SP" />
         <link rel="canonical" href="https://aegiscare.com.br/servicos" />
       </Helmet>
 
