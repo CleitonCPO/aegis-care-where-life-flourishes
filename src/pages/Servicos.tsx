@@ -8,6 +8,7 @@ import {
   Stethoscope,
   Activity,
   Heart, 
+  Plane,
   UserCheck,
   Phone,
   ArrowRight,
