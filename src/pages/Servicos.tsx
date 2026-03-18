@@ -38,10 +38,10 @@ const services = [
     icon: Stethoscope,
     title: "Acompanhamento de Saúde",
     subtitle: "Monitoramento e bem-estar",
-    description: "Equipe qualificada para monitoramento contínuo da saúde do paciente. Realizamos avaliações periódicas, administração de medicamentos e acompanhamento de sinais vitais com toda a expertise necessária.",
+    description: "Cuidadores qualificados para acompanhamento contínuo da saúde do paciente. Realizamos monitoramento diário, auxílio com medicamentos e acompanhamento de bem-estar com toda a atenção necessária.",
     features: [
-      "Administração de medicamentos",
-      "Monitoramento de sinais vitais",
+      "Auxílio com medicamentos",
+      "Monitoramento diário de bem-estar",
       "Avaliação periódica",
       "Relatórios detalhados para a família"
     ],
