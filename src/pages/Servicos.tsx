@@ -188,7 +188,7 @@ const Servicos = () => {
               className="grid md:grid-cols-3 gap-6"
             >
               {[
-                { image: enfermagemImage, title: "Enfermagem Especializada", subtitle: "Cuidado técnico de excelência" },
+                { image: enfermagemImage, title: "Cuidadores Especializados", subtitle: "Profissionais capacitados" },
                 { image: acompanhamentoImage, title: "Acompanhamento Diário", subtitle: "Qualidade de vida no lar" },
                 { image: heroImage, title: "Cuidado no Lar", subtitle: "Companhia em todos os momentos" }
               ].map((item, index) => (
