@@ -1278,32 +1278,32 @@ Moradores do **Tatuapé** e região da **Zona Leste** podem contar com a Aegis C
   },
   {
     id: "8",
-    slug: "home-care-analia-franco-vila-prudente",
-    title: "Home Care na Anália Franco e Vila Prudente: Cuidado Profissional em Casa",
-    excerpt: "Serviços de home care de qualidade na Anália Franco e Vila Prudente. Cuidadores especializados para idosos na Zona Leste de São Paulo.",
+    slug: "cuidadores-idosos-analia-franco-vila-prudente",
+    title: "Serviços de Cuidadores de Idosos na Anália Franco e Vila Prudente: Cuidado Profissional em Casa",
+    excerpt: "Serviços de cuidadores de idosos de qualidade na Anália Franco e Vila Prudente. Cuidadores especializados na Zona Leste de São Paulo.",
     category: "Zona Leste",
     author: "Equipe Aegis Care",
     publishedAt: "2024-12-18",
     readTime: "8 min",
     image: homeCareZonaLeste,
     content: `
-## Home Care de Excelência na Zona Leste
+## Serviços de Cuidadores de Excelência na Zona Leste
 
-A **Anália Franco** e a **Vila Prudente** são bairros nobres da Zona Leste paulistana, com moradores que buscam serviços de saúde de alta qualidade. O **home care** representa a evolução do cuidado ao idoso, trazendo profissionalismo e humanização ao ambiente doméstico.
+A **Anália Franco** e a **Vila Prudente** são bairros nobres da Zona Leste paulistana, com moradores que buscam serviços de saúde de alta qualidade. Os **serviços de cuidadores de idosos** representam a evolução do cuidado ao idoso, trazendo profissionalismo e humanização ao ambiente doméstico.
 
-## O que é Home Care?
+## O que são os Serviços de Cuidadores?
 
 ### Definição
 
-Home care é o conjunto de serviços de saúde realizados no domicílio do paciente:
+Os serviços de cuidadores compreendem o conjunto de cuidados básicos e supervisão realizados no domicílio do paciente:
 
-- **Cuidados de enfermagem**
-- **Acompanhamento de cuidadores**
+- **Cuidados básicos de saúde**
+- **Acompanhamento de cuidadores e supervisores**
 - **Fisioterapia domiciliar**
 - **Suporte nutricional**
 - **Assistência médica quando necessário**
 
-### Vantagens do Home Care
+### Vantagens dos Serviços de Cuidadores
 
 1. **Conforto do lar**: O idoso permanece em seu ambiente
 2. **Atenção individualizada**: Cuidado exclusivo
@@ -1389,11 +1389,11 @@ Oferecemos:
 
 ## Conclusão
 
-Moradores da **Anália Franco** e **Vila Prudente** podem contar com a Aegis Care para serviços de **home care** de excelência. Nossa equipe está preparada para oferecer o cuidado que seu familiar merece.
+Moradores da **Anália Franco** e **Vila Prudente** podem contar com a Aegis Care para **serviços de cuidadores de idosos** de excelência. Nossa equipe de cuidadores e supervisores está preparada para oferecer o cuidado que seu familiar merece.
 
 ---
 
-*Agende uma visita gratuita na Anália Franco ou Vila Prudente e conheça nossos serviços de home care.*
+*Agende uma visita gratuita na Anália Franco ou Vila Prudente e conheça nossos serviços de cuidadores.*
     `
   },
   {
