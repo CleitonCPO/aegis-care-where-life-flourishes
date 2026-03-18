@@ -8,6 +8,7 @@ import {
   Stethoscope,
   Activity,
   Heart, 
+  Plane,
   UserCheck,
   Phone,
   ArrowRight,
@@ -59,6 +60,19 @@ const services = [
       "Estímulo à independência"
     ],
     image: acompanhamentoImage
+  },
+  {
+    icon: Plane,
+    title: "Acompanhamento em Viagem",
+    subtitle: "Cuidado onde a família estiver",
+    description: "Seu familiar pode viajar com segurança e tranquilidade. Oferecemos cuidadores para acompanhar viagens em família, garantindo todo o suporte necessário durante o deslocamento e a estadia.",
+    features: [
+      "Viagens nacionais com a família",
+      "Cuidados contínuos durante a viagem",
+      "Auxílio com medicamentos e rotina",
+      "Segurança e companhia em todos os momentos"
+    ],
+    image: heroImage
   },
 ];
 
