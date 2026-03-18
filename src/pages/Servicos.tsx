@@ -5,15 +5,10 @@ import { Button } from "@/components/ui/button";
 import { motion, type Variants, type Easing } from "framer-motion";
 import { 
   Home, 
-  Stethoscope, 
-  Heart, 
-  Plane, 
-  Building2, 
+  Stethoscope,
   Activity,
-  Brain,
+  Heart, 
   UserCheck,
-  Bandage,
-  Syringe,
   Phone,
   ArrowRight,
   CheckCircle2
@@ -24,7 +19,6 @@ import { Link } from "react-router-dom";
 import heroImage from "@/assets/servicos/cuidado-domiciliar-hero.jpg";
 import enfermagemImage from "@/assets/servicos/enfermagem-domiciliar.jpg";
 import acompanhamentoImage from "@/assets/servicos/acompanhamento-diario.jpg";
-import hospitalImage from "@/assets/servicos/acompanhante-hospitalar.jpg";
 
 const services = [
   {
@@ -35,75 +29,23 @@ const services = [
     features: [
       "Acompanhamento integral 24 horas",
       "Cuidadores certificados e treinados",
-      "Supervisão de enfermagem",
+      "Acompanhamento do cuidado contínuo",
       "Planos personalizados"
     ],
     image: heroImage
   },
   {
     icon: Stethoscope,
-    title: "Serviços de Enfermagem",
-    subtitle: "Cuidado técnico especializado",
-    description: "Equipe de enfermagem altamente qualificada para procedimentos técnicos e monitoramento contínuo da saúde. Realizamos avaliações, administração de medicamentos e acompanhamento de sinais vitais com toda a expertise necessária.",
+    title: "Acompanhamento de Saúde",
+    subtitle: "Monitoramento e bem-estar",
+    description: "Equipe qualificada para monitoramento contínuo da saúde do paciente. Realizamos avaliações periódicas, administração de medicamentos e acompanhamento de sinais vitais com toda a expertise necessária.",
     features: [
       "Administração de medicamentos",
       "Monitoramento de sinais vitais",
-      "Avaliação clínica periódica",
+      "Avaliação periódica",
       "Relatórios detalhados para a família"
     ],
     image: enfermagemImage
-  },
-  {
-    icon: Bandage,
-    title: "Cuidados de Feridas",
-    subtitle: "Tratamento especializado",
-    description: "Tratamento profissional de lesões cutâneas, úlceras de pressão e feridas cirúrgicas. Nossa equipe utiliza técnicas avançadas e materiais de alta qualidade para promover a cicatrização eficaz e prevenir complicações.",
-    features: [
-      "Curativos especializados",
-      "Prevenção de úlceras de pressão",
-      "Tratamento de feridas complexas",
-      "Acompanhamento da evolução"
-    ],
-    image: acompanhamentoImage
-  },
-  {
-    icon: Syringe,
-    title: "Dispositivos Médicos",
-    subtitle: "Gestão e manutenção",
-    description: "Gerenciamento completo de dispositivos médicos como sondas, cateteres, traqueostomias e ostomias. Cuidamos da manutenção, higienização e troca, garantindo segurança e bem-estar ao paciente.",
-    features: [
-      "Sondas e cateteres",
-      "Traqueostomias",
-      "Ostomias",
-      "Orientação familiar"
-    ],
-    image: hospitalImage
-  },
-  {
-    icon: Building2,
-    title: "Acompanhante Hospitalar",
-    subtitle: "Suporte durante a internação",
-    description: "Presença constante e qualificada durante períodos de internação hospitalar. Nossos acompanhantes oferecem suporte emocional, auxiliam na comunicação com a equipe médica e garantem que o paciente receba toda atenção necessária.",
-    features: [
-      "Acompanhamento diurno e noturno",
-      "Suporte emocional ao paciente",
-      "Comunicação com equipe médica",
-      "Relatórios para a família"
-    ],
-    image: hospitalImage
-  },
-  {
-    icon: Plane,
-    title: "Acompanhante em Viagens",
-    subtitle: "Mobilidade com segurança",
-    description: "Viaje com tranquilidade. Oferecemos acompanhantes especializados para viagens nacionais e internacionais, garantindo que todas as necessidades de saúde sejam atendidas durante o deslocamento.",
-    features: [
-      "Viagens nacionais e internacionais",
-      "Gestão de medicamentos",
-      "Assistência em aeroportos",
-      "Cuidados durante todo o trajeto"
-    ],
-    image: acompanhamentoImage
   },
   {
     icon: UserCheck,
@@ -116,20 +58,7 @@ const services = [
       "Acompanhamento de rotina",
       "Estímulo à independência"
     ],
-    image: heroImage
-  },
-  {
-    icon: Brain,
-    title: "Cuidados Especializados",
-    subtitle: "Alzheimer, Parkinson e AVC",
-    description: "Atendimento especializado para pacientes com doenças neurodegenerativas e sequelas de AVC. Nossa equipe é treinada para lidar com as particularidades de cada condição, oferecendo suporte terapêutico e emocional.",
-    features: [
-      "Protocolos específicos por condição",
-      "Estimulação cognitiva",
-      "Prevenção de quedas",
-      "Suporte à família e cuidadores"
-    ],
-    image: enfermagemImage
+    image: acompanhamentoImage
   },
 ];
 
@@ -164,9 +93,9 @@ const Servicos = () => {
         <title>Serviços | Aegis Care - Cuidado Domiciliar Premium</title>
         <meta 
           name="description" 
-          content="Conheça nossos serviços de cuidado domiciliar: enfermagem, cuidado de feridas, acompanhante hospitalar, cuidados para Alzheimer, Parkinson e AVC. Atendemos Zona Leste SP." 
+          content="Conheça nossos serviços de cuidado domiciliar: cuidadores de idosos, acompanhamento 24h, cuidador para adultos. Atendemos Zona Leste SP." 
         />
-        <meta name="keywords" content="cuidado domiciliar, agência de cuidadores de idosos, serviços de cuidadores, enfermagem domiciliar, cuidador de idosos, Alzheimer, Parkinson, AVC, acompanhante hospitalar, zona leste SP" />
+        <meta name="keywords" content="cuidado domiciliar, agência de cuidadores de idosos, serviços de cuidadores, cuidador de idosos, acompanhamento domiciliar, zona leste SP" />
         <link rel="canonical" href="https://aegiscare.com.br/servicos" />
       </Helmet>
 
@@ -261,7 +190,7 @@ const Servicos = () => {
               {[
                 { image: enfermagemImage, title: "Enfermagem Especializada", subtitle: "Cuidado técnico de excelência" },
                 { image: acompanhamentoImage, title: "Acompanhamento Diário", subtitle: "Qualidade de vida no lar" },
-                { image: hospitalImage, title: "Suporte Hospitalar", subtitle: "Companhia em todos os momentos" }
+                { image: heroImage, title: "Cuidado no Lar", subtitle: "Companhia em todos os momentos" }
               ].map((item, index) => (
                 <motion.div
                   key={index}
