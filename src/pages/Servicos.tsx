@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import { motion, type Variants, type Easing } from "framer-motion";
 import { 
   Home, 
-  Stethoscope, 
+  Stethoscope,
+  Activity,
   Heart, 
   UserCheck,
   Phone,
