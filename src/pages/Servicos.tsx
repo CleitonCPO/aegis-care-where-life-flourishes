@@ -18,7 +18,6 @@ import { Link } from "react-router-dom";
 import heroImage from "@/assets/servicos/cuidado-domiciliar-hero.jpg";
 import enfermagemImage from "@/assets/servicos/enfermagem-domiciliar.jpg";
 import acompanhamentoImage from "@/assets/servicos/acompanhamento-diario.jpg";
-import hospitalImage from "@/assets/servicos/acompanhante-hospitalar.jpg";
 
 const services = [
   {
