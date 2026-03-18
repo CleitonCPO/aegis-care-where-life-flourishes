@@ -31,8 +31,8 @@ const services = [
   },
   {
     icon: ClipboardList,
-    title: "Supervisão de Enfermagem",
-    description: "Supervisão técnica constante para garantir a qualidade do cuidado.",
+    title: "Acompanhamento do Cuidado 24h",
+    description: "Acompanhamento contínuo para garantir a qualidade e segurança do cuidado.",
   },
   {
     icon: Heart,
