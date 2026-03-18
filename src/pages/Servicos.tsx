@@ -166,7 +166,7 @@ const Servicos = () => {
           name="description" 
           content="Conheça nossos serviços de cuidado domiciliar: enfermagem, cuidado de feridas, acompanhante hospitalar, cuidados para Alzheimer, Parkinson e AVC. Atendemos Zona Leste SP." 
         />
-        <meta name="keywords" content="cuidado domiciliar, home care, enfermagem domiciliar, cuidador de idosos, Alzheimer, Parkinson, AVC, acompanhante hospitalar, zona leste SP" />
+        <meta name="keywords" content="cuidado domiciliar, agência de cuidadores de idosos, serviços de cuidadores, enfermagem domiciliar, cuidador de idosos, Alzheimer, Parkinson, AVC, acompanhante hospitalar, zona leste SP" />
         <link rel="canonical" href="https://aegiscare.com.br/servicos" />
       </Helmet>
 

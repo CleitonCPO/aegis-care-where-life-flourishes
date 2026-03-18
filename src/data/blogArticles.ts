@@ -1389,11 +1389,11 @@ Oferecemos:
 
 ## Conclusão
 
-Moradores da **Anália Franco** e **Vila Prudente** podem contar com a Aegis Care para serviços de **home care** de excelência. Nossa equipe está preparada para oferecer o cuidado que seu familiar merece.
+Moradores da **Anália Franco** e **Vila Prudente** podem contar com a Aegis Care para **serviços de cuidadores de idosos** de excelência. Nossa equipe de cuidadores e supervisores está preparada para oferecer o cuidado que seu familiar merece.
 
 ---
 
-*Agende uma visita gratuita na Anália Franco ou Vila Prudente e conheça nossos serviços de home care.*
+*Agende uma visita gratuita na Anália Franco ou Vila Prudente e conheça nossos serviços de cuidadores.*
     `
   },
   {
