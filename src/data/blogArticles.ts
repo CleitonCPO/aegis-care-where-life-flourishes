@@ -13,6 +13,12 @@ import envelhecimentoPopulacionalCuidador from "@/assets/blog/envelhecimento-pop
 import guiaCuidadorIdosos from "@/assets/blog/guia-cuidador-idosos.jpg";
 import diaMundialCancerIdoso from "@/assets/blog/dia-mundial-cancer-cuidado-idoso.jpg";
 
+export interface ArticleReference {
+  name: string;
+  url: string;
+  description: string;
+}
+
 export interface BlogArticle {
   id: string;
   slug: string;
@@ -24,6 +30,7 @@ export interface BlogArticle {
   readTime: string;
   category: string;
   image: string;
+  references?: ArticleReference[];
 }
 
 export const blogArticles: BlogArticle[] = [
