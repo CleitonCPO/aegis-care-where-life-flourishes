@@ -8,8 +8,8 @@ import { getArticleBySlug, getRelatedArticles, blogArticles, type ArticleReferen
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 
-// References for EEAT
-const references = [
+// Default references for articles without specific ones
+const defaultReferences: ArticleReference[] = [
   {
     name: "Organização Mundial da Saúde (OMS)",
     url: "https://www.who.int/pt",
