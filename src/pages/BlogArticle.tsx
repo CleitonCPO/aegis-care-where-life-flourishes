@@ -4,12 +4,12 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getArticleBySlug, getRelatedArticles, blogArticles } from "@/data/blogArticles";
+import { getArticleBySlug, getRelatedArticles, blogArticles, type ArticleReference } from "@/data/blogArticles";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 
-// References for EEAT
-const references = [
+// Default references for articles without specific ones
+const defaultReferences: ArticleReference[] = [
   {
     name: "Organização Mundial da Saúde (OMS)",
     url: "https://www.who.int/pt",
@@ -31,6 +31,7 @@ const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
   const article = slug ? getArticleBySlug(slug) : undefined;
   const relatedArticles = slug ? getRelatedArticles(slug, 2) : [];
+  const references = article?.references ?? defaultReferences;
 
   if (!article) {
     return <Navigate to="/blog" replace />;

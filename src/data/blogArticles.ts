@@ -13,6 +13,12 @@ import envelhecimentoPopulacionalCuidador from "@/assets/blog/envelhecimento-pop
 import guiaCuidadorIdosos from "@/assets/blog/guia-cuidador-idosos.jpg";
 import diaMundialCancerIdoso from "@/assets/blog/dia-mundial-cancer-cuidado-idoso.jpg";
 
+export interface ArticleReference {
+  name: string;
+  url: string;
+  description: string;
+}
+
 export interface BlogArticle {
   id: string;
   slug: string;
@@ -24,6 +30,7 @@ export interface BlogArticle {
   readTime: string;
   category: string;
   image: string;
+  references?: ArticleReference[];
 }
 
 export const blogArticles: BlogArticle[] = [
@@ -138,7 +145,15 @@ Se você tem um familiar idoso em tratamento oncológico e precisa de apoio, a A
 4. Pesquisa Nacional de Saúde (PNS/2013). Limitações em atividades diárias de idosos com câncer
 5. Sociedade Brasileira de Geriatria e Gerontologia (SBGG)
 6. Organização Mundial da Saúde (OMS). Envelhecimento e Saúde
-    `
+    `,
+    references: [
+      { name: "Instituto Nacional de Câncer (INCA)", url: "https://www.inca.gov.br", description: "Estimativas para o Triênio 2026-2028" },
+      { name: "Ministério da Saúde", url: "https://www.gov.br/saude/pt-br", description: "Guia de Cuidados para a Pessoa Idosa (2023)" },
+      { name: "DATASUS", url: "https://datasus.saude.gov.br", description: "Sistema de Informações sobre Mortalidade" },
+      { name: "Pesquisa Nacional de Saúde (PNS/2013)", url: "https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html", description: "Limitações em atividades diárias de idosos com câncer" },
+      { name: "Sociedade Brasileira de Geriatria e Gerontologia (SBGG)", url: "https://sbgg.org.br", description: "Referência em geriatria e gerontologia no Brasil" },
+      { name: "Organização Mundial da Saúde (OMS)", url: "https://www.who.int/pt", description: "Envelhecimento e Saúde" }
+    ]
   },
   {
     id: "13",
