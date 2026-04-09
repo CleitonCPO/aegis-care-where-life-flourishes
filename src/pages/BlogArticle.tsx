@@ -266,49 +266,7 @@ const BlogArticle = () => {
                   <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.content}</ReactMarkdown>
                 </div>
 
-                {/* Authorship and Technical Review */}
-                <div className="mt-12 p-6 bg-cream rounded-xl border border-border/50">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                      <Award className="w-6 h-6 text-secondary" />
-                    </div>
-                    <div>
-                      <h3 className="font-display text-lg font-semibold text-foreground mb-2">
-                        Revisão Técnica
-                      </h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        Este conteúdo foi elaborado pela <strong className="text-foreground">Equipe Aegis Care</strong>, 
-                        com base em experiência profissional em cuidado domiciliar e supervisão de enfermeiros especializados 
-                        em geriatria e gerontologia.
-                      </p>
-                    </div>
-                  </div>
-                </div>
 
-                {/* References Section - EEAT */}
-                <div className="mt-8 p-6 bg-card rounded-xl border border-border">
-                  <div className="flex items-center gap-3 mb-4">
-                    <BookOpen className="w-5 h-5 text-secondary" />
-                    <h3 className="font-display text-lg font-semibold text-foreground">
-                      Referências
-                    </h3>
-                  </div>
-                  <ul className="space-y-3">
-                    {references.map((ref, index) => (
-                      <li key={index} className="text-sm">
-                        <a
-                          href={ref.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-secondary hover:text-secondary/80 font-medium underline underline-offset-2"
-                        >
-                          {ref.name}
-                        </a>
-                        <span className="text-muted-foreground">: {ref.description}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
 
 
                 {/* Discrete CTA */}
