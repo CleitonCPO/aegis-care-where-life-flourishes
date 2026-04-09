@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getArticleBySlug, getRelatedArticles, blogArticles } from "@/data/blogArticles";
+import { getArticleBySlug, getRelatedArticles, blogArticles, type ArticleReference } from "@/data/blogArticles";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 
