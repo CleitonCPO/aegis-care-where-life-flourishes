@@ -11,6 +11,7 @@ import cuidadorNoturnoIdoso from "@/assets/blog/cuidador-noturno-idoso.jpg";
 import cuidadorAlzheimerDomiciliar from "@/assets/blog/cuidador-alzheimer-domiciliar.jpg";
 import envelhecimentoPopulacionalCuidador from "@/assets/blog/envelhecimento-populacional-cuidador-enfermagem.jpg";
 import guiaCuidadorIdosos from "@/assets/blog/guia-cuidador-idosos.jpg";
+import diaMundialCancerIdoso from "@/assets/blog/dia-mundial-cancer-cuidado-idoso.jpg";
 
 export interface BlogArticle {
   id: string;
@@ -26,6 +27,119 @@ export interface BlogArticle {
 }
 
 export const blogArticles: BlogArticle[] = [
+  {
+    id: "14",
+    slug: "dia-mundial-luta-contra-cancer-cuidado-idoso",
+    title: "Dia Mundial da Luta Contra o Câncer: O Papel do Cuidador no Conforto e Acolhimento do Idoso",
+    excerpt: "No Dia Mundial da Luta Contra o Câncer, a Aegis Care reafirma seu compromisso com o cuidado humanizado, oferecendo conforto, companhia e acolhimento aos idosos que enfrentam essa jornada.",
+    category: "Saúde",
+    author: "Equipe Aegis Care",
+    publishedAt: "2026-04-09",
+    readTime: "14 min",
+    image: diaMundialCancerIdoso,
+    content: `
+## O Dia Mundial da Luta Contra o Câncer e a Realidade do Idoso Brasileiro
+
+O câncer é uma das maiores preocupações de saúde pública no Brasil, especialmente entre a população idosa. Mais de 60% dos diagnósticos de câncer e 70% das mortes pela doença ocorrem em pessoas acima de 65 anos. Para o triênio 2026-2028, são esperados 781 mil novos casos por ano no país.
+
+No Dia Mundial da Luta Contra o Câncer, a **Aegis Care** reafirma seu compromisso de estar ao lado das famílias, oferecendo o que há de mais essencial nessa jornada: **presença, conforto e cuidado humanizado**.
+
+## O Impacto do Câncer na Vida do Idoso e de Sua Família
+
+O diagnóstico oncológico transforma profundamente a rotina do idoso e de todos ao seu redor. O impacto vai muito além do tratamento médico, afetando diversas dimensões da vida:
+
+### Comprometimento da Autonomia
+
+Estudos mostram que até 48% dos idosos em tratamento oncológico apresentam dependência para atividades instrumentais do dia a dia, como preparar refeições, organizar medicamentos e se locomover. Essa perda de independência gera frustração e exige apoio constante e qualificado.
+
+### Bem-estar Emocional
+
+Sentimentos de tristeza, medo e isolamento são frequentes. A depressão pode afetar entre 5% e 37% dos idosos em tratamento. A companhia de um cuidador preparado e atencioso faz toda a diferença na manutenção do equilíbrio emocional.
+
+### Sobrecarga Familiar
+
+Frequentemente, a família assume o papel de cuidadora principal, gerando sobrecarga física, emocional e financeira. A rotina familiar é completamente alterada, e muitas vezes quem cuida também precisa de apoio.
+
+### Nutrição e Saúde Física
+
+A desnutrição é um desafio real, afetando cerca de 44% dos idosos em tratamento oncológico. Garantir uma alimentação adequada e o auxílio com medicamentos se torna uma tarefa diária essencial.
+
+## O Papel da Aegis Care: Cuidado que Vai Além
+
+Na Aegis Care, acreditamos que o cuidado ao idoso com câncer vai muito além dos procedimentos médicos. Nossa missão é garantir que cada pessoa acolhida por nós tenha **dignidade, conforto e qualidade de vida** em todos os momentos.
+
+### Como Nossos Cuidadores Fazem a Diferença
+
+Os cuidadores da Aegis Care são capacitados para oferecer um suporte integral e humanizado:
+
+- **Companhia e presença constante**: Estar ao lado do idoso nos momentos difíceis, ouvindo, conversando e oferecendo apoio emocional genuíno
+- **Auxílio na alimentação**: Ajudar o idoso a manter uma nutrição adequada, respeitando suas preferências e as orientações da equipe de saúde
+- **Auxílio com medicamentos**: Zelar pelo cumprimento dos horários e dosagens prescritos, com atenção e responsabilidade
+- **Cuidados com higiene e conforto**: Auxiliar no banho, na troca de roupas e em todos os cuidados pessoais, preservando a dignidade e a autoestima
+- **Estímulo à mobilidade**: Acompanhar em caminhadas leves e deslocamentos, sempre respeitando os limites e a condição do idoso
+- **Acompanhamento em consultas**: Estar presente nas idas ao médico, exames e retornos, garantindo segurança e tranquilidade
+
+### Um Olhar Atento ao Bem-estar Emocional
+
+Nossos cuidadores são treinados para perceber mudanças de humor, sinais de tristeza ou isolamento. A escuta ativa, o carinho e a paciência são ferramentas poderosas no combate ao sofrimento emocional que o tratamento oncológico pode causar.
+
+> "Cuidar é, acima de tudo, estar presente. É oferecer a mão quando o caminho parece difícil e lembrar que ninguém precisa enfrentar essa jornada sozinho."
+
+## O Câncer no Brasil: Dados que Reforçam a Importância do Cuidado
+
+Para compreender a dimensão do desafio, é importante conhecer os números:
+
+| Dado | Informação |
+| ---- | ---------- |
+| Casos novos esperados por ano (2026-2028) | 781 mil |
+| Diagnósticos em pessoas acima de 65 anos | Mais de 60% |
+| Mortes por câncer em idosos acima de 60 anos | 77% do total |
+| Idosos com limitações nas atividades diárias | 33% |
+| Prevalência de desnutrição em idosos em tratamento | 43,8% |
+
+Esses dados revelam que o cuidado domiciliar qualificado não é um luxo, é uma necessidade. O idoso que enfrenta o câncer precisa de muito mais do que tratamento médico, ele precisa de alguém que cuide de sua rotina, de seu conforto e de seu coração.
+
+## Vulnerabilidades Regionais e o Acesso ao Cuidado
+
+O Brasil é um país de dimensões continentais e desigualdades marcantes. Em regiões com menor acesso a serviços de saúde, o diagnóstico tardio e a falta de suporte adequado agravam a situação do idoso com câncer.
+
+Fatores como baixa escolaridade, renda familiar reduzida e ausência de rede de apoio estão diretamente associados a piores desfechos. Nesse contexto, a presença de um cuidador capacitado pode representar a diferença entre um tratamento humanizado e o abandono.
+
+A Aegis Care atua justamente nessa lacuna, levando cuidado profissional e acolhimento até o lar das famílias que mais precisam.
+
+## Apoio à Família: Quem Cuida Também Precisa de Cuidado
+
+Um aspecto frequentemente esquecido é o impacto sobre os familiares que acompanham o idoso em tratamento. A sobrecarga do cuidador familiar é real e pode incluir:
+
+- Exaustão física e emocional
+- Privação de sono
+- Afastamento do trabalho e da vida social
+- Sentimentos de culpa e impotência
+
+Ao contar com o apoio profissional da Aegis Care, a família pode respirar, cuidar de si mesma e manter sua saúde preservada, sabendo que seu ente querido está em boas mãos.
+
+## Uma Mensagem de Esperança no Dia Mundial da Luta Contra o Câncer
+
+O Dia Mundial da Luta Contra o Câncer é um momento de conscientização, mas também de esperança. Cada gesto de cuidado, cada palavra de conforto e cada mão estendida fazem parte dessa luta.
+
+Na Aegis Care, acreditamos que **envelhecer é um privilégio** e que cada pessoa merece viver com dignidade, independentemente dos desafios de saúde que enfrenta. Nosso compromisso é garantir que nenhum idoso precise enfrentar o câncer sozinho ou sem o conforto que merece.
+
+Se você tem um familiar idoso em tratamento oncológico e precisa de apoio, a Aegis Care está aqui para ajudar. Nossos cuidadores são mais do que profissionais, eles são companheiros de jornada.
+
+---
+
+**Revisão Técnica**: Este conteúdo foi elaborado pela Equipe Aegis Care, com base em dados do Instituto Nacional de Câncer (INCA), Ministério da Saúde e estudos científicos publicados em bases como SciELO, PubMed e LILACS.
+
+## Referências
+
+1. Instituto Nacional de Câncer (INCA). Estimativas para o Triênio 2026-2028
+2. Ministério da Saúde. Guia de Cuidados para a Pessoa Idosa (2023)
+3. DATASUS. Sistema de Informações sobre Mortalidade
+4. Pesquisa Nacional de Saúde (PNS/2013). Limitações em atividades diárias de idosos com câncer
+5. Sociedade Brasileira de Geriatria e Gerontologia (SBGG)
+6. Organização Mundial da Saúde (OMS). Envelhecimento e Saúde
+    `
+  },
   {
     id: "13",
     slug: "guia-completo-cuidador-idosos",
