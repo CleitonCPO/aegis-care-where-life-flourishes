@@ -31,6 +31,7 @@ const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
   const article = slug ? getArticleBySlug(slug) : undefined;
   const relatedArticles = slug ? getRelatedArticles(slug, 2) : [];
+  const references = article?.references ?? defaultReferences;
 
   if (!article) {
     return <Navigate to="/blog" replace />;
