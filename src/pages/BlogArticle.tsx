@@ -310,28 +310,6 @@ const BlogArticle = () => {
                   </ul>
                 </div>
 
-                {/* Internal Links to Related Content */}
-                <div className="mt-8 p-6 bg-cream rounded-xl">
-                  <h3 className="font-display text-lg font-semibold text-foreground mb-4">
-                    Continue lendo sobre cuidado domiciliar
-                  </h3>
-                  <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-                    {blogArticles
-                      .filter(a => a.slug !== article.slug)
-                      .slice(0, 3)
-                      .map(relatedArticle => (
-                        <Link
-                          key={relatedArticle.id}
-                          to={`/blog/${relatedArticle.slug}`}
-                          className="text-sm text-secondary hover:text-secondary/80 underline underline-offset-2"
-                        >
-                          {relatedArticle.title.length > 50 
-                            ? relatedArticle.title.substring(0, 50) + '...' 
-                            : relatedArticle.title}
-                        </Link>
-                      ))}
-                  </div>
-                </div>
 
                 {/* Discrete CTA */}
                 <div className="mt-8 p-6 border border-border rounded-xl bg-card">
