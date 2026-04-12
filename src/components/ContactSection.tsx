@@ -119,8 +119,8 @@ const ContactSection = () => {
                 whileHover={{ y: -8, transition: { duration: 0.3 } }}
                 className="bg-card rounded-3xl p-8 shadow-card"
               >
-                <h3 className="font-display text-xl font-semibold text-foreground mb-6">
-                  Trabalhe Conosco
+                <h3 className="font-display text-xl font-semibold text-foreground mb-4">
+                  Faça Parte da Nossa Equipe
                 </h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   Se você acredita que cuidar é um privilégio e deseja fazer parte 
@@ -134,11 +134,17 @@ const ContactSection = () => {
                     Aqui, cuidamos de quem cuida.
                   </p>
                 </motion.div>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  Cadastre-se em nosso Portal de Talentos, conheça as vagas disponíveis 
+                  e dê o primeiro passo rumo a uma carreira com propósito.
+                </p>
                 <a
-                  href="mailto:contato@aegiscare.com.br?subject=Trabalhe%20Conosco"
+                  href="https://aegiscare.zohorecruit.com/candidateportal"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Button variant="outline" size="lg" className="w-full gap-2">
-                    Envie seu currículo
+                    Acesse o Portal de Talentos
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 </a>
