@@ -1,6 +1,7 @@
 import { MessageCircle, X } from "lucide-react";
 import { memo, useState, useEffect } from "react";
 import { trackWhatsAppClick } from "@/lib/gtag";
+import aegisLogo from "@/assets/aegis-care-logo.png";
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send/?phone=5511920067183&text&type=phone_number&app_absent=0";
 
@@ -26,9 +27,7 @@ const WhatsAppButton = memo(() => {
         <div className="w-[320px] rounded-2xl shadow-2xl overflow-hidden border border-border/50 bg-white">
           {/* WhatsApp Header */}
           <div className="bg-[#075E54] px-4 py-3 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
-              CO
-            </div>
+            <img src={aegisLogo} alt="Aegis Care" className="w-10 h-10 rounded-full object-contain bg-white p-0.5 flex-shrink-0" />
             <div className="flex-1 min-w-0">
               <p className="text-white font-semibold text-sm leading-tight">Cleiton Oliveira</p>
               <p className="text-white/70 text-xs">Enfermeiro Gerontólogo • Aegis Care</p>
