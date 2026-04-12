@@ -1,6 +1,7 @@
 import { MessageCircle, X } from "lucide-react";
 import { memo, useState, useEffect } from "react";
 import { trackWhatsAppClick } from "@/lib/gtag";
+import aegisLogo from "@/assets/aegis-care-logo.png";
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send/?phone=5511920067183&text&type=phone_number&app_absent=0";
 
