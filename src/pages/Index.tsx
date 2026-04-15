@@ -2,11 +2,11 @@ import { lazy, Suspense, useEffect, memo } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import FounderSection from "@/components/FounderSection";
-import AboutSection from "@/components/AboutSection";
 import LazySection from "@/components/LazySection";
 
 // Lazy load below-the-fold sections
+const FounderSection = lazy(() => import("@/components/FounderSection"));
+const AboutSection = lazy(() => import("@/components/AboutSection"));
 const MissionSection = lazy(() => import("@/components/MissionSection"));
 const ServicesSection = lazy(() => import("@/components/ServicesSection"));
 const WhyUsSection = lazy(() => import("@/components/WhyUsSection"));
@@ -45,8 +45,18 @@ const Index = memo(() => {
       <Header />
       <main>
         <HeroSection />
-        <FounderSection />
-        <AboutSection />
+        
+        <LazySection rootMargin="400px">
+          <Suspense fallback={<SectionFallback />}>
+            <FounderSection />
+          </Suspense>
+        </LazySection>
+        
+        <LazySection rootMargin="400px">
+          <Suspense fallback={<SectionFallback />}>
+            <AboutSection />
+          </Suspense>
+        </LazySection>
         
         <LazySection>
           <Suspense fallback={<SectionFallback />}>

@@ -152,14 +152,25 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- Google Ads (Performance Max) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17836033587"></script>
+    <!-- Google Ads (Performance Max) - Deferred for performance -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-17836033587');
-      gtag('config', 'G-TLM6LXCMRK');
+      // Defer Google Ads loading until after page is interactive
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var s = document.createElement('script');
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17836033587';
+          s.async = true;
+          document.head.appendChild(s);
+          s.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'AW-17836033587');
+            gtag('config', 'G-TLM6LXCMRK');
+          };
+        }, 2000);
+      });
     </script>
   </body>
 </html>
