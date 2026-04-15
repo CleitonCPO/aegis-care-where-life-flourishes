@@ -2,7 +2,7 @@ import { useState, useEffect, memo, useCallback } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Phone, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo-aegis-care.png";
+import logo from "@/assets/logo-aegis-care-optimized.webp";
 
 const navLinks = [
   { href: "/quem-somos", label: "Quem Somos", isRoute: true },

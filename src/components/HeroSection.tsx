@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowDown } from "lucide-react";
 import { memo, useEffect, useState } from "react";
-import heroImage from "@/assets/hero-elderly-care.jpg";
+import heroImage from "@/assets/hero-elderly-care-optimized.webp";
 
 const HeroSection = memo(() => {
   const [isLoaded, setIsLoaded] = useState(false);

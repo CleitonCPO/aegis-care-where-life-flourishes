@@ -1,4 +1,4 @@
-import logo from "@/assets/logo-aegis-care.png";
+import logo from "@/assets/logo-aegis-care-optimized.webp";
 
 const PageLoader = () => {
   return (
