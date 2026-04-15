@@ -1,6 +1,6 @@
 import { Phone, Mail, Instagram, Linkedin, Heart, Facebook, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo-aegis-care.png";
+import logo from "@/assets/logo-aegis-care-optimized.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

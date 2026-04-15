@@ -5,7 +5,7 @@ import { Heart, Award, Users, GraduationCap, Stethoscope, Home, ArrowLeft, Quote
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import cleitonPhoto from "@/assets/cleiton-oliveira.png";
+import cleitonPhoto from "@/assets/cleiton-oliveira-optimized.webp";
 import { trackWhatsAppClick } from "@/lib/gtag";
 
 const Fundador = () => {

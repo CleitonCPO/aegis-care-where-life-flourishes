@@ -6,7 +6,7 @@ import { Shield, Heart, Home, Users, Target, CheckCircle, ArrowRight } from "luc
 import cuidadorCaminhando from "@/assets/quem-somos/cuidador-caminhando-idoso.jpg";
 import atividadesRecreativas from "@/assets/quem-somos/atividades-recreativas.jpg";
 import cuidadoAlimentacao from "@/assets/quem-somos/cuidado-alimentacao.jpg";
-import cleitonPhoto from "@/assets/cleiton-oliveira.png";
+import cleitonPhoto from "@/assets/cleiton-oliveira-optimized.webp";
 
 const QuemSomos = () => {
   return (
