@@ -2,12 +2,13 @@ import { lazy, Suspense, useEffect, memo } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import FounderSection from "@/components/FounderSection";
-import AboutSection from "@/components/AboutSection";
 import LazySection from "@/components/LazySection";
 
 // Lazy load below-the-fold sections
-const MissionSection = lazy(() => import("@/components/MissionSection"));
+const FounderSection = lazy(() => import("@/components/FounderSection"));
+
+// Lazy load below-the-fold sections
+const AboutSection = lazy(() => import("@/components/AboutSection"));
 const ServicesSection = lazy(() => import("@/components/ServicesSection"));
 const WhyUsSection = lazy(() => import("@/components/WhyUsSection"));
 const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
