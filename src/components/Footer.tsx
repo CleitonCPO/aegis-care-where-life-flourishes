@@ -1,4 +1,4 @@
-import { Phone, Mail, Instagram, Linkedin, Heart, Facebook, Youtube } from "lucide-react";
+import { Phone, Mail, Instagram, Linkedin, Heart, Facebook, Youtube, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo-aegis-care-optimized.webp";
 
@@ -138,6 +138,17 @@ const Footer = () => {
                 >
                   <Mail className="w-4 h-4" />
                   contato@aegiscare.com.br
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=R.+Itapura,+254+-+290+-+Vila+Gomes+Cardim,+São+Paulo+-+SP,+03310-000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                >
+                  <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                  <span>R. Itapura, 254 - 290<br />Vila Gomes Cardim<br />São Paulo - SP, 03310-000</span>
                 </a>
               </li>
             </ul>
