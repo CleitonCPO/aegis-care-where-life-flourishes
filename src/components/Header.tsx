@@ -129,16 +129,17 @@ const Header = memo(() => {
         <button
           className="lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center text-foreground touch-manipulation"
           onClick={toggleMobileMenu}
-          aria-label="Toggle menu"
+          aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-menu"
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-card shadow-elevated animate-fade-in max-h-[80vh] overflow-y-auto">
+        <div id="mobile-menu" className="lg:hidden absolute top-full left-0 right-0 bg-card shadow-elevated animate-fade-in max-h-[80vh] overflow-y-auto">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               link.isRoute ? (

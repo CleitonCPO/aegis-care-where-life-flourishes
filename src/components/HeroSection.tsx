@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Phone, ArrowDown } from "lucide-react";
 import { memo, useEffect, useState } from "react";
 import heroImage from "@/assets/hero-elderly-care-optimized.webp";
+import heroImageMobile from "@/assets/hero-elderly-care-mobile.webp";
 
 const HeroSection = memo(() => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // Trigger animations after mount
     setIsLoaded(true);
   }, []);
 
@@ -17,16 +17,20 @@ const HeroSection = memo(() => {
       <div 
         className={`absolute inset-0 z-0 transition-transform duration-1000 ease-out ${isLoaded ? 'scale-100' : 'scale-105'}`}
       >
-        <img
-          src={heroImage}
-          alt="Cuidado acolhedor no lar"
-          className="w-full h-full object-cover"
-          loading="eager"
-          fetchPriority="high"
-          decoding="async"
-          width={1920}
-          height={1080}
-        />
+        <picture>
+          <source media="(max-width: 768px)" srcSet={heroImageMobile} type="image/webp" />
+          <source media="(min-width: 769px)" srcSet={heroImage} type="image/webp" />
+          <img
+            src={heroImage}
+            alt="Cuidado acolhedor no lar"
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={1920}
+            height={1080}
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
       </div>
