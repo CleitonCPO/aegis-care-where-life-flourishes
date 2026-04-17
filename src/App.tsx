@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { Suspense, lazy } from "react";
 import PageLoader from "./components/PageLoader";
-import WhatsAppButton from "./components/WhatsAppButton";
 
 const Index = lazy(() => import("./pages/Index"));
 const Blog = lazy(() => import("./pages/Blog"));
@@ -16,6 +15,7 @@ const Servicos = lazy(() => import("./pages/Servicos"));
 const Fundador = lazy(() => import("./pages/Fundador"));
 const PoliticaPrivacidade = lazy(() => import("./pages/PoliticaPrivacidade"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const WhatsAppButton = lazy(() => import("./components/WhatsAppButton"));
 
 const queryClient = new QueryClient();
 
@@ -38,7 +38,9 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
-          <WhatsAppButton />
+          <Suspense fallback={null}>
+            <WhatsAppButton />
+          </Suspense>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
