@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Shield, Heart, Home, Users, Target, CheckCircle, ArrowRight } from "lucide-react";
 import cuidadorCaminhando from "@/assets/quem-somos/cuidadora-idosa-brasileira.jpg";
-import atividadesRecreativas from "@/assets/quem-somos/atividades-recreativas.jpg";
+import atividadesRecreativas from "@/assets/quem-somos/atividades-recreativas-brasileira.jpg";
 import cuidadoAlimentacao from "@/assets/quem-somos/cuidado-alimentacao.jpg";
 import cleitonPhoto from "@/assets/cleiton-oliveira-optimized.webp";
 
@@ -156,7 +156,7 @@ const QuemSomos = () => {
                     <div className="rounded-2xl overflow-hidden shadow-elevated">
                       <img 
                         src={atividadesRecreativas} 
-                        alt="Idoso e cuidadora realizando atividades recreativas juntos" 
+                        alt="Cuidadora brasileira jovem jogando dominó com idosa em sala de estar acolhedora" 
                         className="w-full h-80 object-cover"
                         loading="lazy"
                         decoding="async"
