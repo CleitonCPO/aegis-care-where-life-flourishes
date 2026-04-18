@@ -98,7 +98,7 @@ const QuemSomos = () => {
                   <div className="rounded-2xl overflow-hidden shadow-elevated">
                     <img 
                       src={cuidadorCaminhando} 
-                      alt="Cuidador caminhando com idoso feliz em jardim" 
+                      alt="Cuidadora brasileira jovem acompanhando idosa em ambiente domiciliar acolhedor" 
                       className="w-full h-80 lg:h-96 object-cover"
                       loading="eager"
                       decoding="async"
