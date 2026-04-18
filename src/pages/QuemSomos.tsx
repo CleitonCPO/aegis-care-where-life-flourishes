@@ -156,7 +156,7 @@ const QuemSomos = () => {
                     <div className="rounded-2xl overflow-hidden shadow-elevated">
                       <img 
                         src={atividadesRecreativas} 
-                        alt="Idoso e cuidadora realizando atividades recreativas juntos" 
+                        alt="Cuidadora brasileira jovem jogando dominó com idosa em sala de estar acolhedora" 
                         className="w-full h-80 object-cover"
                         loading="lazy"
                         decoding="async"
