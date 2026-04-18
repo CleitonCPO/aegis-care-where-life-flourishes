@@ -369,8 +369,8 @@ const QuemSomos = () => {
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
                   Aegis Care
                 </h2>
-                <p className="text-xl text-secondary font-display font-semibold mb-8">
-                  Proteção e cuidado para permanecer em casa
+                <p className="text-xl text-secondary font-display font-semibold italic mb-8">
+                  Sob nossa égide, sua história continua em casa.
                 </p>
                 <a
                   href="https://wa.me/5511920067183"
