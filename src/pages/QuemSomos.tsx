@@ -283,12 +283,10 @@ const QuemSomos = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     "Avaliação clínica individual",
-                    "Escuta ativa e planejamento",
                     "Análise do ambiente domiciliar",
-                    "Atendimento às necessidades reais",
-                    "Supervisão por enfermeiros",
+                    "Escuta ativa e planejamento personalizado",
+                    "Supervisão rigorosa por enfermeiros",
                     "Comunicação clara com a família",
-                    "Acompanhamento sistemático",
                     "Ajustes contínuos no cuidado"
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-4 bg-card rounded-xl p-5 shadow-soft">
