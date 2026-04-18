@@ -12,10 +12,10 @@ const QuemSomos = () => {
   return (
     <>
       <Helmet>
-        <title>Quem Somos | Aegis Care - Cuidado Domiciliar Especializado</title>
+        <title>Quem Somos | Aegis Care - Onde o Cuidado encontra sua Fortaleza</title>
         <meta 
           name="description" 
-          content="Conheça a Aegis Care, empresa de cuidado domiciliar criada para proteger a permanência da pessoa em seu lar com segurança, dignidade e continuidade."
+          content="A história da Aegis Care: inspirada na Aegis, o escudo lendário de proteção da mitologia grega. Cuidado domiciliar com critério, supervisão de enfermeiros e respeito à história de cada pessoa."
         />
         <meta 
           name="keywords" 
@@ -59,23 +59,42 @@ const QuemSomos = () => {
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
                 <span className="inline-block px-4 py-2 bg-primary-foreground/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-semibold mb-6">
-                  Quem Somos
+                  Nossa História
                 </span>
                 <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-primary-foreground font-bold mb-6">
-                  Aegis Care
+                  A História da Aegis Care
                 </h1>
-                <p className="text-xl md:text-2xl text-primary-foreground/90 leading-relaxed">
-                  Proteção e cuidado para permanecer em casa
+                <p className="text-xl md:text-2xl text-primary-foreground/90 leading-relaxed font-display italic">
+                  Onde o Cuidado encontra sua Fortaleza
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Intro Section with Image */}
+          {/* O Legado de um Nome - Mitologia */}
           <section className="py-16 lg:py-24 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-5xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
+                  <div>
+                    <span className="inline-block px-4 py-1.5 bg-teal-light rounded-full text-secondary text-sm font-semibold mb-4">
+                      O Legado de um Nome
+                    </span>
+                    <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+                      Por que <span className="text-gradient">Aegis</span>?
+                    </h2>
+                    <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
+                      <p>
+                        Na mitologia grega, a Aegis (ou Égide) era o escudo lendário de proteção utilizado por Zeus, o rei dos deuses, e mais tarde por sua filha Atena, a deusa da sabedoria.
+                      </p>
+                      <p>
+                        Mais do que um objeto, a Aegis representava a segurança absoluta e o apoio incondicional. Estar "sob a égide" de alguém significava estar protegido por uma força capaz de garantir a paz e a preservação da vida.
+                      </p>
+                      <p className="text-foreground font-medium">
+                        A Aegis Care nasceu inspirada nesse conceito. Entendemos que o envelhecimento e os desafios da saúde são jornadas que exigem proteção. Por isso, somos o escudo que protege a permanência da pessoa em seu lar, garantindo que a vida continue acontecendo com segurança, dignidade e continuidade.
+                      </p>
+                    </div>
+                  </div>
                   <div className="rounded-2xl overflow-hidden shadow-elevated">
                     <img 
                       src={cuidadorCaminhando} 
@@ -87,18 +106,27 @@ const QuemSomos = () => {
                       height={384}
                     />
                   </div>
-                  <div>
-                    <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-                      A Aegis Care é uma empresa de cuidado domiciliar criada para proteger a permanência da pessoa em seu lar.
-                    </p>
-                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                      Acreditamos que a casa não é apenas um espaço físico, mas o lugar onde a história, os vínculos e a identidade permanecem vivos.
-                    </p>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                      Nosso trabalho existe para que o cuidado em saúde aconteça onde a vida acontece: em casa, com segurança, dignidade e continuidade.
-                    </p>
-                  </div>
                 </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Nossa Essência */}
+          <section className="py-16 lg:py-24 gradient-soft">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mx-auto text-center">
+                <span className="inline-block px-4 py-1.5 bg-secondary/20 rounded-full text-secondary text-sm font-semibold mb-4">
+                  Nossa Essência
+                </span>
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+                  O lar é onde a vida pulsa
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
+                  Acreditamos que a casa não é apenas um espaço físico, mas o lugar onde a história, os vínculos e a identidade permanecem vivos.
+                </p>
+                <p className="text-lg text-foreground font-medium leading-relaxed text-justify">
+                  Nosso trabalho existe para que o cuidado em saúde aconteça onde a vida pulsa: em casa.
+                </p>
               </div>
             </div>
           </section>
@@ -115,12 +143,14 @@ const QuemSomos = () => {
                     <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
                       Cuidado com critério, não com improviso
                     </h2>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      Na Aegis Care, o cuidado não começa com a escala de um cuidador. Ele começa com avaliação, escuta e planejamento.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Cada assistência é estruturada a partir de uma análise clínica individual, considerando o histórico de saúde, a rotina familiar, o ambiente domiciliar e as necessidades reais do assistido. Nada é padronizado. Nada é genérico.
-                    </p>
+                    <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
+                      <p>
+                        Assim como a deusa Atena utilizava a Aegis com estratégia e inteligência, na Aegis Care o cuidado não começa com a escala de um cuidador. Ele começa com avaliação, escuta e planejamento.
+                      </p>
+                      <p>
+                        Cada assistência é estruturada a partir de uma análise clínica individual, considerando o histórico de saúde, a rotina familiar e o ambiente domiciliar. Substituímos soluções genéricas por um cuidado sob medida, desenhado para atender às necessidades reais e específicas de cada assistido.
+                      </p>
+                    </div>
                   </div>
                   <div className="relative">
                     <div className="rounded-2xl overflow-hidden shadow-elevated">
@@ -167,8 +197,8 @@ const QuemSomos = () => {
                     <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
                       Presença profissional e acompanhamento contínuo
                     </h2>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
-                      Todos os cuidados são supervisionados por enfermeiros, com acompanhamento sistemático e comunicação clara com a família.
+                    <p className="text-muted-foreground leading-relaxed mb-6 text-justify">
+                      Como o olhar vigilante de Zeus, a Aegis Care não delega o cuidado sem controle. Todos os nossos serviços são supervisionados por enfermeiros, com acompanhamento sistemático e comunicação clara com a família.
                     </p>
                     <div className="bg-card rounded-2xl p-6 shadow-soft">
                       <div className="flex items-center gap-4 mb-4">
@@ -176,11 +206,11 @@ const QuemSomos = () => {
                           <Users className="w-6 h-6 text-primary-foreground" />
                         </div>
                         <h3 className="font-display text-lg font-semibold text-foreground">
-                          Supervisão contínua
+                          Supervisão por enfermeiros
                         </h3>
                       </div>
-                      <p className="text-muted-foreground leading-relaxed">
-                        A Aegis Care não delega o cuidado sem controle. Nós acompanhamos, orientamos e ajustamos continuamente. Isso garante segurança clínica, previsibilidade e tranquilidade para quem confia em nós.
+                      <p className="text-muted-foreground leading-relaxed text-justify">
+                        Essa supervisão garante segurança clínica, previsibilidade e a tranquilidade de saber que o plano de cuidado é ajustado continuamente conforme a evolução do quadro de saúde.
                       </p>
                     </div>
                   </div>
@@ -197,13 +227,10 @@ const QuemSomos = () => {
                   Nosso Diferencial
                 </span>
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  Mais do que cuidadores, uma curadoria de cuidado
+                  Uma Curadoria de Cuidado
                 </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-3xl mx-auto">
-                  Não somos uma agência comum de cuidadores. Somos uma estrutura de curadoria do cuidado domiciliar, onde cada decisão é tomada com responsabilidade técnica e sensibilidade humana.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                  Nosso compromisso é proteger a autonomia do assistido, respeitar sua história e sustentar um cuidado que faça sentido para quem vive aquela casa.
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6 max-w-3xl mx-auto text-justify">
+                  Não somos uma agência comum de cuidadores. Somos uma estrutura de curadoria, onde cada decisão une a força da responsabilidade técnica à delicadeza da sensibilidade humana.
                 </p>
               </div>
 
@@ -256,12 +283,10 @@ const QuemSomos = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     "Avaliação clínica individual",
-                    "Escuta ativa e planejamento",
                     "Análise do ambiente domiciliar",
-                    "Atendimento às necessidades reais",
-                    "Supervisão por enfermeiros",
+                    "Escuta ativa e planejamento personalizado",
+                    "Supervisão rigorosa por enfermeiros",
                     "Comunicação clara com a família",
-                    "Acompanhamento sistemático",
                     "Ajustes contínuos no cuidado"
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-4 bg-card rounded-xl p-5 shadow-soft">
@@ -344,8 +369,8 @@ const QuemSomos = () => {
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
                   Aegis Care
                 </h2>
-                <p className="text-xl text-secondary font-display font-semibold mb-8">
-                  Proteção e cuidado para permanecer em casa
+                <p className="text-xl text-secondary font-display font-semibold italic mb-8">
+                  Sob nossa égide, sua história continua em casa.
                 </p>
                 <a
                   href="https://wa.me/5511920067183"
