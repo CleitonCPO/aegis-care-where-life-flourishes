@@ -143,12 +143,14 @@ const QuemSomos = () => {
                     <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
                       Cuidado com critério, não com improviso
                     </h2>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      Na Aegis Care, o cuidado não começa com a escala de um cuidador. Ele começa com avaliação, escuta e planejamento.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Cada assistência é estruturada a partir de uma análise clínica individual, considerando o histórico de saúde, a rotina familiar, o ambiente domiciliar e as necessidades reais do assistido. Nada é padronizado. Nada é genérico.
-                    </p>
+                    <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
+                      <p>
+                        Assim como a deusa Atena utilizava a Aegis com estratégia e inteligência, na Aegis Care o cuidado não começa com a escala de um cuidador. Ele começa com avaliação, escuta e planejamento.
+                      </p>
+                      <p>
+                        Cada assistência é estruturada a partir de uma análise clínica individual, considerando o histórico de saúde, a rotina familiar e o ambiente domiciliar. Substituímos soluções genéricas por um cuidado sob medida, desenhado para atender às necessidades reais e específicas de cada assistido.
+                      </p>
+                    </div>
                   </div>
                   <div className="relative">
                     <div className="rounded-2xl overflow-hidden shadow-elevated">
