@@ -197,8 +197,8 @@ const QuemSomos = () => {
                     <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
                       Presença profissional e acompanhamento contínuo
                     </h2>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
-                      Todos os cuidados são supervisionados por enfermeiros, com acompanhamento sistemático e comunicação clara com a família.
+                    <p className="text-muted-foreground leading-relaxed mb-6 text-justify">
+                      Como o olhar vigilante de Zeus, a Aegis Care não delega o cuidado sem controle. Todos os nossos serviços são supervisionados por enfermeiros, com acompanhamento sistemático e comunicação clara com a família.
                     </p>
                     <div className="bg-card rounded-2xl p-6 shadow-soft">
                       <div className="flex items-center gap-4 mb-4">
@@ -206,11 +206,11 @@ const QuemSomos = () => {
                           <Users className="w-6 h-6 text-primary-foreground" />
                         </div>
                         <h3 className="font-display text-lg font-semibold text-foreground">
-                          Supervisão contínua
+                          Supervisão por enfermeiros
                         </h3>
                       </div>
-                      <p className="text-muted-foreground leading-relaxed">
-                        A Aegis Care não delega o cuidado sem controle. Nós acompanhamos, orientamos e ajustamos continuamente. Isso garante segurança clínica, previsibilidade e tranquilidade para quem confia em nós.
+                      <p className="text-muted-foreground leading-relaxed text-justify">
+                        Essa supervisão garante segurança clínica, previsibilidade e a tranquilidade de saber que o plano de cuidado é ajustado continuamente conforme a evolução do quadro de saúde.
                       </p>
                     </div>
                   </div>
