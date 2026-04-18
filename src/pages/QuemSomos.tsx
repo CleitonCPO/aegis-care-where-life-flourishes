@@ -59,23 +59,42 @@ const QuemSomos = () => {
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
                 <span className="inline-block px-4 py-2 bg-primary-foreground/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-semibold mb-6">
-                  Quem Somos
+                  Nossa História
                 </span>
                 <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-primary-foreground font-bold mb-6">
-                  Aegis Care
+                  A História da Aegis Care
                 </h1>
-                <p className="text-xl md:text-2xl text-primary-foreground/90 leading-relaxed">
-                  Proteção e cuidado para permanecer em casa
+                <p className="text-xl md:text-2xl text-primary-foreground/90 leading-relaxed font-display italic">
+                  Onde o Cuidado encontra sua Fortaleza
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Intro Section with Image */}
+          {/* O Legado de um Nome - Mitologia */}
           <section className="py-16 lg:py-24 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-5xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
+                  <div>
+                    <span className="inline-block px-4 py-1.5 bg-teal-light rounded-full text-secondary text-sm font-semibold mb-4">
+                      O Legado de um Nome
+                    </span>
+                    <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+                      Por que <span className="text-gradient">Aegis</span>?
+                    </h2>
+                    <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
+                      <p>
+                        Na mitologia grega, a Aegis (ou Égide) era o escudo lendário de proteção utilizado por Zeus, o rei dos deuses, e mais tarde por sua filha Atena, a deusa da sabedoria.
+                      </p>
+                      <p>
+                        Mais do que um objeto, a Aegis representava a segurança absoluta e o apoio incondicional. Estar "sob a égide" de alguém significava estar protegido por uma força capaz de garantir a paz e a preservação da vida.
+                      </p>
+                      <p className="text-foreground font-medium">
+                        A Aegis Care nasceu inspirada nesse conceito. Entendemos que o envelhecimento e os desafios da saúde são jornadas que exigem proteção. Por isso, somos o escudo que protege a permanência da pessoa em seu lar, garantindo que a vida continue acontecendo com segurança, dignidade e continuidade.
+                      </p>
+                    </div>
+                  </div>
                   <div className="rounded-2xl overflow-hidden shadow-elevated">
                     <img 
                       src={cuidadorCaminhando} 
@@ -87,18 +106,27 @@ const QuemSomos = () => {
                       height={384}
                     />
                   </div>
-                  <div>
-                    <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-                      A Aegis Care é uma empresa de cuidado domiciliar criada para proteger a permanência da pessoa em seu lar.
-                    </p>
-                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                      Acreditamos que a casa não é apenas um espaço físico, mas o lugar onde a história, os vínculos e a identidade permanecem vivos.
-                    </p>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                      Nosso trabalho existe para que o cuidado em saúde aconteça onde a vida acontece: em casa, com segurança, dignidade e continuidade.
-                    </p>
-                  </div>
                 </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Nossa Essência */}
+          <section className="py-16 lg:py-24 gradient-soft">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mx-auto text-center">
+                <span className="inline-block px-4 py-1.5 bg-secondary/20 rounded-full text-secondary text-sm font-semibold mb-4">
+                  Nossa Essência
+                </span>
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+                  O lar é onde a vida pulsa
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
+                  Acreditamos que a casa não é apenas um espaço físico, mas o lugar onde a história, os vínculos e a identidade permanecem vivos.
+                </p>
+                <p className="text-lg text-foreground font-medium leading-relaxed text-justify">
+                  Nosso trabalho existe para que o cuidado em saúde aconteça onde a vida pulsa: em casa.
+                </p>
               </div>
             </div>
           </section>
