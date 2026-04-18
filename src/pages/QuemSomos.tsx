@@ -227,13 +227,10 @@ const QuemSomos = () => {
                   Nosso Diferencial
                 </span>
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  Mais do que cuidadores, uma curadoria de cuidado
+                  Uma Curadoria de Cuidado
                 </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-3xl mx-auto">
-                  Não somos uma agência comum de cuidadores. Somos uma estrutura de curadoria do cuidado domiciliar, onde cada decisão é tomada com responsabilidade técnica e sensibilidade humana.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                  Nosso compromisso é proteger a autonomia do assistido, respeitar sua história e sustentar um cuidado que faça sentido para quem vive aquela casa.
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6 max-w-3xl mx-auto text-justify">
+                  Não somos uma agência comum de cuidadores. Somos uma estrutura de curadoria, onde cada decisão une a força da responsabilidade técnica à delicadeza da sensibilidade humana.
                 </p>
               </div>
 
