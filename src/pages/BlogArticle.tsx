@@ -266,8 +266,30 @@ const BlogArticle = () => {
                   <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.content}</ReactMarkdown>
                 </div>
 
-
-
+                {/* References */}
+                {references.length > 0 && (
+                  <div className="mt-12 p-6 border border-border rounded-xl bg-muted/30">
+                    <h2 className="font-display text-xl text-foreground mb-4 flex items-center gap-2">
+                      <BookOpen className="w-5 h-5 text-secondary" />
+                      Referências Científicas
+                    </h2>
+                    <ol className="space-y-3 list-decimal list-inside">
+                      {references.map((ref, idx) => (
+                        <li key={idx} className="text-sm text-muted-foreground leading-relaxed">
+                          <a
+                            href={ref.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-link hover:text-link-hover font-medium underline underline-offset-2"
+                          >
+                            {ref.name}
+                          </a>
+                          {ref.description && <span> {ref.description}</span>}
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
 
                 {/* Discrete CTA */}
                 <div className="mt-8 p-6 border border-border rounded-xl bg-card">
