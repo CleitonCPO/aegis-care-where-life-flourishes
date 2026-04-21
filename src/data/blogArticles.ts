@@ -144,7 +144,7 @@ Na **Aegis Care**, o cuidado começa por uma avaliação clínica individual fei
 Cuidar de uma pessoa com Doença de Parkinson em casa é possível, viável e, em muitos casos, é a melhor escolha clínica e humana. A literatura científica recente mostra um caminho consistente: sobrecarga do cuidador deve ser monitorada, estratégias de enfrentamento ativas funcionam, treinamento estruturado tem dose certa, reabilitação multidisciplinar prolonga a vida em casa e a telessaúde amplia o acesso a especialistas.
 
 Quando essas peças se encontram, com supervisão profissional e sensibilidade humana, o resultado vai muito além do controle de sintomas: é a preservação da história, da autonomia e da dignidade de quem construiu uma vida inteira dentro daquele lar.
-    \`,
+    `,
     references: [
       { name: "Olson et al. (2025)", url: "https://www.mdpi.com/journal/healthcare", description: "Parkinson's Disease Caregiving, Level of Care Burden, Caregiving-Related Strain, and Caregiver Health. Healthcare, v. 13, n. 13." },
       { name: "Soares et al. (2023)", url: "https://doi.org/10.1002/mdc3.13868", description: "Contributory Factors to Caregiver Burden in Parkinson's Disease. Movement Disorders Clinical Practice, v. 10, n. 11, p. 1650-1658." },
