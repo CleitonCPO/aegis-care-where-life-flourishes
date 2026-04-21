@@ -8,68 +8,28 @@ import {
 
 const faqData = [
   {
-    question: "Como o cuidado domiciliar pode tornar o dia a dia mais leve e feliz?",
-    answer: "Quando o cuidado acontece no lar, tudo flui melhor. A rotina permanece familiar, as memórias são preservadas e o bem-estar se manifesta nos pequenos detalhes do dia a dia."
+    question: "Como é o processo seletivo dos cuidadores?",
+    answer: "Todos os profissionais passam por um processo seletivo criterioso, com análise de experiência, perfil comportamental, validação documental e alinhamento com os valores do cuidado domiciliar. Nosso objetivo é garantir profissionais preparados, humanizados e compatíveis com o perfil de cada família."
   },
   {
-    question: "É possível cuidar sem mudar a dinâmica da casa?",
-    answer: "Sim. Nosso cuidado se integra naturalmente à rotina da família, respeitando hábitos, horários e preferências. Nada é imposto, tudo é harmonizado."
+    question: "Em caso de não adaptação, podemos trocar de cuidador?",
+    answer: "Sim. Caso não haja adaptação entre o cuidador e o assistido, realizamos a substituição do profissional. Entendemos que o cuidado envolve vínculo, confiança e presença, por isso esse alinhamento é essencial para a qualidade da assistência."
   },
   {
-    question: "Como a Aegis Care ajuda a preservar a alegria de viver do idoso?",
-    answer: "Valorizamos autonomia, estímulo, conversa, presença e afeto. O cuidado acontece com leveza, promovendo conforto, segurança e qualidade de vida."
+    question: "Podemos fazer um teste antes de iniciar o plano mensal?",
+    answer: "Sim. É possível iniciar por diárias ou por um período reduzido, permitindo que a família avalie a adaptação do assistido e a dinâmica do cuidado antes de optar por um plano contínuo."
   },
   {
-    question: "O cuidador passa a fazer parte da casa?",
-    answer: "Sim, de forma respeitosa e discreta. O profissional entra como apoio, presença tranquila e confiança no dia a dia."
+    question: "Em caso de ausência do cuidador, como a empresa age?",
+    answer: "Na ausência do profissional, entramos em contato com a família para entender se desejam a substituição por um folguista. Quando o atendimento é integral, a reposição é acionada imediatamente. Para garantir o menor impacto possível na assistência, agilizamos o deslocamento do profissional, inclusive com envio de carro por aplicativo quando necessário, mantendo a continuidade do cuidado e a segurança do assistido."
   },
   {
-    question: "O cuidado domiciliar permite que o idoso continue sendo quem sempre foi?",
-    answer: "Exatamente. Nosso cuidado existe para apoiar, não para substituir. A identidade, as preferências e o ritmo de cada pessoa são preservados."
+    question: "Como acompanho a rotina do meu ente querido?",
+    answer: "A família acompanha toda a assistência por meio do nosso prontuário eletrônico, onde registramos os cuidados realizados, rotina diária, observações importantes e evolução do assistido. Esse acompanhamento garante transparência, organização e segurança no cuidado."
   },
   {
-    question: "Como a família acompanha o cuidado?",
-    answer: "Com proximidade e transparência. Mantemos diálogo constante, garantindo tranquilidade e confiança para todos."
-  },
-  {
-    question: "O cuidado pode ser ajustado com o tempo?",
-    answer: "Sim. O cuidado acompanha a vida, respeitando cada fase com sensibilidade e planejamento."
-  },
-  {
-    question: "O cuidado domiciliar contribui para um envelhecimento ativo?",
-    answer: "Sim. Estar em casa estimula autonomia, bem-estar emocional e conexão com a própria história."
-  },
-  {
-    question: "O atendimento é personalizado?",
-    answer: "Sempre. Cada cuidado é construído de forma única, respeitando o estilo de vida e as necessidades de cada pessoa."
-  },
-  {
-    question: "Como a Aegis Care seleciona seus profissionais?",
-    answer: "Com critérios rigorosos, formação adequada e supervisão contínua, garantindo um cuidado humano, técnico e confiável."
-  },
-  {
-    question: "O cuidado domiciliar traz tranquilidade para a família?",
-    answer: "Sim. Ele traz equilíbrio, segurança e a certeza de que tudo está sendo cuidado com carinho e atenção."
-  },
-  {
-    question: "É possível começar o cuidado de forma gradual?",
-    answer: "Sim. O cuidado pode ser introduzido aos poucos, respeitando o tempo e o conforto de cada família."
-  },
-  {
-    question: "O cuidado interfere na liberdade do idoso?",
-    answer: "Não. Pelo contrário, ele existe para preservar autonomia e ampliar o bem-estar."
-  },
-  {
-    question: "O cuidado domiciliar substitui o convívio familiar?",
-    answer: "Nunca. Ele fortalece o convívio, permitindo que os momentos juntos sejam mais leves e prazerosos."
-  },
-  {
-    question: "Como saber se o cuidado domiciliar é a melhor escolha?",
-    answer: "Quando a prioridade é conforto, alegria, segurança e permanência no lar, o cuidado domiciliar é um grande aliado."
-  },
-  {
-    question: "Por que escolher a Aegis Care?",
-    answer: "Porque cuidamos com presença, respeito e sensibilidade, onde a vida foi construída."
+    question: "Vocês fazem visitas na casa da minha família?",
+    answer: "Sim. Realizamos visitas técnicas e acompanhamentos presenciais conforme a necessidade do atendimento, mensal, bimestral ou trimestral. Essas visitas permitem avaliar o ambiente, orientar a equipe, ajustar rotinas e garantir que o cuidado esteja alinhado com as necessidades do assistido e da família."
   }
 ];
 
