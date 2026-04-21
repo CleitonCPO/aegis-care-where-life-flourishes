@@ -148,15 +148,7 @@ Quando essas peças se encontram, com supervisão profissional e sensibilidade h
     references: [
       { name: "Olson et al. (2025)", url: "https://www.mdpi.com/journal/healthcare", description: "Parkinson's Disease Caregiving, Level of Care Burden, Caregiving-Related Strain, and Caregiver Health. Healthcare, v. 13, n. 13." },
       { name: "Soares et al. (2023)", url: "https://doi.org/10.1002/mdc3.13868", description: "Contributory Factors to Caregiver Burden in Parkinson's Disease. Movement Disorders Clinical Practice, v. 10, n. 11, p. 1650-1658." },
-      { name: "Sin et al. (2025)", url: "https://www.journals.elsevier.com/international-journal-of-nursing-studies", description: "Factors impacting caregiver burden in Parkinson's disease: A systematic review and meta-analysis. International Journal of Nursing Studies." },
-      { name: "Barón Castro et al. (2023)", url: "https://doi.org/10.15446/av.enferm.v41n3.111581", description: "Capacidade de enfrentamento e adaptação de cuidadores familiares de pessoas com Parkinson. Avances en Enfermería, v. 41, n. 3." },
-      { name: "Thomsen et al. (2025)", url: "https://www.hindawi.com/journals/pd/", description: "EMPOWER-PD: Evaluation of an 8-Week Co-Designed Self-Management Program for People with Parkinson's Disease. Parkinson's Disease." },
-      { name: "Stümpel et al. (2022)", url: "https://content.iospress.com/journals/journal-of-parkinsons-disease", description: "Coping Styles in Patients with Parkinson's Disease. Journal of Parkinson's Disease, v. 12, n. 6, p. 1987-1997." },
-      { name: "Ge et al. (2025)", url: "https://doi.org/10.1016/j.parkreldis.2025.108867", description: "Reducing caregiver burden in advanced Parkinson's disease through targeted training. Parkinsonism & Related Disorders." },
-      { name: "Steendam-Oldekamp et al. (2023)", url: "https://doi.org/10.3389/fneur.2023.1128891", description: "Combined multidisciplinary in/outpatient rehabilitation delays definite nursing home admission in advanced Parkinson's disease. Frontiers in Neurology, v. 14." },
-      { name: "Sun et al. (2025/2026)", url: "https://doi.org/10.2196/70994", description: "Effects of Telehealth Interventions for People With Parkinson Disease: Systematic Review and Meta-Analysis. JMIR mHealth and uHealth." },
-      { name: "Adams et al. (2026)", url: "https://doi.org/10.1007/s11910-026-01481-7", description: "Digital Technologies for Symptom Monitoring in Parkinson Disease. Current Neurology and Neuroscience Reports, v. 26, n. 1." },
-      { name: "Afshari et al. (2025)", url: "https://www.journals.elsevier.com/journal-of-the-neurological-sciences", description: "Integrating tele-palliative care for atypical Parkinsonian disorders. Journal of the Neurological Sciences." }
+      { name: "Steendam-Oldekamp et al. (2023)", url: "https://doi.org/10.3389/fneur.2023.1128891", description: "Combined multidisciplinary in/outpatient rehabilitation delays definite nursing home admission in advanced Parkinson's disease. Frontiers in Neurology, v. 14." }
     ]
   },
   {
