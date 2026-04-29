@@ -135,16 +135,14 @@ const ContactSection = () => {
                   </p>
                 </motion.div>
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  Cadastre-se em nosso Portal de Talentos, conheça as vagas disponíveis 
-                  e dê o primeiro passo rumo a uma carreira com propósito.
+                  Envie seu currículo para o nosso e-mail e dê o primeiro passo 
+                  rumo a uma carreira com propósito.
                 </p>
                 <a
-                  href="https://aegiscare.zohorecruit.com/candidateportal"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:contato@aegiscare.com.br?subject=Quero%20fazer%20parte%20da%20equipe%20Aegis%20Care&body=Ol%C3%A1%2C%20gostaria%20de%20fazer%20parte%20da%20equipe%20Aegis%20Care.%20Segue%20em%20anexo%20meu%20curr%C3%ADculo."
                 >
                   <Button variant="outline" size="lg" className="w-full gap-2">
-                    Acesse o Portal de Talentos
+                    Envie seu Currículo
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 </a>
