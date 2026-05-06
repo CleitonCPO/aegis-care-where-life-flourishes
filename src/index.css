@@ -309,3 +309,61 @@
     }
   }
 }
+
+/* ===== Premium Gold Pulsing Border (Global) ===== */
+:root {
+  --gold: 43 74% 56%;
+  --gold-bright: 45 95% 65%;
+  --gold-deep: 38 70% 42%;
+}
+
+@keyframes goldPulse {
+  0%, 100% {
+    box-shadow:
+      inset 0 0 0 2px hsl(var(--gold) / 0.55),
+      inset 0 0 18px hsl(var(--gold-bright) / 0.35),
+      0 0 0 0 hsl(var(--gold-bright) / 0);
+  }
+  50% {
+    box-shadow:
+      inset 0 0 0 2px hsl(var(--gold-bright) / 0.95),
+      inset 0 0 32px hsl(var(--gold-bright) / 0.65),
+      0 0 0 0 hsl(var(--gold-bright) / 0);
+  }
+}
+
+@keyframes goldShimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  border-radius: 0;
+  padding: 3px;
+  background: linear-gradient(
+    120deg,
+    hsl(var(--gold-deep)) 0%,
+    hsl(var(--gold-bright)) 25%,
+    hsl(var(--gold)) 50%,
+    hsl(var(--gold-bright)) 75%,
+    hsl(var(--gold-deep)) 100%
+  );
+  background-size: 200% 200%;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: goldShimmer 6s linear infinite, goldPulse 2.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px hsl(var(--gold-bright) / 0.55));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before { animation: none; }
+}
+
