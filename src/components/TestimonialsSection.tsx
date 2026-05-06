@@ -15,6 +15,11 @@ const testimonials = [
     rating: 5,
   },
   {
+    name: "Janete Bolgheroni",
+    text: "Foi uma boa experiência, solicitei uma profissional e fui atendida prontamente. A cuidadora indicada foi ótima, educada, pontual e atenciosa.",
+    rating: 5,
+  },
+  {
     name: "Michele Valejo",
     text: "Empresa muito atenciosa. Demonstrou atenção com o paciente e familiares e superou nossas expectativas! Recomendo os serviços.",
     rating: 5,
