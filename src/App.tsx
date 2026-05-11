@@ -7,8 +7,6 @@ import { HelmetProvider } from "react-helmet-async";
 import { Suspense, lazy } from "react";
 import PageLoader from "./components/PageLoader";
 
-import { useEffect, useState } from "react";
-
 const Index = lazy(() => import("./pages/Index"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogArticle = lazy(() => import("./pages/BlogArticle"));
@@ -18,26 +16,6 @@ const Fundador = lazy(() => import("./pages/Fundador"));
 const PoliticaPrivacidade = lazy(() => import("./pages/PoliticaPrivacidade"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const WhatsAppButton = lazy(() => import("./components/WhatsAppButton"));
-
-const DeferredWhatsApp = () => {
-  const [show, setShow] = useState(false);
-  useEffect(() => {
-    const onReady = () => setShow(true);
-    const events = ["scroll", "mousemove", "touchstart", "keydown"];
-    events.forEach((e) => window.addEventListener(e, onReady, { once: true, passive: true }));
-    const t = window.setTimeout(onReady, 2500);
-    return () => {
-      events.forEach((e) => window.removeEventListener(e, onReady));
-      window.clearTimeout(t);
-    };
-  }, []);
-  if (!show) return null;
-  return (
-    <Suspense fallback={null}>
-      <WhatsAppButton />
-    </Suspense>
-  );
-};
 
 const queryClient = new QueryClient();
 
@@ -60,7 +38,9 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
-          <DeferredWhatsApp />
+          <Suspense fallback={null}>
+            <WhatsAppButton />
+          </Suspense>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
