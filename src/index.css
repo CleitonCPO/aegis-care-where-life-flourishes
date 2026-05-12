@@ -317,69 +317,57 @@
   }
 }
 
-/* ===== Premium Gold Pulse (highlight buttons) ===== */
+/* ===== Premium Emerald Glow (highlight buttons) ===== */
 :root {
+  --emerald: 170 55% 45%;
+  --emerald-bright: 168 60% 55%;
+  --emerald-deep: 180 50% 30%;
+  /* Legacy gold tokens kept for accents */
   --gold: 43 74% 56%;
   --gold-bright: 45 95% 65%;
   --gold-deep: 38 70% 42%;
 }
 
-@keyframes goldPulseBtn {
+@keyframes emeraldPulseBtn {
   0%, 100% {
-    box-shadow:
-      0 0 0 0 hsl(var(--gold-bright) / 0.55),
-      0 0 14px 2px hsl(var(--gold) / 0.45),
-      0 8px 24px -8px hsl(var(--gold-deep) / 0.5);
+    box-shadow: 0 0 0 0 hsl(var(--emerald-bright) / 0.35),
+      0 6px 18px -10px hsl(var(--emerald-deep) / 0.4);
   }
   50% {
-    box-shadow:
-      0 0 0 8px hsl(var(--gold-bright) / 0),
-      0 0 28px 6px hsl(var(--gold-bright) / 0.85),
-      0 10px 30px -8px hsl(var(--gold-deep) / 0.65);
+    box-shadow: 0 0 0 6px hsl(var(--emerald-bright) / 0),
+      0 0 18px 2px hsl(var(--emerald-bright) / 0.45),
+      0 8px 22px -10px hsl(var(--emerald-deep) / 0.5);
   }
-}
-
-@keyframes goldShimmerBtn {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
 }
 
 .btn-gold-premium {
   position: relative;
   isolation: isolate;
-  border: 2px solid transparent;
-  background-clip: padding-box;
-  animation: goldPulseBtn 2.6s ease-in-out infinite;
+  animation: emeraldPulseBtn 3.2s ease-in-out infinite;
 }
 
 .btn-gold-premium::before {
   content: "";
   position: absolute;
-  inset: -2px;
+  inset: 0;
   border-radius: inherit;
-  padding: 2px;
+  padding: 1px;
   background: linear-gradient(
-    120deg,
-    hsl(var(--gold-deep)) 0%,
-    hsl(var(--gold-bright)) 25%,
-    hsl(var(--gold)) 50%,
-    hsl(var(--gold-bright)) 75%,
-    hsl(var(--gold-deep)) 100%
+    135deg,
+    hsl(var(--emerald-bright) / 0.55),
+    hsl(var(--emerald) / 0.25) 50%,
+    hsl(var(--emerald-bright) / 0.55)
   );
-  background-size: 200% 200%;
   -webkit-mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
-  animation: goldShimmerBtn 4s linear infinite;
   pointer-events: none;
-  z-index: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .btn-gold-premium,
-  .btn-gold-premium::before { animation: none; }
+  .btn-gold-premium { animation: none; }
 }
 
 /* ===== Premium A+ Polish (Global) ===== */
