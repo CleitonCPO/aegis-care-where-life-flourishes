@@ -14,9 +14,7 @@ const HeroSection = memo(() => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image with Overlay - Optimized for LCP */}
-      <div 
-        className={`absolute inset-0 z-0 transition-transform duration-1000 ease-out ${isLoaded ? 'scale-100' : 'scale-105'}`}
-      >
+      <div className="absolute inset-0 z-0">
         <picture>
           <source media="(max-width: 768px)" srcSet={heroImageMobile} type="image/webp" />
           <source media="(min-width: 769px)" srcSet={heroImage} type="image/webp" />
