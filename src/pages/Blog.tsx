@@ -16,13 +16,13 @@ const Blog = () => {
         "@type": "Blog",
         "name": "Blog Aegis Care",
         "description": "Artigos especializados sobre cuidado domiciliar, cuidado ao idoso em casa, envelhecimento saudável, segurança clínica e assistência domiciliar.",
-        "url": "https://aegiscare.com.br/blog",
+        "url": "https://www.aegiscare.com.br/blog",
         "publisher": {
           "@type": "Organization",
           "name": "Aegis Care",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://aegiscare.com.br/logo.png"
+            "url": "https://www.aegiscare.com.br/logo.png"
           }
         },
         "blogPost": blogArticles.map(article => ({
@@ -30,7 +30,7 @@ const Blog = () => {
           "headline": article.title,
           "description": article.excerpt,
           "datePublished": article.publishedAt,
-          "url": `https://aegiscare.com.br/blog/${article.slug}`,
+          "url": `https://www.aegiscare.com.br/blog/${article.slug}`,
           "author": {
             "@type": "Organization",
             "name": article.author
@@ -44,13 +44,13 @@ const Blog = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Início",
-            "item": "https://aegiscare.com.br"
+            "item": "https://www.aegiscare.com.br"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Blog",
-            "item": "https://aegiscare.com.br/blog"
+            "item": "https://www.aegiscare.com.br/blog"
           }
         ]
       }
@@ -71,11 +71,11 @@ const Blog = () => {
         <title>Blog Aegis Care | Cuidado Domiciliar de Idosos</title>
         <meta name="description" content="Artigos sobre cuidado domiciliar, envelhecimento saudável e segurança clínica. Conteúdo confiável da Aegis Care." />
         <meta name="keywords" content="cuidado domiciliar, cuidado ao idoso em casa, envelhecimento saudável, segurança clínica, assistência domiciliar, cuidador de idosos" />
-        <link rel="canonical" href="https://aegiscare.com.br/blog" />
+        <link rel="canonical" href="https://www.aegiscare.com.br/blog" />
         <meta property="og:title" content="Blog Aegis Care | Cuidado Domiciliar para Idosos" />
         <meta property="og:description" content="Artigos especializados sobre cuidado domiciliar e saúde do idoso." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aegiscare.com.br/blog" />
+        <meta property="og:url" content="https://www.aegiscare.com.br/blog" />
       </Helmet>
 
       <script

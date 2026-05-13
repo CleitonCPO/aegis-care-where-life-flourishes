@@ -53,25 +53,25 @@ const BlogArticle = () => {
         "@type": "Article",
         "headline": article.title,
         "description": article.excerpt,
-        "image": `https://aegiscare.com.br${article.image}`,
+        "image": `https://www.aegiscare.com.br${article.image}`,
         "datePublished": article.publishedAt,
         "dateModified": article.publishedAt,
         "author": {
           "@type": "Organization",
           "name": article.author,
-          "url": "https://aegiscare.com.br"
+          "url": "https://www.aegiscare.com.br"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Aegis Care",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://aegiscare.com.br/logo.png"
+            "url": "https://www.aegiscare.com.br/logo.png"
           }
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": `https://aegiscare.com.br/blog/${article.slug}`
+          "@id": `https://www.aegiscare.com.br/blog/${article.slug}`
         },
         "articleSection": article.category,
         "wordCount": article.content.split(/\s+/).length,
@@ -89,19 +89,19 @@ const BlogArticle = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Início",
-            "item": "https://aegiscare.com.br"
+            "item": "https://www.aegiscare.com.br"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Blog",
-            "item": "https://aegiscare.com.br/blog"
+            "item": "https://www.aegiscare.com.br/blog"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": article.title,
-            "item": `https://aegiscare.com.br/blog/${article.slug}`
+            "item": `https://www.aegiscare.com.br/blog/${article.slug}`
           }
         ]
       }
@@ -131,12 +131,12 @@ const BlogArticle = () => {
         <title>{article.title} | Blog Aegis Care</title>
         <meta name="description" content={article.excerpt} />
         <meta name="keywords" content={`${article.category}, cuidado domiciliar, cuidado ao idoso em casa, envelhecimento saudável, segurança clínica, assistência domiciliar, Aegis Care`} />
-        <link rel="canonical" href={`https://aegiscare.com.br/blog/${article.slug}`} />
+        <link rel="canonical" href={`https://www.aegiscare.com.br/blog/${article.slug}`} />
         <meta property="og:title" content={article.title} />
         <meta property="og:description" content={article.excerpt} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://aegiscare.com.br/blog/${article.slug}`} />
-        <meta property="og:image" content={`https://aegiscare.com.br${article.image}`} />
+        <meta property="og:url" content={`https://www.aegiscare.com.br/blog/${article.slug}`} />
+        <meta property="og:image" content={`https://www.aegiscare.com.br${article.image}`} />
         <meta property="article:published_time" content={article.publishedAt} />
         <meta property="article:author" content={article.author} />
         <meta property="article:section" content={article.category} />
