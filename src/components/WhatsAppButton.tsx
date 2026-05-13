@@ -86,7 +86,7 @@ const WhatsAppButton = memo(() => {
       <div
         className={`transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] origin-bottom-right ${
           isOpen
-            ? "opacity-100 scale-100 translate-y-0"
+            ? "opacity-100 scale-100 translate-y-0 pointer-events-auto"
             : "opacity-0 scale-75 translate-y-4 pointer-events-none"
         }`}
       >
