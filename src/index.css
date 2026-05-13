@@ -371,6 +371,19 @@
   .btn-gold-premium { animation: none; }
 }
 
+/* Mobile: lighten effects for performance and reliable taps */
+@media (max-width: 768px) {
+  .btn-gold-premium {
+    animation: none;
+  }
+  .btn-gold-premium::before {
+    display: none;
+  }
+  .card-premium::after {
+    display: none;
+  }
+}
+
 /* ===== Premium A+ Polish (Global) ===== */
 
 /* Refined typography */
