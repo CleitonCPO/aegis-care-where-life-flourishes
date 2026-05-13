@@ -245,7 +245,7 @@ const WhatsAppButton = memo(() => {
       </div>
 
       {/* Floating Button */}
-      <div className="relative">
+      <div className="relative pointer-events-auto">
         {/* Text bubble hint */}
         {showBubble && !isOpen && (
           <div className="absolute bottom-full right-0 mb-2 animate-fade-in">
