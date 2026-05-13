@@ -12,22 +12,22 @@ const QuemSomos = () => {
   return (
     <>
       <Helmet>
-        <title>Quem Somos | Aegis Care - Onde o Cuidado encontra sua Fortaleza</title>
+        <title>Quem Somos | Aegis Care - Cuidado Domiciliar</title>
         <meta 
           name="description" 
-          content="A história da Aegis Care: inspirada na Aegis, o escudo lendário de proteção da mitologia grega. Cuidado domiciliar com critério, supervisão de enfermeiros e respeito à história de cada pessoa."
+          content="A história da Aegis Care: cuidado domiciliar com critério, supervisão de enfermeiros e respeito à história de cada pessoa."
         />
         <meta 
           name="keywords" 
           content="quem somos aegis care, cuidado domiciliar, cuidador de idosos, agência de cuidadores, sobre a aegis care"
         />
-        <link rel="canonical" href="https://aegiscare.com.br/quem-somos" />
+        <link rel="canonical" href="https://www.aegiscare.com.br/quem-somos" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Quem Somos | Aegis Care" />
         <meta property="og:description" content="Conheça a Aegis Care, empresa de cuidado domiciliar criada para proteger a permanência da pessoa em seu lar." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aegiscare.com.br/quem-somos" />
+        <meta property="og:url" content="https://www.aegiscare.com.br/quem-somos" />
         
         {/* Schema.org */}
         <script type="application/ld+json">
@@ -36,8 +36,8 @@ const QuemSomos = () => {
             "@type": "Organization",
             "name": "Aegis Care",
             "description": "Empresa de cuidado domiciliar criada para proteger a permanência da pessoa em seu lar com segurança, dignidade e continuidade.",
-            "url": "https://aegiscare.com.br",
-            "logo": "https://aegiscare.com.br/logo.png",
+            "url": "https://www.aegiscare.com.br",
+            "logo": "https://www.aegiscare.com.br/logo.png",
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+55-11-92006-7183",

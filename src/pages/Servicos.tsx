@@ -110,7 +110,11 @@ const Servicos = () => {
           content="Conheça nossos serviços de cuidado domiciliar: cuidadores de idosos, acompanhamento 24h, cuidador para adultos. Atendemos Zona Leste SP." 
         />
         <meta name="keywords" content="cuidado domiciliar, agência de cuidadores de idosos, serviços de cuidadores, cuidador de idosos, acompanhamento domiciliar, zona leste SP" />
-        <link rel="canonical" href="https://aegiscare.com.br/servicos" />
+        <link rel="canonical" href="https://www.aegiscare.com.br/servicos" />
+        <meta property="og:title" content="Serviços | Aegis Care - Cuidado Domiciliar Premium" />
+        <meta property="og:description" content="Cuidador de idosos, acompanhamento 24h, cuidador para adultos e acompanhamento em viagem na Zona Leste de SP." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.aegiscare.com.br/servicos" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
