@@ -166,8 +166,9 @@
     font-family: var(--font-display);
   }
 
-  /* Improve touch targets */
-  button, a, [role="button"] {
+  /* Improve touch targets - apply only to interactive blocks, not inline links in copy */
+  button:not(:where(p, li, span, h1, h2, h3, h4, h5, h6) *),
+  [role="button"]:not(:where(p, li, span, h1, h2, h3, h4, h5, h6) *) {
     min-height: 44px;
   }
 
