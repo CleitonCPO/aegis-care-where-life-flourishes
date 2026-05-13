@@ -81,12 +81,12 @@ const WhatsAppButton = memo(() => {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex flex-col items-end gap-3 pointer-events-none">
       {/* Chat Preview Card */}
       <div
         className={`transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] origin-bottom-right ${
           isOpen
-            ? "opacity-100 scale-100 translate-y-0"
+            ? "opacity-100 scale-100 translate-y-0 pointer-events-auto"
             : "opacity-0 scale-75 translate-y-4 pointer-events-none"
         }`}
       >
@@ -245,7 +245,7 @@ const WhatsAppButton = memo(() => {
       </div>
 
       {/* Floating Button */}
-      <div className="relative">
+      <div className="relative pointer-events-auto">
         {/* Text bubble hint */}
         {showBubble && !isOpen && (
           <div className="absolute bottom-full right-0 mb-2 animate-fade-in">
