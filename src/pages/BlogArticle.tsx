@@ -128,7 +128,7 @@ const BlogArticle = () => {
   return (
     <>
       <Helmet>
-        <title>{article.title} | Blog Aegis Care</title>
+        <title>{(article.title.length > 45 ? article.title.slice(0, 42).trimEnd() + '...' : article.title) + ' | Aegis Care'}</title>
         <meta name="description" content={article.excerpt.length > 160 ? article.excerpt.slice(0, 157).trimEnd() + '...' : article.excerpt} />
         <meta name="keywords" content={`${article.category}, cuidado domiciliar, cuidado ao idoso em casa, envelhecimento saudável, segurança clínica, assistência domiciliar, Aegis Care`} />
         <link rel="canonical" href={`https://www.aegiscare.com.br/blog/${article.slug}`} />
