@@ -129,11 +129,11 @@ const BlogArticle = () => {
     <>
       <Helmet>
         <title>{article.title} | Blog Aegis Care</title>
-        <meta name="description" content={article.excerpt} />
+        <meta name="description" content={article.excerpt.length > 160 ? article.excerpt.slice(0, 157).trimEnd() + '...' : article.excerpt} />
         <meta name="keywords" content={`${article.category}, cuidado domiciliar, cuidado ao idoso em casa, envelhecimento saudável, segurança clínica, assistência domiciliar, Aegis Care`} />
         <link rel="canonical" href={`https://www.aegiscare.com.br/blog/${article.slug}`} />
-        <meta property="og:title" content={article.title} />
-        <meta property="og:description" content={article.excerpt} />
+        <meta property="og:title" content={article.title.length > 60 ? article.title.slice(0, 57).trimEnd() + '...' : article.title} />
+        <meta property="og:description" content={article.excerpt.length > 160 ? article.excerpt.slice(0, 157).trimEnd() + '...' : article.excerpt} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://www.aegiscare.com.br/blog/${article.slug}`} />
         <meta property="og:image" content={`https://www.aegiscare.com.br${article.image}`} />
