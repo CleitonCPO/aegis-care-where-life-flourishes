@@ -81,7 +81,7 @@ const Fundador = () => {
         <title>Cleiton Oliveira - Fundador | Aegis Care</title>
         <meta 
           name="description" 
-          content="Conheça Cleiton Oliveira, enfermeiro e fundador da Aegis Care. Com especialização em UTI e Gerontologia, ele dedica sua vida ao cuidado humanizado de idosos em seus lares." 
+          content="Conheça Cleiton Oliveira, enfermeiro fundador da Aegis Care, especialista em UTI e Gerontologia, dedicado ao cuidado humanizado de idosos." 
         />
         <meta name="keywords" content="Cleiton Oliveira, fundador Aegis Care, enfermeiro especialista, cuidado domiciliar, gerontologia, UTI" />
         <link rel="canonical" href="https://aegiscare.com.br/fundador" />

@@ -12,10 +12,10 @@ const QuemSomos = () => {
   return (
     <>
       <Helmet>
-        <title>Quem Somos | Aegis Care - Onde o Cuidado encontra sua Fortaleza</title>
+        <title>Quem Somos | Aegis Care - Cuidado Domiciliar</title>
         <meta 
           name="description" 
-          content="A história da Aegis Care: inspirada na Aegis, o escudo lendário de proteção da mitologia grega. Cuidado domiciliar com critério, supervisão de enfermeiros e respeito à história de cada pessoa."
+          content="A história da Aegis Care: cuidado domiciliar com critério, supervisão de enfermeiros e respeito à história de cada pessoa."
         />
         <meta 
           name="keywords" 

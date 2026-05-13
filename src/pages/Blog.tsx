@@ -68,8 +68,8 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Blog Aegis Care | Artigos sobre Cuidado Domiciliar para Idosos</title>
-        <meta name="description" content="Artigos especializados sobre cuidado domiciliar, cuidado ao idoso em casa, envelhecimento saudável, segurança clínica e assistência domiciliar. Conteúdo confiável da Aegis Care." />
+        <title>Blog Aegis Care | Cuidado Domiciliar de Idosos</title>
+        <meta name="description" content="Artigos sobre cuidado domiciliar, envelhecimento saudável e segurança clínica. Conteúdo confiável da Aegis Care." />
         <meta name="keywords" content="cuidado domiciliar, cuidado ao idoso em casa, envelhecimento saudável, segurança clínica, assistência domiciliar, cuidador de idosos" />
         <link rel="canonical" href="https://aegiscare.com.br/blog" />
         <meta property="og:title" content="Blog Aegis Care | Cuidado Domiciliar para Idosos" />

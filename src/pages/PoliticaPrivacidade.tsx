@@ -13,7 +13,11 @@ const PoliticaPrivacidade = () => {
           name="description" 
           content="Política de Privacidade da Aegis Care conforme a LGPD. Saiba como coletamos, armazenamos e protegemos seus dados pessoais."
         />
-        <link rel="canonical" href="https://aegiscare.com.br/politica-privacidade" />
+        <link rel="canonical" href="https://www.aegiscare.com.br/politica-privacidade" />
+        <meta property="og:title" content="Política de Privacidade | Aegis Care" />
+        <meta property="og:description" content="Política de Privacidade da Aegis Care conforme a LGPD: como coletamos, armazenamos e protegemos seus dados." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.aegiscare.com.br/politica-privacidade" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
