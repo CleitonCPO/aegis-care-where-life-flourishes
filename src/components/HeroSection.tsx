@@ -29,8 +29,8 @@ const HeroSection = memo(() => {
             height={1080}
           />
         </picture>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/92 via-primary/75 to-primary/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/55 via-transparent to-transparent" />
       </div>
 
       {/* Content - CSS animations instead of framer-motion for initial load */}
@@ -43,27 +43,30 @@ const HeroSection = memo(() => {
             Cuidado Domiciliar Especializado
           </span>
           
+          <span 
+            className={`eyebrow !text-primary-foreground/80 mb-6 inline-block transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
+            style={{ transitionDelay: '100ms' }}
+          >
+            Assistência Domiciliar Premium
+          </span>
+          
           <h1 
-            className={`font-display text-4xl md:text-5xl lg:text-6xl text-primary-foreground font-bold leading-tight mb-6 transition-all duration-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            className={`font-display text-4xl md:text-5xl lg:text-[4.25rem] text-primary-foreground font-normal leading-[1.05] mb-8 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '200ms' }}
           >
-            Cuidar onde a vida foi construída.
+            Cuidar onde a vida<br />foi construída.
           </h1>
-          
-          <p 
-            className={`text-lg md:text-xl text-primary-foreground/90 mb-4 font-light transition-all duration-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+
+          <div
+            className={`h-px w-20 bg-[hsl(var(--gold-bright))] mb-8 transition-all duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
             style={{ transitionDelay: '300ms' }}
-          >
-            Um cuidado que acolhe a vida
-          </p>
+          />
           
           <p 
-            className={`text-base md:text-lg text-primary-foreground/80 mb-8 leading-relaxed transition-all duration-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            className={`text-base md:text-lg text-primary-foreground/85 mb-10 max-w-xl leading-relaxed transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '400ms' }}
           >
-            Na Aegis Care, acreditamos que envelhecer é um privilégio. 
-            É sinal de história vivida, de caminhos percorridos, de vínculos criados 
-            e de um legado que merece ser respeitado.
+            Acreditamos que envelhecer é um privilégio. Sinal de história vivida, de caminhos percorridos, de vínculos criados e de um legado que merece ser respeitado.
           </p>
 
           <div 

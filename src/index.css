@@ -9,70 +9,70 @@
 
 @layer base {
   :root {
-    /* Core palette - Teal & Warm Cream */
-    --background: 40 33% 98%;
-    --foreground: 200 50% 15%;
+    /* Core palette - Premium editorial off-white & deep teal */
+    --background: 40 30% 97%;
+    --foreground: 222 56% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 200 50% 15%;
+    --card-foreground: 222 56% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 200 50% 15%;
+    --popover-foreground: 222 56% 14%;
 
-    /* Primary - Deep Teal/Navy from logo */
-    --primary: 195 70% 25%;
-    --primary-foreground: 40 33% 98%;
+    /* Primary - Deep navy-teal #172A50 */
+    --primary: 222 56% 20%;
+    --primary-foreground: 40 30% 97%;
 
-    /* Secondary - Lighter Teal */
-    --secondary: 170 45% 45%;
-    --secondary-foreground: 40 33% 98%;
+    /* Secondary - #14537C / #1F7087 */
+    --secondary: 192 62% 33%;
+    --secondary-foreground: 40 30% 97%;
 
     /* Muted - Soft cream tones */
-    --muted: 40 25% 94%;
-    --muted-foreground: 200 20% 40%;
+    --muted: 38 28% 94%;
+    --muted-foreground: 220 18% 38%;
 
-    /* Accent - Warm turquoise */
-    --accent: 168 55% 50%;
-    --accent-foreground: 200 50% 15%;
+    /* Accent - Bright teal #3BA6AA */
+    --accent: 182 47% 45%;
+    --accent-foreground: 222 56% 14%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 20% 88%;
-    --input: 40 20% 88%;
-    --ring: 195 70% 25%;
+    --border: 38 22% 88%;
+    --input: 38 22% 88%;
+    --ring: 222 56% 20%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Custom design tokens */
-    --cream: 40 40% 96%;
-    --cream-dark: 35 30% 92%;
-    --teal-light: 170 50% 85%;
-    --teal-glow: 170 60% 70%;
-    --navy: 200 50% 12%;
+    /* Premium surface tokens */
+    --cream: 38 38% 95%;
+    --cream-dark: 35 28% 90%;
+    --teal-light: 182 45% 88%;
+    --teal-glow: 182 50% 70%;
+    --navy: 222 56% 14%;
 
     /* Content tokens */
-    --link: 214 90% 56%;
-    --link-hover: 214 90% 48%;
+    --link: 192 62% 38%;
+    --link-hover: 202 72% 28%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(195 70% 25%) 0%, hsl(170 45% 45%) 100%);
-    --gradient-soft: linear-gradient(180deg, hsl(40 33% 98%) 0%, hsl(40 40% 96%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(40 25% 98%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(170 45% 45%) 0%, hsl(168 55% 50%) 100%);
+    /* Gradients - elegant, restrained */
+    --gradient-hero: linear-gradient(135deg, hsl(222 56% 20%) 0%, hsl(202 72% 28%) 60%, hsl(192 62% 33%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(40 30% 97%) 0%, hsl(38 38% 95%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(38 28% 98%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(202 72% 28%) 0%, hsl(182 47% 45%) 100%);
 
-    /* Premium gold accent */
-    --gold: 43 74% 56%;
-    --gold-bright: 45 95% 65%;
-    --gold-deep: 38 70% 42%;
+    /* Champagne gold accent — #C8A96B — used only on thin lines, dividers, tiny details */
+    --gold: 38 45% 60%;
+    --gold-bright: 40 55% 70%;
+    --gold-deep: 36 42% 48%;
     --gradient-gold: linear-gradient(120deg, hsl(var(--gold-deep)) 0%, hsl(var(--gold-bright)) 50%, hsl(var(--gold-deep)) 100%);
 
-    /* Shadows - refined for premium depth */
-    --shadow-soft: 0 4px 20px -4px hsl(200 50% 15% / 0.08);
-    --shadow-card: 0 10px 40px -12px hsl(200 50% 15% / 0.18), 0 2px 6px -2px hsl(200 50% 15% / 0.06);
-    --shadow-elevated: 0 30px 70px -20px hsl(200 50% 15% / 0.25), 0 8px 20px -8px hsl(200 50% 15% / 0.1);
-    --shadow-glow: 0 0 50px hsl(170 60% 70% / 0.35);
-    --shadow-luxe: 0 1px 0 hsl(var(--gold-bright) / 0.25) inset, 0 30px 60px -25px hsl(200 50% 12% / 0.35);
+    /* Shadows - refined for editorial depth */
+    --shadow-soft: 0 2px 12px -4px hsl(222 56% 14% / 0.06);
+    --shadow-card: 0 12px 40px -16px hsl(222 56% 14% / 0.14), 0 2px 6px -2px hsl(222 56% 14% / 0.04);
+    --shadow-elevated: 0 30px 70px -24px hsl(222 56% 14% / 0.22), 0 8px 20px -10px hsl(222 56% 14% / 0.08);
+    --shadow-glow: 0 0 60px hsl(182 50% 70% / 0.25);
+    --shadow-luxe: 0 1px 0 hsl(var(--gold-bright) / 0.2) inset, 0 30px 60px -25px hsl(222 56% 14% / 0.3);
 
     /* Typography */
     --font-display: 'Lora', Georgia, serif;
@@ -80,8 +80,8 @@
 
     /* Transitions */
     --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 400ms cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-slow: 700ms cubic-bezier(0.22, 1, 0.36, 1);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -316,6 +316,18 @@
       transform: scale(1); 
     }
   }
+
+  /* Premium reveal-on-scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ===== Premium Emerald Glow (highlight buttons) ===== */
@@ -396,10 +408,11 @@ html {
 
 h1, h2, h3 {
   letter-spacing: -0.02em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-h1 { letter-spacing: -0.03em; }
+h1 { letter-spacing: -0.035em; font-weight: 500; }
+h2 { font-weight: 500; }
 
 p { letter-spacing: 0.005em; }
 

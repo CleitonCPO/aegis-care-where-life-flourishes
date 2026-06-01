@@ -1,6 +1,6 @@
 import { Phone, Mail, Instagram, Linkedin, Heart, Facebook, Youtube, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo-aegis-care-optimized.webp";
+import logo from "@/assets/logo-aegis-care-premium.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,9 +14,9 @@ const Footer = () => {
             <img
               src={logo}
               alt="Aegis Care"
-              className="h-14 w-auto mb-6 brightness-0 invert"
-              width={140}
-              height={56}
+              className="h-16 w-auto mb-6 brightness-0 invert opacity-95"
+              width={168}
+              height={64}
               loading="lazy"
             />
             <p className="text-primary-foreground/80 leading-relaxed mb-6 max-w-md">

@@ -2,7 +2,7 @@ import { useState, useEffect, memo, useCallback } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Phone, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo-aegis-care-optimized.webp";
+import logo from "@/assets/logo-aegis-care-premium.webp";
 
 const navLinks = [
   { href: "/quem-somos", label: "Quem Somos", isRoute: true },
@@ -70,8 +70,8 @@ const Header = memo(() => {
           <img
             src={logo}
             alt="Aegis Care - Cuidado Domiciliar"
-            className="h-12 md:h-14 w-auto"
-            width={120}
+            className="h-11 md:h-14 w-auto"
+            width={147}
             height={56}
             loading="eager"
             fetchPriority="high"
