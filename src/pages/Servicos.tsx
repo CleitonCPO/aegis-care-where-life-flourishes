@@ -25,58 +25,54 @@ const services = [
   {
     icon: Home,
     title: "Cuidado Domiciliar",
-    subtitle: "Preservar a rotina, os vínculos e a sensação de estar em casa.",
-    description:
-      "Oferecemos acompanhamento domiciliar personalizado para pessoas que necessitam de apoio contínuo, respeitando sua individualidade, seus hábitos e a história construída ao longo de uma vida inteira. O objetivo não é apenas assistir. É permitir que o cuidado aconteça sem romper aquilo que faz um lar ser um lar.",
+    subtitle: "Conforto e segurança no lar",
+    description: "Atendimento humanizado no ambiente mais importante: a casa do paciente. Oferecemos cuidadores altamente capacitados que garantem conforto, segurança e qualidade de vida, preservando a autonomia e a dignidade de cada pessoa.",
     features: [
-      "Acompanhamento personalizado e contínuo",
-      "Respeito à rotina e à individualidade",
-      "Cuidadores cuidadosamente selecionados",
-      "Comunicação próxima com a família",
+      "Acompanhamento integral 24 horas",
+      "Cuidadores certificados e treinados",
+      "Acompanhamento do cuidado contínuo",
+      "Planos personalizados"
     ],
-    image: heroImage,
+    image: heroImage
   },
   {
     icon: Stethoscope,
-    title: "Enfermagem Domiciliar",
-    subtitle: "Segurança clínica com a tranquilidade de permanecer em casa.",
-    description:
-      "Nossa equipe de enfermagem atua com excelência técnica e acompanhamento individualizado para que o processo de cuidado aconteça com conforto, estabilidade e confiança.",
+    title: "Acompanhamento de Saúde",
+    subtitle: "Monitoramento e bem-estar",
+    description: "Cuidadores qualificados para acompanhamento contínuo da saúde do paciente. Realizamos monitoramento diário, auxílio com medicamentos e acompanhamento de bem-estar com toda a atenção necessária.",
     features: [
-      "Excelência técnica em ambiente domiciliar",
-      "Acompanhamento clínico individualizado",
-      "Supervisão por enfermeiros experientes",
-      "Conforto, estabilidade e previsibilidade",
+      "Auxílio com medicamentos",
+      "Monitoramento diário de bem-estar",
+      "Avaliação periódica",
+      "Relatórios detalhados para a família"
     ],
-    image: enfermagemImage,
+    image: enfermagemImage
   },
   {
     icon: UserCheck,
-    title: "Acompanhamento Hospitalar",
-    subtitle: "Presença quando a família não consegue estar.",
-    description:
-      "Sabemos que nem sempre é possível permanecer ao lado de quem amamos durante toda uma internação. Por isso, oferecemos acompanhamento profissional que garante atenção, suporte e comunicação contínua com a família.",
+    title: "Cuidador para Adultos",
+    subtitle: "Apoio às limitações físicas",
+    description: "Assistência especializada para adultos com limitações físicas ou cognitivas temporárias ou permanentes. Auxiliamos na mobilidade, higiene pessoal, alimentação e atividades diárias, sempre respeitando a individualidade.",
     features: [
-      "Presença qualificada no hospital",
-      "Atenção integral ao assistido",
-      "Comunicação contínua com a família",
-      "Suporte em todas as fases da internação",
+      "Auxílio à mobilidade",
+      "Higiene e cuidados pessoais",
+      "Acompanhamento de rotina",
+      "Estímulo à independência"
     ],
-    image: acompanhamentoImage,
+    image: acompanhamentoImage
   },
   {
     icon: Plane,
-    title: "Pós-Alta Hospitalar",
-    subtitle: "O retorno para casa exige mais do que cuidados. Exige adaptação.",
-    description:
-      "Auxiliamos famílias no processo de transição entre hospital e domicílio, promovendo segurança, orientação e continuidade assistencial.",
+    title: "Acompanhamento em Viagem",
+    subtitle: "Cuidado onde a família estiver",
+    description: "Seu familiar pode viajar com segurança e tranquilidade. Oferecemos cuidadores para acompanhar viagens em família, garantindo todo o suporte necessário durante o deslocamento e a estadia.",
     features: [
-      "Transição segura entre hospital e lar",
-      "Orientação à família e ao assistido",
-      "Continuidade assistencial cuidadosa",
-      "Adaptação respeitosa à nova rotina",
+      "Viagens nacionais com a família",
+      "Cuidados contínuos durante a viagem",
+      "Auxílio com medicamentos e rotina",
+      "Segurança e companhia em todos os momentos"
     ],
-    image: heroImage,
+    image: heroImage
   },
 ];
 
@@ -150,23 +146,22 @@ const Servicos = () => {
             >
               <motion.span 
                 variants={fadeInUp}
-                className="eyebrow !text-white/70 mb-6 inline-block"
+                className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-semibold mb-6"
               >
-                Como podemos ajudar sua família
+                Excelência em Cuidados
               </motion.span>
               <motion.h1 
                 variants={fadeInUp}
-                className="font-display text-4xl md:text-5xl lg:text-[4.25rem] font-normal text-white mb-6 leading-[1.05]"
+                className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               >
-                Atravessar essa etapa com mais{" "}
-                <span className="italic text-teal-light">segurança e tranquilidade.</span>
+                Serviços Premium de{" "}
+                <span className="text-teal-light">Cuidado Domiciliar</span>
               </motion.h1>
-              <motion.div variants={fadeInUp} className="h-px w-24 bg-[hsl(var(--gold-bright))] mx-auto mb-8" />
               <motion.p 
                 variants={fadeInUp}
-                className="text-lg md:text-xl text-white/85 mb-10 max-w-2xl mx-auto leading-relaxed"
+                className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed"
               >
-                Cada plano de cuidado começa pela escuta. Porque cada vida carrega uma história única que merece ser respeitada.
+                Cada pessoa merece um cuidado único. Oferecemos soluções completas e personalizadas para proporcionar qualidade de vida, conforto e dignidade.
               </motion.p>
               <motion.div 
                 variants={fadeInUp}
@@ -249,13 +244,15 @@ const Servicos = () => {
               variants={fadeInUp}
               className="max-w-3xl mx-auto text-center mb-16"
             >
-              <span className="eyebrow text-secondary">Nossos Serviços</span>
-              <div className="divider-gold !mx-auto mt-3 mb-6" />
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 leading-[1.1]">
-                O cuidado começa pela compreensão da história de cada pessoa.
+              <span className="inline-block px-4 py-1.5 bg-teal-light rounded-full text-secondary text-sm font-semibold mb-4">
+                O Que Oferecemos
+              </span>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground font-bold mb-6">
+                Soluções Completas para{" "}
+                <span className="text-gradient">Cada Necessidade</span>
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Nenhum plano de cuidado é igual. Porque nenhuma vida é igual. Construímos soluções personalizadas que respeitam não apenas necessidades clínicas, mas também valores, vínculos, preferências e tudo aquilo que torna cada trajetória única.
+              <p className="text-lg text-muted-foreground">
+                Da assistência diária aos cuidados mais especializados, nossa equipe está preparada para oferecer o melhor atendimento.
               </p>
             </motion.div>
 

@@ -62,7 +62,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="faq" className="py-24 md:py-32 bg-cream overflow-hidden">
+    <section id="faq" className="py-20 md:py-28 bg-cream overflow-hidden">
       {/* Schema.org structured data */}
       <script
         type="application/ld+json"
@@ -75,21 +75,26 @@ const FAQSection = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={containerVariants}
-          className="text-center mb-20 max-w-2xl mx-auto"
+          className="text-center mb-16"
         >
           <motion.span 
             variants={itemVariants}
-            className="eyebrow text-secondary"
+            className="inline-block text-secondary font-medium tracking-wide uppercase text-sm mb-4"
           >
-            Perguntas Frequentes
+            Tire Suas Dúvidas
           </motion.span>
-          <motion.div variants={itemVariants} className="divider-gold mt-4 mb-6" />
           <motion.h2 
             variants={itemVariants}
-            className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground leading-[1.1]"
+            className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mb-6"
           >
-            Respostas claras para decisões delicadas.
+            Perguntas Frequentes
           </motion.h2>
+          <motion.p 
+            variants={itemVariants}
+            className="text-muted-foreground text-lg max-w-2xl mx-auto"
+          >
+            Respondemos às principais dúvidas sobre o cuidado domiciliar para idosos
+          </motion.p>
         </motion.header>
 
         <motion.div 
@@ -97,19 +102,19 @@ const FAQSection = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
           variants={containerVariants}
-          className="max-w-3xl mx-auto"
+          className="max-w-4xl mx-auto"
         >
-          <Accordion type="single" collapsible className="space-y-0 divide-y divide-border/60">
+          <Accordion type="single" collapsible className="space-y-4">
             {faqData.map((item, index) => (
               <motion.div key={index} variants={itemVariants}>
                 <AccordionItem
                   value={`item-${index}`}
-                  className="border-none px-0"
+                  className="bg-card rounded-lg shadow-soft border-none px-6 hover:shadow-card transition-shadow duration-300"
                 >
-                  <AccordionTrigger className="text-left font-display text-lg md:text-xl text-foreground hover:text-secondary py-7 hover:no-underline">
+                  <AccordionTrigger className="text-left font-display text-lg text-foreground hover:text-secondary py-6 hover:no-underline">
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground text-base md:text-[1.0625rem] pb-7 leading-[1.85] max-w-2xl">
+                  <AccordionContent className="text-muted-foreground text-base pb-6 leading-relaxed">
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>
