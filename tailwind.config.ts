@@ -28,13 +28,25 @@ export default {
           dark: "hsl(var(--cream-dark))",
         },
         teal: {
-          light: "hsl(var(--teal-light))",
-          glow: "hsl(var(--teal-glow))",
+          light: "hsl(var(--turquoise) / 0.12)",
+          glow: "hsl(var(--turquoise))",
+          deep: "hsl(var(--teal-deep))",
+          DEFAULT: "hsl(var(--teal))",
         },
-        navy: "hsl(var(--navy))",
+        navy: {
+          DEFAULT: "hsl(var(--navy-deep))",
+          mid: "hsl(var(--navy))",
+        },
+        turquoise: "hsl(var(--turquoise))",
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          deep: "hsl(var(--gold-deep))",
+        },
+        sand: "hsl(var(--sand))",
+        stone: "hsl(var(--stone))",
         link: {
-          DEFAULT: "hsl(var(--link))",
-          hover: "hsl(var(--link-hover))",
+          DEFAULT: "hsl(var(--teal-deep))",
+          hover: "hsl(var(--navy-deep))",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

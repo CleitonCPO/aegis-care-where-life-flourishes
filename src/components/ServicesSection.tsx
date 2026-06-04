@@ -1,126 +1,78 @@
-import { motion, type Variants } from "framer-motion";
-import { 
-  Users, 
-  Home, 
-  Activity, 
-  Stethoscope, 
-  ClipboardList, 
-  Heart 
-} from "lucide-react";
-
 const services = [
   {
-    icon: Users,
-    title: "Cuidadores de Idosos",
-    description: "Profissionais cuidadosamente selecionados e treinados para oferecer o melhor cuidado.",
+    number: "01",
+    title: "Cuidadores selecionados",
+    description:
+      "Profissionais avaliados sob critérios técnicos, comportamentais e relacionais, escolhidos para o perfil de cada família.",
   },
   {
-    icon: Home,
-    title: "Acompanhamento Domiciliar",
-    description: "Assistência contínua ou pontual, conforme a necessidade da família.",
+    number: "02",
+    title: "Acompanhamento residencial",
+    description:
+      "Presença contínua ou por períodos definidos, sempre conduzida com discrição dentro da rotina do lar.",
   },
   {
-    icon: Activity,
-    title: "Atividades do Dia a Dia",
-    description: "Apoio nas atividades diárias, preservando autonomia e qualidade de vida.",
+    number: "03",
+    title: "Apoio às atividades diárias",
+    description:
+      "Suporte sensível à mobilidade, higiene, alimentação e convivência, preservando autonomia e dignidade.",
   },
   {
-    icon: Stethoscope,
-    title: "Cuidados Pós-operatórios",
-    description: "Acompanhamento especializado durante a recuperação cirúrgica.",
+    number: "04",
+    title: "Recuperação pós-hospitalar",
+    description:
+      "Acompanhamento estruturado após internações, com coordenação de enfermagem e atenção integral à evolução.",
   },
   {
-    icon: ClipboardList,
-    title: "Acompanhamento do Cuidado 24h",
-    description: "Acompanhamento contínuo para garantir a qualidade e segurança do cuidado.",
+    number: "05",
+    title: "Coordenação clínica 24h",
+    description:
+      "Supervisão de enfermagem disponível em tempo integral, com registros, comunicação e visitas técnicas regulares.",
   },
   {
-    icon: Heart,
-    title: "Planos Personalizados",
-    description: "Serviços adaptados ao estilo de vida e necessidades de cada paciente.",
+    number: "06",
+    title: "Plano individualizado",
+    description:
+      "Cada assistência é desenhada a partir da história, do diagnóstico e dos desejos de quem é cuidado.",
   },
 ];
 
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: 0.2 }
-  }
-};
-
-const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-};
-
 const ServicesSection = () => {
   return (
-    <section id="servicos" className="py-20 lg:py-28 bg-background">
-      <div className="container mx-auto px-4">
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={containerVariants}
-          className="max-w-3xl mx-auto text-center mb-16"
-        >
-          <motion.span 
-            variants={itemVariants}
-            className="inline-block px-4 py-1.5 bg-teal-light rounded-full text-secondary text-sm font-semibold mb-4"
-          >
-            Nossos Serviços
-          </motion.span>
-          <motion.h2 
-            variants={itemVariants}
-            className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground font-bold mb-6"
-          >
-            Cada pessoa é única.{" "}
-            <span className="text-gradient">Cada cuidado também.</span>
-          </motion.h2>
-          <motion.p 
-            variants={itemVariants}
-            className="text-lg text-muted-foreground"
-          >
-            Tudo é pensado para preservar autonomia, conforto e alegria.
-          </motion.p>
-        </motion.div>
+    <section id="servicos" className="py-28 md:py-40 bg-background">
+      <div className="container-editorial">
+        <div className="max-w-3xl mb-20 md:mb-28">
+          <span className="eyebrow mb-6 block">Assistência</span>
+          <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-foreground mb-8">
+            Cuidado privado, organizado em torno de uma única vida.
+          </h2>
+          <p className="text-lg text-muted-foreground leading-[1.8] prose-justified">
+            Cada plano é construído com a família e coordenado clinicamente para garantir
+            segurança, conforto e a presença certa em cada momento.
+          </p>
+        </div>
 
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-          variants={containerVariants}
-          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              whileHover={{ y: -8, transition: { duration: 0.3 } }}
-              className="group relative bg-card rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 overflow-hidden"
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+          {services.map((s) => (
+            <div
+              key={s.number}
+              className="group bg-background p-10 lg:p-12 transition-colors duration-500 hover:bg-[hsl(var(--cream))]"
             >
-              {/* Decorative gradient */}
-              <div className="absolute top-0 right-0 w-32 h-32 gradient-cta opacity-5 rounded-full blur-2xl group-hover:opacity-10 transition-opacity" />
-              
-              <div className="relative">
-                <motion.div 
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                  transition={{ duration: 0.3 }}
-                  className="w-12 h-12 rounded-xl bg-teal-light flex items-center justify-center mb-5"
-                >
-                  <service.icon className="w-6 h-6 text-secondary" />
-                </motion.div>
-                <h3 className="font-display text-lg font-semibold text-foreground mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {service.description}
-                </p>
+              <div className="flex items-start justify-between mb-8">
+                <span className="font-display text-[hsl(var(--teal-deep))] text-lg tabular-nums tracking-wider">
+                  {s.number}
+                </span>
+                <span className="h-px w-10 bg-[hsl(var(--gold))] mt-3 transition-all duration-500 group-hover:w-16" />
               </div>
-            </motion.div>
+              <h3 className="font-display text-2xl text-foreground mb-4 leading-tight">
+                {s.title}
+              </h3>
+              <p className="text-muted-foreground leading-[1.8] text-[15px]">
+                {s.description}
+              </p>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
