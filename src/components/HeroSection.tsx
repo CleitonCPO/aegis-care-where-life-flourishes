@@ -1,109 +1,93 @@
 import { Button } from "@/components/ui/button";
-import { Phone, ArrowDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { memo, useEffect, useState } from "react";
-import heroImage from "@/assets/hero-elderly-care-optimized.webp";
-import heroImageMobile from "@/assets/hero-elderly-care-mobile.webp";
+import heroImage from "@/assets/hero-aegis-premium.jpg";
 
 const HeroSection = memo(() => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    setIsLoaded(true);
+    const t = setTimeout(() => setIsLoaded(true), 50);
+    return () => clearTimeout(t);
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image with Overlay - Optimized for LCP */}
+    <section className="relative min-h-[100svh] flex items-center overflow-hidden bg-[hsl(var(--navy-deep))]">
       <div className="absolute inset-0 z-0">
-        <picture>
-          <source media="(max-width: 768px)" srcSet={heroImageMobile} type="image/webp" />
-          <source media="(min-width: 769px)" srcSet={heroImage} type="image/webp" />
-          <img
-            src={heroImage}
-            alt="Cuidado acolhedor no lar"
-            className="w-full h-full object-cover"
-            loading="eager"
-            fetchPriority="high"
-            decoding="async"
-            width={1920}
-            height={1080}
-          />
-        </picture>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
+        <img
+          src={heroImage}
+          alt="Cuidado domiciliar humanizado para idosos — Aegis Care"
+          className={`w-full h-full object-cover transition-[transform,opacity] duration-[1600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-105"}`}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          width={1920}
+          height={1280}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--navy-deep))]/95 via-[hsl(var(--navy-deep))]/70 to-[hsl(var(--navy-deep))]/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--navy-deep))]/60 via-transparent to-transparent" />
       </div>
 
-      {/* Content - CSS animations instead of framer-motion for initial load */}
-      <div className="container mx-auto px-4 relative z-10 pt-20">
+      <div className="container-editorial relative z-10 pt-32 pb-24">
         <div className="max-w-2xl">
-          <span 
-            className={`inline-block px-4 py-2 bg-secondary/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-medium mb-6 transition-all duration-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
-            style={{ transitionDelay: '100ms' }}
+          <div
+            className={`flex items-center gap-4 mb-10 transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"}`}
           >
-            Cuidado Domiciliar Especializado
-          </span>
-          
-          <h1 
-            className={`font-display text-4xl md:text-5xl lg:text-6xl text-primary-foreground font-bold leading-tight mb-6 transition-all duration-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-            style={{ transitionDelay: '200ms' }}
+            <span className="h-px w-12 bg-[hsl(var(--gold))]" />
+            <span className="text-[hsl(var(--gold))] text-[0.7rem] tracking-[0.32em] uppercase font-medium">
+              Assistência Domiciliar Premium
+            </span>
+          </div>
+
+          <h1
+            className={`font-display text-[2.25rem] md:text-5xl lg:text-[3.75rem] text-white font-normal leading-[1.08] mb-8 transition-all duration-[1100ms] ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+            style={{ transitionDelay: "150ms", letterSpacing: "-0.035em" }}
           >
-            Cuidar onde a vida foi construída.
+            O envelhecimento não deve afastar ninguém daquilo que dá sentido à sua vida.
           </h1>
-          
-          <p 
-            className={`text-lg md:text-xl text-primary-foreground/90 mb-4 font-light transition-all duration-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-            style={{ transitionDelay: '300ms' }}
+
+          <p
+            className={`text-base md:text-lg text-white/85 mb-12 leading-[1.7] font-light max-w-xl transition-all duration-[1100ms] ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+            style={{ transitionDelay: "320ms" }}
           >
-            Um cuidado que acolhe a vida
-          </p>
-          
-          <p 
-            className={`text-base md:text-lg text-primary-foreground/80 mb-8 leading-relaxed transition-all duration-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-            style={{ transitionDelay: '400ms' }}
-          >
-            Na Aegis Care, acreditamos que envelhecer é um privilégio. 
-            É sinal de história vivida, de caminhos percorridos, de vínculos criados 
-            e de um legado que merece ser respeitado.
+            Cuidado domiciliar pensado para preservar dignidade, autonomia e a continuidade
+            de uma história construída ao longo de uma vida inteira.
           </p>
 
-          <div 
-            className={`flex flex-col sm:flex-row gap-4 transition-all duration-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-            style={{ transitionDelay: '500ms' }}
+          <div
+            className={`flex flex-col sm:flex-row gap-4 transition-all duration-[1100ms] ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+            style={{ transitionDelay: "480ms" }}
           >
+            <a href="#sobre">
+              <Button variant="hero" size="xl" className="w-full sm:w-auto bg-white text-[hsl(var(--navy-deep))] hover:bg-[hsl(var(--turquoise))] hover:text-[hsl(var(--navy-deep))]">
+                Conheça a Aegis Care
+              </Button>
+            </a>
             <a
-              href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20conhecer%20a%20assist%C3%AAncia%20domiciliar%20para%20meu%20familiar.&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button variant="hero" size="xl" className="gap-2 w-full sm:w-auto">
-                <Phone className="w-5 h-5" />
-                Fale Conosco
-              </Button>
-            </a>
-            <a href="#sobre">
               <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
-                Conheça Nossa História
+                Falar com a equipe
               </Button>
             </a>
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <a
         href="#sobre"
-        className={`absolute bottom-8 left-1/2 -translate-x-1/2 z-10 transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
-        style={{ transitionDelay: '800ms' }}
-        aria-label="Ver mais sobre a Aegis Care"
+        className={`absolute bottom-10 left-1/2 -translate-x-1/2 z-10 transition-opacity duration-1000 ${isLoaded ? "opacity-60" : "opacity-0"}`}
+        style={{ transitionDelay: "1000ms" }}
+        aria-label="Descer"
       >
-        <div className="flex flex-col items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors animate-bounce">
-          <ArrowDown className="w-5 h-5" />
-        </div>
+        <ArrowDown className="w-4 h-4 text-white animate-bounce" />
       </a>
     </section>
   );
 });
 
-HeroSection.displayName = 'HeroSection';
+HeroSection.displayName = "HeroSection";
 
 export default HeroSection;
