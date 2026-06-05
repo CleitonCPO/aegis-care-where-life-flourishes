@@ -1,92 +1,62 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { Heart, Award, Users, GraduationCap, Stethoscope, Home, ArrowLeft, Quote } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import cleitonPhoto from "@/assets/cleiton-oliveira-optimized.webp";
 import { trackWhatsAppClick } from "@/lib/gtag";
 
+const trajetoria = [
+  {
+    period: "2020",
+    title: "Linha de frente, COVID-19",
+    description:
+      "Atuação em hospital de referência em São Paulo, ao lado de pacientes críticos em UTI.",
+  },
+  {
+    period: "Especialização",
+    title: "UTI · Gerontologia · Liderança",
+    description:
+      "Formação contínua para unir excelência clínica e cuidado individualizado à terceira idade.",
+  },
+  {
+    period: "Hoje",
+    title: "Coordenação da Aegis Care",
+    description:
+      "Conduz pessoalmente a curadoria de cada caso e a seleção dos profissionais que entram em cada lar.",
+  },
+];
+
+const beliefs = [
+  {
+    title: "O lar como centro",
+    description:
+      "O cuidado deve acontecer onde a vida foi construída, cercado por memórias e pessoas amadas.",
+  },
+  {
+    title: "Cada história é única",
+    description:
+      "Não existe cuidado padronizado. Existe escuta, leitura individual e ajuste fino.",
+  },
+  {
+    title: "A família junto",
+    description:
+      "Quando cuidamos de alguém, cuidamos também da tranquilidade de quem o ama.",
+  },
+];
+
 const Fundador = () => {
-  const formacoes = [
-    {
-      titulo: "Graduação em Enfermagem",
-      instituicao: "Universidade Nove de Julho (UNINOVE)",
-      ano: "2020",
-      descricao: "Formação completa em Enfermagem, com ênfase em cuidados humanizados e assistência integral ao paciente."
-    },
-    {
-      titulo: "Especialização em UTI",
-      instituicao: "Unidade de Terapia Intensiva",
-      descricao: "Capacitação avançada para atendimento de pacientes críticos, com foco em monitoramento e intervenções de alta complexidade."
-    },
-    {
-      titulo: "Especialização em Gerontologia",
-      instituicao: "Cuidado ao Idoso",
-      descricao: "Dedicação ao estudo do envelhecimento saudável, com abordagem multidisciplinar para a saúde da terceira idade."
-    },
-    {
-      titulo: "Gestão de Pessoas e Liderança",
-      instituicao: "Formação em Liderança",
-      descricao: "Desenvolvimento de competências para liderar equipes de saúde com empatia, eficiência e humanização."
-    }
-  ];
-
-  const experiencias = [
-    {
-      icon: Stethoscope,
-      titulo: "Linha de Frente - COVID-19",
-      descricao: "Atuação heroica durante a pandemia em hospital de referência em São Paulo, cuidando de pacientes críticos e salvando vidas nos momentos mais desafiadores da saúde brasileira."
-    },
-    {
-      icon: Heart,
-      titulo: "UTI - Hospital Particular",
-      descricao: "Experiência em Unidade de Terapia Intensiva, desenvolvendo expertise em cuidados críticos e monitoramento avançado de pacientes."
-    },
-    {
-      icon: Home,
-      titulo: "Atendimento Domiciliar",
-      descricao: "Dois anos de dedicação em clínica de atendimento domiciliar, onde descobriu sua vocação: levar cuidado de qualidade para dentro do lar das famílias."
-    },
-    {
-      icon: Users,
-      titulo: "Cuidador Familiar",
-      descricao: "A experiência mais significativa: cuidar pessoalmente dos avós e do pai, vivenciando na pele o que significa amar e cuidar de quem nos deu a vida."
-    }
-  ];
-
-  const valores = [
-    {
-      titulo: "O Lar como Centro do Cuidado",
-      descricao: "Acredito profundamente que o cuidado deve acontecer onde a vida foi construída: no lar, cercado por memórias, objetos queridos e pessoas amadas."
-    },
-    {
-      titulo: "Cada Paciente é Único",
-      descricao: "Não existe cuidado padronizado. Cada pessoa tem sua história, suas preferências, seus medos e seus sonhos. O cuidado precisa respeitar isso."
-    },
-    {
-      titulo: "Família em Primeiro Lugar",
-      descricao: "Quando cuidamos de um idoso, cuidamos de toda a família. A tranquilidade dos filhos e netos é parte essencial do nosso trabalho."
-    },
-    {
-      titulo: "Humanização Acima de Tudo",
-      descricao: "Antes de qualquer técnica ou procedimento, vem o olhar, o toque, a palavra de conforto. O cuidado é, antes de tudo, um ato de amor."
-    }
-  ];
-
   return (
     <>
       <Helmet>
-        <title>Cleiton Oliveira - Fundador | Aegis Care</title>
-        <meta 
-          name="description" 
-          content="Conheça Cleiton Oliveira, enfermeiro fundador da Aegis Care, especialista em UTI e Gerontologia, dedicado ao cuidado humanizado de idosos." 
+        <title>Cleiton Oliveira — Fundador | Aegis Care</title>
+        <meta
+          name="description"
+          content="Enfermeiro, gerontólogo e fundador da Aegis Care. Conduz pessoalmente cada caso atendido pela empresa."
         />
-        <meta name="keywords" content="Cleiton Oliveira, fundador Aegis Care, enfermeiro especialista, cuidado domiciliar, gerontologia, UTI" />
         <link rel="canonical" href="https://www.aegiscare.com.br/fundador" />
-        <meta property="og:title" content="Cleiton Oliveira - Fundador | Aegis Care" />
-        <meta property="og:description" content="Conheça a história de quem transformou a experiência pessoal de cuidar em uma missão de vida." />
+        <meta property="og:title" content="Cleiton Oliveira — Fundador | Aegis Care" />
+        <meta property="og:description" content="Enfermeiro, gerontólogo e fundador da Aegis Care." />
         <meta property="og:type" content="profile" />
         <meta property="og:url" content="https://www.aegiscare.com.br/fundador" />
       </Helmet>
@@ -94,363 +64,142 @@ const Fundador = () => {
       <div className="min-h-screen bg-background">
         <Header />
 
-        {/* Hero Section */}
-        <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-cream via-background to-cream-dark overflow-hidden">
-          <div className="container mx-auto px-4">
-            <Link
-              to="/quem-somos"
-              className="inline-flex items-center gap-2 text-secondary hover:text-secondary/80 mb-8 transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Voltar para Quem Somos
-            </Link>
-
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              {/* Photo */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                className="relative order-2 lg:order-1"
+        <main>
+          {/* HERO */}
+          <section className="pt-40 pb-28 md:pt-48 md:pb-36 bg-background">
+            <div className="container-editorial">
+              <Link
+                to="/quem-somos"
+                className="inline-flex items-center gap-2 text-xs tracking-[0.25em] uppercase text-muted-foreground hover:text-[hsl(var(--navy-deep))] transition-colors mb-12"
               >
-                <div className="relative max-w-md mx-auto lg:max-w-none">
-                  {/* Decorative elements */}
-                  <div className="absolute -top-6 -left-6 w-32 h-32 bg-secondary/10 rounded-full blur-2xl" />
-                  <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-accent/10 rounded-full blur-3xl" />
-                  
-                  {/* Main photo */}
-                  <div className="relative rounded-2xl overflow-hidden shadow-elevated">
-                    <img
-                      src={cleitonPhoto}
-                      alt="Cleiton Oliveira - Fundador da Aegis Care"
-                      className="w-full h-auto object-cover"
-                      loading="eager"
-                    />
-                    {/* Overlay gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
-                  </div>
+                <ArrowLeft className="w-4 h-4" />
+                Quem Somos
+              </Link>
 
-                  {/* Badge */}
-                  <div className="absolute -bottom-4 -right-4 md:bottom-8 md:right-8 bg-card p-4 rounded-xl shadow-card">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center">
-                        <Award className="w-6 h-6 text-secondary" />
-                      </div>
-                      <div>
-                        <p className="font-display font-semibold text-foreground">Enfermeiro</p>
-                        <p className="text-sm text-muted-foreground">Gerontólogo</p>
-                      </div>
+              <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+                <div className="lg:col-span-5">
+                  <div className="relative">
+                    <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-card">
+                      <img
+                        src={cleitonPhoto}
+                        alt="Cleiton Oliveira — fundador da Aegis Care"
+                        className="w-full h-full object-cover object-top"
+                        loading="eager"
+                        width={480}
+                        height={600}
+                      />
+                    </div>
+                    <div className="absolute -bottom-4 -left-4 px-5 py-2 bg-[hsl(var(--navy-deep))] text-[hsl(var(--turquoise))] text-[0.65rem] tracking-[0.32em] uppercase">
+                      Fundador
                     </div>
                   </div>
                 </div>
-              </motion.div>
 
-              {/* Content */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="order-1 lg:order-2"
-              >
-                <span className="inline-block bg-secondary/10 text-secondary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-                  Fundador & CEO
-                </span>
-                
-                <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-                  Cleiton Oliveira
-                </h1>
-                
-                <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-                  Enfermeiro, empreendedor e apaixonado pelo cuidado humanizado. 
-                  <span className="text-foreground font-medium"> Transformei minha história pessoal de cuidar em uma missão de vida.</span>
-                </p>
-
-                <div className="flex flex-wrap gap-3 mb-8">
-                  <span className="px-4 py-2 bg-card rounded-lg text-sm font-medium text-foreground shadow-soft">
-                    <GraduationCap className="w-4 h-4 inline mr-2 text-secondary" />
-                    UNINOVE 2020
-                  </span>
-                  <span className="px-4 py-2 bg-card rounded-lg text-sm font-medium text-foreground shadow-soft">
-                    <Stethoscope className="w-4 h-4 inline mr-2 text-secondary" />
-                    Esp. UTI
-                  </span>
-                  <span className="px-4 py-2 bg-card rounded-lg text-sm font-medium text-foreground shadow-soft">
-                    <Heart className="w-4 h-4 inline mr-2 text-secondary" />
-                    Gerontologia
-                  </span>
+                <div className="lg:col-span-7">
+                  <span className="eyebrow-gold eyebrow mb-6 block">Quem conduz</span>
+                  <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.08] text-foreground mb-6">
+                    Cleiton Oliveira
+                  </h1>
+                  <p className="text-xs tracking-[0.25em] uppercase text-[hsl(var(--teal-deep))] font-semibold mb-8">
+                    Enfermeiro · Especialista em UTI · Gerontólogo
+                  </p>
+                  <p className="text-lg text-muted-foreground leading-[1.85] prose-justified">
+                    Construiu a Aegis Care a partir de uma convicção: o cuidado domiciliar precisa unir critério clínico, sensibilidade humana e uma estrutura discreta capaz de sustentar famílias em momentos delicados.
+                  </p>
                 </div>
-
-                <a
-                  href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button variant="cta" size="lg" className="gap-2">
-                    Converse comigo
-                  </Button>
-                </a>
-              </motion.div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Quote Section */}
-        <section className="py-16 md:py-24 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <Quote className="w-16 h-16 mx-auto mb-8 opacity-30" />
-              <blockquote className="font-display text-2xl md:text-3xl lg:text-4xl leading-relaxed mb-8">
-                "Acredito que o cuidado deve permanecer onde a vida foi construída: no lar, 
-                cercado pelas pessoas que você ama, repleto de memórias e objetos que contam sua história."
+          {/* QUOTE */}
+          <section className="py-28 md:py-36 gradient-deep">
+            <div className="container-editorial max-w-4xl mx-auto text-center">
+              <span className="block h-px w-12 bg-[hsl(var(--gold))] mx-auto mb-10" />
+              <blockquote className="font-display text-2xl md:text-3xl lg:text-[2.25rem] leading-[1.35] text-primary-foreground italic">
+                "O cuidado deve permanecer onde a vida foi construída — no lar, cercado pelas pessoas e memórias que formaram uma história."
               </blockquote>
-              <p className="text-primary-foreground/70 text-lg">
+              <p className="mt-10 text-xs tracking-[0.32em] uppercase text-primary-foreground/70">
                 Cleiton Oliveira
               </p>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* My Story Section */}
-        <section className="py-16 md:py-24 bg-background">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="max-w-3xl mx-auto"
-            >
-              <h2 className="font-display text-3xl md:text-4xl text-foreground mb-8 text-center">
-                Minha História
-              </h2>
-              
-              <div className="prose prose-lg max-w-none text-muted-foreground">
-                <p className="text-lg leading-relaxed mb-6">
-                  Minha jornada no cuidado começou muito antes de eu me formar enfermeiro. 
-                  Começou em casa, cuidando dos meus avós e do meu pai. Foi ali que entendi 
-                  que <strong className="text-foreground">cuidar é mais do que técnica. É presença, é amor, é estar junto 
-                  nos momentos difíceis</strong>.
-                </p>
-                
-                <p className="text-lg leading-relaxed mb-6">
-                  Em 2020, me formei pela Universidade Nove de Julho e logo fui chamado para 
-                  a linha de frente no combate ao COVID-19. Foram meses intensos em um hospital 
-                  de referência em São Paulo, onde vi de perto a fragilidade da vida e a força 
-                  do cuidado humano.
-                </p>
-                
-                <p className="text-lg leading-relaxed mb-6">
-                  Busquei me especializar em <strong className="text-foreground">UTI, Gestão de Pessoas e Gerontologia</strong>, 
-                  porque sabia que minha missão era unir a excelência técnica com o olhar 
-                  humanizado para a terceira idade.
-                </p>
-                
-                <p className="text-lg leading-relaxed mb-6">
-                  Durante dois anos em uma clínica de atendimento domiciliar, descobri minha 
-                  vocação definitiva: <strong className="text-foreground">levar o cuidado de qualidade para dentro do lar</strong>. 
-                  Vi famílias aliviadas por terem seus entes queridos em casa, vi idosos 
-                  sorrindo por estarem cercados de suas memórias.
-                </p>
-                
-                <p className="text-lg leading-relaxed">
-                  A <strong className="text-foreground">Aegis Care</strong> nasceu dessa convicção. Cada paciente que cuidamos, 
-                  cuido como se fosse da minha família. Cada colaborador que contratamos, 
-                  escolho como se fosse cuidar dos meus avós. Porque sei o que significa 
-                  confiar alguém que você ama aos cuidados de outra pessoa.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Formação Section */}
-        <section className="py-16 md:py-24 bg-cream">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-12"
-            >
-              <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
-                Formação Acadêmica
-              </h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Uma trajetória de aprendizado contínuo, sempre buscando excelência 
-                para oferecer o melhor cuidado.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {formacoes.map((formacao, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-card p-6 rounded-xl shadow-soft hover:shadow-card transition-shadow"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                      <GraduationCap className="w-6 h-6 text-secondary" />
-                    </div>
-                    <div>
-                      <h3 className="font-display text-lg font-semibold text-foreground mb-1">
-                        {formacao.titulo}
-                      </h3>
-                      <p className="text-secondary text-sm font-medium mb-2">
-                        {formacao.instituicao} {formacao.ano && `• ${formacao.ano}`}
-                      </p>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        {formacao.descricao}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Experiências Section */}
-        <section className="py-16 md:py-24 bg-background">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-12"
-            >
-              <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
-                Experiências que Me Formaram
-              </h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Cada experiência contribuiu para moldar minha visão sobre o cuidado humanizado.
-              </p>
-            </motion.div>
+          {/* TRAJETÓRIA */}
+          <section className="py-28 md:py-36 bg-background">
+            <div className="container-editorial">
+              <div className="max-w-2xl mb-16 md:mb-20">
+                <span className="eyebrow mb-5 block">Trajetória</span>
+                <h2 className="font-display text-3xl md:text-[2.25rem] leading-[1.15] text-foreground">
+                  Uma carreira construída entre a UTI e a casa das famílias.
+                </h2>
+              </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {experiencias.map((exp, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex gap-5"
-                >
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-secondary to-accent flex items-center justify-center flex-shrink-0 shadow-soft">
-                    <exp.icon className="w-7 h-7 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-display text-xl font-semibold text-foreground mb-2">
-                      {exp.titulo}
+              <div className="grid md:grid-cols-3 gap-10 md:gap-14">
+                {trajetoria.map((t) => (
+                  <div key={t.title}>
+                    <p className="eyebrow-gold eyebrow mb-4">{t.period}</p>
+                    <h3 className="font-display text-xl md:text-2xl text-foreground mb-4">
+                      {t.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {exp.descricao}
+                    <p className="text-muted-foreground leading-[1.85] prose-justified">
+                      {t.description}
                     </p>
                   </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Valores Section */}
-        <section className="py-16 md:py-24 bg-cream">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-12"
-            >
-              <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
-                O Que Eu Acredito
-              </h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Princípios que guiam cada decisão na Aegis Care.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {valores.map((valor, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-card p-6 rounded-xl shadow-soft border-l-4 border-secondary"
-                >
-                  <h3 className="font-display text-lg font-semibold text-foreground mb-3">
-                    {valor.titulo}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {valor.descricao}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="max-w-3xl mx-auto text-center"
-            >
-              <h2 className="font-display text-3xl md:text-4xl mb-6">
-                Vamos Conversar?
-              </h2>
-              <p className="text-primary-foreground/80 text-lg mb-8 leading-relaxed">
-                Se você está buscando cuidado para alguém que ama, eu gostaria de ouvir sua história. 
-                Cada família é única, e juntos podemos encontrar a melhor solução.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={trackWhatsAppClick}
-                >
-                  <Button 
-                    variant="secondary" 
-                    size="lg" 
-                    className="gap-2 bg-white text-primary hover:bg-white/90"
-                  >
-                    <Heart className="w-5 h-5" />
-                    Fale Comigo no WhatsApp
-                  </Button>
-                </a>
-                <Link to="/servicos">
-                  <Button 
-                    variant="outline" 
-                    size="lg" 
-                    className="gap-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-                  >
-                    Conheça Nossos Serviços
-                  </Button>
-                </Link>
+                ))}
               </div>
-            </motion.div>
-          </div>
-        </section>
+            </div>
+          </section>
+
+          {/* CONVICÇÕES */}
+          <section className="py-28 md:py-36 bg-[hsl(var(--cream))]">
+            <div className="container-editorial">
+              <div className="max-w-2xl mb-16 md:mb-20">
+                <span className="eyebrow mb-5 block">Convicções</span>
+                <h2 className="font-display text-3xl md:text-[2.25rem] leading-[1.15] text-foreground">
+                  Princípios que orientam cada decisão da Aegis Care.
+                </h2>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-10 md:gap-14">
+                {beliefs.map((b, i) => (
+                  <div key={b.title}>
+                    <div className="flex items-baseline gap-5 mb-4">
+                      <span className="font-display text-[hsl(var(--teal-deep))] text-2xl tabular-nums">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <h3 className="font-display text-2xl text-foreground">{b.title}</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-[1.85] pl-10 prose-justified">
+                      {b.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* CTA */}
+          <section className="py-28 md:py-36 bg-background">
+            <div className="container-editorial max-w-3xl mx-auto text-center">
+              <h2 className="font-display text-3xl md:text-[2.5rem] leading-[1.15] text-foreground mb-6">
+                Conversemos pessoalmente.
+              </h2>
+              <p className="text-muted-foreground leading-[1.85] mb-10">
+                Cada família é única. O primeiro passo é uma conversa, sem compromisso, para entender o contexto e o que pode fazer sentido.
+              </p>
+              <a
+                href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={trackWhatsAppClick}
+                className="inline-flex items-center gap-3 px-10 py-4 bg-[hsl(var(--navy-deep))] text-primary-foreground text-xs tracking-[0.3em] uppercase font-semibold rounded-sm hover:bg-[hsl(var(--teal-deep))] transition-colors"
+              >
+                Falar com Cleiton
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </section>
+        </main>
 
         <Footer />
       </div>
