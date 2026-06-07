@@ -13,6 +13,7 @@ import envelhecimentoPopulacionalCuidador from "@/assets/blog/envelhecimento-pop
 import guiaCuidadorIdosos from "@/assets/blog/guia-cuidador-idosos.jpg";
 import diaMundialCancerIdoso from "@/assets/blog/dia-mundial-cancer-cuidado-idoso.jpg";
 import cuidadosParkinson from "@/assets/blog/cuidados-domiciliares-parkinson.jpg";
+import envelhecimentoSaudavelCuidadorEssencial from "@/assets/blog/envelhecimento-saudavel-cuidador-essencial.jpg";
 
 export interface ArticleReference {
   name: string;
