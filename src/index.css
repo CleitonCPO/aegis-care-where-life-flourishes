@@ -246,6 +246,63 @@
     from { opacity: 0; transform: translateY(40px); filter: blur(4px); }
     to   { opacity: 1; transform: translateY(0); filter: blur(0); }
   }
+
+  /* ===== Premium scroll-reveal — delicate fade + rise =====
+     Applied site-wide via src/lib/scroll-reveal.ts.
+     Only active after JS marks <html class="reveal-ready"> so the page
+     remains fully visible if JS is disabled or motion is reduced. */
+  .reveal-ready [data-reveal][data-revealed="false"] {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(2px);
+    will-change: opacity, transform, filter;
+    transition:
+      opacity 1100ms var(--ease-premium) var(--reveal-delay, 0ms),
+      transform 1100ms var(--ease-premium) var(--reveal-delay, 0ms),
+      filter 900ms var(--ease-premium) var(--reveal-delay, 0ms);
+  }
+  .reveal-ready [data-reveal][data-revealed="true"] {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    transition:
+      opacity 1100ms var(--ease-premium) var(--reveal-delay, 0ms),
+      transform 1100ms var(--ease-premium) var(--reveal-delay, 0ms),
+      filter 900ms var(--ease-premium) var(--reveal-delay, 0ms);
+  }
+
+  /* Slow, almost imperceptible cinematic zoom — pair with hero imagery. */
+  .ken-burns {
+    animation: kenBurns 22s var(--ease-premium) both;
+    transform-origin: center center;
+  }
+  @keyframes kenBurns {
+    from { transform: scale(1.06); }
+    to   { transform: scale(1); }
+  }
+
+  /* Soft floating accent — for medallions, small ornaments. */
+  .float-soft { animation: floatSoft 7s ease-in-out infinite; }
+  @keyframes floatSoft {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-6px); }
+  }
+
+  /* Gentle hover for editorial imagery */
+  .img-hover-soft {
+    overflow: hidden;
+  }
+  .img-hover-soft img {
+    transition: transform 1400ms var(--ease-premium), filter 1400ms var(--ease-premium);
+  }
+  .img-hover-soft:hover img {
+    transform: scale(1.035);
+    filter: saturate(1.05);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ken-burns, .float-soft { animation: none !important; }
+  }
 }
 
 /* Legacy classes kept for backward compatibility (now quiet) */
