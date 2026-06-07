@@ -49,9 +49,11 @@ function tagChildren(root: ParentNode) {
         const el = child as HTMLElement;
         if (el.matches(skipMatcher)) return;
         if (el.hasAttribute(REVEAL_ATTR)) return;
+        // Skip absolutely / fixed positioned layers (background images, overlays).
+        const pos = getComputedStyle(el).position;
+        if (pos === "absolute" || pos === "fixed") return;
         el.setAttribute(REVEAL_ATTR, "");
         el.setAttribute(STATE_ATTR, "false");
-        // Cascading stagger — capped so long lists stay calm.
         const delay = Math.min(i, 6) * 90;
         if (delay > 0) el.style.setProperty("--reveal-delay", `${delay}ms`);
         ensureObserver()?.observe(el);
