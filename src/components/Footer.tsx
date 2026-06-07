@@ -52,6 +52,7 @@ const Footer = () => {
               <li><Link to="/servicos" className="hover:text-white transition-colors">Serviços</Link></li>
               <li><Link to="/fundador" className="hover:text-white transition-colors">Fundador</Link></li>
               <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+              <li><a href="https://aegis-care-academy-forge.lovable.app/#top" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Aegis Care Academy</a></li>
               <li><a href="/#contato" className="hover:text-white transition-colors">Contato</a></li>
             </ul>
           </div>
