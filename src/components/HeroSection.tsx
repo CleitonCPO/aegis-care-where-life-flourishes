@@ -17,7 +17,7 @@ const HeroSection = memo(() => {
         <img
           src={heroImage}
           alt="Cuidado domiciliar humanizado para idosos — Aegis Care"
-          className={`w-full h-full object-cover transition-[transform,opacity] duration-[1600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-105"}`}
+          className={`w-full h-full object-cover transition-[opacity] duration-[1600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${isLoaded ? "opacity-100 ken-burns" : "opacity-0"}`}
           loading="eager"
           fetchPriority="high"
           decoding="async"
