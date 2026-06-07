@@ -156,7 +156,7 @@ Contudo, o cuidado de qualidade não pode ser construído sobre a exaustão da f
 O **cuidador profissional**, especialmente quando inserido em uma equipe multidisciplinar liderada por enfermeiros, não substitui o amor familiar: ele o protege. Ao assumir as demandas técnicas e diárias do cuidado, permite que a família se mantenha como família, preservando vínculos sem sacrificar a saúde de ninguém.
 
 Na **Aegis Care**, esse é o ponto de partida do nosso trabalho. Empresa de **home care liderada por enfermeiros**, oferecemos avaliação clínica individual, plano de cuidado personalizado, supervisão contínua e cuidadores treinados para atuar com segurança, técnica e afeto. Em um mercado onde ainda predominam textos genéricos e desprovidos de respaldo científico, acreditamos que o cuidado que une evidência, empatia e praticidade é o que verdadeiramente transforma a experiência de envelhecer em casa.
-    \`,
+    `,
     references: [
       { name: "IBGE (2024)", url: "https://www.ibge.gov.br/estatisticas/sociais/populacao/9109-projecao-da-populacao.html", description: "Projeções da população: Brasil e Unidades da Federação, Revisão 2024. Rio de Janeiro: IBGE." },
       { name: "WHO (2025)", url: "https://www.who.int/initiatives/decade-of-healthy-ageing", description: "Decade of Healthy Ageing (2021-2030): Monitoring and Evaluation Framework. Geneva: World Health Organization." },
