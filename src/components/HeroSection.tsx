@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { memo, useEffect, useState } from "react";
-import heroImage from "@/assets/hero-aegis-premium.jpg";
+import heroMobile from "@/assets/hero-aegis-premium-480.webp";
+import heroTablet from "@/assets/hero-aegis-premium-800.webp";
+import heroDesktop from "@/assets/hero-aegis-premium-1600.webp";
 
 const HeroSection = memo(() => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -15,14 +17,16 @@ const HeroSection = memo(() => {
     <section className="relative min-h-[100svh] flex items-center overflow-hidden bg-[hsl(var(--navy-deep))]">
       <div className="absolute inset-0 z-0">
         <img
-          src={heroImage}
+          src={heroDesktop}
+          srcSet={`${heroMobile} 480w, ${heroTablet} 800w, ${heroDesktop} 1600w`}
+          sizes="100vw"
           alt="Cuidado domiciliar humanizado para idosos — Aegis Care"
           className={`w-full h-full object-cover transition-[opacity] duration-[1600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${isLoaded ? "opacity-100 ken-burns" : "opacity-0"}`}
           loading="eager"
           fetchPriority="high"
           decoding="async"
-          width={1920}
-          height={1280}
+          width={1600}
+          height={900}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--navy-deep))]/95 via-[hsl(var(--navy-deep))]/70 to-[hsl(var(--navy-deep))]/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--navy-deep))]/60 via-transparent to-transparent" />

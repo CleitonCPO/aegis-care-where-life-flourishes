@@ -1,5 +1,5 @@
 import { memo, useEffect, useRef, useState } from "react";
-import aboutImage from "@/assets/about-aegis-premium.jpg";
+import aboutImage from "@/assets/about-aegis-premium.webp";
 
 const pillars = [
   {

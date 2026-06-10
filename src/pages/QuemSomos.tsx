@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
-import aboutImage from "@/assets/about-aegis-premium.jpg";
+import aboutImage from "@/assets/about-aegis-premium.webp";
 import cleitonPhoto from "@/assets/cleiton-oliveira-optimized.webp";
 
 const pillars = [
