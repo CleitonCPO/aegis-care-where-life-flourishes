@@ -65,13 +65,22 @@ function tagChildren(root: ParentNode) {
 export function initScrollReveal() {
   if (typeof window === "undefined") return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  // Skip motion on small/low-power devices to keep mobile fast.
+  if (window.matchMedia("(max-width: 768px)").matches) return;
 
   document.documentElement.classList.add("reveal-ready");
 
   const run = () => tagChildren(document.body);
   run();
 
-  // Watch for SPA route changes / lazy-loaded sections.
-  const mo = new MutationObserver(() => run());
+  // Watch for SPA route changes / lazy-loaded sections — throttled.
+  let scheduled = false;
+  const mo = new MutationObserver(() => {
+    if (scheduled) return;
+    scheduled = true;
+    requestIdleCallback?.(() => { scheduled = false; run(); }, { timeout: 500 })
+      ?? setTimeout(() => { scheduled = false; run(); }, 300);
+  });
   mo.observe(document.body, { childList: true, subtree: true });
 }
+
