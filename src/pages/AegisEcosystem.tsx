@@ -131,21 +131,22 @@ const AegisEcosystem = () => {
         <section className="container-editorial pb-24">
           <div className="grid lg:grid-cols-2 gap-px bg-[#d4af6a]/30 border border-[#d4af6a]/30">
             {/* Academy */}
-            <div className="bg-[hsl(var(--navy-deep))] p-10 md:p-14 relative">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-md bg-gradient-to-br from-[#7a5a1c] via-[#d4af6a] to-[#f5e3a8] flex items-center justify-center shadow-[0_0_30px_-8px_rgba(245,227,168,0.7)]">
-                  <GraduationCap className="w-8 h-8 text-[hsl(var(--navy-deep))]" />
-                </div>
-                <div>
-                  <p className="font-display text-3xl text-white leading-none">aegis</p>
-                  <p className="text-[0.7rem] tracking-[0.4em] uppercase text-[#e8c97a] mt-1">Academy</p>
-                </div>
+            <div className="bg-[hsl(var(--navy-deep))] p-10 md:p-14 relative flex flex-col">
+              <div className="flex items-center justify-center md:justify-start mb-8 min-h-[110px]">
+                <img
+                  src={aegisAcademyLogo.url}
+                  alt="Aegis Academy"
+                  width={280}
+                  height={110}
+                  loading="lazy"
+                  className="h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_24px_rgba(245,227,168,0.35)]"
+                />
               </div>
               <p className="text-white/80 text-lg leading-relaxed mb-8">
                 Educação continuada em saúde que conecta{" "}
                 <strong className="text-white">conhecimento à prática.</strong>
               </p>
-              <a href="https://aegis-care-academy-forge.lovable.app/#top" target="_blank" rel="noopener noreferrer">
+              <a href="https://aegis-care-academy-forge.lovable.app/#top" target="_blank" rel="noopener noreferrer" className="mt-auto">
                 <Button variant="outline" className="border-[#d4af6a] text-[#e8c97a] hover:bg-[#d4af6a] hover:text-[hsl(var(--navy-deep))] gap-2">
                   Conhecer a Academy <ExternalLink className="w-4 h-4" />
                 </Button>
@@ -153,21 +154,22 @@ const AegisEcosystem = () => {
             </div>
 
             {/* Care */}
-            <div className="bg-[hsl(var(--navy-deep))] p-10 md:p-14 relative">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-md bg-gradient-to-br from-[hsl(var(--teal-deep))] via-[hsl(var(--teal))] to-[hsl(var(--turquoise))] flex items-center justify-center shadow-[0_0_30px_-8px_hsl(var(--turquoise)/0.7)]">
-                  <Heart className="w-8 h-8 text-white" />
-                </div>
-                <div>
-                  <p className="font-display text-3xl text-white leading-none">aegis</p>
-                  <p className="text-[0.7rem] tracking-[0.4em] uppercase text-[hsl(var(--turquoise))] mt-1">Care</p>
-                </div>
+            <div className="bg-[hsl(var(--navy-deep))] p-10 md:p-14 relative flex flex-col">
+              <div className="flex items-center justify-center md:justify-start mb-8 min-h-[110px]">
+                <img
+                  src={aegisCareLogo.url}
+                  alt="Aegis Care"
+                  width={280}
+                  height={110}
+                  loading="lazy"
+                  className="h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_24px_hsl(var(--turquoise)/0.35)]"
+                />
               </div>
               <p className="text-white/80 text-lg leading-relaxed mb-8">
                 Cuidado domiciliar humanizado e de excelência que{" "}
                 <strong className="text-white">transforma experiências e gera bem-estar.</strong>
               </p>
-              <Link to="/">
+              <Link to="/" className="mt-auto">
                 <Button variant="outline" className="border-[hsl(var(--turquoise))] text-[hsl(var(--turquoise))] hover:bg-[hsl(var(--turquoise))] hover:text-[hsl(var(--navy-deep))] gap-2">
                   Conhecer o Care <ArrowRight className="w-4 h-4" />
                 </Button>
