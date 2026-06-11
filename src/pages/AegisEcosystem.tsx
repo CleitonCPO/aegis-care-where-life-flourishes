@@ -78,7 +78,7 @@ const AegisEcosystem = () => {
         {/* Hero */}
         <section className="container-editorial pt-40 pb-20 md:pt-48 md:pb-28">
           <p className="text-[0.7rem] tracking-[0.4em] uppercase text-[#d4af6a] mb-6">Aegis Ecosystem</p>
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl leading-[1.1] max-w-5xl">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl leading-[1.1] max-w-5xl text-white">
             Do cuidado à formação dos profissionais{" "}
             <span className="text-[#e8c97a] italic">que transformam vidas.</span>
           </h1>
