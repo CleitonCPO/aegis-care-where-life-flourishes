@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { Handshake, Users, GraduationCap, ShieldCheck, Heart, ArrowRight, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
+import aegisCareLogo from "@/assets/aegis-care-logo.png.asset.json";
+import aegisAcademyLogo from "@/assets/aegis-academy-logo.png.asset.json";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
