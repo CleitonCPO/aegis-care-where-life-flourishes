@@ -60,13 +60,14 @@ const AegisEcosystem = () => {
               <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
             </filter>
             <filter id="flashGlow" x="-20%" y="-20%" width="140%" height="140%">
-              <feGaussianBlur stdDeviation="6" result="b" />
+              <feGaussianBlur stdDeviation="3.5" result="b" />
               <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
             </filter>
             <linearGradient id="flashCore" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stopColor="#ffffff" stopOpacity="0" />
-              <stop offset="50%" stopColor="#fff8e0" stopOpacity="1" />
-              <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+              <stop offset="0%" stopColor="#d4af6a" stopOpacity="0" />
+              <stop offset="70%" stopColor="#f5e3a8" stopOpacity="0.85" />
+              <stop offset="92%" stopColor="#fff6d6" stopOpacity="1" />
+              <stop offset="100%" stopColor="#ffffff" stopOpacity="1" />
             </linearGradient>
           </defs>
           {/* Base gold lines */}
@@ -77,11 +78,11 @@ const AegisEcosystem = () => {
           <line x1="800" y1="280" x2="800" y2="900" stroke="url(#goldLine)" strokeWidth="0.8" opacity="0.5" />
 
           {/* Light flashes traveling along the lines (sequential loop) */}
-          <path className="gold-flash gold-flash-1" d="M -50 80 Q 600 -40 1650 320" stroke="url(#flashCore)" strokeWidth="2.4" strokeLinecap="round" filter="url(#flashGlow)" fill="none" />
-          <path className="gold-flash gold-flash-2" d="M -60 200 Q 700 100 1700 460" stroke="url(#flashCore)" strokeWidth="2" strokeLinecap="round" filter="url(#flashGlow)" fill="none" />
-          <path className="gold-flash gold-flash-3" d="M -80 980 Q 700 1180 1700 820" stroke="url(#flashCore)" strokeWidth="2.4" strokeLinecap="round" filter="url(#flashGlow)" fill="none" />
-          <path className="gold-flash gold-flash-4" d="M -60 1100 Q 700 1280 1700 940" stroke="url(#flashCore)" strokeWidth="2" strokeLinecap="round" filter="url(#flashGlow)" fill="none" />
-          <line className="gold-flash gold-flash-5" x1="800" y1="280" x2="800" y2="900" stroke="url(#flashCore)" strokeWidth="1.6" strokeLinecap="round" filter="url(#flashGlow)" />
+          <path className="gold-flash gold-flash-1" d="M -50 80 Q 600 -40 1650 320" stroke="url(#flashCore)" strokeWidth="1.6" strokeLinecap="round" filter="url(#flashGlow)" fill="none" />
+          <path className="gold-flash gold-flash-2" d="M -60 200 Q 700 100 1700 460" stroke="url(#flashCore)" strokeWidth="1.4" strokeLinecap="round" filter="url(#flashGlow)" fill="none" />
+          <path className="gold-flash gold-flash-3" d="M -80 980 Q 700 1180 1700 820" stroke="url(#flashCore)" strokeWidth="1.6" strokeLinecap="round" filter="url(#flashGlow)" fill="none" />
+          <path className="gold-flash gold-flash-4" d="M -60 1100 Q 700 1280 1700 940" stroke="url(#flashCore)" strokeWidth="1.4" strokeLinecap="round" filter="url(#flashGlow)" fill="none" />
+          <line className="gold-flash gold-flash-5" x1="800" y1="280" x2="800" y2="900" stroke="url(#flashCore)" strokeWidth="1.2" strokeLinecap="round" filter="url(#flashGlow)" />
         </svg>
 
         {/* sparkle dots */}
