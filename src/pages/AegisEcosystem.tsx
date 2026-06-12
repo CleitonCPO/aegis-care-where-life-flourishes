@@ -134,14 +134,16 @@ const AegisEcosystem = () => {
             {/* Academy */}
             <div className="bg-[hsl(var(--navy-deep))] p-10 md:p-14 relative flex flex-col">
               <div className="flex items-center justify-center md:justify-start mb-8 h-[128px]">
-                <img
-                  src={aegisAcademyLogo.url}
-                  alt="Aegis Academy"
-                  width={260}
-                  height={96}
-                  loading="lazy"
-                  className="max-h-24 md:max-h-28 max-w-[280px] w-full object-contain object-left drop-shadow-[0_0_24px_rgba(245,227,168,0.35)]"
-                />
+                <div className="h-[112px] w-[292px] flex items-center justify-center rounded-sm bg-white/95 px-6 shadow-[0_0_32px_-14px_rgba(245,227,168,0.65)]">
+                  <img
+                    src={aegisAcademyLogo.url}
+                    alt="Aegis Academy"
+                    width={260}
+                    height={96}
+                    loading="lazy"
+                    className="max-h-[88px] w-full object-contain"
+                  />
+                </div>
               </div>
               <p className="text-white/80 text-lg leading-relaxed mb-8">
                 Educação continuada em saúde que conecta{" "}
@@ -157,14 +159,16 @@ const AegisEcosystem = () => {
             {/* Care */}
             <div className="bg-[hsl(var(--navy-deep))] p-10 md:p-14 relative flex flex-col">
               <div className="flex items-center justify-center md:justify-start mb-8 h-[128px]">
-                <img
-                  src={aegisCareLogo}
-                  alt="Aegis Care"
-                  width={260}
-                  height={104}
-                  loading="lazy"
-                  className="max-h-24 md:max-h-28 max-w-[280px] w-full object-contain object-left drop-shadow-[0_0_24px_hsl(var(--turquoise)/0.35)]"
-                />
+                <div className="h-[112px] w-[292px] flex items-center justify-center rounded-sm bg-white/95 px-6 shadow-[0_0_32px_-14px_hsl(var(--turquoise)/0.65)]">
+                  <img
+                    src={aegisCareLogo}
+                    alt="Aegis Care"
+                    width={260}
+                    height={104}
+                    loading="lazy"
+                    className="max-h-[88px] w-full object-contain"
+                  />
+                </div>
               </div>
               <p className="text-white/80 text-lg leading-relaxed mb-8">
                 Cuidado domiciliar humanizado e de excelência que{" "}
