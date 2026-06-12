@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { Handshake, Users, GraduationCap, ShieldCheck, Heart, ArrowRight, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
-import aegisCareLogo from "@/assets/aegis-care-logo.png.asset.json";
 import aegisAcademyLogo from "@/assets/aegis-academy-logo.png.asset.json";
+import aegisCareLogo from "@/assets/logo-aegis-care-optimized.webp";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -133,14 +133,14 @@ const AegisEcosystem = () => {
           <div className="grid lg:grid-cols-2 gap-px bg-[#d4af6a]/30 border border-[#d4af6a]/30">
             {/* Academy */}
             <div className="bg-[hsl(var(--navy-deep))] p-10 md:p-14 relative flex flex-col">
-              <div className="flex items-center justify-center md:justify-start mb-8 min-h-[110px]">
+              <div className="flex items-center justify-center md:justify-start mb-8 h-[128px]">
                 <img
                   src={aegisAcademyLogo.url}
                   alt="Aegis Academy"
-                  width={280}
-                  height={110}
+                  width={260}
+                  height={96}
                   loading="lazy"
-                  className="h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_24px_rgba(245,227,168,0.35)]"
+                  className="max-h-24 md:max-h-28 max-w-[280px] w-full object-contain object-left drop-shadow-[0_0_24px_rgba(245,227,168,0.35)]"
                 />
               </div>
               <p className="text-white/80 text-lg leading-relaxed mb-8">
@@ -156,14 +156,14 @@ const AegisEcosystem = () => {
 
             {/* Care */}
             <div className="bg-[hsl(var(--navy-deep))] p-10 md:p-14 relative flex flex-col">
-              <div className="flex items-center justify-center md:justify-start mb-8 min-h-[110px]">
+              <div className="flex items-center justify-center md:justify-start mb-8 h-[128px]">
                 <img
-                  src={aegisCareLogo.url}
+                  src={aegisCareLogo}
                   alt="Aegis Care"
-                  width={280}
-                  height={110}
+                  width={260}
+                  height={104}
                   loading="lazy"
-                  className="h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_24px_hsl(var(--turquoise)/0.35)]"
+                  className="max-h-24 md:max-h-28 max-w-[280px] w-full object-contain object-left drop-shadow-[0_0_24px_hsl(var(--turquoise)/0.35)]"
                 />
               </div>
               <p className="text-white/80 text-lg leading-relaxed mb-8">
