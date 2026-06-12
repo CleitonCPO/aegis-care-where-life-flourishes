@@ -323,27 +323,29 @@
 .hover-lift { transition: transform var(--transition-smooth), box-shadow var(--transition-smooth); }
 .hover-lift:hover { transform: translateY(-3px); box-shadow: var(--shadow-card); }
 
-/* Aegis Ecosystem — gold light flashes traveling along ornamental lines */
+/* Aegis Ecosystem — shooting-star gold flashes traveling along ornamental lines */
 .gold-flash {
-  stroke-dasharray: 140 2200;
-  stroke-dashoffset: 2340;
+  stroke-dasharray: 220 2400;
+  stroke-dashoffset: 2620;
   opacity: 0;
-  animation: goldFlashTravel 7s linear infinite;
+  animation: goldShootingStar 9s cubic-bezier(0.45, 0, 0.25, 1) infinite;
   will-change: stroke-dashoffset, opacity;
 }
-.gold-flash-1 { animation-delay: 0s; }
-.gold-flash-2 { animation-delay: 1.2s; animation-duration: 8s; }
-.gold-flash-3 { animation-delay: 2.6s; animation-duration: 7.5s; }
-.gold-flash-4 { animation-delay: 4s;   animation-duration: 8.5s; }
-.gold-flash-5 { animation-delay: 5.2s; animation-duration: 6s; stroke-dasharray: 80 1400; stroke-dashoffset: 1480; }
+.gold-flash-1 { animation-delay: 0.4s;  animation-duration: 9s; }
+.gold-flash-2 { animation-delay: 3.2s;  animation-duration: 10s; }
+.gold-flash-3 { animation-delay: 1.8s;  animation-duration: 9.5s; }
+.gold-flash-4 { animation-delay: 5.6s;  animation-duration: 10.5s; }
+.gold-flash-5 { animation-delay: 4.4s;  animation-duration: 8s; stroke-dasharray: 140 1600; stroke-dashoffset: 1740; }
 
-@keyframes goldFlashTravel {
-  0%   { stroke-dashoffset: 2340; opacity: 0; }
-  8%   { opacity: 1; }
-  90%  { opacity: 1; }
-  100% { stroke-dashoffset: -200; opacity: 0; }
+@keyframes goldShootingStar {
+  0%   { stroke-dashoffset: 2620; opacity: 0; }
+  4%   { opacity: 0.95; }
+  45%  { opacity: 0.9; }
+  60%  { opacity: 0; }
+  100% { stroke-dashoffset: -260; opacity: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .gold-flash { animation: none; opacity: 0; }
 }
+
