@@ -107,12 +107,12 @@ const Servicos = () => {
         <title>Serviços | Aegis Care - Cuidado Domiciliar Premium</title>
         <meta 
           name="description" 
-          content="Conheça nossos serviços de cuidado domiciliar: cuidadores de idosos, acompanhamento 24h, cuidador para adultos. Atendemos Zona Leste SP." 
+          content="Conheça nossos serviços de cuidado domiciliar: cuidadores de idosos, acompanhamento 24h, cuidador para adultos. Atendemos Capital SP." 
         />
-        <meta name="keywords" content="cuidado domiciliar, agência de cuidadores de idosos, serviços de cuidadores, cuidador de idosos, acompanhamento domiciliar, zona leste SP" />
+        <meta name="keywords" content="cuidado domiciliar, agência de cuidadores de idosos, serviços de cuidadores, cuidador de idosos, acompanhamento domiciliar, Capital SP" />
         <link rel="canonical" href="https://www.aegiscare.com.br/servicos" />
         <meta property="og:title" content="Serviços | Aegis Care - Cuidado Domiciliar Premium" />
-        <meta property="og:description" content="Cuidador de idosos, acompanhamento 24h, cuidador para adultos e acompanhamento em viagem na Zona Leste de SP." />
+        <meta property="og:description" content="Cuidador de idosos, acompanhamento 24h, cuidador para adultos e acompanhamento em viagem na Capital de SP." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.aegiscare.com.br/servicos" />
       </Helmet>
@@ -401,7 +401,7 @@ const Servicos = () => {
                 {[
                   { icon: Activity, value: "24/7", label: "Atendimento" },
                   { icon: UserCheck, value: "100%", label: "Profissionais Certificados" },
-                  { icon: Home, value: "Zona Leste", label: "São Paulo - SP" }
+                  { icon: Home, value: "Capital", label: "São Paulo - SP" }
                 ].map((stat, index) => (
                   <motion.div 
                     key={index}
