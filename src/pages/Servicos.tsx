@@ -15,66 +15,15 @@ import {
   CheckCircle2
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { services as servicesHub } from "@/data/servicesData";
 
 // Images
 import heroImage from "@/assets/servicos/cuidado-domiciliar-hero.jpg";
 import enfermagemImage from "@/assets/servicos/enfermagem-domiciliar.jpg";
 import acompanhamentoImage from "@/assets/servicos/acompanhamento-diario.jpg";
 
-const services = [
-  {
-    icon: Home,
-    title: "Cuidado Domiciliar",
-    subtitle: "Conforto e segurança no lar",
-    description: "Atendimento humanizado no ambiente mais importante: a casa do paciente. Oferecemos cuidadores altamente capacitados que garantem conforto, segurança e qualidade de vida, preservando a autonomia e a dignidade de cada pessoa.",
-    features: [
-      "Acompanhamento integral 24 horas",
-      "Cuidadores certificados e treinados",
-      "Acompanhamento do cuidado contínuo",
-      "Planos personalizados"
-    ],
-    image: heroImage
-  },
-  {
-    icon: Stethoscope,
-    title: "Acompanhamento de Saúde",
-    subtitle: "Monitoramento e bem-estar",
-    description: "Cuidadores qualificados para acompanhamento contínuo da saúde do paciente. Realizamos monitoramento diário, auxílio com medicamentos e acompanhamento de bem-estar com toda a atenção necessária.",
-    features: [
-      "Auxílio com medicamentos",
-      "Monitoramento diário de bem-estar",
-      "Avaliação periódica",
-      "Relatórios detalhados para a família"
-    ],
-    image: enfermagemImage
-  },
-  {
-    icon: UserCheck,
-    title: "Cuidador para Adultos",
-    subtitle: "Apoio às limitações físicas",
-    description: "Assistência especializada para adultos com limitações físicas ou cognitivas temporárias ou permanentes. Auxiliamos na mobilidade, higiene pessoal, alimentação e atividades diárias, sempre respeitando a individualidade.",
-    features: [
-      "Auxílio à mobilidade",
-      "Higiene e cuidados pessoais",
-      "Acompanhamento de rotina",
-      "Estímulo à independência"
-    ],
-    image: acompanhamentoImage
-  },
-  {
-    icon: Plane,
-    title: "Acompanhamento em Viagem",
-    subtitle: "Cuidado onde a família estiver",
-    description: "Seu familiar pode viajar com segurança e tranquilidade. Oferecemos cuidadores para acompanhar viagens em família, garantindo todo o suporte necessário durante o deslocamento e a estadia.",
-    features: [
-      "Viagens nacionais com a família",
-      "Cuidados contínuos durante a viagem",
-      "Auxílio com medicamentos e rotina",
-      "Segurança e companhia em todos os momentos"
-    ],
-    image: heroImage
-  },
-];
+const hubImages = [heroImage, enfermagemImage, acompanhamentoImage];
+
 
 // Animation variants with proper typing
 const easeOut: Easing = [0.16, 1, 0.3, 1];
@@ -261,72 +210,64 @@ const Servicos = () => {
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={staggerContainer}
-              className="grid md:grid-cols-2 gap-8"
+              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
-              {services.map((service, index) => (
+              {servicesHub.map((service, index) => (
                 <motion.article
-                  key={index}
+                  key={service.slug}
                   variants={fadeInUp}
                   whileHover={{ y: -8, transition: { duration: 0.3 } }}
                   className="group relative bg-card rounded-3xl overflow-hidden shadow-soft hover:shadow-elevated transition-shadow duration-500"
                 >
-                  {/* Image */}
-                  <div className="relative h-48 overflow-hidden">
-                    <motion.img 
-                      src={service.image} 
-                      alt={service.title}
-                      className="w-full h-full object-cover"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ duration: 0.6 }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
-                    
-                    {/* Icon floating over image */}
-                    <motion.div 
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      className="absolute bottom-4 left-8 w-16 h-16 rounded-2xl gradient-hero flex items-center justify-center shadow-lg"
-                    >
-                      <service.icon className="w-8 h-8 text-white" />
-                    </motion.div>
-                  </div>
+                  <Link
+                    to={`/servicos/${service.slug}`}
+                    className="block h-full"
+                    aria-label={`Saiba mais sobre ${service.title}`}
+                  >
+                    {/* Image */}
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        src={hubImages[index % hubImages.length]}
+                        alt={service.title}
+                        loading="lazy"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
 
-                  {/* Content */}
-                  <div className="relative p-8 pt-4">
-                    {/* Background decoration */}
-                    <div className="absolute top-0 right-0 w-40 h-40 gradient-cta opacity-5 rounded-full blur-3xl group-hover:opacity-10 transition-opacity duration-500" />
-
-                    <div className="relative">
-                      <p className="text-secondary text-sm font-medium mb-1">{service.subtitle}</p>
-                      <h3 className="font-display text-2xl font-bold text-foreground mb-3">
-                        {service.title}
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed mb-6">
-                        {service.description}
-                      </p>
-
-                      {/* Features */}
-                      <ul className="space-y-2">
-                        {service.features.map((feature, idx) => (
-                          <motion.li 
-                            key={idx} 
-                            initial={{ opacity: 0, x: -10 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ delay: idx * 0.1 }}
-                            viewport={{ once: true }}
-                            className="flex items-center gap-3 text-sm text-foreground"
-                          >
-                            <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0" />
-                            {feature}
-                          </motion.li>
-                        ))}
-                      </ul>
+                      {/* Icon floating over image */}
+                      <div className="absolute bottom-4 left-8 w-16 h-16 rounded-2xl gradient-hero flex items-center justify-center shadow-lg">
+                        <service.icon className="w-8 h-8 text-white" />
+                      </div>
                     </div>
-                  </div>
+
+                    {/* Content */}
+                    <div className="relative p-8 pt-4">
+                      <div className="absolute top-0 right-0 w-40 h-40 gradient-cta opacity-5 rounded-full blur-3xl group-hover:opacity-10 transition-opacity duration-500" />
+
+                      <div className="relative">
+                        <p className="text-secondary text-sm font-medium mb-1">
+                          {service.categoryLabel}
+                        </p>
+                        <h3 className="font-display text-2xl font-bold text-foreground mb-3 group-hover:text-secondary transition-colors">
+                          {service.title}
+                        </h3>
+                        <p className="text-muted-foreground leading-relaxed mb-6 line-clamp-3">
+                          {service.hero}
+                        </p>
+
+                        <span className="inline-flex items-center gap-2 text-secondary font-semibold text-sm group-hover:gap-3 transition-all">
+                          Ver página completa
+                          <ArrowRight className="w-4 h-4" />
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
                 </motion.article>
               ))}
             </motion.div>
           </div>
         </section>
+
 
         {/* CTA Section */}
         <section className="py-20 lg:py-28 bg-muted relative overflow-hidden">
