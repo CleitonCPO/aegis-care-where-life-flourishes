@@ -12,6 +12,7 @@ const Blog = lazy(() => import("./pages/Blog"));
 const BlogArticle = lazy(() => import("./pages/BlogArticle"));
 const QuemSomos = lazy(() => import("./pages/QuemSomos"));
 const Servicos = lazy(() => import("./pages/Servicos"));
+const ServicoDetalhe = lazy(() => import("./pages/ServicoDetalhe"));
 const Fundador = lazy(() => import("./pages/Fundador"));
 const AegisEcosystem = lazy(() => import("./pages/AegisEcosystem"));
 const PoliticaPrivacidade = lazy(() => import("./pages/PoliticaPrivacidade"));
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/quem-somos" element={<QuemSomos />} />
               <Route path="/servicos" element={<Servicos />} />
+              <Route path="/servicos/:slug" element={<ServicoDetalhe />} />
               <Route path="/fundador" element={<Fundador />} />
               <Route path="/aegis-ecosystem" element={<AegisEcosystem />} />
               <Route path="/academy-aegis-care" element={<AegisEcosystem />} />
