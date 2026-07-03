@@ -345,7 +345,19 @@
   100% { stroke-dashoffset: -260; opacity: 0; }
 }
 
+@keyframes flashDown {
+  0%, 100% { transform: translate(-50%, -100%); opacity: 0; }
+  15% { opacity: 1; }
+  50% { transform: translate(-50%, 400%); opacity: 0; }
+}
+@keyframes flashUp {
+  0%, 100% { transform: translate(-50%, 100%); opacity: 0; }
+  15% { opacity: 1; }
+  50% { transform: translate(-50%, -400%); opacity: 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .gold-flash { animation: none; opacity: 0; }
 }
+
 
