@@ -138,10 +138,10 @@ const AegisEcosystem = () => {
                   <img
                     src={aegisAcademyLogo.url}
                     alt="Aegis Academy"
-                    width={260}
-                    height={96}
+                    width={220}
+                    height={72}
                     loading="lazy"
-                    className="max-h-[88px] w-full object-contain"
+                    className="max-h-[72px] max-w-[220px] w-auto h-auto object-contain"
                   />
                 </div>
               </div>
@@ -149,7 +149,8 @@ const AegisEcosystem = () => {
                 Educação continuada em saúde que conecta{" "}
                 <strong className="text-white">conhecimento à prática.</strong>
               </p>
-              <a href="https://aegis-care-academy-forge.lovable.app/#top" target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <a href="https://academy.aegiscare.com.br/" target="_blank" rel="noopener noreferrer" className="mt-auto">
+
                 <Button variant="outline" className="border-[#d4af6a] text-[#e8c97a] hover:bg-[#d4af6a] hover:text-[hsl(var(--navy-deep))] gap-2">
                   Conhecer a Academy <ExternalLink className="w-4 h-4" />
                 </Button>
@@ -163,13 +164,14 @@ const AegisEcosystem = () => {
                   <img
                     src={aegisCareLogo}
                     alt="Aegis Care"
-                    width={260}
-                    height={104}
+                    width={220}
+                    height={72}
                     loading="lazy"
-                    className="max-h-[88px] w-full object-contain"
+                    className="max-h-[72px] max-w-[220px] w-auto h-auto object-contain"
                   />
                 </div>
               </div>
+
               <p className="text-white/80 text-lg leading-relaxed mb-8">
                 Cuidado domiciliar humanizado e de excelência que{" "}
                 <strong className="text-white">transforma experiências e gera bem-estar.</strong>
@@ -201,7 +203,7 @@ const AegisEcosystem = () => {
               <p className="text-[0.7rem] tracking-[0.3em] uppercase text-white/70 md:text-right">
                 Conheça mais sobre o Aegis Ecosystem
               </p>
-              <a href="https://aegis-care-academy-forge.lovable.app/#top" target="_blank" rel="noopener noreferrer">
+              <a href="https://academy.aegiscare.com.br/" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-[#d4af6a] text-[hsl(var(--navy-deep))] hover:bg-[#e8c97a] gap-2">
                   Acessar Academy <ExternalLink className="w-4 h-4" />
                 </Button>
