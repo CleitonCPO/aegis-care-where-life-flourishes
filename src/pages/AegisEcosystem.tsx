@@ -164,11 +164,12 @@ const AegisEcosystem = () => {
                   <img
                     src={aegisCareLogo}
                     alt="Aegis Care"
-                    width={220}
-                    height={72}
+                    width={260}
+                    height={88}
                     loading="lazy"
-                    className="max-h-[72px] max-w-[220px] w-auto h-auto object-contain"
+                    className="h-[88px] w-auto max-w-[260px] object-contain scale-[1.35] origin-center"
                   />
+
                 </div>
               </div>
 
