@@ -19,6 +19,7 @@ const Header = memo(() => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const { open: openWhatsAppForm } = useWhatsAppForm();
 
   useEffect(() => {
     let ticking = false;
