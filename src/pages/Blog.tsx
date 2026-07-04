@@ -4,8 +4,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { blogArticles, getAllCategories } from "@/data/blogArticles";
 import { Helmet } from "react-helmet-async";
+import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
 
 const Blog = () => {
+  const { open: openWhatsAppForm } = useWhatsAppForm();
   const categories = getAllCategories();
 
   // Schema.org Blog structured data with BreadcrumbList
@@ -212,15 +214,14 @@ const Blog = () => {
               <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
                 Nossa equipe está pronta para oferecer assistência domiciliar personalizada e um cuidado humanizado para seu ente querido.
               </p>
-              <a
-                href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={openWhatsAppForm}
                 className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-medium hover:shadow-elevated transition-all"
               >
                 Fale Conosco pelo WhatsApp
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </button>
             </div>
           </section>
         </main>

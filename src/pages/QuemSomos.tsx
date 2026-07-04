@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 import aboutImage from "@/assets/about-aegis-premium.webp";
 import cleitonPhoto from "@/assets/cleiton-oliveira-optimized.webp";
+import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
 
 const pillars = [
   {
@@ -32,6 +33,7 @@ const standards = [
 ];
 
 const QuemSomos = () => {
+  const { open: openWhatsAppForm } = useWhatsAppForm();
   return (
     <>
       <Helmet>
@@ -197,15 +199,14 @@ const QuemSomos = () => {
               <p className="text-primary-foreground/75 leading-[1.85] mb-10">
                 Atendemos um número restrito de famílias por vez. Conversamos pessoalmente antes de qualquer proposta.
               </p>
-              <a
-                href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={openWhatsAppForm}
                 className="inline-flex items-center gap-3 px-10 py-4 bg-[hsl(var(--turquoise))] text-[hsl(var(--navy-deep))] text-xs tracking-[0.3em] uppercase font-semibold rounded-sm hover:bg-[hsl(var(--turquoise))]/90 transition-colors"
               >
                 Conversar com a Aegis
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </button>
             </div>
           </section>
         </main>

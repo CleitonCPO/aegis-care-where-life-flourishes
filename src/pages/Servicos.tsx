@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { services as servicesHub } from "@/data/servicesData";
+import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
 
 // Images
 import heroImage from "@/assets/servicos/cuidado-domiciliar-hero.jpg";
@@ -50,6 +51,7 @@ const scaleIn: Variants = {
 };
 
 const Servicos = () => {
+  const { open: openWhatsAppForm } = useWhatsAppForm();
   return (
     <>
       <Helmet>
@@ -116,12 +118,15 @@ const Servicos = () => {
                 variants={fadeInUp}
                 className="flex flex-col sm:flex-row gap-4 justify-center"
               >
-                <a href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-                  <Button variant="cta" size="xl" className="gap-2 w-full sm:w-auto">
-                    <Phone className="w-5 h-5" />
-                    Solicitar Orçamento
-                  </Button>
-                </a>
+                <Button
+                  variant="cta"
+                  size="xl"
+                  className="gap-2 w-full sm:w-auto"
+                  onClick={openWhatsAppForm}
+                >
+                  <Phone className="w-5 h-5" />
+                  Solicitar Orçamento
+                </Button>
                 <Link to="/quem-somos">
                   <Button 
                     variant="outline" 
@@ -324,12 +329,15 @@ const Servicos = () => {
                 variants={fadeInUp}
                 className="flex flex-col sm:flex-row gap-4 justify-center"
               >
-                <a href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-                  <Button variant="cta" size="xl" className="gap-2 w-full sm:w-auto">
-                    <Phone className="w-5 h-5" />
-                    Fale com Nossa Equipe
-                  </Button>
-                </a>
+                <Button
+                  variant="cta"
+                  size="xl"
+                  className="gap-2 w-full sm:w-auto"
+                  onClick={openWhatsAppForm}
+                >
+                  <Phone className="w-5 h-5" />
+                  Fale com Nossa Equipe
+                </Button>
               </motion.div>
 
               <motion.div 

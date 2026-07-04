@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import cleitonPhoto from "@/assets/cleiton-oliveira-optimized.webp";
-import { trackWhatsAppClick } from "@/lib/gtag";
+import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
 
 const trajetoria = [
   {
@@ -46,6 +46,7 @@ const beliefs = [
 ];
 
 const Fundador = () => {
+  const { open: openWhatsAppForm } = useWhatsAppForm();
   return (
     <>
       <Helmet>
@@ -187,16 +188,14 @@ const Fundador = () => {
               <p className="text-muted-foreground leading-[1.85] mb-10">
                 Cada família é única. O primeiro passo é uma conversa, sem compromisso, para entender o contexto e o que pode fazer sentido.
               </p>
-              <a
-                href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={trackWhatsAppClick}
+              <button
+                type="button"
+                onClick={openWhatsAppForm}
                 className="inline-flex items-center gap-3 px-10 py-4 bg-[hsl(var(--navy-deep))] text-primary-foreground text-xs tracking-[0.3em] uppercase font-semibold rounded-sm hover:bg-[hsl(var(--teal-deep))] transition-colors"
               >
                 Falar com Cleiton
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </button>
             </div>
           </section>
         </main>
