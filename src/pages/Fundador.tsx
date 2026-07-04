@@ -46,6 +46,7 @@ const beliefs = [
 ];
 
 const Fundador = () => {
+  const { open: openWhatsAppForm } = useWhatsAppForm();
   return (
     <>
       <Helmet>
