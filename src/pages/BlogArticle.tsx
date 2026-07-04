@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { getArticleBySlug, getRelatedArticles, blogArticles, type ArticleReference } from "@/data/blogArticles";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
+import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
 
 // Default references for articles without specific ones
 const defaultReferences: ArticleReference[] = [
