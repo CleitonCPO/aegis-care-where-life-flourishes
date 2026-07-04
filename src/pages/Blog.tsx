@@ -4,8 +4,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { blogArticles, getAllCategories } from "@/data/blogArticles";
 import { Helmet } from "react-helmet-async";
+import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
 
 const Blog = () => {
+  const { open: openWhatsAppForm } = useWhatsAppForm();
   const categories = getAllCategories();
 
   // Schema.org Blog structured data with BreadcrumbList
