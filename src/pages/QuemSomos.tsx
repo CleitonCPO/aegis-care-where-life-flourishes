@@ -33,6 +33,7 @@ const standards = [
 ];
 
 const QuemSomos = () => {
+  const { open: openWhatsAppForm } = useWhatsAppForm();
   return (
     <>
       <Helmet>
