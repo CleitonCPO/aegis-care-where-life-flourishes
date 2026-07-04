@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { services as servicesHub } from "@/data/servicesData";
+import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
 
 // Images
 import heroImage from "@/assets/servicos/cuidado-domiciliar-hero.jpg";
