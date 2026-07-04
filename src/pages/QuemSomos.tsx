@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 import aboutImage from "@/assets/about-aegis-premium.webp";
 import cleitonPhoto from "@/assets/cleiton-oliveira-optimized.webp";
+import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
 
 const pillars = [
   {
