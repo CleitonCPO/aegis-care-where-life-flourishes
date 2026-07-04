@@ -139,12 +139,15 @@ const ServicoDetalhe = () => {
                 </p>
 
                 <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                    <Button variant="cta" size="xl" className="gap-2 w-full sm:w-auto">
-                      <Phone className="w-5 h-5" />
-                      Falar com a Aegis Care
-                    </Button>
-                  </a>
+                  <Button
+                    variant="cta"
+                    size="xl"
+                    className="gap-2 w-full sm:w-auto"
+                    onClick={openWhatsAppForm}
+                  >
+                    <Phone className="w-5 h-5" />
+                    Falar com a Aegis Care
+                  </Button>
                   <Link to="/servicos">
                     <Button variant="outline" size="xl" className="gap-2 w-full sm:w-auto">
                       Ver todos os serviços
@@ -284,12 +287,15 @@ const ServicoDetalhe = () => {
                     Fale com nossa equipe pelo WhatsApp. Fazemos uma avaliação
                     inicial gratuita e sem compromisso.
                   </p>
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                    <Button variant="cta" size="lg" className="w-full gap-2">
-                      <Phone className="w-4 h-4" />
-                      Falar no WhatsApp
-                    </Button>
-                  </a>
+                  <Button
+                    variant="cta"
+                    size="lg"
+                    className="w-full gap-2"
+                    onClick={openWhatsAppForm}
+                  >
+                    <Phone className="w-4 h-4" />
+                    Falar no WhatsApp
+                  </Button>
                 </div>
 
                 {related.length > 0 && (
