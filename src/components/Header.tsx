@@ -105,16 +105,15 @@ const Header = memo(() => {
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
-          <a
-            href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Button
+            variant="cta"
+            size="lg"
+            className="gap-2"
+            onClick={openWhatsAppForm}
           >
-            <Button variant="cta" size="lg" className="gap-2">
-              <Phone className="w-4 h-4" />
-              Fale Conosco
-            </Button>
-          </a>
+            <Phone className="w-4 h-4" />
+            Fale Conosco
+          </Button>
           <a
             href="https://app.aegiscare.com.br"
             target="_blank"
@@ -165,16 +164,18 @@ const Header = memo(() => {
               )
             ))}
             <div className="border-t border-border mt-2 pt-4 flex flex-col gap-3">
-              <a
-                href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Button
+                variant="cta"
+                size="lg"
+                className="w-full gap-2 min-h-[52px] text-base touch-manipulation"
+                onClick={() => {
+                  closeMobileMenu();
+                  openWhatsAppForm();
+                }}
               >
-                <Button variant="cta" size="lg" className="w-full gap-2 min-h-[52px] text-base touch-manipulation">
-                  <Phone className="w-5 h-5" />
-                  Fale Conosco
-                </Button>
-              </a>
+                <Phone className="w-5 h-5" />
+                Fale Conosco
+              </Button>
               <a
                 href="https://app.aegiscare.com.br"
                 target="_blank"
