@@ -30,6 +30,7 @@ const defaultReferences: ArticleReference[] = [
 
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { open: openWhatsAppForm } = useWhatsAppForm();
   const article = slug ? getArticleBySlug(slug) : undefined;
   const relatedArticles = slug ? getRelatedArticles(slug, 2) : [];
   const references = article?.references ?? defaultReferences;
