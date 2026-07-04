@@ -69,15 +69,14 @@ const HeroSection = memo(() => {
                 Conheça a Aegis Care
               </Button>
             </a>
-            <a
-              href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20conhecer%20a%20assist%C3%AAncia%20domiciliar%20para%20meu%20familiar.&type=phone_number&app_absent=0"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Button
+              variant="heroOutline"
+              size="xl"
+              className="w-full sm:w-auto"
+              onClick={openWhatsAppForm}
             >
-              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
-                Falar com a equipe
-              </Button>
-            </a>
+              Falar com a equipe
+            </Button>
           </div>
         </div>
       </div>
