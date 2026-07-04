@@ -1,12 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { memo, useEffect, useState } from "react";
+import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
 import heroMobile from "@/assets/hero-aegis-premium-480.webp";
 import heroTablet from "@/assets/hero-aegis-premium-800.webp";
 import heroDesktop from "@/assets/hero-aegis-premium-1600.webp";
 
 const HeroSection = memo(() => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const { open: openWhatsAppForm } = useWhatsAppForm();
 
   useEffect(() => {
     const t = setTimeout(() => setIsLoaded(true), 50);
