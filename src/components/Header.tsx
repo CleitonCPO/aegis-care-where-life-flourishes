@@ -164,6 +164,7 @@ const Header = memo(() => {
               )
             ))}
             <div className="border-t border-border mt-2 pt-4 flex flex-col gap-3">
+
               <Button
                 variant="cta"
                 size="lg"
