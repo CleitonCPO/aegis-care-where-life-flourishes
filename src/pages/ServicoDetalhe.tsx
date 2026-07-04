@@ -14,9 +14,7 @@ import {
   getServiceBySlug,
   getRelatedServices,
 } from "@/data/servicesData";
-
-const WHATSAPP_URL =
-  "https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0";
+import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
 
 const BASE_URL = "https://www.aegiscare.com.br";
 
