@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import cleitonPhoto from "@/assets/cleiton-oliveira-optimized.webp";
-import { trackWhatsAppClick } from "@/lib/gtag";
+import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
 
 const trajetoria = [
   {
