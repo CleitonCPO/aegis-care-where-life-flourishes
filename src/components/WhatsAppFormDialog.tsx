@@ -103,7 +103,7 @@ const WhatsAppFormDialog = ({ open, onOpenChange }: Props) => {
       setError(parsed.error.issues[0].message);
       return;
     }
-    const message = buildWhatsAppMessage(parsed.data);
+    const message = buildWhatsAppMessage(parsed.data as WhatsAppAnswers);
     const url = buildWhatsAppUrl(message);
     trackWhatsAppClick();
     window.open(url, "_blank", "noopener,noreferrer");
