@@ -20,6 +20,7 @@ const BASE_URL = "https://www.aegiscare.com.br";
 
 const ServicoDetalhe = () => {
   const { slug } = useParams();
+  const { open: openWhatsAppForm } = useWhatsAppForm();
   const service = slug ? getServiceBySlug(slug) : undefined;
 
   if (!service) {
