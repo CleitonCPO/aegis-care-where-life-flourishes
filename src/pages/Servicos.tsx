@@ -51,6 +51,7 @@ const scaleIn: Variants = {
 };
 
 const Servicos = () => {
+  const { open: openWhatsAppForm } = useWhatsAppForm();
   return (
     <>
       <Helmet>
