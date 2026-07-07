@@ -300,10 +300,22 @@
     filter: saturate(1.05);
   }
 
+  /* ===== Animated logo — Banco Inter–style letter entrance ===== */
+  @keyframes logoLetterIn {
+    0%   { opacity: 0; transform: translateY(110%); }
+    60%  { opacity: 1; }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes logoShieldIn {
+    0%   { opacity: 0; transform: scale(0.7) rotate(-8deg); filter: blur(4px); }
+    100% { opacity: 1; transform: scale(1) rotate(0); filter: blur(0); }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .ken-burns, .float-soft { animation: none !important; }
   }
 }
+
 
 /* Legacy classes kept for backward compatibility (now quiet) */
 .btn-gold-premium { position: relative; }

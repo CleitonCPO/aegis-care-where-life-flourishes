@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Phone, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
-import logo from "@/assets/logo-aegis-care-optimized.webp";
+import AnimatedLogo from "./AnimatedLogo";
 
 const navLinks = [
   { href: "/quem-somos", label: "Quem Somos", isRoute: true },
@@ -68,17 +68,10 @@ const Header = memo(() => {
       }`}
     >
       <div className="container-editorial flex items-center justify-between">
-        <Link to="/" className="flex items-center">
-          <img
-            src={logo}
-            alt="Aegis Care - Cuidado Domiciliar"
-            className="h-12 md:h-14 w-auto"
-            width={120}
-            height={56}
-            loading="eager"
-            fetchPriority="high"
-          />
+        <Link to="/" className="flex items-center" aria-label="Aegis Care - Início">
+          <AnimatedLogo isScrolled={isScrolled} />
         </Link>
+
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-10">
