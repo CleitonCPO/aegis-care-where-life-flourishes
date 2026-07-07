@@ -68,17 +68,10 @@ const Header = memo(() => {
       }`}
     >
       <div className="container-editorial flex items-center justify-between">
-        <Link to="/" className="flex items-center">
-          <img
-            src={logo}
-            alt="Aegis Care - Cuidado Domiciliar"
-            className="h-12 md:h-14 w-auto"
-            width={120}
-            height={56}
-            loading="eager"
-            fetchPriority="high"
-          />
+        <Link to="/" className="flex items-center" aria-label="Aegis Care - Início">
+          <AnimatedLogo isScrolled={isScrolled} />
         </Link>
+
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-10">
