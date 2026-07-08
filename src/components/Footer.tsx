@@ -1,7 +1,6 @@
 import { Phone, Mail, Instagram, Linkedin, Facebook, Youtube, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import logoAsset from "@/assets/logotipo-aegis-care.svg.asset.json";
-const logo = logoAsset.url;
+import AegisLogo from "@/components/AegisLogo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,13 +10,8 @@ const Footer = () => {
       <div className="container-editorial py-20 md:py-28">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-5">
-            <img
-              src={logo}
-              alt="Aegis Care"
-              className="h-12 w-auto mb-8 brightness-0 invert"
-              width={140}
-              height={56}
-              loading="lazy"
+            <AegisLogo
+              className="h-12 w-auto mb-8"
             />
             <p className="leading-[1.85] mb-10 max-w-md text-white/70 prose-justified">
               Assistência domiciliar privada conduzida com coordenação clínica de enfermagem,
