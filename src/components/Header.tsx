@@ -63,7 +63,7 @@ const Header = memo(() => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border py-3"
+          ? "bg-[hsl(var(--teal-deep))]/95 backdrop-blur-md border-b border-white/10 py-3 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.35)]"
           : "bg-transparent py-5"
       }`}
     >
@@ -80,7 +80,7 @@ const Header = memo(() => {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 ${isScrolled ? "text-foreground hover:text-[hsl(var(--teal-deep))]" : "text-white/90 hover:text-white"}`}
+                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 ${isScrolled ? "text-white/90 hover:text-[hsl(var(--gold))]" : "text-white/90 hover:text-white"}`}
               >
                 {link.label}
               </Link>
@@ -89,7 +89,7 @@ const Header = memo(() => {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleAnchorClick(e, link.href)}
-                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 cursor-pointer ${isScrolled ? "text-foreground hover:text-[hsl(var(--teal-deep))]" : "text-white/90 hover:text-white"}`}
+                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 cursor-pointer ${isScrolled ? "text-white/90 hover:text-[hsl(var(--gold))]" : "text-white/90 hover:text-white"}`}
               >
                 {link.label}
               </a>
@@ -101,7 +101,11 @@ const Header = memo(() => {
           <Button
             variant="cta"
             size="lg"
-            className="gap-2"
+            className={`gap-2 transition-colors duration-500 ${
+              isScrolled
+                ? "!bg-gradient-to-r !from-[hsl(var(--gold-deep))] !to-[hsl(var(--gold))] !text-[hsl(var(--navy-deep))] hover:!brightness-110 border-0 shadow-[0_6px_20px_-6px_hsl(var(--gold)/0.55)]"
+                : ""
+            }`}
             onClick={openWhatsAppForm}
           >
             <Phone className="w-4 h-4" />
@@ -112,7 +116,15 @@ const Header = memo(() => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="outline" size="lg" className="gap-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Button
+              variant="outline"
+              size="lg"
+              className={`gap-2 transition-colors duration-500 ${
+                isScrolled
+                  ? "border-[hsl(var(--gold))] text-[hsl(var(--gold))] bg-transparent hover:bg-[hsl(var(--gold))] hover:text-[hsl(var(--navy-deep))]"
+                  : "border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              }`}
+            >
               <ClipboardList className="w-4 h-4" />
               Prontuário
             </Button>
@@ -121,7 +133,7 @@ const Header = memo(() => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center text-foreground touch-manipulation"
+          className={`lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center touch-manipulation transition-colors duration-500 ${isScrolled ? "text-white" : "text-white"}`}
           onClick={toggleMobileMenu}
           aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={isMobileMenuOpen}
