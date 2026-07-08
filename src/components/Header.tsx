@@ -133,7 +133,7 @@ const Header = memo(() => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center text-foreground touch-manipulation"
+          className={`lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center touch-manipulation transition-colors duration-500 ${isScrolled ? "text-white" : "text-white"}`}
           onClick={toggleMobileMenu}
           aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={isMobileMenuOpen}
