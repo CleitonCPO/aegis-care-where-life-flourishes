@@ -80,7 +80,7 @@ const Header = memo(() => {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 ${isScrolled ? "text-foreground hover:text-[hsl(var(--teal-deep))]" : "text-white/90 hover:text-white"}`}
+                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 ${isScrolled ? "text-white/90 hover:text-[hsl(var(--gold))]" : "text-white/90 hover:text-white"}`}
               >
                 {link.label}
               </Link>
@@ -89,7 +89,7 @@ const Header = memo(() => {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleAnchorClick(e, link.href)}
-                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 cursor-pointer ${isScrolled ? "text-foreground hover:text-[hsl(var(--teal-deep))]" : "text-white/90 hover:text-white"}`}
+                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 cursor-pointer ${isScrolled ? "text-white/90 hover:text-[hsl(var(--gold))]" : "text-white/90 hover:text-white"}`}
               >
                 {link.label}
               </a>
