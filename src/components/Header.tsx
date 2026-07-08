@@ -63,7 +63,7 @@ const Header = memo(() => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-[hsl(var(--teal-deep))]/95 backdrop-blur-md border-b border-white/10 py-3 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.35)]"
+          ? "bg-[hsl(var(--navy-deep))]/95 backdrop-blur-md border-b border-white/10 py-3 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.35)]"
           : "bg-transparent py-5"
       }`}
     >
