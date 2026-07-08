@@ -101,7 +101,11 @@ const Header = memo(() => {
           <Button
             variant="cta"
             size="lg"
-            className="gap-2"
+            className={`gap-2 transition-colors duration-500 ${
+              isScrolled
+                ? "!bg-gradient-to-r !from-[hsl(var(--gold-deep))] !to-[hsl(var(--gold))] !text-[hsl(var(--navy-deep))] hover:!brightness-110 border-0 shadow-[0_6px_20px_-6px_hsl(var(--gold)/0.55)]"
+                : ""
+            }`}
             onClick={openWhatsAppForm}
           >
             <Phone className="w-4 h-4" />
@@ -112,7 +116,15 @@ const Header = memo(() => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="outline" size="lg" className="gap-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Button
+              variant="outline"
+              size="lg"
+              className={`gap-2 transition-colors duration-500 ${
+                isScrolled
+                  ? "border-[hsl(var(--gold))] text-[hsl(var(--gold))] bg-transparent hover:bg-[hsl(var(--gold))] hover:text-[hsl(var(--navy-deep))]"
+                  : "border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              }`}
+            >
               <ClipboardList className="w-4 h-4" />
               Prontuário
             </Button>
