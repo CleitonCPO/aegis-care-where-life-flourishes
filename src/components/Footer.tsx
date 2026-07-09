@@ -13,11 +13,12 @@ const Footer = () => {
             <img
               src={logo}
               alt="Aegis Care"
-              className="h-12 w-auto mb-8 brightness-0 invert"
-              width={140}
-              height={56}
+              className="w-[250px] h-[100px] object-contain mb-8 brightness-0 invert"
+              width={250}
+              height={100}
               loading="lazy"
             />
+
             <p className="leading-[1.85] mb-10 max-w-md text-white/70 prose-justified">
               Assistência domiciliar privada conduzida com coordenação clínica de enfermagem,
               presença humana e respeito profundo à história de cada família.
