@@ -61,9 +61,12 @@ const ServicoDetalhe = () => {
     return <Navigate to="/servicos" replace />;
   }
 
+  const canonical = `${BASE_URL}/servicos/${service.slug}`;
+  const related = getRelatedServices(service.related);
   const Icon = service.icon;
   const heroImage = SERVICE_IMAGES[service.slug];
   const gradient = CATEGORY_GRADIENT[service.category] ?? CATEGORY_GRADIENT.assistencial;
+
 
 
   const faqSchema = {
