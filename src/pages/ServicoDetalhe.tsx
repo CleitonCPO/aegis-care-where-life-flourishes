@@ -15,6 +15,40 @@ import {
   getRelatedServices,
 } from "@/data/servicesData";
 import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
+import svc01 from "@/assets/servicos/servico-01.jpg.asset.json";
+import svc02 from "@/assets/servicos/servico-02.jpg.asset.json";
+import svc03 from "@/assets/servicos/servico-03.jpg.asset.json";
+import svc04 from "@/assets/servicos/servico-04.jpg.asset.json";
+import svc05 from "@/assets/servicos/servico-05.jpg.asset.json";
+import svc06 from "@/assets/servicos/servico-06.jpg.asset.json";
+import svc07 from "@/assets/servicos/servico-07.jpg.asset.json";
+import svc08 from "@/assets/servicos/servico-08.jpg.asset.json";
+import svc09 from "@/assets/servicos/servico-09.jpg.asset.json";
+import svc10 from "@/assets/servicos/servico-10.jpg.asset.json";
+
+const SERVICE_IMAGES: Record<string, string> = {
+  "cuidador-de-idosos-em-sao-paulo": svc01.url,
+  "cuidador-de-adultos-com-limitacoes": svc02.url,
+  "cuidador-pos-avc": svc03.url,
+  "cuidados-para-alzheimer-em-casa": svc04.url,
+  "cuidados-para-parkinson": svc05.url,
+  "cuidados-para-demencia": svc06.url,
+  "acompanhamento-em-viagens": svc07.url,
+  "acompanhamento-em-consultas": svc08.url,
+  "cuidado-domiciliar": svc09.url,
+  "acompanhamento-de-saude": svc10.url,
+};
+
+// Sophisticated brand gradient per category, blending image with site palette
+const CATEGORY_GRADIENT: Record<string, string> = {
+  assistencial:
+    "linear-gradient(115deg, hsl(var(--navy-deep) / 0.92) 0%, hsl(var(--teal-deep) / 0.78) 55%, hsl(var(--turquoise) / 0.18) 100%)",
+  clinico:
+    "linear-gradient(115deg, hsl(var(--navy-deep) / 0.94) 0%, hsl(var(--navy) / 0.82) 55%, hsl(var(--teal-deep) / 0.35) 100%)",
+  rotina:
+    "linear-gradient(115deg, hsl(var(--navy-deep) / 0.90) 0%, hsl(var(--teal-deep) / 0.72) 50%, hsl(var(--gold) / 0.30) 100%)",
+};
+
 
 const BASE_URL = "https://www.aegiscare.com.br";
 
