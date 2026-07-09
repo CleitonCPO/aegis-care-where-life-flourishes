@@ -159,9 +159,8 @@ const Header = memo(() => {
             <div className="border-t border-border mt-2 pt-4 flex flex-col gap-3">
 
               <Button
-                variant="cta"
                 size="lg"
-                className="w-full gap-2 min-h-[52px] text-base touch-manipulation"
+                className="w-full gap-2 min-h-[52px] text-base touch-manipulation bg-[hsl(var(--gold))] text-[hsl(var(--navy-deep))] hover:bg-[hsl(var(--gold-deep))] hover:text-white transition-colors duration-500 border border-[hsl(var(--gold))]"
                 onClick={() => {
                   closeMobileMenu();
                   openWhatsAppForm();
@@ -175,11 +174,12 @@ const Header = memo(() => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="outline" size="lg" className="w-full gap-2 min-h-[52px] text-base border-primary text-primary hover:bg-primary hover:text-primary-foreground touch-manipulation">
+                <Button size="lg" className="w-full gap-2 min-h-[52px] text-base touch-manipulation bg-transparent text-[hsl(var(--gold))] border border-[hsl(var(--gold))] hover:bg-[hsl(var(--gold))] hover:text-[hsl(var(--navy-deep))] transition-colors duration-500">
                   <ClipboardList className="w-5 h-5" />
                   Prontuário
                 </Button>
               </a>
+
             </div>
           </nav>
         </div>
