@@ -61,10 +61,10 @@ const Header = memo(() => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-[hsl(var(--navy-deep))] ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border py-3"
-          : "bg-transparent py-5"
+          ? "shadow-soft border-b border-white/10 py-3"
+          : "py-5"
       }`}
     >
       <div className="container-editorial flex items-center justify-between">
@@ -80,7 +80,7 @@ const Header = memo(() => {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 ${isScrolled ? "text-foreground hover:text-[hsl(var(--teal-deep))]" : "text-white/90 hover:text-white"}`}
+                className="text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 text-white/90 hover:text-[hsl(var(--gold))]"
               >
                 {link.label}
               </Link>
@@ -89,7 +89,7 @@ const Header = memo(() => {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleAnchorClick(e, link.href)}
-                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 cursor-pointer ${isScrolled ? "text-foreground hover:text-[hsl(var(--teal-deep))]" : "text-white/90 hover:text-white"}`}
+                className="text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 cursor-pointer text-white/90 hover:text-[hsl(var(--gold))]"
               >
                 {link.label}
               </a>
@@ -99,9 +99,8 @@ const Header = memo(() => {
 
         <div className="hidden lg:flex items-center gap-3">
           <Button
-            variant="cta"
             size="lg"
-            className="gap-2"
+            className="gap-2 bg-[hsl(var(--gold))] text-[hsl(var(--navy-deep))] hover:bg-[hsl(var(--gold-deep))] hover:text-white transition-colors duration-500 border border-[hsl(var(--gold))]"
             onClick={openWhatsAppForm}
           >
             <Phone className="w-4 h-4" />
@@ -112,7 +111,7 @@ const Header = memo(() => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="outline" size="lg" className="gap-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Button size="lg" className="gap-2 bg-transparent text-[hsl(var(--gold))] border border-[hsl(var(--gold))] hover:bg-[hsl(var(--gold))] hover:text-[hsl(var(--navy-deep))] transition-colors duration-500">
               <ClipboardList className="w-4 h-4" />
               Prontuário
             </Button>
@@ -121,7 +120,7 @@ const Header = memo(() => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center text-foreground touch-manipulation"
+          className="lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center text-white touch-manipulation"
           onClick={toggleMobileMenu}
           aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={isMobileMenuOpen}
@@ -130,6 +129,7 @@ const Header = memo(() => {
           {isMobileMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
         </button>
       </div>
+
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
