@@ -142,20 +142,49 @@ const ServicoDetalhe = () => {
 
         <main>
           {/* Hero */}
-          <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-b from-[hsl(var(--cream))] to-background">
-            <div className="container-editorial">
+          <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+            {/* Background image */}
+            {heroImage && (
+              <img
+                src={heroImage}
+                alt=""
+                aria-hidden="true"
+                width={1600}
+                height={1100}
+                loading="eager"
+                fetchPriority="high"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            )}
+            {/* Brand gradient overlay */}
+            <div
+              aria-hidden="true"
+              className="absolute inset-0"
+              style={{ background: gradient }}
+            />
+            {/* Subtle bottom fade into page background */}
+            <div
+              aria-hidden="true"
+              className="absolute inset-x-0 bottom-0 h-32"
+              style={{
+                background:
+                  "linear-gradient(180deg, transparent 0%, hsl(var(--background)) 100%)",
+              }}
+            />
+
+            <div className="container-editorial relative z-10">
               {/* Breadcrumb */}
-              <nav aria-label="breadcrumb" className="mb-8 text-sm text-muted-foreground">
+              <nav aria-label="breadcrumb" className="mb-8 text-sm text-white/70">
                 <ol className="flex items-center gap-2 flex-wrap">
                   <li>
-                    <Link to="/" className="hover:text-foreground">Home</Link>
+                    <Link to="/" className="hover:text-white">Home</Link>
                   </li>
                   <ChevronRight className="w-3 h-3" />
                   <li>
-                    <Link to="/servicos" className="hover:text-foreground">Serviços</Link>
+                    <Link to="/servicos" className="hover:text-white">Serviços</Link>
                   </li>
                   <ChevronRight className="w-3 h-3" />
-                  <li className="text-foreground" aria-current="page">
+                  <li className="text-white" aria-current="page">
                     {service.title}
                   </li>
                 </ol>
@@ -163,31 +192,36 @@ const ServicoDetalhe = () => {
 
               <div className="max-w-3xl">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-[hsl(var(--teal-deep))] flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-white" aria-hidden="true" />
+                  <div className="w-12 h-12 rounded-xl bg-[hsl(var(--gold))] flex items-center justify-center shadow-soft">
+                    <Icon className="w-6 h-6 text-[hsl(var(--navy-deep))]" aria-hidden="true" />
                   </div>
-                  <span className="eyebrow">{service.categoryLabel}</span>
+                  <span className="eyebrow text-[hsl(var(--turquoise))]">
+                    {service.categoryLabel}
+                  </span>
                 </div>
 
-                <h1 className="font-display text-3xl md:text-5xl leading-[1.1] text-foreground mb-6">
+                <h1 className="font-display text-3xl md:text-5xl leading-[1.1] text-white mb-6">
                   {service.h1}
                 </h1>
-                <p className="text-lg md:text-xl text-muted-foreground leading-[1.7] max-w-2xl">
+                <p className="text-lg md:text-xl text-white/85 leading-[1.7] max-w-2xl">
                   {service.hero}
                 </p>
 
                 <div className="mt-10 flex flex-col sm:flex-row gap-4">
                   <Button
-                    variant="cta"
                     size="xl"
-                    className="gap-2 w-full sm:w-auto"
+                    className="gap-2 w-full sm:w-auto bg-[hsl(var(--gold))] text-[hsl(var(--navy-deep))] hover:bg-[hsl(var(--gold-deep))] hover:text-white transition-colors duration-500"
                     onClick={openWhatsAppForm}
                   >
                     <Phone className="w-5 h-5" />
                     Falar com a Aegis Care
                   </Button>
                   <Link to="/servicos">
-                    <Button variant="outline" size="xl" className="gap-2 w-full sm:w-auto">
+                    <Button
+                      variant="outline"
+                      size="xl"
+                      className="gap-2 w-full sm:w-auto bg-transparent border-white/60 text-white hover:bg-white hover:text-[hsl(var(--navy-deep))]"
+                    >
                       Ver todos os serviços
                       <ArrowRight className="w-5 h-5" />
                     </Button>
@@ -196,6 +230,7 @@ const ServicoDetalhe = () => {
               </div>
             </div>
           </section>
+
 
           {/* O que é */}
           <section className="py-20 md:py-28">
