@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MessageCircle } from "lucide-react";
-import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
+import { trackWhatsAppClick } from "@/lib/gtag";
 
 const ContactSection = () => {
-  const { open: openWhatsAppForm } = useWhatsAppForm();
   return (
     <section id="contato" className="py-28 md:py-40 bg-background">
       <div className="container-editorial">
@@ -48,15 +47,18 @@ const ContactSection = () => {
               </a>
             </div>
 
-            <Button
-              variant="cta"
-              size="xl"
-              className="gap-3 mt-12"
-              onClick={openWhatsAppForm}
+            <a
+              href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20gostaria%20de%20conversar%20sobre%20assist%C3%AAncia%20domiciliar%20para%20meu%20familiar.&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={trackWhatsAppClick}
+              className="inline-block mt-12"
             >
-              <MessageCircle className="w-5 h-5" />
-              Iniciar conversa
-            </Button>
+              <Button variant="cta" size="xl" className="gap-3">
+                <MessageCircle className="w-5 h-5" />
+                Iniciar conversa
+              </Button>
+            </a>
           </div>
 
           <div className="lg:col-span-5">

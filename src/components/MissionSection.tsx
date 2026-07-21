@@ -1,4 +1,4 @@
-import cuidadoImage from "@/assets/cuidado-aegis-premium.webp";
+import cuidadoImage from "@/assets/cuidado-aegis-premium.jpg";
 
 const MissionSection = () => {
   return (

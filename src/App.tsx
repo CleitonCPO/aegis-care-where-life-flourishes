@@ -6,16 +6,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { Suspense, lazy } from "react";
 import PageLoader from "./components/PageLoader";
-import { WhatsAppFormProvider } from "./context/WhatsAppFormContext";
 
 const Index = lazy(() => import("./pages/Index"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogArticle = lazy(() => import("./pages/BlogArticle"));
 const QuemSomos = lazy(() => import("./pages/QuemSomos"));
 const Servicos = lazy(() => import("./pages/Servicos"));
-const ServicoDetalhe = lazy(() => import("./pages/ServicoDetalhe"));
 const Fundador = lazy(() => import("./pages/Fundador"));
-const AegisEcosystem = lazy(() => import("./pages/AegisEcosystem"));
 const PoliticaPrivacidade = lazy(() => import("./pages/PoliticaPrivacidade"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const WhatsAppButton = lazy(() => import("./components/WhatsAppButton"));
@@ -29,26 +26,21 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <WhatsAppFormProvider>
-            <Suspense fallback={<PageLoader />}>
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/quem-somos" element={<QuemSomos />} />
-                <Route path="/servicos" element={<Servicos />} />
-                <Route path="/servicos/:slug" element={<ServicoDetalhe />} />
-                <Route path="/fundador" element={<Fundador />} />
-                <Route path="/aegis-ecosystem" element={<AegisEcosystem />} />
-                <Route path="/academy-aegis-care" element={<AegisEcosystem />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/blog/:slug" element={<BlogArticle />} />
-                <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
-            <Suspense fallback={null}>
-              <WhatsAppButton />
-            </Suspense>
-          </WhatsAppFormProvider>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/quem-somos" element={<QuemSomos />} />
+              <Route path="/servicos" element={<Servicos />} />
+              <Route path="/fundador" element={<Fundador />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogArticle />} />
+              <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
+          <Suspense fallback={null}>
+            <WhatsAppButton />
+          </Suspense>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

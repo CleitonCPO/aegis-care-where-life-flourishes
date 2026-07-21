@@ -1,14 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { memo, useEffect, useState } from "react";
-import { useWhatsAppForm } from "@/context/WhatsAppFormContext";
-import heroMobile from "@/assets/hero-aegis-premium-480.webp";
-import heroTablet from "@/assets/hero-aegis-premium-800.webp";
-import heroDesktop from "@/assets/hero-aegis-premium-1600.webp";
+import heroImage from "@/assets/hero-aegis-premium.jpg";
 
 const HeroSection = memo(() => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const { open: openWhatsAppForm } = useWhatsAppForm();
 
   useEffect(() => {
     const t = setTimeout(() => setIsLoaded(true), 50);
@@ -19,16 +15,14 @@ const HeroSection = memo(() => {
     <section className="relative min-h-[100svh] flex items-center overflow-hidden bg-[hsl(var(--navy-deep))]">
       <div className="absolute inset-0 z-0">
         <img
-          src={heroDesktop}
-          srcSet={`${heroMobile} 480w, ${heroTablet} 800w, ${heroDesktop} 1600w`}
-          sizes="100vw"
+          src={heroImage}
           alt="Cuidado domiciliar humanizado para idosos — Aegis Care"
-          className={`w-full h-full object-cover transition-[opacity] duration-[1600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${isLoaded ? "opacity-100 ken-burns" : "opacity-0"}`}
+          className={`w-full h-full object-cover transition-[transform,opacity] duration-[1600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-105"}`}
           loading="eager"
           fetchPriority="high"
           decoding="async"
-          width={1600}
-          height={900}
+          width={1920}
+          height={1280}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--navy-deep))]/95 via-[hsl(var(--navy-deep))]/70 to-[hsl(var(--navy-deep))]/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--navy-deep))]/60 via-transparent to-transparent" />
@@ -69,14 +63,15 @@ const HeroSection = memo(() => {
                 Conheça a Aegis Care
               </Button>
             </a>
-            <Button
-              variant="heroOutline"
-              size="xl"
-              className="w-full sm:w-auto"
-              onClick={openWhatsAppForm}
+            <a
+              href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20conhecer%20a%20assist%C3%AAncia%20domiciliar%20para%20meu%20familiar.&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Falar com a equipe
-            </Button>
+              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
+                Falar com a equipe
+              </Button>
+            </a>
           </div>
         </div>
       </div>

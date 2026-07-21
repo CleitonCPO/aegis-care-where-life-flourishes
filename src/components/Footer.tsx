@@ -13,12 +13,11 @@ const Footer = () => {
             <img
               src={logo}
               alt="Aegis Care"
-              className="w-[250px] h-[100px] object-contain mb-8 brightness-0 invert"
-              width={250}
-              height={100}
+              className="h-12 w-auto mb-8 brightness-0 invert"
+              width={140}
+              height={56}
               loading="lazy"
             />
-
             <p className="leading-[1.85] mb-10 max-w-md text-white/70 prose-justified">
               Assistência domiciliar privada conduzida com coordenação clínica de enfermagem,
               presença humana e respeito profundo à história de cada família.
@@ -53,7 +52,6 @@ const Footer = () => {
               <li><Link to="/servicos" className="hover:text-white transition-colors">Serviços</Link></li>
               <li><Link to="/fundador" className="hover:text-white transition-colors">Fundador</Link></li>
               <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-              <li><Link to="/academy-aegis-care" className="hover:text-white transition-colors">Academy Aegis Care</Link></li>
               <li><a href="/#contato" className="hover:text-white transition-colors">Contato</a></li>
             </ul>
           </div>
