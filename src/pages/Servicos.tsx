@@ -214,65 +214,56 @@ const Servicos = () => {
             >
               {services.map((service, index) => (
                 <motion.article
-                  key={index}
+                  key={service.slug}
                   variants={fadeInUp}
                   whileHover={{ y: -8, transition: { duration: 0.3 } }}
                   className="group relative bg-card rounded-3xl overflow-hidden shadow-soft hover:shadow-elevated transition-shadow duration-500"
                 >
-                  {/* Image */}
-                  <div className="relative h-48 overflow-hidden">
-                    <motion.img 
-                      src={service.image} 
-                      alt={service.title}
-                      className="w-full h-full object-cover"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ duration: 0.6 }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
-                    
-                    {/* Icon floating over image */}
-                    <motion.div 
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      className="absolute bottom-4 left-8 w-16 h-16 rounded-2xl gradient-hero flex items-center justify-center shadow-lg"
-                    >
-                      <service.icon className="w-8 h-8 text-white" />
-                    </motion.div>
-                  </div>
+                  <Link to={`/servicos/${service.slug}`} className="block">
+                    {/* Image */}
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        src={service.image}
+                        alt={service.imageAlt}
+                        loading="lazy"
+                        width={1280}
+                        height={854}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+                    </div>
 
-                  {/* Content */}
-                  <div className="relative p-8 pt-4">
-                    {/* Background decoration */}
-                    <div className="absolute top-0 right-0 w-40 h-40 gradient-cta opacity-5 rounded-full blur-3xl group-hover:opacity-10 transition-opacity duration-500" />
-
-                    <div className="relative">
-                      <p className="text-secondary text-sm font-medium mb-1">{service.subtitle}</p>
+                    {/* Content */}
+                    <div className="relative p-8 pt-6">
+                      <p className="text-secondary text-sm font-medium mb-1">{service.eyebrow}</p>
                       <h3 className="font-display text-2xl font-bold text-foreground mb-3">
-                        {service.title}
+                        {service.shortName}
                       </h3>
                       <p className="text-muted-foreground leading-relaxed mb-6">
-                        {service.description}
+                        {service.summary}
                       </p>
 
-                      {/* Features */}
-                      <ul className="space-y-2">
-                        {service.features.map((feature, idx) => (
-                          <motion.li 
-                            key={idx} 
-                            initial={{ opacity: 0, x: -10 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ delay: idx * 0.1 }}
-                            viewport={{ once: true }}
+                      <ul className="space-y-2 mb-6">
+                        {service.includes.slice(0, 4).map((feature) => (
+                          <li
+                            key={feature}
                             className="flex items-center gap-3 text-sm text-foreground"
                           >
                             <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0" />
                             {feature}
-                          </motion.li>
+                          </li>
                         ))}
                       </ul>
+
+                      <span className="inline-flex items-center gap-2 text-secondary font-medium">
+                        Ver página do serviço
+                        <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                      </span>
                     </div>
-                  </div>
+                  </Link>
                 </motion.article>
               ))}
+
             </motion.div>
           </div>
         </section>
