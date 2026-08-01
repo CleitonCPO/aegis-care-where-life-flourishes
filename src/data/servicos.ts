@@ -250,7 +250,6 @@ export const services: Service[] = [
       "Cuidador para adultos em pós-operatório, reabilitação ou condição neurológica, com apoio à mobilidade e rotina terapêutica em São Paulo.",
     keywords:
       "cuidador para adultos, cuidador pós-operatório, cuidado domiciliar AVC, home care adulto São Paulo, assistência domiciliar reabilitação",
-    forWhod: [] as never,
     forWhom: [
       "Adultos em recuperação de cirurgia ou internação",
       "Pessoas com sequelas de AVC ou doenças neurológicas",
