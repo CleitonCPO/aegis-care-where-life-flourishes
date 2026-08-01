@@ -21,60 +21,9 @@ import heroImage from "@/assets/servicos/cuidado-domiciliar-hero.jpg";
 import enfermagemImage from "@/assets/servicos/enfermagem-domiciliar.jpg";
 import acompanhamentoImage from "@/assets/servicos/acompanhamento-diario.jpg";
 
-const services = [
-  {
-    icon: Home,
-    title: "Cuidado Domiciliar",
-    subtitle: "Conforto e segurança no lar",
-    description: "Atendimento humanizado no ambiente mais importante: a casa do paciente. Oferecemos cuidadores altamente capacitados que garantem conforto, segurança e qualidade de vida, preservando a autonomia e a dignidade de cada pessoa.",
-    features: [
-      "Acompanhamento integral 24 horas",
-      "Cuidadores certificados e treinados",
-      "Acompanhamento do cuidado contínuo",
-      "Planos personalizados"
-    ],
-    image: heroImage
-  },
-  {
-    icon: Stethoscope,
-    title: "Acompanhamento de Saúde",
-    subtitle: "Monitoramento e bem-estar",
-    description: "Cuidadores qualificados para acompanhamento contínuo da saúde do paciente. Realizamos monitoramento diário, auxílio com medicamentos e acompanhamento de bem-estar com toda a atenção necessária.",
-    features: [
-      "Auxílio com medicamentos",
-      "Monitoramento diário de bem-estar",
-      "Avaliação periódica",
-      "Relatórios detalhados para a família"
-    ],
-    image: enfermagemImage
-  },
-  {
-    icon: UserCheck,
-    title: "Cuidador para Adultos",
-    subtitle: "Apoio às limitações físicas",
-    description: "Assistência especializada para adultos com limitações físicas ou cognitivas temporárias ou permanentes. Auxiliamos na mobilidade, higiene pessoal, alimentação e atividades diárias, sempre respeitando a individualidade.",
-    features: [
-      "Auxílio à mobilidade",
-      "Higiene e cuidados pessoais",
-      "Acompanhamento de rotina",
-      "Estímulo à independência"
-    ],
-    image: acompanhamentoImage
-  },
-  {
-    icon: Plane,
-    title: "Acompanhamento em Viagem",
-    subtitle: "Cuidado onde a família estiver",
-    description: "Seu familiar pode viajar com segurança e tranquilidade. Oferecemos cuidadores para acompanhar viagens em família, garantindo todo o suporte necessário durante o deslocamento e a estadia.",
-    features: [
-      "Viagens nacionais com a família",
-      "Cuidados contínuos durante a viagem",
-      "Auxílio com medicamentos e rotina",
-      "Segurança e companhia em todos os momentos"
-    ],
-    image: heroImage
-  },
-];
+import { services as serviceData } from "@/data/servicos";
+
+const services = serviceData;
 
 // Animation variants with proper typing
 const easeOut: Easing = [0.16, 1, 0.3, 1];
