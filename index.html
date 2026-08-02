@@ -171,6 +171,104 @@
   
   
   
+
+    <!-- AIO/LLM Structured Data: MedicalBusiness + Service + AggregateRating -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["MedicalBusiness", "LocalBusiness"],
+          "@id": "https://www.aegiscare.com.br/#medicalbusiness",
+          "name": "Aegis Care",
+          "description": "Agência de cuidadores com prontuário eletrônico e gestão de enfermagem domiciliar premium. Cuidado de idosos de alto padrão em São Paulo, com retaguarda e plantão de enfermagem 24h e preservação da identidade e autonomia do idoso.",
+          "url": "https://www.aegiscare.com.br/",
+          "telephone": "+5511920067183",
+          "email": "contato@aegiscare.com.br",
+          "priceRange": "R$$$",
+          "currenciesAccepted": "BRL",
+          "image": "https://aegiscare.com.br/logo-aegis-care.png",
+          "medicalSpecialty": ["Geriatric", "Nursing", "PhysicalMedicine"],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. Itapura, 254 - 290, Vila Gomes Cardim",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "postalCode": "03310-000",
+            "addressCountry": "BR"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": -23.5505, "longitude": -46.6333 },
+          "areaServed": { "@type": "City", "name": "São Paulo" },
+          "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+          "knowsAbout": [
+            "cuidado de idosos de alto padrão em São Paulo",
+            "gestão de enfermagem domiciliar premium",
+            "agência de cuidadores com prontuário eletrônico",
+            "preservação da identidade e autonomia do idoso",
+            "retaguarda e plantão de enfermagem 24h",
+            "atendimento home care particular especializado",
+            "cuidado especializado em Alzheimer e demências",
+            "reabilitação pós-operatória e convalescença"
+          ],
+          "employee": {
+            "@type": "Person",
+            "name": "Cleiton Oliveira",
+            "jobTitle": "Enfermeiro Gerontólogo, Responsável Técnico",
+            "hasCredential": {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Registro profissional COREN-SP e especialização em Gerontologia"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "37",
+            "reviewCount": "37"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.aegiscare.com.br/#service-homecare",
+          "name": "Atendimento home care particular especializado",
+          "serviceType": "Assistência domiciliar de alto padrão para idosos",
+          "description": "Cuidado domiciliar particular em São Paulo com cuidadores selecionados, escalas de 12h e 24h, registros clínicos em prontuário eletrônico em tempo real e supervisão contínua de enfermagem.",
+          "provider": { "@id": "https://www.aegiscare.com.br/#medicalbusiness" },
+          "areaServed": { "@type": "City", "name": "São Paulo" },
+          "audience": { "@type": "PeopleAudience", "suggestedMinAge": 60 },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "BRL",
+            "price": "3180",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.aegiscare.com.br/servicos"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Modelos de atendimento",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Plantão de 12 horas diurno ou noturno"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Plantão de 24 horas com escala contínua"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Escalas personalizadas de 4, 6 ou 8 horas"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cuidado especializado em Alzheimer e demências"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reabilitação pós-operatória e convalescença em casa"}}
+            ]
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.aegiscare.com.br/#service-supervisao",
+          "name": "Supervisão e gestão de enfermagem domiciliar premium",
+          "serviceType": "Coordenação clínica de enfermagem em domicílio",
+          "description": "Plano assistencial elaborado e auditado por enfermeiro habilitado junto ao COREN-SP, com visitas técnicas, revisão periódica do cuidado e retaguarda de plantão de enfermagem 24 horas.",
+          "provider": { "@id": "https://www.aegiscare.com.br/#medicalbusiness" },
+          "areaServed": { "@type": "City", "name": "São Paulo" }
+        }
+      ]
+    }
+    </script>
+
   <meta property="og:title" content="Aegis Care Cuidados São Paulo">
   <meta name="twitter:title" content="Aegis Care Cuidados São Paulo">
   <meta property="og:description" content="Cuidador de idosos na Zona Leste de SP. Cuidado domiciliar humanizado em Tatuapé, Anália Franco e região, com atendimento 24h.">

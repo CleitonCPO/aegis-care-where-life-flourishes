@@ -10,6 +10,9 @@ const AboutSection = lazy(() => import("@/components/AboutSection"));
 const MissionSection = lazy(() => import("@/components/MissionSection"));
 const ServicesSection = lazy(() => import("@/components/ServicesSection"));
 const WhyUsSection = lazy(() => import("@/components/WhyUsSection"));
+const SpecialtiesSection = lazy(() => import("@/components/SpecialtiesSection"));
+const ClinicalGovernanceSection = lazy(() => import("@/components/ClinicalGovernanceSection"));
+const CareModelsSection = lazy(() => import("@/components/CareModelsSection"));
 const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
 const FAQSection = lazy(() => import("@/components/FAQSection"));
 const ContactSection = lazy(() => import("@/components/ContactSection"));
@@ -76,6 +79,24 @@ const Index = memo(() => {
           </Suspense>
         </LazySection>
         
+        <LazySection>
+          <Suspense fallback={<SectionFallback />}>
+            <SpecialtiesSection />
+          </Suspense>
+        </LazySection>
+
+        <LazySection>
+          <Suspense fallback={<SectionFallback />}>
+            <ClinicalGovernanceSection />
+          </Suspense>
+        </LazySection>
+
+        <LazySection>
+          <Suspense fallback={<SectionFallback />}>
+            <CareModelsSection />
+          </Suspense>
+        </LazySection>
+
         <LazySection>
           <Suspense fallback={<SectionFallback />}>
             <TestimonialsSection />
