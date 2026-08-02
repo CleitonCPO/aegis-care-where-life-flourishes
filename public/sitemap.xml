@@ -79,6 +79,13 @@
   
   <!-- Artigos do Blog -->
   <url>
+    <loc>https://www.aegiscare.com.br/blog/envelhecimento-populacao-lgbtqiapn-cuidado-domiciliar-inclusivo</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
     <loc>https://www.aegiscare.com.br/blog/guia-completo-cuidador-idosos</loc>
     <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
