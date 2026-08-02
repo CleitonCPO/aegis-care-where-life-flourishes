@@ -90,6 +90,18 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-white/10">
+        <div className="container-editorial py-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
+          <p className="text-white/60 text-xs leading-[1.7] tracking-wide">
+            <span className="text-[hsl(var(--turquoise))]">Aplicativo Aegis Care com Prontuário Eletrônico em Tempo Real</span>
+            {" "}· Supervisão de enfermagem habilitada junto ao COREN-SP e especialização em Gerontologia
+          </p>
+          <p className="text-white/40 text-xs leading-[1.7] tracking-wide md:text-right md:ml-auto md:max-w-xs">
+            Atendimento home care particular especializado em São Paulo · SP
+          </p>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10">
         <div className="container-editorial py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/50 text-xs tracking-wider">
             © {currentYear} Aegis Care · Todos os direitos reservados
