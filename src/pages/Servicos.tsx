@@ -49,6 +49,80 @@ const scaleIn: Variants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: easeOut } }
 };
 
+const SITE = "https://www.aegiscare.com.br";
+
+const provider = {
+  "@type": ["MedicalBusiness", "LocalBusiness"],
+  "@id": `${SITE}/#organization`,
+  name: "Aegis Care",
+  url: SITE,
+  telephone: "+55 11 92006-7183",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "R. Itapura, 254 - 290, Vila Gomes Cardim",
+    addressLocality: "São Paulo",
+    addressRegion: "SP",
+    postalCode: "03310-000",
+    addressCountry: "BR",
+  },
+};
+
+const servicosJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${SITE}/servicos#lista`,
+    name: "Serviços de cuidado domiciliar e enfermagem sênior da Aegis Care",
+    itemListElement: serviceData.map((service, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": ["HealthcareService", "Service"],
+        "@id": `${SITE}/servicos/${service.slug}#service`,
+        name: service.name,
+        alternateName: service.shortName,
+        serviceType: service.shortName,
+        description: service.definition,
+        url: `${SITE}/servicos/${service.slug}`,
+        provider,
+        areaServed: { "@type": "City", name: "São Paulo", addressRegion: "SP", addressCountry: "BR" },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "BRL",
+          price: "3180",
+          availability: "https://schema.org/InStock",
+          url: `${SITE}/servicos/${service.slug}`,
+        },
+      },
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${SITE}/servicos#faq`,
+    url: `${SITE}/servicos`,
+    name: "Perguntas frequentes sobre os serviços da Aegis Care",
+    mainEntity: serviceData.flatMap((service) =>
+      service.faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${faq.answer} (${service.shortName})`,
+        },
+      })),
+    ),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Início", item: SITE },
+      { "@type": "ListItem", position: 2, name: "Serviços", item: `${SITE}/servicos` },
+    ],
+  },
+];
+
 const Servicos = () => {
   return (
     <>
@@ -64,6 +138,7 @@ const Servicos = () => {
         <meta property="og:description" content="Cuidador de idosos, acompanhamento 24h, cuidador para adultos e acompanhamento em viagem na Zona Leste de SP." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.aegiscare.com.br/servicos" />
+        <script type="application/ld+json">{JSON.stringify(servicosJsonLd)}</script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
