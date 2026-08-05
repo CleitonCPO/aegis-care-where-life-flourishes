@@ -88,6 +88,10 @@ const ServicoDetalhe = () => {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "@id": `${url}#faq`,
+      url,
+      name: `Perguntas frequentes sobre ${service.shortName}`,
+      about: { "@id": `${url}#service` },
       mainEntity: service.faqs.map((faq) => ({
         "@type": "Question",
         name: faq.question,
