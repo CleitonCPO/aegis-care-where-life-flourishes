@@ -20,34 +20,68 @@ const ServicoDetalhe = () => {
   const url = `${SITE}/servicos/${service.slug}`;
   const others = services.filter((s) => s.slug !== service.slug).slice(0, 3);
 
+  const provider = {
+    "@type": ["MedicalBusiness", "LocalBusiness"],
+    "@id": `${SITE}/#organization`,
+    name: "Aegis Care",
+    url: SITE,
+    telephone: "+55 11 92006-7183",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "R. Itapura, 254 - 290, Vila Gomes Cardim",
+      addressLocality: "São Paulo",
+      addressRegion: "SP",
+      postalCode: "03310-000",
+      addressCountry: "BR",
+    },
+  };
+
   const jsonLd = [
     {
       "@context": "https://schema.org",
-      "@type": "Service",
+      "@type": ["HealthcareService", "Service"],
+      "@id": `${url}#service`,
       name: service.name,
+      alternateName: service.shortName,
       serviceType: service.shortName,
+      category: "Cuidado domiciliar de alto padrão",
       description: service.definition,
       url,
-      provider: {
-        "@type": "LocalBusiness",
-        name: "Aegis Care",
-        url: SITE,
-        telephone: "+55 11 92006-7183",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "R. Itapura, 254 - 290, Vila Gomes Cardim",
-          addressLocality: "São Paulo",
-          addressRegion: "SP",
-          postalCode: "03310-000",
-          addressCountry: "BR",
-        },
+      image: `${SITE}${service.image}`,
+      provider,
+      providerMobility: "dynamic",
+      availableChannel: {
+        "@type": "ServiceChannel",
+        serviceUrl: url,
+        servicePhone: "+55 11 92006-7183",
+        availableLanguage: { "@type": "Language", name: "Portuguese", alternateName: "pt-BR" },
       },
-      areaServed: { "@type": "City", name: "São Paulo" },
+      audience: {
+        "@type": "PeopleAudience",
+        audienceType: service.forWhom.join("; "),
+      },
+      areaServed: { "@type": "City", name: "São Paulo", addressRegion: "SP", addressCountry: "BR" },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: `O que inclui: ${service.shortName}`,
+        itemListElement: service.includes.map((item, index) => ({
+          "@type": "Offer",
+          position: index + 1,
+          itemOffered: { "@type": "Service", name: item },
+        })),
+      },
       offers: {
         "@type": "Offer",
         priceCurrency: "BRL",
         price: "3180",
+        priceSpecification: {
+          "@type": "PriceSpecification",
+          priceCurrency: "BRL",
+          minPrice: "3180",
+          valueAddedTaxIncluded: true,
+        },
         availability: "https://schema.org/InStock",
+        areaServed: { "@type": "City", name: "São Paulo" },
         url,
       },
     },
