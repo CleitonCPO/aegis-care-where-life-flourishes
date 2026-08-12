@@ -72,14 +72,6 @@ const ServicoDetalhe = () => {
       },
       offers: {
         "@type": "Offer",
-        priceCurrency: "BRL",
-        price: "3180",
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          priceCurrency: "BRL",
-          minPrice: "3180",
-          valueAddedTaxIncluded: true,
-        },
         availability: "https://schema.org/InStock",
         areaServed: { "@type": "City", name: "São Paulo" },
         url,

@@ -88,8 +88,6 @@ const servicosJsonLd = [
         areaServed: { "@type": "City", name: "São Paulo", addressRegion: "SP", addressCountry: "BR" },
         offers: {
           "@type": "Offer",
-          priceCurrency: "BRL",
-          price: "3180",
           availability: "https://schema.org/InStock",
           url: `${SITE}/servicos/${service.slug}`,
         },
