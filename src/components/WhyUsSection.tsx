@@ -1,27 +1,27 @@
 const differentials = [
   {
-    title: "Coordenação de enfermagem",
-    text: "Cada caso é acompanhado clinicamente por um enfermeiro responsável, com supervisão contínua da equipe em campo.",
+    title: "Coordenação de enfermagem 24h",
+    text: "Cada caso de cuidado domiciliar de idosos é acompanhado clinicamente por um enfermeiro responsável, com supervisão contínua da equipe em campo.",
   },
   {
-    title: "Seleção criteriosa de profissionais",
-    text: "Processo seletivo com avaliação técnica, comportamental e validação documental antes de qualquer indicação.",
+    title: "Cuidadores selecionados e sempre atualizados",
+    text: "Processo seletivo com avaliação técnica, comportamental e validação documental, somado a treinamento e reciclagem permanente dos cuidadores de idosos.",
   },
   {
-    title: "Cuidado dentro do lar",
-    text: "Toda a estrutura assistencial é desenhada para que a vida continue acontecendo onde sempre aconteceu.",
+    title: "Planos de 4h, 6h, 8h, 12h, 24h e flexíveis",
+    text: "Escalas de cuidador de idosos em domicílio ajustadas à rotina da família, incluindo períodos diurnos, plantões noturnos, finais de semana e cobertura integral.",
   },
   {
     title: "Comunicação próxima à família",
-    text: "Registros diários em prontuário eletrônico e canais diretos com a coordenação para decisões compartilhadas.",
+    text: "Registros diários em prontuário eletrônico e canais diretos com a coordenação de enfermagem para decisões compartilhadas e acompanhamento em tempo real.",
   },
   {
-    title: "Discrição e presença",
-    text: "Profissionais formados para acompanhar com sensibilidade, sem ocupar o espaço afetivo da família.",
+    title: "Envelhecer em casa com segurança",
+    text: "Toda a estrutura assistencial é desenhada para prevenir quedas, organizar medicações e manter a autonomia do idoso onde a vida sempre aconteceu.",
   },
   {
-    title: "Excelência assistencial",
-    text: "Protocolos clínicos, visitas técnicas e revisão constante do plano de cuidado conforme a evolução do assistido.",
+    title: "Excelência assistencial premium",
+    text: "Protocolos clínicos, visitas técnicas e revisão constante do plano de cuidado conforme a evolução do assistido, com discrição dentro do lar.",
   },
 ];
 
@@ -31,14 +31,15 @@ const WhyUsSection = () => {
       <div className="container-editorial relative z-10">
         <div className="max-w-3xl mb-20 md:mb-28">
           <span className="text-[hsl(var(--turquoise))] text-[0.7rem] tracking-[0.32em] uppercase font-medium mb-6 block">
-            Por que a Aegis Care
+            Diferenciais da Aegis Care
           </span>
           <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-white mb-8 font-light">
             Sofisticação assistencial não é luxo. É o cuidado certo, executado com método.
           </h2>
           <p className="text-lg text-white/75 leading-[1.8] prose-justified">
-            Uma estrutura privada construída para famílias que esperam excelência, presença
-            humana e coordenação clínica em cada detalhe do cotidiano do lar.
+            Uma agência de cuidadores de idosos premium em São Paulo, construída para famílias que
+            esperam segurança, tranquilidade, presença humana e gestão de enfermagem domiciliar em
+            cada detalhe do cotidiano do lar.
           </p>
         </div>
 

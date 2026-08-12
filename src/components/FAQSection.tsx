@@ -29,6 +29,22 @@ const faqData = [
   {
     question: "Vocês fazem visitas na casa da minha família?",
     answer: "Sim. Realizamos visitas técnicas e acompanhamentos presenciais conforme a necessidade do atendimento, mensal, bimestral ou trimestral. Essas visitas permitem avaliar o ambiente, orientar a equipe, ajustar rotinas e garantir que o cuidado esteja alinhado com as necessidades do assistido e da família."
+  },
+  {
+    question: "Quais são os planos de cuidador de idosos disponíveis?",
+    answer: "Trabalhamos com planos de 4h, 6h, 8h, 12h e 24h por dia, além de planos flexíveis montados sob medida, como plantões noturnos, finais de semana, diárias e coberturas pontuais. A escala ideal é definida na avaliação de enfermagem, sem custo para a família."
+  },
+  {
+    question: "Quanto custa um cuidador de idosos em domicílio em São Paulo?",
+    answer: "O investimento varia conforme a carga horária contratada e a complexidade clínica do assistido. Na Aegis Care, o cuidado domiciliar de alto padrão começa em R$ 3.180 por mês, com contrato formal, cuidadores selecionados e supervisão de enfermagem incluída."
+  },
+  {
+    question: "Vocês atendem em quais regiões de São Paulo?",
+    answer: "Atendemos a capital de São Paulo, com forte presença na Zona Leste e regiões próximas, oferecendo cuidador de idosos em domicílio, acompanhamento hospitalar, cuidados em Alzheimer e Parkinson e acompanhamento em viagens."
+  },
+  {
+    question: "Os cuidadores recebem treinamento e atualização contínua?",
+    answer: "Sim. Todos os cuidadores de idosos da Aegis Care passam por capacitação inicial e atualização permanente em prevenção de quedas, mobilidade, demências, primeiros socorros e comunicação com a família, sempre orientados pela coordenação de enfermagem."
   }
 ];
 
