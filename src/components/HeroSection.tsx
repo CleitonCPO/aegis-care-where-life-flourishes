@@ -43,15 +43,16 @@ const HeroSection = memo(() => {
             className={`font-display text-[2.25rem] md:text-5xl lg:text-[3.75rem] text-white font-normal leading-[1.08] mb-8 transition-all duration-[1100ms] ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
             style={{ transitionDelay: "150ms", letterSpacing: "-0.035em" }}
           >
-            O envelhecimento não deve afastar ninguém daquilo que dá sentido à sua vida.
+            Envelhecer em casa é um direito. Escolha cuidar com excelência.
           </h1>
 
           <p
             className={`text-base md:text-lg text-white/85 mb-12 leading-[1.7] font-light max-w-xl transition-all duration-[1100ms] ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
             style={{ transitionDelay: "320ms" }}
           >
-            Cuidado domiciliar pensado para preservar dignidade, autonomia e a continuidade
-            de uma história construída ao longo de uma vida inteira.
+            Segurança, tranquilidade e cuidadores sempre atualizados. Cuidador de idosos em
+            domicílio em São Paulo, com escalas de 4h, 6h, 8h, 12h, 24h e planos flexíveis,
+            sob coordenação de enfermagem.
           </p>
 
           <div
