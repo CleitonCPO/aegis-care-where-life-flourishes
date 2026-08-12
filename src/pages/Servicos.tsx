@@ -127,15 +127,15 @@ const Servicos = () => {
   return (
     <>
       <Helmet>
-        <title>Serviços | Aegis Care - Cuidado Domiciliar Premium</title>
+        <title>Serviços de Cuidadores de Idosos em SP | Aegis Care</title>
         <meta 
           name="description" 
-          content="Conheça nossos serviços de cuidado domiciliar: cuidadores de idosos, acompanhamento 24h, cuidador para adultos. Atendemos Zona Leste SP." 
+          content="Cuidador de idosos em domicílio em São Paulo com planos de 4h, 6h, 8h, 12h, 24h e flexíveis. Supervisão de enfermagem, cuidadores atualizados e prontuário eletrônico." 
         />
-        <meta name="keywords" content="cuidado domiciliar, agência de cuidadores de idosos, serviços de cuidadores, cuidador de idosos, acompanhamento domiciliar, zona leste SP" />
+        <meta name="keywords" content="cuidador de idosos, cuidador de idosos em domicílio, planos de cuidador 4h 6h 8h 12h 24h, cuidador 24 horas, cuidador noturno, agência de cuidadores de idosos São Paulo, home care premium, gestão de enfermagem domiciliar, acompanhante hospitalar, cuidador para Alzheimer e Parkinson, zona leste SP" />
         <link rel="canonical" href="https://www.aegiscare.com.br/servicos" />
-        <meta property="og:title" content="Serviços | Aegis Care - Cuidado Domiciliar Premium" />
-        <meta property="og:description" content="Cuidador de idosos, acompanhamento 24h, cuidador para adultos e acompanhamento em viagem na Zona Leste de SP." />
+        <meta property="og:title" content="Serviços de Cuidadores de Idosos em SP | Aegis Care" />
+        <meta property="og:description" content="Planos de cuidador de idosos de 4h, 6h, 8h, 12h, 24h e flexíveis, com supervisão de enfermagem em São Paulo." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.aegiscare.com.br/servicos" />
         <script type="application/ld+json">{JSON.stringify(servicosJsonLd)}</script>
