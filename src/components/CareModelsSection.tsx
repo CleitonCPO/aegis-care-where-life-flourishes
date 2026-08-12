@@ -54,7 +54,7 @@ const CareModelsSection = () => {
             A avaliação inicial é conduzida por enfermeiro, sem custo e sem compromisso. A partir dela,
             a família recebe a escala sugerida, o perfil do profissional indicado e o valor fechado do
             mês, com retaguarda e plantão de enfermagem 24h, cobertura de faltas e registro no
-            prontuário eletrônico já incluídos. O investimento começa em R$ 3.180.
+            prontuário eletrônico já incluídos.
           </p>
         </div>
       </div>

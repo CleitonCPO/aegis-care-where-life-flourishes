@@ -36,7 +36,7 @@ const faqData = [
   },
   {
     question: "Quanto custa um cuidador de idosos em domicílio em São Paulo?",
-    answer: "O investimento varia conforme a carga horária contratada e a complexidade clínica do assistido. Na Aegis Care, o cuidado domiciliar de alto padrão começa em R$ 3.180 por mês, com contrato formal, cuidadores selecionados e supervisão de enfermagem incluída."
+    answer: "O plano é definido conforme a carga horária contratada e a complexidade clínica do assistido, sempre após a avaliação de enfermagem, que é gratuita. O cuidado domiciliar de alto padrão inclui contrato formal, cuidadores selecionados e supervisão de enfermagem."
   },
   {
     question: "Vocês atendem em quais regiões de São Paulo?",
