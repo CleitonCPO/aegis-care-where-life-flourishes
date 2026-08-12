@@ -100,9 +100,9 @@ export const services: Service[] = [
     steps: process,
     faqs: [
       {
-        question: "Quanto custa um cuidador de idosos em São Paulo?",
+        question: "Como é definido o plano de cuidado em São Paulo?",
         answer:
-          "O valor depende da escala e da complexidade do cuidado. Na Aegis Care, o investimento começa em R$ 3.180 por mês e é definido após a avaliação de enfermagem, sem custo para a família.",
+          "O plano depende da escala e da complexidade do cuidado. Na Aegis Care, tudo é definido após a avaliação de enfermagem, sem custo para a família.",
       },
       {
         question: "Qual a diferença entre cuidador e técnico de enfermagem?",

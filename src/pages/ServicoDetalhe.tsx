@@ -72,14 +72,6 @@ const ServicoDetalhe = () => {
       },
       offers: {
         "@type": "Offer",
-        priceCurrency: "BRL",
-        price: "3180",
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          priceCurrency: "BRL",
-          minPrice: "3180",
-          valueAddedTaxIncluded: true,
-        },
         availability: "https://schema.org/InStock",
         areaServed: { "@type": "City", name: "São Paulo" },
         url,
@@ -313,7 +305,7 @@ const ServicoDetalhe = () => {
                 Vamos entender a necessidade da sua família.
               </h2>
               <p className="text-white/80 leading-[1.85] mb-10">
-                A avaliação inicial é conduzida por enfermeiro, sem custo e sem compromisso. O investimento começa em R$ 3.180.
+                A avaliação inicial é conduzida por enfermeiro, sem custo e sem compromisso.
               </p>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="xl" className="gap-2">
