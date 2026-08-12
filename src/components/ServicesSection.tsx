@@ -7,9 +7,9 @@ const services = [
   },
   {
     number: "02",
-    title: "Acompanhamento residencial",
+    title: "Planos de 4h, 6h, 8h, 12h e 24h",
     description:
-      "Presença contínua ou por períodos definidos, sempre conduzida com discrição dentro da rotina do lar.",
+      "Escalas flexíveis de cuidador de idosos em domicílio, diurnas, noturnas ou integrais, ajustadas à rotina da casa em São Paulo.",
   },
   {
     number: "03",
