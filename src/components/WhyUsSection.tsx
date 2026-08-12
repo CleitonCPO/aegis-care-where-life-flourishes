@@ -31,14 +31,15 @@ const WhyUsSection = () => {
       <div className="container-editorial relative z-10">
         <div className="max-w-3xl mb-20 md:mb-28">
           <span className="text-[hsl(var(--turquoise))] text-[0.7rem] tracking-[0.32em] uppercase font-medium mb-6 block">
-            Por que a Aegis Care
+            Diferenciais da Aegis Care
           </span>
           <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-white mb-8 font-light">
             Sofisticação assistencial não é luxo. É o cuidado certo, executado com método.
           </h2>
           <p className="text-lg text-white/75 leading-[1.8] prose-justified">
-            Uma estrutura privada construída para famílias que esperam excelência, presença
-            humana e coordenação clínica em cada detalhe do cotidiano do lar.
+            Uma agência de cuidadores de idosos premium em São Paulo, construída para famílias que
+            esperam segurança, tranquilidade, presença humana e gestão de enfermagem domiciliar em
+            cada detalhe do cotidiano do lar.
           </p>
         </div>
 
