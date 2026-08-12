@@ -1,27 +1,27 @@
 const differentials = [
   {
-    title: "Coordenação de enfermagem",
-    text: "Cada caso é acompanhado clinicamente por um enfermeiro responsável, com supervisão contínua da equipe em campo.",
+    title: "Coordenação de enfermagem 24h",
+    text: "Cada caso de cuidado domiciliar de idosos é acompanhado clinicamente por um enfermeiro responsável, com supervisão contínua da equipe em campo.",
   },
   {
-    title: "Seleção criteriosa de profissionais",
-    text: "Processo seletivo com avaliação técnica, comportamental e validação documental antes de qualquer indicação.",
+    title: "Cuidadores selecionados e sempre atualizados",
+    text: "Processo seletivo com avaliação técnica, comportamental e validação documental, somado a treinamento e reciclagem permanente dos cuidadores de idosos.",
   },
   {
-    title: "Cuidado dentro do lar",
-    text: "Toda a estrutura assistencial é desenhada para que a vida continue acontecendo onde sempre aconteceu.",
+    title: "Planos de 4h, 6h, 8h, 12h, 24h e flexíveis",
+    text: "Escalas de cuidador de idosos em domicílio ajustadas à rotina da família, incluindo períodos diurnos, plantões noturnos, finais de semana e cobertura integral.",
   },
   {
     title: "Comunicação próxima à família",
-    text: "Registros diários em prontuário eletrônico e canais diretos com a coordenação para decisões compartilhadas.",
+    text: "Registros diários em prontuário eletrônico e canais diretos com a coordenação de enfermagem para decisões compartilhadas e acompanhamento em tempo real.",
   },
   {
-    title: "Discrição e presença",
-    text: "Profissionais formados para acompanhar com sensibilidade, sem ocupar o espaço afetivo da família.",
+    title: "Envelhecer em casa com segurança",
+    text: "Toda a estrutura assistencial é desenhada para prevenir quedas, organizar medicações e manter a autonomia do idoso onde a vida sempre aconteceu.",
   },
   {
-    title: "Excelência assistencial",
-    text: "Protocolos clínicos, visitas técnicas e revisão constante do plano de cuidado conforme a evolução do assistido.",
+    title: "Excelência assistencial premium",
+    text: "Protocolos clínicos, visitas técnicas e revisão constante do plano de cuidado conforme a evolução do assistido, com discrição dentro do lar.",
   },
 ];
 
