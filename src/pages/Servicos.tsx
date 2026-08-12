@@ -343,6 +343,75 @@ const Servicos = () => {
           </div>
         </section>
 
+        {/* Planos de Cuidadores */}
+        <section id="planos" className="py-20 lg:py-28 bg-muted/40">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center mb-14">
+              <span className="inline-block px-4 py-1.5 bg-teal-light rounded-full text-secondary text-sm font-semibold mb-4">
+                Planos de cuidadores de idosos
+              </span>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground font-bold mb-6">
+                Planos de 4h, 6h, 8h, 12h, 24h e{" "}
+                <span className="text-gradient">formatos flexíveis</span>
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                O serviço de cuidador de idosos em domicílio da Aegis Care é organizado por carga
+                horária. A escala ideal é definida na avaliação de enfermagem, sem custo, conforme a
+                rotina da família e o grau de dependência do assistido em São Paulo.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {[
+                {
+                  hours: "4h",
+                  title: "Apoio pontual diário",
+                  text: "Cuidador por 4 horas para banho, refeições, medicação e companhia em momentos críticos do dia.",
+                },
+                {
+                  hours: "6h",
+                  title: "Meio período",
+                  text: "Seis horas de assistência domiciliar para manhãs ou tardes, com rotina organizada e registro diário.",
+                },
+                {
+                  hours: "8h",
+                  title: "Jornada completa",
+                  text: "Oito horas de cuidado contínuo, indicado para famílias que trabalham fora e precisam de presença estável.",
+                },
+                {
+                  hours: "12h",
+                  title: "Plantão diurno ou noturno",
+                  text: "Plantões de 12 horas, incluindo cuidador noturno para prevenção de quedas e monitoramento do sono.",
+                },
+                {
+                  hours: "24h",
+                  title: "Cuidado integral",
+                  text: "Cobertura de 24 horas com revezamento de cuidadores e supervisão de enfermagem em tempo integral.",
+                },
+                {
+                  hours: "Flex",
+                  title: "Planos flexíveis",
+                  text: "Diárias, finais de semana, feriados, pós-operatório e coberturas sob medida, ajustadas mês a mês.",
+                },
+              ].map((plan) => (
+                <article
+                  key={plan.hours}
+                  className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-elevated transition-shadow duration-500"
+                >
+                  <p className="font-display text-4xl font-bold text-secondary mb-3">{plan.hours}</p>
+                  <h3 className="font-display text-xl font-bold text-foreground mb-3">{plan.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed text-[15px]">{plan.text}</p>
+                </article>
+              ))}
+            </div>
+
+            <p className="text-center text-muted-foreground mt-10 max-w-2xl mx-auto">
+              Todos os planos incluem avaliação de enfermagem, curadoria do cuidador, prontuário
+              eletrônico com acompanhamento em tempo real e substituição imediata em caso de falta.
+            </p>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-20 lg:py-28 bg-muted relative overflow-hidden">
           {/* Animated background elements */}
