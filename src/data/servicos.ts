@@ -67,16 +67,16 @@ export const services: Service[] = [
     eyebrow: "Cuidado domiciliar",
     headline: "Envelhecer em casa, com segurança e sem perder a própria rotina.",
     summary:
-      "Cuidador de idosos em domicílio com avaliação de enfermagem, escalas de 6, 12 ou 24 horas e supervisão contínua na capital de São Paulo.",
+      "Cuidador de idosos em domicílio com avaliação de enfermagem, planos de 4h, 6h, 8h, 12h e 24h, além de escalas flexíveis e supervisão contínua na capital de São Paulo.",
     definition:
-      "O serviço de cuidador de idosos em domicílio da Aegis Care oferece um profissional treinado dentro da casa do assistido para apoiar higiene, alimentação, mobilidade, rotina de medicamentos e companhia, sempre sob supervisão de enfermagem. O atendimento é organizado em escalas de 6, 12 ou 24 horas, com plano de cuidado individual definido após avaliação clínica presencial.",
+      "O serviço de cuidador de idosos em domicílio da Aegis Care oferece um profissional treinado dentro da casa do assistido para apoiar higiene, alimentação, mobilidade, rotina de medicamentos e companhia, sempre sob supervisão de enfermagem. O atendimento é organizado em planos de 4h, 6h, 8h, 12h e 24h, além de escalas flexíveis, com plano de cuidado individual definido após avaliação clínica presencial.",
     image: cuidadorIdosos,
     imageAlt: "Cuidadora profissional acolhendo idosa em sala de estar residencial",
     metaTitle: "Cuidador de Idosos em Domicílio | Aegis Care São Paulo",
     metaDescription:
-      "Cuidador de idosos em domicílio em São Paulo, com avaliação de enfermagem, escalas de 6, 12 ou 24 horas e supervisão contínua. Solicite um orçamento.",
+      "Cuidador de idosos em domicílio em São Paulo, com avaliação de enfermagem, planos de 4h, 6h, 8h, 12h e 24h, além de escalas flexíveis e supervisão contínua. Solicite um orçamento.",
     keywords:
-      "cuidador de idosos, cuidador de idosos em domicílio, home care para idosos, agência de cuidadores São Paulo, cuidador 24 horas, cuidado domiciliar de idosos",
+      "cuidador de idosos, cuidador de idosos em domicílio, home care para idosos, agência de cuidadores São Paulo, cuidador 24 horas, cuidador 12 horas, cuidador 6 horas, plano de cuidador flexível, cuidado domiciliar de idosos de alto padrão",
     forWhom: [
       "Idosos que desejam permanecer em casa com segurança",
       "Famílias que precisam de apoio diurno, noturno ou integral",
@@ -112,7 +112,7 @@ export const services: Service[] = [
       {
         question: "É possível contratar cuidador apenas para o período noturno?",
         answer:
-          "Sim. Trabalhamos com escalas de 6, 12 e 24 horas, incluindo plantões noturnos e finais de semana.",
+          "Sim. Trabalhamos com planos de 4h, 6h, 8h, 12h e 24h, além de escalas flexíveis, incluindo plantões noturnos, finais de semana e diárias.",
       },
       {
         question: "Em quanto tempo o cuidador começa a atender?",
