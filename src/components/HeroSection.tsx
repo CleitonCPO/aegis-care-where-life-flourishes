@@ -12,7 +12,7 @@ const HeroSection = memo(() => {
   }, []);
 
   return (
-    <section className="relative min-h-[100svh] flex items-center overflow-hidden bg-[hsl(var(--navy-deep))]">
+    <section className="relative min-h-screen min-h-[100svh] flex items-center overflow-hidden bg-[hsl(var(--navy-deep))]">
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}

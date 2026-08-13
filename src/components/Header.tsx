@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Phone, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-aegis-care-optimized.webp";
+import logoFallback from "@/assets/logo-aegis-care.png";
 
 const navLinks = [
   { href: "/quem-somos", label: "Quem Somos", isRoute: true },
@@ -67,15 +68,19 @@ const Header = memo(() => {
     >
       <div className="container-editorial flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img
-            src={logo}
-            alt="Aegis Care - Cuidado Domiciliar"
-            className="h-12 md:h-14 w-auto"
-            width={120}
-            height={56}
-            loading="eager"
-            fetchPriority="high"
-          />
+          <picture>
+            <source srcSet={logo} type="image/webp" />
+            <img
+              src={logoFallback}
+              alt="Aegis Care - Cuidado Domiciliar"
+              className="h-12 md:h-14 w-auto"
+              width={120}
+              height={56}
+              loading="eager"
+              fetchPriority="high"
+            />
+          </picture>
+
         </Link>
 
         {/* Desktop Navigation */}
