@@ -265,3 +265,45 @@
 }
 .hover-lift { transition: transform var(--transition-smooth), box-shadow var(--transition-smooth); }
 .hover-lift:hover { transform: translateY(-3px); box-shadow: var(--shadow-card); }
+
+/* ==========================================================================
+   Compatibilidade com navegadores antigos (iOS 12+, Android 7+, Edge legado)
+   ========================================================================== */
+
+/* Fallback quando backdrop-filter nao existe (iOS 12/13, Android antigo) */
+@supports not ((backdrop-filter: blur(4px)) or (-webkit-backdrop-filter: blur(4px))) {
+  .backdrop-blur-sm,
+  .backdrop-blur,
+  .backdrop-blur-md,
+  .backdrop-blur-lg,
+  .backdrop-blur-xl {
+    background-color: hsl(var(--background));
+  }
+}
+
+/* Fallback de altura quando svh/dvh nao sao suportados */
+@supports not (height: 100svh) {
+  .min-h-screen { min-height: 100vh; }
+}
+
+/* Fallback de gap em flex para Safari antigo */
+@supports not (gap: 1rem) {
+  .flex > * + * { margin-left: 0.75rem; }
+  .flex-col > * + * { margin-left: 0; margin-top: 0.75rem; }
+}
+
+/* Modo leve: aparelhos antigos, telas pequenas ou economia de dados */
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+  .shadow-glow { box-shadow: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
