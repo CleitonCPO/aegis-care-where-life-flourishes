@@ -307,3 +307,15 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Rede de seguranca para navegadores sem CSS custom properties (iOS 9.0 a 9.2) */
+@supports not (--css: variables) {
+  body {
+    background-color: #ffffff;
+    color: #172a50;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  a { color: #0f6f66; }
+  img, picture, video { max-width: 100%; height: auto; }
+  .container-editorial { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+}
