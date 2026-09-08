@@ -40,6 +40,112 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    id: "19",
+    slug: "queda-no-idoso-o-que-fazer-imediatamente-quando-procurar-ajuda",
+    title: "Queda no Idoso: O Que Fazer Imediatamente e Quando Procurar Ajuda",
+    excerpt: "A primeira coisa a fazer é manter a calma, não levantar o idoso sozinho e observar sinais de alerta. Aprenda quais sinais indicam emergência, como prevenir quedas em casa e quando considerar acompanhamento especializado de enfermagem gerontológica.",
+    category: "Segurança e Prevenção",
+    author: "Cleiton Oliveira",
+    publishedAt: "2026-08-25",
+    readTime: "10 min",
+    image: quedaIdosoDomiciliar.url,
+    content: `
+## Resumo
+
+A primeira coisa a fazer é manter a calma, não levantar o idoso sozinho e observar sinais de alerta. Se houver perda de consciência, dor intensa no quadril, deformidade no membro, sangramento que não para ou confusão repentina, a situação é emergência e exige atendimento médico imediato. Na ausência desses sinais, a avaliação pode ser feita em até 24 horas, mas nunca deixe de observar mudanças de comportamento nas horas seguintes.
+
+**Palavras-chave:** queda no idoso, o que fazer quando idoso cai, fratura de quadril em idoso, prevenção de quedas em casa, cuidado domiciliar de idosos, enfermagem gerontológica, assistência domiciliar São Paulo, cuidador de idoso, segurança do idoso em casa, SAMU 192.
+
+## 1. O que fazer nos primeiros minutos após a queda
+
+Antes de qualquer movimento, observe se a pessoa está consciente e respondendo. Pergunte, com voz calma, onde sente dor. Se o idoso estiver caído e não conseguir se levantar, não o puxe pelos braços, isso pode agravar uma fratura ou lesão na coluna. Posicione-se ao lado dele, avalie a respiração e o pulso, e verifique se há sangramento visível.
+
+Se houver ferimento aberto, comprima com gaze limpa. Se suspeitar de fratura no quadril ou perna, imobilize a região com um objeto rígido e aguarde a equipe de emergência. Fraturas de fêmur em idosos são consideradas emergência ortopédica devido ao elevado risco de morbidade e mortalidade, com taxas que variam entre 10% e 50% nos primeiros meses após o evento.
+
+## 2. Quais sinais indicam que é uma emergência
+
+Chame imediatamente o SAMU (192) se observar qualquer um dos seguintes sinais:
+
+- Perda de consciência, mesmo que breve
+- Dor intensa ou incapacidade de mover a perna, especialmente se acompanhada de encurtamento ou rotação anormal do membro, sinais clássicos de fratura de quadril
+- Sangramento que não cessa com compressão
+- Confusão repentina, dificuldade para falar ou assimetria facial, protocolo de reconhecimento rápido de AVC
+- Vômito repetido ou queixa de tontura intensa após impacto na cabeça
+- Inchaço ou deformidade óssea visível
+
+A fratura de quadril é a lesão mais temida. No Brasil, entre 2008 e 2019, foram registradas mais de 510 mil internações por fratura de fêmur em idosos, com o principal mecanismo de trauma sendo a queda da própria altura. A faixa etária mais atingida é a de 80 anos ou mais, que concentra cerca de 53% dos casos e 74% dos óbitos.
+
+## 3. E se o idoso não tiver machucado aparente
+
+Muitas famílias relaxam quando não há ferida visível. Lesões internas, como hematomas intracranianos ou fraturas por estresse, podem demorar horas ou dias para se manifestar. Mesmo sem sinais externos, observe nos próximos 24 a 48 horas:
+
+- Sonolência excessiva ou dificuldade para acordar
+- Dor de cabeça persistente ou piorando
+- Náuseas ou vômitos
+- Alteração do equilíbrio ou da marcha
+- Mudança de humor, agitação ou apatia repentina
+- Dificuldade para urinar ou presença de sangue na urina
+
+Se qualquer um desses sinais aparecer, procure atendimento médico mesmo que a queda tenha parecido leve.
+
+## 4. Por que idosos caem com mais frequência
+
+A queda no idoso raramente tem uma única causa. Ela resulta da interação entre fatores intrínsecos, relacionados ao corpo, e extrínsecos, relacionados ao ambiente. Entre os fatores de risco modificáveis, destacam-se distúrbios de marcha e equilíbrio, hipotensão ortostática, comprometimento sensorial, uso de medicamentos e riscos ambientais.
+
+A polifarmácia, uso de cinco ou mais medicamentos, é um dos principais fatores de risco modificáveis. Fármacos como benzodiazepínicos, antidepressivos e anti-hipertensivos podem afetar a atenção, a resposta motora e a regulação da pressão arterial. A revisão periódica da medicação, feita por um profissional habilitado, é uma das medidas mais eficazes de prevenção.
+
+## 5. Como prevenir quedas em casa
+
+A prevenção exige uma abordagem multifatorial. As evidências mais robustas apontam para a combinação de três eixos: exercício físico, adaptação ambiental e revisão clínica.
+
+### Exercício e fortalecimento muscular
+
+Programas que combinam equilíbrio, força muscular e coordenação motora reduzem a taxa de quedas em aproximadamente 23% a 30%. O tai chi chuan demonstrou melhorar a estabilidade postural mais do que outros tipos de exercício. Programas com duração mínima de quatro meses, supervisionados por profissionais treinados, apresentam os melhores resultados.
+
+### Adaptação do ambiente domiciliar
+
+A correção de riscos ambientais, como iluminação inadequada, tapetes soltos e ausência de barras de apoio no banheiro, reduz significativamente a incidência de quedas. Barras de apoio, elevação da altura do vaso sanitário e calçados com sola antiderrapante são medidas simples e de baixo custo.
+
+### Revisão clínica periódica
+
+A avaliação multidimensional deve incluir testes de equilíbrio e marcha, como o Timed Up and Go (quando o tempo excede 12 segundos, o risco de queda está elevado), avaliação da visão e audição, e rastreamento de osteoporose.
+
+## 6. Quando a família deve considerar acompanhamento especializado
+
+Se o idoso já caiu uma ou mais vezes no último ano, apresenta dificuldade para se levantar de uma cadeira, sente medo de cair ou tem condições como Parkinson, demência ou osteoporose, o acompanhamento especializado deixa de ser opcional e passa a ser necessário. A enfermagem gerontológica e a fisioterapia atuam na identificação precoce de riscos, na educação da família e na implementação de um plano de cuidados individualizado.
+
+A assistência domiciliar com supervisão de enfermagem permite monitorar a adesão ao programa de exercícios, revisar a medicação periodicamente e adaptar o ambiente de forma contínua, não como uma intervenção pontual, mas como um processo que acompanha a evolução da pessoa idosa.
+
+## 7. Considerações finais
+
+Quedas são eventos preveníveis na maioria dos casos, mas exigem uma abordagem que vai além da boa vontade da família. Na Aegis Care, trabalhamos com um olhar clínico e humano sobre o envelhecimento em casa. Se você cuida de um idoso que já caiu ou tem medo de cair, fale com nossa equipe. Podemos avaliar o ambiente, o estado funcional e desenhar um plano de cuidados que preserve a autonomia sem abrir mão da segurança.
+
+*Enfermeiro Gerontólogo: Cleiton Oliveira, Coren SP 661587 ENF, fundador da Aegis Care.*
+    `,
+    references: [
+      {
+        name: "Colón-Emeric CS, McDermott CL, Lee DS, Berry SD. Risk Assessment and Prevention of Falls in Older Community-Dwelling Adults: A Review. JAMA. 2024;332(1):58-69.",
+        url: "https://pubmed.ncbi.nlm.nih.gov/38536167/",
+        description: "Revisão sobre avaliação de risco e prevenção de quedas em idosos que vivem na comunidade, publicada na JAMA.",
+      },
+      {
+        name: "Coulter JS, et al. Falls in Older Adults: Approach and Prevention. Am Fam Physician. 2024;109(5):447-456.",
+        url: "https://pubmed.ncbi.nlm.nih.gov/38804759/",
+        description: "Artigo sobre abordagem clínica e prevenção de quedas em adultos idosos, publicado no American Family Physician.",
+      },
+      {
+        name: "Intervenções para prevenção de quedas em idosos na Atenção Primária: revisão sistemática. Acta Paul Enferm. 2022;35:eAPE03403.",
+        url: "https://www.scielo.br/j/ape/a/TqV4k45sTkZYTJW9NGHh5Jj/?lang=pt",
+        description: "Revisão sistemática brasileira sobre intervenções de prevenção de quedas na atenção primária, publicada na Acta Paulista de Enfermagem.",
+      },
+      {
+        name: "Jesus WB, Andrade NMD, Cavalcante JAR, Strijdonk AVS, Souza E, Santos JC. Estudo epidemiológico das fraturas de fêmur na população idosa no Brasil. Rev Tópicos. 2025.",
+        url: "https://revistatopicos.com.br/artigos/estudo-epidemiologico-das-fraturas-de-femur-na-populacao-idosa-no-brasil",
+        description: "Estudo epidemiológico brasileiro sobre fraturas de fêmur em idosos, com dados de internação e mortalidade entre 2008 e 2019.",
+      },
+    ],
+  },
+  {
     id: "18",
     slug: "diagnostico-infarto-5a-definicao-universal-cuidado-idoso-domiciliar",
     title: "Nova Definição Universal de Infarto: O Que Muda para Quem Cuida de Idoso em Casa",
