@@ -15,7 +15,7 @@ import diaMundialCancerIdoso from "@/assets/blog/dia-mundial-cancer-cuidado-idos
 import cuidadosParkinson from "@/assets/blog/cuidados-domiciliares-parkinson.jpg";
 import envelhecimentoSaudavelCuidadorEssencial from "@/assets/blog/envelhecimento-saudavel-cuidador-essencial.jpg";
 import envelhecimentoLgbtqiapn from "@/assets/blog/envelhecimento-lgbtqiapn-cuidado-domiciliar.jpg";
-import diagnosticoInfartoIdoso from "@/assets/blog/diagnostico-infarto-idoso-domiciliar.jpg";
+import diagnosticoInfartoIdoso from "@/assets/blog/diagnostico-infarto-idoso-domiciliar.png";
 
 export interface ArticleReference {
   name: string;
