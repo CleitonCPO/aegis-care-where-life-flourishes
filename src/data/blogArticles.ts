@@ -15,6 +15,7 @@ import diaMundialCancerIdoso from "@/assets/blog/dia-mundial-cancer-cuidado-idos
 import cuidadosParkinson from "@/assets/blog/cuidados-domiciliares-parkinson.jpg";
 import envelhecimentoSaudavelCuidadorEssencial from "@/assets/blog/envelhecimento-saudavel-cuidador-essencial.jpg";
 import envelhecimentoLgbtqiapn from "@/assets/blog/envelhecimento-lgbtqiapn-cuidado-domiciliar.jpg";
+import diagnosticoInfartoIdoso from "@/assets/blog/diagnostico-infarto-idoso-domiciliar.jpg";
 
 export interface ArticleReference {
   name: string;
@@ -37,6 +38,118 @@ export interface BlogArticle {
 }
 
 export const blogArticles: BlogArticle[] = [
+  {
+    id: "18",
+    slug: "diagnostico-infarto-5a-definicao-universal-cuidado-idoso-domiciliar",
+    title: "Nova Definição Universal de Infarto: O Que Muda para Quem Cuida de Idoso em Casa",
+    excerpt: "A 5ª Definição Universal de Infarto do Miocárdio (2026) reorganiza o diagnóstico em três grupos. Entenda por que a troponina alta sozinha não confirma infarto, quais sintomas atípicos aparecem em idosos e como o cuidador domiciliar pode reconhecer sinais de alerta cardíaco a tempo.",
+    category: "Saúde Cardiovascular",
+    author: "Cleiton Oliveira",
+    publishedAt: "2026-08-31",
+    readTime: "12 min",
+    image: diagnosticoInfartoIdoso,
+    content: `
+## Resumo
+
+Em agosto de 2026, as quatro principais sociedades cardíacas do mundo publicaram a 5ª Definição Universal de Infarto do Miocárdio. A grande mudança está na classificação: em vez de dividir os casos em tipos numerados, o novo documento os organiza em três grupos, infarto primário, secundário e relacionado a procedimento, com base na origem do problema. Para quem cuida de um idoso em casa, o que importa é entender que o diagnóstico nunca dependeu de um único exame, e essa revisão reforça exatamente isso: a troponina alta sozinha não confirma infarto.
+
+**Palavras-chave:** infarto do miocárdio, diagnóstico de infarto em idosos, troponina elevada, cuidado domiciliar cardíaco, cuidador de idoso com doença cardíaca, sinais de infarto em idosos, 5ª Definição Universal de Infarto, assistência domiciliar cardiovascular, home care cardíaco São Paulo, sintomas atípicos de infarto na terceira idade.
+
+## 1. Por que a troponina alta sozinha não confirma infarto
+
+A troponina é uma proteína liberada quando as células do músculo cardíaco se lesionam. O novo consenso mantém o critério de lesão miocárdica aguda quando seus níveis sobem e caem ao longo do tempo, ultrapassando o percentil 99 de referência. O problema é que a troponina também sobe em outras situações: infecção grave, insuficiência cardíaca, embolia pulmonar, anemia intensa, crises de pressão muito alta e até em tratamentos contra câncer.
+
+Nos idosos, essa distinção é ainda mais delicada. Com o envelhecimento, é comum que a troponina esteja levemente elevada de forma crônica por doenças cardíacas prévias, problema renal ou fibrose, sem que haja um infarto em andamento. A nova definição reforça que, para falar em infarto, é preciso somar à lesão miocárdica evidências de isquemia: sintomas compatíveis, alterações novas no eletrocardiograma ou exames de imagem que confirmem falta de oxigenação no coração.
+
+## 2. Sintomas atípicos: por que o idoso pode infartar sem dor no peito
+
+A dor no peito em aperto, clássica da propaganda, é menos frequente na terceira idade. Estudos mostram que quase metade dos idosos com síndrome coronariana aguda chega ao pronto-socorro sem esse sintoma. O que aparece é falta de ar de repente, cansaço extremo, tontura, náusea, dor no abdômen ou na parte de cima do estômago, confusão mental ou até desmaio. Alguns relatam apenas um mal-estar difuso, difícil de nomear.
+
+Essa apresentação atípica não é raridade: em idosos acima de 85 anos, a dor torácica clássica ocorre em apenas 40% dos casos. Diabetes, demência, uso de medicamentos para dor e a própria redução da percepção de dor com a idade explicam parte dessa máscara. O resultado é que a família pode subestimar o quadro, atribuindo a indisposição ao cansaço do dia, a uma gripe ou a uma azia passageira.
+
+## 3. O que a nova classificação muda na prática
+
+A antiga divisão em tipos 1 a 5 reunia mecanismos diferentes sob o mesmo número, dificultando a comunicação. O novo sistema é mais clínico:
+
+### Infarto primário
+
+Começa com problema agudo na própria artéria coronária. A causa mais comum é a ruptura de uma placa de gordura que forma um coágulo. Também entram casos menos frequentes, como dissecção espontânea da artéria, vasoespasmo ou embolia.
+
+### Infarto secundário
+
+Ocorre quando outra doença desequilibra a relação entre o oxigênio que chega ao coração e o que ele precisa. Anemia grave, pressão muito baixa, infecção sistêmica ou batimentos acelerados demais são exemplos.
+
+### Infarto relacionado a procedimento
+
+Complicação de intervenções cardíacas, como cateterismo ou cirurgia, em até 30 dias do procedimento.
+
+Para a família, essa reorganização significa que o médico poderá explicar com mais clareza o que aconteceu, por que aconteceu e qual o próximo passo.
+
+## 4. Quando a troponina alta exige atenção imediata
+
+Se o idoso já tem troponina elevada de forma crônica por doença cardíaca ou insuficiência renal, a chave está na mudança. A nova definição valoriza a dosagem seriada: não é o valor isolado que conta, mas como ele se comporta ao longo de horas. Uma subida acentuada, acompanhada de novos sintomas ou de alterações no eletrocardiograma, exige investigação urgente.
+
+O consenso também reforça o uso de valores de referência específicos por sexo. Em mulheres, o percentil 99 de troponina costuma ser mais baixo. Aplicar um único ponto de corte para ambos os sexos pode fazer com que infartos em mulheres passem despercebidos, um viés que a nova diretriz tenta corrigir.
+
+## 5. Quando levar o idoso ao pronto-socorro sem hesitar
+
+Não espere pela dor no peito clássica. Busque atendimento médico imediato se o idoso apresentar:
+
+- Falta de ar repentina
+- Desmaio ou sensação de desmaio iminente
+- Confusão mental súbita sem causa óbvia
+- Dor ou desconforto no abdômen superior acompanhado de suor frio
+- Náusea intensa com fraqueza
+- Cansaço extremo que impede atividades simples
+- Dor que irradia para o braço, mandíbula ou costas mesmo sem dor no peito
+
+Em idosos, o tempo é crítico: quanto maior o atraso no reconhecimento, maiores as chances de insuficiência cardíaca, arritmias graves ou morte.
+
+## 6. O que a família pode fazer enquanto espera ajuda
+
+Se houver suspeita de infarto, ligue para o serviço de emergência. Não tente levar o idoso de carro particular. Enquanto a ambulância não chega, mantenha-o sentado ou deitado em posição confortável, evite movimentos desnecessários e não ofereça alimento ou líquido. Se o idoso já usa medicação cardíaca prescrita, como nitratos, e estiver consciente, siga as orientações médicas prévias. Não administre remédios por conta própria.
+
+A vigilância atenta da família é o primeiro filtro de segurança. Conhecer o padrão habitual do idoso, como ele respira, como caminha, como dorme, permite perceber quando algo está fora do lugar, mesmo que o sintoma pareça banal.
+
+## 7. O papel do cuidador domiciliar na prevenção e no reconhecimento
+
+O diagnóstico de infarto nunca foi simples, e a nova definição universal reconhece essa complexidade. Para quem cuida de um idoso em São Paulo, entender que a troponina é apenas uma peça do quebra-cabeça, e que os sintomas podem se disfarçar de cansaço ou azia, pode fazer a diferença entre uma intervenção a tempo e uma consequência irreversível.
+
+Na Aegis Care, a equipe de enfermagem e cuidadores é treinada para reconhecer sinais de alerta cardíaco no dia a dia, documentar mudanças comportamentais e garantir que a família seja avisada com antecedência suficiente para agir. O cuidador profissional domiciliar atua como um observador contínuo: conhece o padrão basal do assistido, identifica variações sutis de respiração, disposição e cognição, e registra tudo em prontuário eletrônico em tempo real.
+
+Esse acompanhamento sistemático é especialmente importante para idosos com doença cardíaca conhecida, diabetes, insuficiência renal ou histórico de infarto. A supervisão de enfermagem garante que cada mudança seja avaliada por critério clínico, não por improviso.
+
+## 8. Considerações finais
+
+A 5ª Definição Universal de Infarto do Miocárdio é, antes de tudo, um reconhecimento de que o coração não conta sua história por um único número. O diagnóstico depende do contexto clínico, da evolução dos exames ao longo do tempo e da correlação com sintomas que, no idoso, raramente seguem o roteiro esperado.
+
+Para a família que cuida em casa, a mensagem prática é clara: conheça o habitual do seu familiar, não ignore mudanças sutis e busque ajuda profissional diante de qualquer sinal compatível. A segurança começa na observação.
+
+*Enfermeiro Gerontólogo: Cleiton Oliveira, Coren SP 661587 ENF, fundador da Aegis Care.*
+    `,
+    references: [
+      {
+        name: "Mills NL, Newby DE, Bhatt DL, et al. Fifth Universal Definition of Myocardial Infarction (2026). Eur Heart J.",
+        url: "https://academic.oup.com/eurheartj",
+        description: "Documento de consenso das quatro principais sociedades cardíacas sobre a nova classificação do infarto do miocárdio.",
+      },
+      {
+        name: "Shah ASV, Anand A, Sandoval Y, et al. Influence of Age on the Diagnosis of Myocardial Infarction. Circulation. 2022;146(16):1233-1245.",
+        url: "https://www.ahajournals.org/journal/circ",
+        description: "Estudo sobre como a idade afeta o diagnóstico de infarto e a interpretação da troponina em idosos.",
+      },
+      {
+        name: "Lucà F, D'Ascenzo F, Moretti C, et al. Acute Coronary Syndrome in Elderly Patients: How to Tackle Them? J Clin Med. 2024;13(19):5935.",
+        url: "https://www.mdpi.com/journal/jcm",
+        description: "Revisão sobre apresentações atípicas de síndrome coronariana aguda em pacientes idosos.",
+      },
+      {
+        name: "Khan IA, Karim HM, Panda CK, et al. Atypical presentations of myocardial infarction: a systematic review of case reports. Cureus. 2023;15(2):e35492.",
+        url: "https://www.cureus.com",
+        description: "Revisão sistemática de casos de infarto com apresentação atípica, incluindo sintomas em idosos.",
+      },
+    ],
+  },
   {
     id: "17",
     slug: "envelhecimento-populacao-lgbtqiapn-cuidado-domiciliar-inclusivo",
