@@ -39,7 +39,7 @@ export interface BlogArticle {
   references?: ArticleReference[];
 }
 
-export const blogArticles: BlogArticle[] = [
+const blogArticlesRaw: BlogArticle[] = [
   {
     id: "19",
     slug: "queda-no-idoso-o-que-fazer-imediatamente-quando-procurar-ajuda",
@@ -2770,6 +2770,10 @@ O diabetes é uma condição séria, mas com informação, hábitos saudáveis e
     ],
   }
 ];
+
+export const blogArticles: BlogArticle[] = [...blogArticlesRaw].sort(
+  (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+);
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined => {
   return blogArticles.find(article => article.slug === slug);
