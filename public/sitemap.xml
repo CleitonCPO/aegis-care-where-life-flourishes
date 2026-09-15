@@ -98,7 +98,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
+
+  <url>
+    <loc>https://www.aegiscare.com.br/blog/diabetes-o-que-e-tipos-e-como-viver-bem-com-a-doenca</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   
   <url>
     <loc>https://www.aegiscare.com.br/blog/guia-completo-cuidador-idosos</loc>
     <lastmod>2026-01-27</lastmod>
