@@ -17,6 +17,7 @@ import envelhecimentoSaudavelCuidadorEssencial from "@/assets/blog/envelheciment
 import envelhecimentoLgbtqiapn from "@/assets/blog/envelhecimento-lgbtqiapn-cuidado-domiciliar.jpg";
 import diagnosticoInfartoIdoso from "@/assets/blog/diagnostico-infarto-idoso-domiciliar.png";
 import quedaIdosoDomiciliar from "@/assets/blog/queda-idoso-domiciliar.png.asset.json";
+import diabetesCuidadoIdosoDomiciliar from "@/assets/blog/diabetes-cuidado-idoso-domiciliar.jpg";
 
 export interface ArticleReference {
   name: string;
