@@ -2583,6 +2583,191 @@ Famílias que enfrentam o **Alzheimer** precisam de apoio especializado. Na **Zo
 
 *Entre em contato para uma avaliação gratuita. Entendemos as necessidades específicas de pacientes com Alzheimer.*
     `
+  },
+  {
+    id: "20",
+    slug: "diabetes-o-que-e-tipos-e-como-viver-bem-com-a-doenca",
+    title: "Diabetes: O Que É, Tipos e Como Viver Bem com a Doença",
+    excerpt: "O diabetes deixa o açúcar do sangue elevado por falta ou mau uso da insulina. Entenda os tipos (1, 2 e gestacional), sintomas, diagnóstico, tratamento e os cuidados especiais para idosos, com orientações práticas de enfermagem domiciliar para controlar a glicemia e prevenir complicações.",
+    category: "Saúde e Doenças Crônicas",
+    author: "Cleiton Oliveira",
+    publishedAt: "2026-09-15",
+    readTime: "14 min",
+    image: diabetesCuidadoIdosoDomiciliar,
+    content: `
+## Resumo
+
+O diabetes é uma doença crônica que mantém o açúcar do sangue (glicemia) elevado por falta ou mau uso da insulina, hormônio que abre as portas das células para a glicose. Existem dois tipos principais: o tipo 1, autoimune, e o tipo 2, ligado a hábitos e genética. Ele não tem cura, mas é perfeitamente controlável. Com alimentação equilibrada, atividade física, medicação em dia e acompanhamento médico regular, é possível viver bem e prevenir complicações como problemas de coração, visão e rins.
+
+A Aegis Care acompanha pacientes diabéticos e idosos no cuidado domiciliar, ajudando no dia a dia do controle glicêmico, na educação em saúde e na prevenção de intercorrências. Continue lendo para entender os sintomas, o diagnóstico e as melhores estratégias para conviver bem com o diabetes.
+
+**Palavras-chave:** diabetes, o que é diabetes, tipos de diabetes, diabetes tipo 1, diabetes tipo 2, sintomas de diabetes, diagnóstico de diabetes, hemoglobina glicada, HbA1c, tratamento do diabetes, controle glicêmico, cuidado domiciliar de idosos diabéticos, enfermagem domiciliar, cuidador de idoso diabético, diabetes em idosos, prevenção de complicações do diabetes, hipoglicemia em idosos, cuidado de idosos de alto padrão, gestão de enfermagem domiciliar premium, assistência domiciliar São Paulo.
+
+## 1. O que é diabetes?
+
+O diabetes é uma doença em que o corpo não consegue manter o açúcar do sangue em níveis adequados. Isso acontece porque a insulina, o hormônio produzido pelo pâncreas que "entrega" a glicose para as células, está em falta ou não funciona bem.
+
+Sem insulina em ação, a glicose acumula no sangue em vez de virar energia. Com o tempo, essa elevação persistente danifica vasos sanguíneos e nervos, aumentando o risco de complicações nos olhos, rins, pés e coração.
+
+Existem diferentes tipos de diabetes, e conhecê-los ajuda a entender o próprio tratamento:
+
+### Diabetes tipo 1
+
+O sistema imune destrói as células produtoras de insulina. Costuma surgir na infância ou juventude e exige insulina diária para a vida toda. Representa cerca de 5% a 10% dos casos.
+
+### Diabetes tipo 2
+
+O corpo resiste à insulina. É o tipo mais comum (cerca de 90% dos casos) e se relaciona a peso, alimentação, sedentarismo e histórico familiar. Pode ser controlado com mudanças de hábitos, medicação oral e, em alguns casos, insulina.
+
+### Diabetes gestacional
+
+Surge durante a gravidez e costuma regredir após o parto, mas exige controle rigoroso para proteger mãe e bebê. Mulheres que tiveram diabetes gestacional têm maior risco de desenvolver diabetes tipo 2 no futuro.
+
+### Outras formas
+
+Causadas por doenças do pâncreas (como pancreatite crônica), uso prolongado de certos medicamentos (como corticoides), condições genéticas específicas, entre outras.
+
+## 2. Quais os sintomas de diabetes?
+
+Os sintomas aparecem quando a glicemia fica muito alta. Nem todo mundo apresenta sinais, muitos diabéticos nem desconfiam da condição, o que reforça a importância de exames periódicos, especialmente após os 45 anos.
+
+Os sinais mais comuns são:
+
+- Urinar muito, inclusive à noite (vontade frequente de urinar)
+- Sentir sede intensa e constante
+- Comer muito sem engordar, com fome frequente
+- Perda de peso sem explicação, principalmente no tipo 1
+- Cansaço, fraqueza e sonolência durante o dia
+- Visão embaçada
+- Feridas demorando a cicatrizar
+- Formigamento ou dormência nos pés, nos casos mais avançados
+- Infecções recorrentes, como candidíase e infecções urinárias
+
+## 3. Quais as causas do diabetes?
+
+As causas variam conforme o tipo. No diabetes tipo 1, trata-se de uma reação autoimune: o corpo ataca por engano as células produtoras de insulina. As causas exatas ainda são estudadas, mas envolvem fatores genéticos e ambientais.
+
+No diabetes tipo 2, que é o mais comum, as causas são uma combinação de fatores:
+
+- Sobrepeso e obesidade, principalmente gordura abdominal
+- Sedentarismo
+- Histórico familiar de diabetes
+- Idade acima de 45 anos (o risco aumenta com o envelhecimento)
+- Pressão alta e colesterol alterado
+- Diabetes gestacional anterior ou bebê com mais de 4 kg
+- Síndrome dos ovários policísticos, condição hormonal comum em mulheres
+
+## 4. Como é feito o diagnóstico do diabetes?
+
+O diagnóstico é simples e feito por exames de sangue. Segundo a Sociedade Brasileira de Diabetes (SBD), o diabetes é confirmado quando há um dos seguintes resultados, repetido em um segundo dia quando necessário:
+
+- **Glicemia de jejum** igual ou acima de 126 mg/dL
+- **Hemoglobina glicada (HbA1c)** igual ou acima de 6,5%, exame que mostra a média da glicemia dos últimos 2 a 3 meses
+- **Glicemia de 2 horas** após beber uma solução de glicose (teste de tolerância oral) igual ou acima de 200 mg/dL
+- **Glicemia aleatória** igual ou acima de 200 mg/dL em pessoa com sintomas
+
+Resultados intermediários (jejum entre 100 e 125 mg/dL ou HbA1c entre 5,7% e 6,4%) indicam pré-diabetes, fase em que a doença ainda pode ser evitada ou postergada com mudanças de hábitos. Esse é o momento ideal para intervir com orientação profissional.
+
+## 5. Como tratar e controlar o diabetes?
+
+O tratamento do diabetes combina medicamentos, alimentação, atividade física e monitoramento. O plano é individualizado: depende do tipo de diabetes, da idade, do peso e de outras condições de saúde.
+
+### Os pilares do controle
+
+**Alimentação equilibrada:** frutas, verduras, legumes, grãos integrais, feijões e carnes magras em porções controladas. Reduza açúcares, ultraprocessados e bebidas açucaradas. A orientação de um nutricionista potencializa os resultados.
+
+**Atividade física regular:** pelo menos 150 minutos semanais de exercício moderado, como caminhada, conforme orientação médica. A caminhada ajuda a glicose a entrar nas células e melhora a sensibilidade à insulina.
+
+**Medicação em dia:** comprimidos que reduzem a glicemia ou a insulina, nas doses e horários prescritos. Nunca suspenda por conta própria.
+
+**Monitoramento da glicemia:** testes capilares em casa e a HbA1c a cada 3 a 6 meses. Para a maioria dos adultos, a meta de HbA1c é abaixo de 7%.
+
+**Cuidado com os pés:** lave e seque bem os pés diariamente, hidrate e use calçados confortáveis. Feridas pequenas podem evoluir se não forem tratadas. Inspecione os pés todos os dias, preferencialmente com auxílio de um espelho.
+
+**Exames de rotina:** fundo de olho, creatinina (função dos rins) e check-up cardiológico, conforme recomendado pelo médico.
+
+## 6. Diabetes em idosos: o que muda?
+
+O diabetes em idosos merece atenção redobrada. Com o envelhecimento, os sintomas de glicemia alta ou baixa podem ser mais sutis: confusão mental, fraqueza ou quedas podem ser o único sinal de alerta. Por isso, a avaliação geriátrica e o acompanhamento de enfermagem domiciliar são tão importantes.
+
+### Pontos que mudam na terceira idade
+
+**Risco de hipoglicemia:** alguns medicamentos podem causar quedas bruscas de glicose, que em idosos aumentam o risco de quedas e fraturas. Sintomas como suor frio, tremor e tontura exigem ação rápida.
+
+**Metas individualizadas:** o médico pode definir metas menos rigorosas para pessoas muito idosas ou com outras doenças, priorizando segurança e qualidade de vida acima de números perfeitos.
+
+**Polifarmácia:** o uso de vários remédios exige organização e revisão periódica com a equipe de saúde. A interação entre medicamentos pode alterar a glicemia de forma imprevisível.
+
+**Síndrome da fragilidade:** o diabetes se associa ao processo de fragilização no idoso, com perda de massa muscular e redução da mobilidade. Isso reforça o valor do acompanhamento domiciliar contínuo, com cuidadores treinados e supervisão de enfermagem.
+
+## 7. O diabetes tem cura?
+
+A resposta honesta é: não existe cura definitiva conhecida, mas o diabetes tipo 2 pode entrar em remissão. Em algumas pessoas com sobrepeso, a perda significativa e sustentada de peso, por meio de mudanças de hábitos ou cirurgia bariátrica quando indicada, pode manter a glicemia normal sem medicação por períodos prolongados.
+
+Isso não significa que a doença desapareceu: as taxas de retorno são relevantes, e o acompanhamento médico deve continuar. Já o diabetes tipo 1 exige insulina para toda a vida, pois o corpo não produz o hormônio. Em todos os casos, o controle adequado permite uma vida plena e reduz drasticamente o risco de complicações.
+
+## 8. Como a Aegis Care pode ajudar no cuidado do diabetes?
+
+Conviver com diabetes exige constância, e é justamente no dia a dia que a Aegis Care atua. Nosso cuidado domiciliar inclui acompanhamento de enfermagem, organização da medicação, orientação alimentar e monitoramento da glicemia, sempre em articulação com a equipe médica assistente.
+
+Para idosos diabéticos e suas famílias, oferecemos um olhar próximo e preventivo, reduzindo intercorrências e trazendo mais segurança e qualidade de vida para casa. Nossos cuidadores são treinados para reconhecer sinais de alerta, aplicar o plano de cuidados prescrito e manter o prontuário eletrônico atualizado, garantindo transparência e comunicação constante com a família.
+
+## 9. Quando procurar um médico
+
+Procure avaliação profissional se você notar:
+
+- Sede intensa, urina muito frequente e perda de peso sem explicação
+- Visão embaçada persistente ou súbita
+- Feridas nos pés que não cicatrizam, vermelhidão ou secreção
+- Tontura, suor frio e tremores (possível hipoglicemia) que não melhoram após comer algo doce
+- Vômitos, respiração ofegante e confusão mental (sinais de glicemia muito elevada)
+- Números de glicemia repetidamente fora da meta, mesmo seguindo o tratamento
+
+## 10. Perguntas frequentes sobre diabetes
+
+**Diabetes pega por comer doce demais?**
+Não exatamente. Comer muito açúcar contribui para o ganho de peso, que é um fator de risco, mas o diabetes surge de uma combinação de genética, peso, idade e hábitos.
+
+**Pessoas magras podem ter diabetes?**
+Sim. O diabetes tipo 1 não está ligado ao peso, e o tipo 2 também pode acometer pessoas magras, especialmente com histórico familiar ou idade avançada.
+
+**Qual o exame mais confiável para diagnosticar diabetes?**
+A hemoglobina glicada (HbA1c) é um dos exames mais usados, pois reflete a glicemia média dos últimos meses, mas o médico pode combinar exames de jejum e de tolerância à glicose.
+
+**Frutas são proibidas para diabéticos?**
+Não. A maioria das frutas pode e deve ser consumida em porções moderadas, preferindo as frutas inteiras aos sucos, que têm açúcar absorvido mais rápido.
+
+**Diabético pode fazer exercício físico?**
+Sim, e deve. A atividade física ajuda a controlar a glicemia e o peso, desde que orientada pela equipe de saúde e combinada com o acompanhamento da glicemia.
+
+## 11. Considerações finais
+
+O diabetes é uma condição séria, mas com informação, hábitos saudáveis e acompanhamento regular você pode viver bem e prevenir complicações. Se reconheceu algum sintoma ou tem fatores de risco, agende um exame de glicemia: a prevenção começa com um simples passo. E conte com a Aegis Care para cuidar de você e da sua família, dentro de casa, todos os dias.
+
+*Enfermeiro Gerontólogo: Cleiton Oliveira, Coren SP 661587 ENF, fundador da Aegis Care.*
+    `,
+    references: [
+      {
+        name: "Sociedade Brasileira de Diabetes (SBD). Diretrizes da SBD 2023-2024.",
+        url: "https://diretrizes.diabetes.org.br/",
+        description: "Diretrizes oficiais da Sociedade Brasileira de Diabetes com critérios diagnósticos, metas de controle e recomendações terapêuticas atualizadas.",
+      },
+      {
+        name: "American Diabetes Association (ADA). Standards of Care in Diabetes 2025.",
+        url: "https://diabetesjournals.org/care",
+        description: "Padrões de cuidado em diabetes publicados pela American Diabetes Association, com recomendações sobre diagnóstico, monitoramento e manejo em idosos.",
+      },
+      {
+        name: "Ministério da Saúde. Diabetes Mellitus: estratégias de cuidado para pessoas com doenças crônicas. Cadernos de Atenção Básica.",
+        url: "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/diabetes",
+        description: "Documento do Ministério da Saúde com estratégias de cuidado para diabetes na atenção básica, incluindo abordagem domiciliar.",
+      },
+      {
+        name: "Cuevas et al. Diabetes in Older Adults: Pathophysiology, Assessment and Management. Journal of the American Geriatrics Society.",
+        url: "https://agsjournals.onlinelibrary.wiley.com/journal/15325415",
+        description: "Artigo científico sobre o manejo do diabetes em idosos, abordando metas individualizadas, hipoglicemia e síndrome da fragilidade.",
+      },
+    ],
   }
 ];
 
