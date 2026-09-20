@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getStoredRegion, setStoredRegion, type Region } from "@/lib/region";
+import { getStoredRegion, setStoredRegion, MG_WHATSAPP_URL, type Region } from "@/lib/region";
 
 const RegionGate = () => {
   const [open, setOpen] = useState(false);
@@ -11,6 +11,22 @@ const RegionGate = () => {
       const timer = setTimeout(() => setOpen(true), 600);
       return () => clearTimeout(timer);
     }
+  }, []);
+
+  // Redireciona todos os links de WhatsApp para o número de Minas Gerais
+  useEffect(() => {
+    const handleClick = (event: MouseEvent) => {
+      if (getStoredRegion() !== "MG") return;
+      const target = event.target as HTMLElement | null;
+      const anchor = target?.closest?.("a") as HTMLAnchorElement | null;
+      if (!anchor) return;
+      const href = anchor.getAttribute("href") || "";
+      if (!/wa\.me|api\.whatsapp\.com/.test(href)) return;
+      if (href === MG_WHATSAPP_URL) return;
+      anchor.setAttribute("href", MG_WHATSAPP_URL);
+    };
+    document.addEventListener("click", handleClick, true);
+    return () => document.removeEventListener("click", handleClick, true);
   }, []);
 
   const handleChoose = (region: Region) => {

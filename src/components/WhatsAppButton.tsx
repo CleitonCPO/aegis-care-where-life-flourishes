@@ -63,7 +63,8 @@ const WhatsAppButton = memo(() => {
   };
 
   const handleSendToWhatsApp = () => {
-    const message = `Olá! Meu nome é ${name}.\n\n${need}`;
+    const isMG = getStoredRegion() === "MG";
+    const message = `Olá! Meu nome é ${name}.${isMG ? "\nEstou em Minas Gerais." : ""}\n\n${need}`;
     const url = `https://api.whatsapp.com/send/?phone=${WHATSAPP_PHONE}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
     trackWhatsAppClick();
     window.open(url, "_blank", "noopener,noreferrer");
