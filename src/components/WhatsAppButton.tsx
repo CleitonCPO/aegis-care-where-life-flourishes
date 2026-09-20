@@ -2,6 +2,7 @@ import { MessageCircle, X, Send } from "lucide-react";
 import { memo, useState, useEffect } from "react";
 import { z } from "zod";
 import { trackWhatsAppClick } from "@/lib/gtag";
+import { getStoredRegion } from "@/lib/region";
 import aegisLogo from "@/assets/aegis-care-logo-optimized.webp";
 
 const WHATSAPP_PHONE = "5511920067183";
@@ -63,7 +64,8 @@ const WhatsAppButton = memo(() => {
   };
 
   const handleSendToWhatsApp = () => {
-    const message = `Olá! Meu nome é ${name}.\n\n${need}`;
+    const isMG = getStoredRegion() === "MG";
+    const message = `Olá! Meu nome é ${name}.${isMG ? "\nEstou em Minas Gerais." : ""}\n\n${need}`;
     const url = `https://api.whatsapp.com/send/?phone=${WHATSAPP_PHONE}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
     trackWhatsAppClick();
     window.open(url, "_blank", "noopener,noreferrer");
