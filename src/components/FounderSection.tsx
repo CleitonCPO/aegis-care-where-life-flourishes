@@ -1,7 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { memo } from "react";
-import founderImage from "@/assets/cleiton-oliveira-optimized.webp";
+import founderAsset from "@/assets/cleiton-oliveira.png.asset.json";
+
+const founderImage = founderAsset.url;
 
 const FounderSection = memo(() => {
   return (
