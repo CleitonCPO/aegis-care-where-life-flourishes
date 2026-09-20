@@ -15,18 +15,25 @@ const RegionGate = () => {
 
   // Redireciona todos os links de WhatsApp para o número de Minas Gerais
   useEffect(() => {
-    const handleClick = (event: MouseEvent) => {
+    const rewrite = () => {
       if (getStoredRegion() !== "MG") return;
-      const target = event.target as HTMLElement | null;
-      const anchor = target?.closest?.("a") as HTMLAnchorElement | null;
-      if (!anchor) return;
-      const href = anchor.getAttribute("href") || "";
-      if (!/wa\.me|api\.whatsapp\.com/.test(href)) return;
-      if (href === MG_WHATSAPP_URL) return;
-      anchor.setAttribute("href", MG_WHATSAPP_URL);
+      document
+        .querySelectorAll<HTMLAnchorElement>("a[href*='wa.me'], a[href*='api.whatsapp.com']")
+        .forEach((anchor) => {
+          if (anchor.getAttribute("href") !== MG_WHATSAPP_URL) {
+            anchor.setAttribute("href", MG_WHATSAPP_URL);
+          }
+        });
     };
-    document.addEventListener("click", handleClick, true);
-    return () => document.removeEventListener("click", handleClick, true);
+
+    rewrite();
+    const observer = new MutationObserver(() => rewrite());
+    observer.observe(document.body, { childList: true, subtree: true });
+    window.addEventListener("aegis-region-change", rewrite);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("aegis-region-change", rewrite);
+    };
   }, []);
 
   const handleChoose = (region: Region) => {
