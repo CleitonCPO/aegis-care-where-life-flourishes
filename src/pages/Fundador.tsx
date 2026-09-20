@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import cleitonAsset from "@/assets/cleiton-oliveira.png.asset.json";
+import cleitonAsset from "@/assets/cleiton-oliveira-mg.png.asset.json";
 
 const cleitonPhoto = cleitonAsset.url;
 import { trackWhatsAppClick } from "@/lib/gtag";
