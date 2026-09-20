@@ -4,7 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 import aboutImage from "@/assets/about-aegis-premium.jpg";
-import cleitonPhoto from "@/assets/cleiton-oliveira-optimized.webp";
+import cleitonAsset from "@/assets/cleiton-oliveira.png.asset.json";
+
+const cleitonPhoto = cleitonAsset.url;
 
 const pillars = [
   {
