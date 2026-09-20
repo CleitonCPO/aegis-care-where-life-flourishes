@@ -2,6 +2,7 @@ import { MessageCircle, X, Send } from "lucide-react";
 import { memo, useState, useEffect } from "react";
 import { z } from "zod";
 import { trackWhatsAppClick } from "@/lib/gtag";
+import { getStoredRegion } from "@/lib/region";
 import aegisLogo from "@/assets/aegis-care-logo-optimized.webp";
 
 const WHATSAPP_PHONE = "5511920067183";
