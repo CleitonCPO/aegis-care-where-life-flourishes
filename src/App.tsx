@@ -17,6 +17,7 @@ const Fundador = lazy(() => import("./pages/Fundador"));
 const PoliticaPrivacidade = lazy(() => import("./pages/PoliticaPrivacidade"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const WhatsAppButton = lazy(() => import("./components/WhatsAppButton"));
+const RegionGate = lazy(() => import("./components/RegionGate"));
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => (
           </Suspense>
           <Suspense fallback={null}>
             <WhatsAppButton />
+            <RegionGate />
           </Suspense>
         </BrowserRouter>
       </TooltipProvider>
