@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import cleitonAsset from "@/assets/cleiton-oliveira-consultorio.png.asset.json";
+import cleitonImg from "@/assets/cleiton-oliveira-consultorio.jpg";
 
-const cleitonPhoto = cleitonAsset.url;
+const cleitonPhoto = cleitonImg;
 import { trackWhatsAppClick } from "@/lib/gtag";
 
 const trajetoria = [
