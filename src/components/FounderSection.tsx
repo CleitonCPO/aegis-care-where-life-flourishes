@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { memo } from "react";
-import founderAsset from "@/assets/cleiton-oliveira-mg.png.asset.json";
+import founderAsset from "@/assets/cleiton-oliveira-consultorio.png.asset.json";
 
 const founderImage = founderAsset.url;
 
