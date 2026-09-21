@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 import aboutImage from "@/assets/about-aegis-premium.jpg";
-import cleitonAsset from "@/assets/cleiton-oliveira-mg.png.asset.json";
+import cleitonAsset from "@/assets/cleiton-oliveira-consultorio.png.asset.json";
 
 const cleitonPhoto = cleitonAsset.url;
 
