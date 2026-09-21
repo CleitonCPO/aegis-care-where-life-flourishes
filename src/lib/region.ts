@@ -8,6 +8,20 @@ const EVENT = "aegis-region-change";
 export const MG_WHATSAPP_URL =
   "https://wa.me/5511920067183?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Aegis%20Care%20e%20gostaria%20de%20conversar%20sobre%20cuidado%20domiciliar%20para%20um%20familiar%20em%20Minas%20Gerais.";
 
+export const MG_PATH = "/belo-horizonte";
+
+/** Visitas vindas de anúncios (Google Ads / campanhas) são tratadas como São Paulo. */
+export const isCampaignVisit = (): boolean => {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    return ["gclid", "gbraid", "wbraid", "utm_source", "utm_medium", "utm_campaign"].some((key) =>
+      params.has(key)
+    );
+  } catch {
+    return false;
+  }
+};
+
 export const getStoredRegion = (): Region | null => {
   try {
     const value = localStorage.getItem(STORAGE_KEY);
