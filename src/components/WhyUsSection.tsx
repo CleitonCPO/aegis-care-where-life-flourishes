@@ -34,7 +34,7 @@ const WhyUsSection = () => {
             Diferenciais da Aegis Care
           </span>
           <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-white mb-8 font-light">
-            Sofisticação assistencial não é luxo. É o cuidado certo, executado com método.
+            Cuidar bem não é questão de status. É o cuidado certo, executado com método.
           </h2>
           <p className="text-lg text-white/75 leading-[1.8] prose-justified">
             Uma agência de cuidadores de idosos em São Paulo, construída para famílias que
