@@ -11,7 +11,7 @@ const specialties = [
   },
   {
     title: "Reabilitação Pós-Operatória e Convalescença",
-    text: "Atendimento home care particular especializado para o retorno seguro do hospital para casa. A gestão de enfermagem domiciliar premium organiza medicação, mobilização progressiva, cuidados com curativos e a integração com fisioterapia e equipe médica assistente.",
+    text: "Atendimento home care particular especializado para o retorno seguro do hospital para casa. A gestão de enfermagem domiciliar especializada organiza medicação, mobilização progressiva, cuidados com curativos e a integração com fisioterapia e equipe médica assistente.",
     points: [
       "Transição hospital para casa com plano assistencial documentado",
       "Controle de dor, sinais vitais e adesão à prescrição médica",
@@ -28,7 +28,7 @@ const SpecialtiesSection = () => {
         <div className="max-w-3xl mb-16 md:mb-20">
           <span className="eyebrow mb-5 block">Patologias e especialidades</span>
           <h2 className="font-display text-3xl md:text-[2.5rem] lg:text-[2.75rem] leading-[1.12] text-foreground mb-6">
-            Cuidado de idosos de alto padrão em São Paulo para condições que exigem método clínico.
+            Cuidado especializado de idosos em São Paulo para condições que exigem método clínico.
           </h2>
           <p className="text-muted-foreground leading-[1.85] prose-justified">
             Cada quadro clínico exige um protocolo próprio. A Aegis Care estrutura o cuidado

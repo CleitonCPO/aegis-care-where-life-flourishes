@@ -44,7 +44,7 @@ const ServicoDetalhe = () => {
       name: service.name,
       alternateName: service.shortName,
       serviceType: service.shortName,
-      category: "Cuidado domiciliar de alto padrão",
+      category: "Cuidado domiciliar especializado",
       description: service.definition,
       url,
       image: `${SITE}${service.image}`,

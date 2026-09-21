@@ -328,7 +328,7 @@ Na prática, isso exige do serviço de assistência domiciliar:
 
 ## 5. A posição da Aegis Care
 
-A Aegis Care conduz **atendimento home care particular especializado** em São Paulo com um princípio inegociável: dentro da casa do assistido, quem define a própria história é ele. Nossa **gestão de enfermagem domiciliar premium** organiza o plano de cuidado a partir da pessoa real, com o nome pelo qual ela deseja ser chamada, os vínculos que ela reconhece e as escolhas que fez ao longo da vida.
+A Aegis Care conduz **atendimento home care particular especializado** em São Paulo com um princípio inegociável: dentro da casa do assistido, quem define a própria história é ele. Nossa **gestão de enfermagem domiciliar especializada** organiza o plano de cuidado a partir da pessoa real, com o nome pelo qual ela deseja ser chamada, os vínculos que ela reconhece e as escolhas que fez ao longo da vida.
 
 O acolhimento não é discurso institucional. Ele aparece na seleção criteriosa de cuidadores, na supervisão por enfermeiro habilitado junto ao COREN SP, no registro em prontuário eletrônico em tempo real e na retaguarda de plantão de enfermagem 24h. Envelhecer sob nossa égide significa continuar sendo quem se é, em casa, com dignidade e sem precisar se explicar.
 
@@ -485,7 +485,7 @@ Serviços que mensuram indicadores como taxa de quedas, readmissões hospitalare
 
 ## Considerações Finais
 
-O **envelhecimento saudável em casa** não é um luxo, mas uma necessidade estratégica diante da transição demográfica brasileira. A evidência científica é clara: o **cuidado domiciliar especializado**, quando bem estruturado e supervisionado, reduz hospitalizações, preserva a autonomia funcional, previne quedas e melhora a **qualidade de vida do idoso**.
+O **envelhecimento saudável em casa** não é um privilégio de poucos, mas uma necessidade estratégica diante da transição demográfica brasileira. A evidência científica é clara: o **cuidado domiciliar especializado**, quando bem estruturado e supervisionado, reduz hospitalizações, preserva a autonomia funcional, previne quedas e melhora a **qualidade de vida do idoso**.
 
 Contudo, o cuidado de qualidade não pode ser construído sobre a exaustão da família. A sobrecarga do cuidador informal, com prevalências que chegam a 70-84% em alguns contextos brasileiros, representa um risco tanto para o cuidador quanto para o idoso.
 
@@ -691,7 +691,7 @@ Para compreender a dimensão do desafio, é importante conhecer os números:
 | Idosos com limitações nas atividades diárias | 33% |
 | Prevalência de desnutrição em idosos em tratamento | 43,8% |
 
-Esses dados revelam que o cuidado domiciliar qualificado não é um luxo, é uma necessidade. O idoso que enfrenta o câncer precisa de muito mais do que tratamento médico, ele precisa de alguém que cuide de sua rotina, de seu conforto e de seu coração.
+Esses dados revelam que o cuidado domiciliar qualificado não é um privilégio de poucos, é uma necessidade. O idoso que enfrenta o câncer precisa de muito mais do que tratamento médico, ele precisa de alguém que cuide de sua rotina, de seu conforto e de seu coração.
 
 ## Vulnerabilidades Regionais e o Acesso ao Cuidado
 
@@ -2041,7 +2041,7 @@ A região conta com excelente estrutura:
 
 Entendemos que moradores da Anália Franco buscam:
 
-- Serviços premium de saúde
+- Serviços especializados de saúde
 - Profissionais altamente qualificados
 - Flexibilidade no atendimento
 - Comunicação constante com a família
@@ -2601,7 +2601,7 @@ O diabetes é uma doença crônica que mantém o açúcar do sangue (glicemia) e
 
 A Aegis Care acompanha pacientes diabéticos e idosos no cuidado domiciliar, ajudando no dia a dia do controle glicêmico, na educação em saúde e na prevenção de intercorrências. Continue lendo para entender os sintomas, o diagnóstico e as melhores estratégias para conviver bem com o diabetes.
 
-**Palavras-chave:** diabetes, o que é diabetes, tipos de diabetes, diabetes tipo 1, diabetes tipo 2, sintomas de diabetes, diagnóstico de diabetes, hemoglobina glicada, HbA1c, tratamento do diabetes, controle glicêmico, cuidado domiciliar de idosos diabéticos, enfermagem domiciliar, cuidador de idoso diabético, diabetes em idosos, prevenção de complicações do diabetes, hipoglicemia em idosos, cuidado de idosos de alto padrão, gestão de enfermagem domiciliar premium, assistência domiciliar São Paulo.
+**Palavras-chave:** diabetes, o que é diabetes, tipos de diabetes, diabetes tipo 1, diabetes tipo 2, sintomas de diabetes, diagnóstico de diabetes, hemoglobina glicada, HbA1c, tratamento do diabetes, controle glicêmico, cuidado domiciliar de idosos diabéticos, enfermagem domiciliar, cuidador de idoso diabético, diabetes em idosos, prevenção de complicações do diabetes, hipoglicemia em idosos, cuidado especializado de idosos, gestão de enfermagem domiciliar especializada, assistência domiciliar São Paulo.
 
 ## 1. O que é diabetes?
 

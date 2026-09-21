@@ -76,7 +76,7 @@ export const services: Service[] = [
     metaDescription:
       "Cuidador de idosos em domicílio em São Paulo, com avaliação de enfermagem, planos de 4h, 6h, 8h, 12h e 24h, além de escalas flexíveis e supervisão contínua. Solicite um orçamento.",
     keywords:
-      "cuidador de idosos, cuidador de idosos em domicílio, home care para idosos, agência de cuidadores São Paulo, cuidador 24 horas, cuidador 12 horas, cuidador 6 horas, plano de cuidador flexível, cuidado domiciliar de idosos de alto padrão",
+      "cuidador de idosos, cuidador de idosos em domicílio, home care para idosos, agência de cuidadores São Paulo, cuidador 24 horas, cuidador 12 horas, cuidador 6 horas, plano de cuidador flexível, cuidado domiciliar de idosos especializado",
     forWhom: [
       "Idosos que desejam permanecer em casa com segurança",
       "Famílias que precisam de apoio diurno, noturno ou integral",

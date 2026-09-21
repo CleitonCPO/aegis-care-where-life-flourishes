@@ -44,7 +44,7 @@ const ServicesSection = () => {
         <div className="max-w-3xl mb-20 md:mb-28">
           <span className="eyebrow mb-6 block">Serviços de cuidadores de idosos</span>
           <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-foreground mb-8">
-            Cuidado domiciliar de alto padrão, organizado em torno de uma única vida.
+            Cuidado domiciliar especializado, organizado em torno de uma única vida.
           </h2>
           <p className="text-lg text-muted-foreground leading-[1.8] prose-justified">
             Agência de cuidadores de idosos em São Paulo com planos de 4h, 6h, 8h, 12h, 24h e
