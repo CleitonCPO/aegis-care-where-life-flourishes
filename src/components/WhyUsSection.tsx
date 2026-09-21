@@ -20,7 +20,7 @@ const differentials = [
     text: "Toda a estrutura assistencial é desenhada para prevenir quedas, organizar medicações e manter a autonomia do idoso onde a vida sempre aconteceu.",
   },
   {
-    title: "Excelência assistencial premium",
+    title: "Excelência assistencial contínua",
     text: "Protocolos clínicos, visitas técnicas e revisão constante do plano de cuidado conforme a evolução do assistido, com discrição dentro do lar.",
   },
 ];
@@ -34,10 +34,10 @@ const WhyUsSection = () => {
             Diferenciais da Aegis Care
           </span>
           <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-white mb-8 font-light">
-            Sofisticação assistencial não é luxo. É o cuidado certo, executado com método.
+            Cuidar bem não é questão de status. É o cuidado certo, executado com método.
           </h2>
           <p className="text-lg text-white/75 leading-[1.8] prose-justified">
-            Uma agência de cuidadores de idosos premium em São Paulo, construída para famílias que
+            Uma agência de cuidadores de idosos em São Paulo, construída para famílias que
             esperam segurança, tranquilidade, presença humana e gestão de enfermagem domiciliar em
             cada detalhe do cotidiano do lar.
           </p>

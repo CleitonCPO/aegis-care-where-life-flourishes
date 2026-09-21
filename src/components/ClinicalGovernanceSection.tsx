@@ -13,7 +13,7 @@ const pillars = [
   },
   {
     title: "Auditoria clínica e visitas técnicas",
-    text: "Visitas técnicas presenciais, checagem documental dos profissionais e revisão do plano de cuidado sustentam uma gestão de enfermagem domiciliar premium do primeiro dia ao último.",
+    text: "Visitas técnicas presenciais, checagem documental dos profissionais e revisão do plano de cuidado sustentam uma gestão de enfermagem domiciliar especializada do primeiro dia ao último.",
   },
 ];
 
@@ -25,10 +25,10 @@ const ClinicalGovernanceSection = () => {
           <div className="lg:col-span-5">
             <span className="eyebrow eyebrow-gold mb-5 block">Governança clínica</span>
             <h2 className="font-display text-3xl md:text-[2.5rem] leading-[1.12] text-foreground mb-6">
-              Gestão de enfermagem domiciliar premium, com responsabilidade técnica declarada.
+              Gestão de enfermagem domiciliar especializada, com responsabilidade técnica declarada.
             </h2>
             <p className="text-muted-foreground leading-[1.85] prose-justified">
-              Cuidado de alto padrão não se sustenta apenas em boa vontade. Sustenta-se em
+              Cuidado especializado não se sustenta apenas em boa vontade. Sustenta-se em
               responsabilidade técnica, registro clínico e supervisão contínua de enfermeiros
               habilitados junto ao COREN-SP, com formação em Gerontologia.
             </p>

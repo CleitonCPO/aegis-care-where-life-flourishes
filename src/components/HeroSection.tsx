@@ -35,7 +35,7 @@ const HeroSection = memo(() => {
           >
             <span className="h-px w-12 bg-[hsl(var(--gold))]" />
             <span className="text-[hsl(var(--gold))] text-[0.7rem] tracking-[0.32em] uppercase font-medium">
-              Assistência Domiciliar Premium
+              Assistência Domiciliar Especializada
             </span>
           </div>
 

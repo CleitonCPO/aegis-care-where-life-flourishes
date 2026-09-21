@@ -130,7 +130,7 @@ const Servicos = () => {
           name="description" 
           content="Cuidador de idosos em domicílio em São Paulo com planos de 4h, 6h, 8h, 12h, 24h e flexíveis. Supervisão de enfermagem, cuidadores atualizados e prontuário eletrônico." 
         />
-        <meta name="keywords" content="cuidador de idosos, cuidador de idosos em domicílio, planos de cuidador 4h 6h 8h 12h 24h, cuidador 24 horas, cuidador noturno, agência de cuidadores de idosos São Paulo, home care premium, gestão de enfermagem domiciliar, acompanhante hospitalar, cuidador para Alzheimer e Parkinson, zona leste SP" />
+        <meta name="keywords" content="cuidador de idosos, cuidador de idosos em domicílio, planos de cuidador 4h 6h 8h 12h 24h, cuidador 24 horas, cuidador noturno, agência de cuidadores de idosos São Paulo, home care especializado, gestão de enfermagem domiciliar, acompanhante hospitalar, cuidador para Alzheimer e Parkinson, zona leste SP" />
         <link rel="canonical" href="https://www.aegiscare.com.br/servicos" />
         <meta property="og:title" content="Serviços de Cuidadores de Idosos em SP | Aegis Care" />
         <meta property="og:description" content="Planos de cuidador de idosos de 4h, 6h, 8h, 12h, 24h e flexíveis, com supervisão de enfermagem em São Paulo." />
@@ -153,7 +153,7 @@ const Servicos = () => {
           >
             <img 
               src={heroImage} 
-              alt="Cuidado domiciliar premium" 
+              alt="Cuidado domiciliar especializado" 
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-secondary/80" />
@@ -176,7 +176,7 @@ const Servicos = () => {
                 variants={fadeInUp}
                 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               >
-                Serviços Premium de{" "}
+                Serviços Especializados de{" "}
                 <span className="text-teal-light">Cuidado Domiciliar</span>
               </motion.h1>
               <motion.p 
