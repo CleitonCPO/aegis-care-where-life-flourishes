@@ -7,6 +7,7 @@ import LazySection from "@/components/LazySection";
 // Lazy load below-the-fold sections
 const FounderSection = lazy(() => import("@/components/FounderSection"));
 const AboutSection = lazy(() => import("@/components/AboutSection"));
+const WhatYouHireSection = lazy(() => import("@/components/WhatYouHireSection"));
 const MissionSection = lazy(() => import("@/components/MissionSection"));
 const ServicesSection = lazy(() => import("@/components/ServicesSection"));
 const WhyUsSection = lazy(() => import("@/components/WhyUsSection"));
@@ -61,6 +62,12 @@ const Index = memo(() => {
           </Suspense>
         </LazySection>
         
+        <LazySection>
+          <Suspense fallback={<SectionFallback />}>
+            <WhatYouHireSection />
+          </Suspense>
+        </LazySection>
+
         <LazySection>
           <Suspense fallback={<SectionFallback />}>
             <MissionSection />

@@ -9,6 +9,7 @@ import { trackWhatsAppClick } from "@/lib/gtag";
 import heroImage from "@/assets/hero-aegis-premium.jpg";
 
 const AboutSection = lazy(() => import("@/components/AboutSection"));
+const WhatYouHireSection = lazy(() => import("@/components/WhatYouHireSection"));
 const ServicesSection = lazy(() => import("@/components/ServicesSection"));
 const WhyUsSection = lazy(() => import("@/components/WhyUsSection"));
 const SpecialtiesSection = lazy(() => import("@/components/SpecialtiesSection"));
@@ -202,6 +203,12 @@ const BeloHorizonte = () => {
         <LazySection rootMargin="400px">
           <Suspense fallback={<SectionFallback />}>
             <AboutSection />
+          </Suspense>
+        </LazySection>
+
+        <LazySection>
+          <Suspense fallback={<SectionFallback />}>
+            <WhatYouHireSection />
           </Suspense>
         </LazySection>
 
