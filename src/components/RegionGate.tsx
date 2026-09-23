@@ -19,6 +19,11 @@ const RegionGate = () => {
   useEffect(() => {
     // Visitas de anúncio e a própria página de BH não veem a janela de escolha.
     if (isCampaignVisit() || location.pathname === MG_PATH) return;
+    // Visitante que já escolheu Minas Gerais volta direto para a home de BH.
+    if (getStoredRegion() === "MG" && location.pathname === "/") {
+      navigate(MG_PATH, { replace: true });
+      return;
+    }
     if (!getStoredRegion()) {
       const timer = setTimeout(() => setOpen(true), 600);
       return () => clearTimeout(timer);
