@@ -1,17 +1,34 @@
 import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getStoredRegion, setStoredRegion, MG_WHATSAPP_URL, type Region } from "@/lib/region";
+import {
+  getStoredRegion,
+  setStoredRegion,
+  isCampaignVisit,
+  MG_WHATSAPP_URL,
+  MG_PATH,
+  type Region,
+} from "@/lib/region";
 
 const RegionGate = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
+    // Visitas de anúncio e a própria página de BH não veem a janela de escolha.
+    if (isCampaignVisit() || location.pathname === MG_PATH) return;
+    // Visitante que já escolheu Minas Gerais volta direto para a home de BH.
+    if (getStoredRegion() === "MG" && location.pathname === "/") {
+      navigate(MG_PATH, { replace: true });
+      return;
+    }
     if (!getStoredRegion()) {
       const timer = setTimeout(() => setOpen(true), 600);
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [location.pathname]);
 
   // Redireciona todos os links de WhatsApp para o número de Minas Gerais
   useEffect(() => {
@@ -39,6 +56,9 @@ const RegionGate = () => {
   const handleChoose = (region: Region) => {
     setStoredRegion(region);
     setOpen(false);
+    if (region === "MG" && location.pathname !== MG_PATH) {
+      navigate(MG_PATH);
+    }
   };
 
   if (!open) return null;

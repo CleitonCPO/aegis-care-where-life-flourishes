@@ -1,6 +1,7 @@
 import { Phone, Mail, Instagram, Linkedin, Facebook, Youtube, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo-aegis-care-optimized.webp";
+import { setStoredRegion } from "@/lib/region";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -53,6 +54,24 @@ const Footer = () => {
               <li><Link to="/fundador" className="hover:text-white transition-colors">Fundador</Link></li>
               <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
               <li><a href="/#contato" className="hover:text-white transition-colors">Contato</a></li>
+              <li>
+                <Link
+                  to="/belo-horizonte"
+                  onClick={() => setStoredRegion("MG")}
+                  className="hover:text-white transition-colors"
+                >
+                  Belo Horizonte · MG
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/"
+                  onClick={() => setStoredRegion("SP")}
+                  className="hover:text-white transition-colors"
+                >
+                  São Paulo · SP
+                </Link>
+              </li>
             </ul>
           </div>
 
