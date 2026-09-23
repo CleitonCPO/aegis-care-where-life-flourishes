@@ -8,6 +8,14 @@
     <priority>1.0</priority>
   </url>
   
+  <!-- Belo Horizonte -->
+  <url>
+    <loc>https://www.aegiscare.com.br/belo-horizonte</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Quem Somos -->
   <url>
     <loc>https://www.aegiscare.com.br/quem-somos</loc>

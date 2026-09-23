@@ -53,6 +53,8 @@ const Footer = () => {
               <li><Link to="/fundador" className="hover:text-white transition-colors">Fundador</Link></li>
               <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
               <li><a href="/#contato" className="hover:text-white transition-colors">Contato</a></li>
+              <li><Link to="/belo-horizonte" className="hover:text-white transition-colors">Belo Horizonte · MG</Link></li>
+              <li><Link to="/" className="hover:text-white transition-colors">São Paulo · SP</Link></li>
             </ul>
           </div>
 

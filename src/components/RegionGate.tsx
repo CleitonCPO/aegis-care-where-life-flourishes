@@ -51,6 +51,9 @@ const RegionGate = () => {
   const handleChoose = (region: Region) => {
     setStoredRegion(region);
     setOpen(false);
+    if (region === "MG" && location.pathname !== MG_PATH) {
+      navigate(MG_PATH);
+    }
   };
 
   if (!open) return null;
