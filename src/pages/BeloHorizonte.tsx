@@ -9,6 +9,7 @@ import { trackWhatsAppClick } from "@/lib/gtag";
 import heroImage from "@/assets/hero-aegis-premium.jpg";
 
 const WhatYouHireSection = lazy(() => import("@/components/WhatYouHireSection"));
+const FounderSection = lazy(() => import("@/components/FounderSection"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 const SectionFallback = memo(() => (
