@@ -22,21 +22,18 @@ export const isCampaignVisit = (): boolean => {
   }
 };
 
-export const getStoredRegion = (): Region | null => {
-  try {
-    const value = localStorage.getItem(STORAGE_KEY);
-    return value === "SP" || value === "MG" ? value : null;
-  } catch {
-    return null;
-  }
-};
+// A escolha vale só enquanto a página está aberta: toda atualização pergunta de novo.
+let currentRegion: Region | null = null;
+try {
+  localStorage.removeItem(STORAGE_KEY);
+} catch {
+  /* ignore */
+}
+
+export const getStoredRegion = (): Region | null => currentRegion;
 
 export const setStoredRegion = (region: Region) => {
-  try {
-    localStorage.setItem(STORAGE_KEY, region);
-  } catch {
-    /* ignore */
-  }
+  currentRegion = region;
   window.dispatchEvent(new CustomEvent(EVENT, { detail: region }));
 };
 
