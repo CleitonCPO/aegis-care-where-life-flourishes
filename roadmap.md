@@ -1,3 +1,3 @@
 # Roadmap
-- [ ] Pergunta SP/MG em toda atualização da página (sem lembrar escolha)
-- [ ] Página BH enxuta, elegante, focada em conversão, sem conteúdo de São Paulo
+- [x] Pergunta SP/MG em toda atualização da página (sem lembrar escolha)
+- [x] Página BH enxuta, elegante, focada em conversão, sem conteúdo de São Paulo
