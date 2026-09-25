@@ -16,19 +16,17 @@ const RegionGate = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // Pergunta a região a cada carregamento (exceto visitas de anúncio, tratadas como SP).
   useEffect(() => {
-    // Visitas de anúncio e a própria página de BH não veem a janela de escolha.
-    if (isCampaignVisit() || location.pathname === MG_PATH) return;
-    // Visitante que já escolheu Minas Gerais volta direto para a home de BH.
-    if (getStoredRegion() === "MG" && location.pathname === "/") {
-      navigate(MG_PATH, { replace: true });
+    if (isCampaignVisit()) {
+      setStoredRegion("SP");
       return;
     }
     if (!getStoredRegion()) {
-      const timer = setTimeout(() => setOpen(true), 600);
+      const timer = setTimeout(() => setOpen(true), 400);
       return () => clearTimeout(timer);
     }
-  }, [location.pathname]);
+  }, []);
 
   // Redireciona todos os links de WhatsApp para o número de Minas Gerais
   useEffect(() => {
@@ -58,7 +56,10 @@ const RegionGate = () => {
     setOpen(false);
     if (region === "MG" && location.pathname !== MG_PATH) {
       navigate(MG_PATH);
+    } else if (region === "SP" && location.pathname === MG_PATH) {
+      navigate("/");
     }
+    window.scrollTo(0, 0);
   };
 
   if (!open) return null;

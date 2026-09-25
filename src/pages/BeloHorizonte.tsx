@@ -8,15 +8,7 @@ import { MG_WHATSAPP_URL } from "@/lib/region";
 import { trackWhatsAppClick } from "@/lib/gtag";
 import heroImage from "@/assets/hero-aegis-premium.jpg";
 
-const AboutSection = lazy(() => import("@/components/AboutSection"));
 const WhatYouHireSection = lazy(() => import("@/components/WhatYouHireSection"));
-const ServicesSection = lazy(() => import("@/components/ServicesSection"));
-const WhyUsSection = lazy(() => import("@/components/WhyUsSection"));
-const SpecialtiesSection = lazy(() => import("@/components/SpecialtiesSection"));
-const ClinicalGovernanceSection = lazy(() => import("@/components/ClinicalGovernanceSection"));
-const CareModelsSection = lazy(() => import("@/components/CareModelsSection"));
-const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
-const FAQSection = lazy(() => import("@/components/FAQSection"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 const SectionFallback = memo(() => (
@@ -202,57 +194,54 @@ const BeloHorizonte = () => {
 
         <LazySection rootMargin="400px">
           <Suspense fallback={<SectionFallback />}>
-            <AboutSection />
-          </Suspense>
-        </LazySection>
-
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
             <WhatYouHireSection />
           </Suspense>
         </LazySection>
 
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
-            <ServicesSection />
-          </Suspense>
-        </LazySection>
-
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
-            <WhyUsSection />
-          </Suspense>
-        </LazySection>
-
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
-            <SpecialtiesSection />
-          </Suspense>
-        </LazySection>
-
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
-            <ClinicalGovernanceSection />
-          </Suspense>
-        </LazySection>
-
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
-            <CareModelsSection />
-          </Suspense>
-        </LazySection>
-
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
-            <TestimonialsSection />
-          </Suspense>
-        </LazySection>
-
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
-            <FAQSection />
-          </Suspense>
-        </LazySection>
+        {/* Como começa */}
+        <section className="py-24 md:py-32 bg-[hsl(var(--navy-deep))]">
+          <div className="container-editorial">
+            <div className="max-w-2xl mb-16">
+              <div className="flex items-center gap-4 mb-8">
+                <span className="h-px w-12 bg-[hsl(var(--gold))]" />
+                <span className="text-[hsl(var(--gold))] text-[0.7rem] tracking-[0.32em] uppercase font-medium">
+                  Como começa
+                </span>
+              </div>
+              <h2 className="font-display text-3xl md:text-[2.75rem] leading-[1.15] text-white">
+                Do primeiro contato ao cuidador em casa, com calma e método.
+              </h2>
+            </div>
+            <ol className="grid md:grid-cols-3 gap-px bg-white/10">
+              {[
+                { n: "01", t: "Conversa inicial", d: "Você conta a rotina e as necessidades da sua família pelo WhatsApp." },
+                { n: "02", t: "Avaliação de enfermagem", d: "Nossa enfermagem avalia o assistido e desenha um plano individualizado." },
+                { n: "03", t: "Início do cuidado", d: "Apresentamos o cuidador compatível e seguimos acompanhando de perto." },
+              ].map((s) => (
+                <li key={s.n} className="bg-[hsl(var(--navy-deep))] p-8 md:p-10">
+                  <span className="font-display text-[hsl(var(--turquoise))] text-2xl">{s.n}</span>
+                  <h3 className="font-display text-xl text-white mt-6 mb-3">{s.t}</h3>
+                  <p className="text-white/70 leading-[1.8]">{s.d}</p>
+                </li>
+              ))}
+            </ol>
+            <a
+              href={MG_WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={trackWhatsAppClick}
+              className="inline-block mt-14"
+            >
+              <Button
+                variant="hero"
+                size="xl"
+                className="bg-white text-[hsl(var(--navy-deep))] hover:bg-[hsl(var(--turquoise))]"
+              >
+                Agendar avaliação em BH
+              </Button>
+            </a>
+          </div>
+        </section>
 
         {/* Contato BH */}
         <section id="contato" className="py-28 md:py-40 bg-background">
