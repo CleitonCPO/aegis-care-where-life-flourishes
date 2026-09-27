@@ -4,8 +4,9 @@ import { Menu, X, Phone, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-aegis-care-optimized.webp";
 import logoFallback from "@/assets/logo-aegis-care.png";
+import { useRegion, MG_PATH } from "@/lib/region";
 
-const navLinks = [
+const baseNavLinks: { href: string; label: string; isRoute?: boolean }[] = [
   { href: "/quem-somos", label: "Quem Somos", isRoute: true },
   { href: "/servicos", label: "Serviços", isRoute: true },
   { href: "#diferenciais", label: "Diferenciais" },
@@ -19,6 +20,15 @@ const Header = memo(() => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const { region } = useRegion();
+  const isMG = region === "MG" || location.pathname === MG_PATH;
+  const homePath = isMG ? MG_PATH : "/";
+  // Em BH, as âncoras apontam para as seções que existem na página de BH.
+  const navLinks = isMG
+    ? baseNavLinks
+        .filter((l) => l.href !== "#faq")
+        .map((l) => (l.href === "#diferenciais" ? { ...l, href: "#o-que-voce-contrata" } : l))
+    : baseNavLinks;
 
   useEffect(() => {
     let ticking = false;
@@ -39,8 +49,8 @@ const Header = memo(() => {
     e.preventDefault();
     const targetId = href.replace("#", "");
     
-    if (location.pathname !== "/") {
-      navigate("/", { state: { scrollTo: targetId } });
+    if (location.pathname !== homePath) {
+      navigate(homePath, { state: { scrollTo: targetId } });
     } else {
       const element = document.getElementById(targetId);
       if (element) {
@@ -48,7 +58,7 @@ const Header = memo(() => {
       }
     }
     setIsMobileMenuOpen(false);
-  }, [location.pathname, navigate]);
+  }, [location.pathname, navigate, homePath]);
 
   const closeMobileMenu = useCallback(() => {
     setIsMobileMenuOpen(false);
@@ -67,7 +77,7 @@ const Header = memo(() => {
       }`}
     >
       <div className="container-editorial flex items-center justify-between">
-        <Link to="/" className="flex items-center">
+        <Link to={homePath} className="flex items-center">
           <picture>
             <source srcSet={logo} type="image/webp" />
             <img
