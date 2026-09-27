@@ -23,6 +23,7 @@ const Header = memo(() => {
   const { region } = useRegion();
   const isMG = region === "MG" || location.pathname === MG_PATH;
   const homePath = isMG ? MG_PATH : "/";
+  const isLightHeader = isScrolled || (location.pathname !== "/" && location.pathname !== MG_PATH);
   // Em BH, as âncoras apontam para as seções que existem na página de BH.
   const navLinks = isMG
     ? baseNavLinks
@@ -71,7 +72,7 @@ const Header = memo(() => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
+        isLightHeader
           ? "bg-background/95 backdrop-blur-md border-b border-border py-3"
           : "bg-transparent py-5"
       }`}
@@ -100,7 +101,7 @@ const Header = memo(() => {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 ${isScrolled ? "text-foreground hover:text-[hsl(var(--teal-deep))]" : "text-white/90 hover:text-white"}`}
+                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 ${isLightHeader ? "text-foreground hover:text-[hsl(var(--teal-deep))]" : "text-primary-foreground/90 hover:text-primary-foreground"}`}
               >
                 {link.label}
               </Link>
@@ -109,7 +110,7 @@ const Header = memo(() => {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleAnchorClick(e, link.href)}
-                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 cursor-pointer ${isScrolled ? "text-foreground hover:text-[hsl(var(--teal-deep))]" : "text-white/90 hover:text-white"}`}
+                className={`text-[0.72rem] tracking-[0.22em] uppercase font-medium transition-colors duration-300 cursor-pointer ${isLightHeader ? "text-foreground hover:text-[hsl(var(--teal-deep))]" : "text-primary-foreground/90 hover:text-primary-foreground"}`}
               >
                 {link.label}
               </a>
