@@ -5,4 +5,4 @@
 - [x] Conectar Google Search Console nesta nova área de trabalho
 - [ ] Concluir verificação do site no Google e enviar sitemap (aguardando a nova publicação aparecer em www.aegiscare.com.br)
 - [x] Manter páginas internas ao escolher SP ou MG; menu deve abrir destino próprio
-- [ ] Corrigir hierarquia de títulos da página Serviços e confirmar nomes acessíveis no menu e rodapé
+- [x] Corrigir hierarquia de títulos da página Serviços e confirmar nomes acessíveis no menu e rodapé
