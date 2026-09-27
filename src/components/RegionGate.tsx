@@ -54,7 +54,8 @@ const RegionGate = () => {
   const handleChoose = (region: Region) => {
     setStoredRegion(region);
     setOpen(false);
-    if (region === "MG" && location.pathname !== MG_PATH) {
+    // Apenas troca de home: páginas internas mantêm sua função em ambas as regiões.
+    if (region === "MG" && location.pathname === "/") {
       navigate(MG_PATH);
     } else if (region === "SP" && location.pathname === MG_PATH) {
       navigate("/");
