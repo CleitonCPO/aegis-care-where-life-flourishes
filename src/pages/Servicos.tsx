@@ -248,7 +248,7 @@ const Servicos = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-teal-light text-sm font-medium mb-1">{item.subtitle}</p>
-                    <h3 className="text-white font-display text-xl font-bold">{item.title}</h3>
+                     <h2 className="text-white font-display text-xl font-bold">{item.title}</h2>
                   </div>
                 </motion.div>
               ))}
