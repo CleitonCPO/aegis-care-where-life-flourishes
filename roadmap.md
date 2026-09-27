@@ -4,3 +4,4 @@
 
 - [x] Conectar Google Search Console nesta nova área de trabalho
 - [ ] Concluir verificação do site no Google e enviar sitemap (aguardando a nova publicação aparecer em www.aegiscare.com.br)
+- [ ] Manter páginas internas ao escolher SP ou MG; menu deve abrir destino próprio
