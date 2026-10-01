@@ -4,7 +4,7 @@ import { Menu, X, Phone, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-aegis-care-optimized.webp";
 import logoFallback from "@/assets/logo-aegis-care.png";
-import { useWhatsAppLink, MG_PATH } from "@/lib/region";
+import { useWhatsAppLink } from "@/lib/region";
 
 const baseNavLinks: { href: string; label: string; isRoute?: boolean }[] = [
   { href: "/quem-somos", label: "Quem Somos", isRoute: true },
@@ -22,7 +22,7 @@ const Header = memo(() => {
   const navigate = useNavigate();
   const whatsAppLink = useWhatsAppLink();
   const homePath = "/";
-  const isLightHeader = isScrolled || (location.pathname !== "/" && location.pathname !== MG_PATH);
+  const isLightHeader = isScrolled || location.pathname !== "/";
   const navLinks = baseNavLinks;
 
   useEffect(() => {
