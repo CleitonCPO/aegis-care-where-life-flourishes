@@ -1,0 +1,2 @@
+Use `src/pages/Index.tsx` as the single shared homepage for both SP and MG; the region selection changes contact routing, not homepage content, to avoid divergent experiences.
+Keep a dedicated `/diferenciais` page for the homepage's differentiation CTA so the preview remains concise while the destination explains the commitments.
