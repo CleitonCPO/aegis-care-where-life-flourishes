@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MessageCircle } from "lucide-react";
 import { trackWhatsAppClick } from "@/lib/gtag";
+import { useWhatsAppLink } from "@/lib/region";
 
 const ContactSection = () => {
+  const whatsAppLink = useWhatsAppLink();
   return (
     <section id="contato" className="py-28 md:py-40 bg-background">
       <div className="container-editorial">
@@ -47,7 +49,7 @@ const ContactSection = () => {
             </div>
 
             <a
-              href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20gostaria%20de%20conversar%20sobre%20assist%C3%AAncia%20domiciliar%20para%20meu%20familiar.&type=phone_number&app_absent=0"
+              href={whatsAppLink("https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20gostaria%20de%20conversar%20sobre%20assist%C3%AAncia%20domiciliar%20para%20meu%20familiar.&type=phone_number&app_absent=0")}
               target="_blank"
               rel="noopener noreferrer"
               onClick={trackWhatsAppClick}

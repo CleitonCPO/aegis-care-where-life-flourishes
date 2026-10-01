@@ -2,18 +2,14 @@ import { lazy, Suspense, useEffect, memo } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import TrustStrip from "@/components/TrustStrip";
 import LazySection from "@/components/LazySection";
 
 // Lazy load below-the-fold sections
 const FounderSection = lazy(() => import("@/components/FounderSection"));
 const AboutSection = lazy(() => import("@/components/AboutSection"));
-const WhatYouHireSection = lazy(() => import("@/components/WhatYouHireSection"));
-const MissionSection = lazy(() => import("@/components/MissionSection"));
 const ServicesSection = lazy(() => import("@/components/ServicesSection"));
 const WhyUsSection = lazy(() => import("@/components/WhyUsSection"));
-const SpecialtiesSection = lazy(() => import("@/components/SpecialtiesSection"));
-const ClinicalGovernanceSection = lazy(() => import("@/components/ClinicalGovernanceSection"));
-const CareModelsSection = lazy(() => import("@/components/CareModelsSection"));
 const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
 const FAQSection = lazy(() => import("@/components/FAQSection"));
 const ContactSection = lazy(() => import("@/components/ContactSection"));
@@ -34,7 +30,7 @@ const Index = memo(() => {
     const state = location.state as { scrollTo?: string } | null;
     if (state?.scrollTo) {
       requestAnimationFrame(() => {
-        const element = document.getElementById(state.scrollTo!);
+        const element = document.getElementById(state.scrollTo);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
@@ -49,12 +45,7 @@ const Index = memo(() => {
       <Header />
       <main>
         <HeroSection />
-        
-        <LazySection rootMargin="400px">
-          <Suspense fallback={<SectionFallback />}>
-            <FounderSection />
-          </Suspense>
-        </LazySection>
+        <TrustStrip />
         
         <LazySection rootMargin="400px">
           <Suspense fallback={<SectionFallback />}>
@@ -64,43 +55,19 @@ const Index = memo(() => {
         
         <LazySection>
           <Suspense fallback={<SectionFallback />}>
-            <WhatYouHireSection />
+            <WhyUsSection />
           </Suspense>
         </LazySection>
 
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
-            <MissionSection />
-          </Suspense>
-        </LazySection>
-        
         <LazySection>
           <Suspense fallback={<SectionFallback />}>
             <ServicesSection />
           </Suspense>
         </LazySection>
-        
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
-            <WhyUsSection />
-          </Suspense>
-        </LazySection>
-        
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
-            <SpecialtiesSection />
-          </Suspense>
-        </LazySection>
 
         <LazySection>
           <Suspense fallback={<SectionFallback />}>
-            <ClinicalGovernanceSection />
-          </Suspense>
-        </LazySection>
-
-        <LazySection>
-          <Suspense fallback={<SectionFallback />}>
-            <CareModelsSection />
+            <FounderSection />
           </Suspense>
         </LazySection>
 

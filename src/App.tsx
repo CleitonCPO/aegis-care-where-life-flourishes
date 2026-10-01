@@ -11,7 +11,7 @@ const Index = lazy(() => import("./pages/Index"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogArticle = lazy(() => import("./pages/BlogArticle"));
 const QuemSomos = lazy(() => import("./pages/QuemSomos"));
-const BeloHorizonte = lazy(() => import("./pages/BeloHorizonte"));
+const Diferenciais = lazy(() => import("./pages/Diferenciais"));
 const Servicos = lazy(() => import("./pages/Servicos"));
 const ServicoDetalhe = lazy(() => import("./pages/ServicoDetalhe"));
 const Fundador = lazy(() => import("./pages/Fundador"));
@@ -33,7 +33,8 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/quem-somos" element={<QuemSomos />} />
-              <Route path="/belo-horizonte" element={<BeloHorizonte />} />
+              <Route path="/belo-horizonte" element={<Index />} />
+              <Route path="/diferenciais" element={<Diferenciais />} />
               <Route path="/servicos" element={<Servicos />} />
               <Route path="/servicos/:slug" element={<ServicoDetalhe />} />
               <Route path="/fundador" element={<Fundador />} />
