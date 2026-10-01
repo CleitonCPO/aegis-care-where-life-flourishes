@@ -6,6 +6,7 @@ import {
   getStoredRegion,
   setStoredRegion,
   isCampaignVisit,
+  MG_WHATSAPP_URL,
   MG_PATH,
   type Region,
 } from "@/lib/region";
@@ -38,6 +39,20 @@ const RegionGate = () => {
     }
     window.scrollTo(0, 0);
   };
+
+  useEffect(() => {
+    const routeWhatsApp = (event: MouseEvent) => {
+      if (getStoredRegion() !== "MG") return;
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+      const anchor = target.closest<HTMLAnchorElement>("a[href*='wa.me'], a[href*='api.whatsapp.com']");
+      if (!anchor) return;
+      event.preventDefault();
+      window.open(MG_WHATSAPP_URL, "_blank", "noopener,noreferrer");
+    };
+    document.addEventListener("click", routeWhatsApp, true);
+    return () => document.removeEventListener("click", routeWhatsApp, true);
+  }, []);
 
   if (!open) return null;
 
