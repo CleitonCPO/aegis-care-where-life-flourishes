@@ -1,5 +1,6 @@
 import { memo, useEffect, useRef, useState } from "react";
 import aboutImage from "@/assets/about-aegis-premium.jpg";
+import { Link } from "react-router-dom";
 
 const pillars = [
   {
@@ -54,11 +55,10 @@ const AboutSection = memo(() => {
             className={`text-lg text-muted-foreground leading-[1.8] transition-all duration-[900ms] prose-justified ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
             style={{ transitionDelay: "240ms" }}
           >
-            A Aegis Care é uma estrutura privada de assistência domiciliar dedicada a famílias
-            que entendem o cuidado como continuidade da história, e não como interrupção dela.
-            Atuamos com discrição, coordenação clínica de enfermagem e profissionais selecionados
-            para garantir presença humana, segurança e organização dentro do lar.
+            A Aegis Care é assistência domiciliar humana. Cuidamos de idosos e pessoas com dependência
+            no próprio lar com transparência, participação da família e valorização real de quem cuida.
           </p>
+          <Link to="/quem-somos" className="inline-flex mt-8 border-b border-[hsl(var(--gold))] pb-1 text-foreground font-medium hover:text-[hsl(var(--teal-deep))] transition-colors">Quem somos →</Link>
         </div>
 
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">

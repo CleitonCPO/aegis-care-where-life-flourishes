@@ -1,78 +1,18 @@
-const services = [
-  {
-    number: "01",
-    title: "Cuidadores selecionados",
-    description:
-      "Profissionais avaliados sob critérios técnicos, comportamentais e relacionais, escolhidos para o perfil de cada família.",
-  },
-  {
-    number: "02",
-    title: "Planos de 4h, 6h, 8h, 12h e 24h",
-    description:
-      "Escalas flexíveis de cuidador de idosos em domicílio, diurnas, noturnas ou integrais, ajustadas à rotina da casa em São Paulo.",
-  },
-  {
-    number: "03",
-    title: "Apoio às atividades diárias",
-    description:
-      "Suporte sensível à mobilidade, higiene, alimentação e convivência, preservando autonomia e dignidade.",
-  },
-  {
-    number: "04",
-    title: "Recuperação pós-hospitalar",
-    description:
-      "Acompanhamento estruturado após internações, com coordenação de enfermagem e atenção integral à evolução.",
-  },
-  {
-    number: "05",
-    title: "Coordenação clínica 24h",
-    description:
-      "Supervisão de enfermagem disponível em tempo integral, com registros, comunicação e visitas técnicas regulares.",
-  },
-  {
-    number: "06",
-    title: "Plano individualizado",
-    description:
-      "Cada assistência é desenhada a partir da história, do diagnóstico e dos desejos de quem é cuidado.",
-  },
-];
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   return (
     <section id="servicos" className="py-28 md:py-40 bg-background">
       <div className="container-editorial">
         <div className="max-w-3xl mb-20 md:mb-28">
-          <span className="eyebrow mb-6 block">Serviços de cuidadores de idosos</span>
+          <span className="eyebrow mb-6 block">Nossos serviços</span>
           <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-foreground mb-8">
-            Cuidado domiciliar especializado, organizado em torno de uma única vida.
+            Cuidado que se adapta à sua família
           </h2>
           <p className="text-lg text-muted-foreground leading-[1.8] prose-justified">
-            Agência de cuidadores de idosos em São Paulo com planos de 4h, 6h, 8h, 12h, 24h e
-            formatos flexíveis. Cada plano de cuidado é construído com a família e coordenado por
-            enfermagem para garantir segurança, conforto e a presença certa em cada momento.
+            Do acompanhamento diário à enfermagem especializada um plano de cuidado feito para a sua realidade.
           </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
-          {services.map((s) => (
-            <div
-              key={s.number}
-              className="group bg-background p-10 lg:p-12 transition-colors duration-500 hover:bg-[hsl(var(--cream))]"
-            >
-              <div className="flex items-start justify-between mb-8">
-                <span className="font-display text-[hsl(var(--teal-deep))] text-lg tabular-nums tracking-wider">
-                  {s.number}
-                </span>
-                <span className="h-px w-10 bg-[hsl(var(--gold))] mt-3 transition-all duration-500 group-hover:w-16" />
-              </div>
-              <h3 className="font-display text-2xl text-foreground mb-4 leading-tight">
-                {s.title}
-              </h3>
-              <p className="text-muted-foreground leading-[1.8] text-[15px]">
-                {s.description}
-              </p>
-            </div>
-          ))}
+          <Link to="/servicos" className="inline-flex mt-8 border-b border-[hsl(var(--gold))] pb-1 text-foreground font-medium hover:text-[hsl(var(--teal-deep))] transition-colors">Ver serviços →</Link>
         </div>
       </div>
     </section>

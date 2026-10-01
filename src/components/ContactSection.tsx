@@ -10,11 +10,10 @@ const ContactSection = () => {
           <div className="lg:col-span-7">
             <span className="eyebrow mb-6 block">Conversar</span>
             <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-foreground mb-10">
-              Estamos prontos para escutar a história da sua família.
+              Quer ver quem ama bem cuidado, em casa e perto da família?
             </h2>
             <p className="text-lg text-muted-foreground leading-[1.8] mb-12 max-w-xl prose-justified">
-              Cada atendimento começa por uma conversa atenta. A coordenação da Aegis Care
-              recebe seu contato pessoalmente, com a discrição que o momento exige.
+              Fale com a nossa equipe. Sem compromisso, sem letras miúdas com verdade e acolhimento.
             </p>
 
             <div className="space-y-px bg-border max-w-xl">

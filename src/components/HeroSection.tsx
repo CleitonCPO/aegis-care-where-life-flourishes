@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { memo, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useWhatsAppLink } from "@/lib/region";
 import heroImage from "@/assets/hero-aegis-premium.jpg";
 
 const HeroSection = memo(() => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const whatsAppLink = useWhatsAppLink();
 
   useEffect(() => {
     const t = setTimeout(() => setIsLoaded(true), 50);
@@ -35,7 +38,7 @@ const HeroSection = memo(() => {
           >
             <span className="h-px w-12 bg-[hsl(var(--gold))]" />
             <span className="text-[hsl(var(--gold))] text-[0.7rem] tracking-[0.32em] uppercase font-medium">
-              Assistência Domiciliar Especializada
+              Assistência Domiciliar Humana
             </span>
           </div>
 
@@ -43,34 +46,34 @@ const HeroSection = memo(() => {
             className={`font-display text-[2.25rem] md:text-5xl lg:text-[3.75rem] text-white font-normal leading-[1.08] mb-8 transition-all duration-[1100ms] ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
             style={{ transitionDelay: "150ms", letterSpacing: "-0.035em" }}
           >
-            Envelhecer em casa é um direito. Escolha cuidar com excelência.
+            Envelhecer em casa é um direito. E o cuidado pode ser humano, seguro e verdadeiro.
           </h1>
 
           <p
             className={`text-base md:text-lg text-white/85 mb-12 leading-[1.7] font-light max-w-xl transition-all duration-[1100ms] ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
             style={{ transitionDelay: "320ms" }}
           >
-            Segurança, tranquilidade e cuidadores sempre atualizados.
+            Coordenação de enfermagem, cuidadores selecionados e uma equipe que trata a sua família como trata a própria.
           </p>
 
           <div
             className={`flex flex-col sm:flex-row gap-4 transition-all duration-[1100ms] ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
             style={{ transitionDelay: "480ms" }}
           >
-            <a href="#sobre">
-              <Button variant="hero" size="xl" className="w-full sm:w-auto bg-white text-[hsl(var(--navy-deep))] hover:bg-[hsl(var(--turquoise))] hover:text-[hsl(var(--navy-deep))]">
-                Conheça a Aegis Care
-              </Button>
-            </a>
             <a
-              href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20conhecer%20a%20assist%C3%AAncia%20domiciliar%20para%20meu%20familiar.&type=phone_number&app_absent=0"
+              href={whatsAppLink("https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0")}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
+              <Button variant="hero" size="xl" className="w-full sm:w-auto bg-white text-[hsl(var(--navy-deep))] hover:bg-[hsl(var(--turquoise))] hover:text-[hsl(var(--navy-deep))]">
                 Falar com a equipe
               </Button>
             </a>
+            <Link to="/quem-somos">
+              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
+                Conheça a Aegis Care
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

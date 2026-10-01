@@ -30,31 +30,21 @@ const FounderSection = memo(() => {
           </div>
 
           <div className="lg:col-span-7">
-            <span className="eyebrow-gold eyebrow mb-6 block">Quem conduz</span>
+            <span className="eyebrow-gold eyebrow mb-6 block">A pessoa por trás da Aegis</span>
             <h2 className="font-display text-3xl md:text-[2.5rem] lg:text-[3rem] leading-[1.12] text-foreground mb-8">
-              Cleiton Oliveira
+              Quem conduz o cuidado
             </h2>
             <p className="text-base text-[hsl(var(--teal-deep))] uppercase tracking-[0.25em] mb-8 font-semibold text-xs">
               Enfermeiro · Gerontólogo · Fundador
             </p>
-            <div className="space-y-5 text-muted-foreground leading-[1.85] prose-justified">
-              <p>
-                Construiu a Aegis Care a partir de uma convicção: o cuidado domiciliar
-                precisa unir critério clínico, sensibilidade humana e uma estrutura discreta
-                capaz de sustentar famílias em momentos delicados.
-              </p>
-              <p>
-                Com formação em enfermagem, especialização em UTI e em gerontologia, e
-                anos de atuação dentro de lares reais, conduz pessoalmente a coordenação
-                assistencial e a curadoria de cada profissional que entra em uma casa
-                atendida pela Aegis Care.
-              </p>
-            </div>
+            <p className="text-muted-foreground leading-[1.85] prose-justified">
+              Cleiton Oliveira, enfermeiro e gerontólogo, fundou a Aegis para fazer diferente: cuidado com critério clínico e coração.
+            </p>
             <Link
               to="/fundador"
               className="inline-flex items-center gap-3 mt-10 text-[hsl(var(--navy-deep))] font-medium text-xs tracking-[0.25em] uppercase border-b border-[hsl(var(--gold))] pb-1 hover:text-[hsl(var(--teal-deep))] transition-colors group"
             >
-              Conheça a trajetória
+              Conheça a história
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
