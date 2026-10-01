@@ -7,7 +7,6 @@ import {
   setStoredRegion,
   isCampaignVisit,
   MG_WHATSAPP_URL,
-  MG_PATH,
   type Region,
 } from "@/lib/region";
 
@@ -32,9 +31,7 @@ const RegionGate = () => {
     setStoredRegion(region);
     setOpen(false);
     // A mesma home atende as duas regiões; a escolha só altera o contato.
-    if (region === "MG" && location.pathname === "/") {
-      navigate(MG_PATH);
-    } else if (region === "SP" && location.pathname === MG_PATH) {
+    if (location.pathname === "/belo-horizonte") {
       navigate("/");
     }
     window.scrollTo(0, 0);

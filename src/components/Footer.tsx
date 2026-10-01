@@ -56,7 +56,7 @@ const Footer = () => {
               <li><a href="/#contato" className="hover:text-white transition-colors">Contato</a></li>
               <li>
                 <Link
-                  to="/belo-horizonte"
+                  to="/"
                   onClick={() => setStoredRegion("MG")}
                   className="hover:text-white transition-colors"
                 >

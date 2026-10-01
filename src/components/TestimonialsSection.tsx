@@ -48,7 +48,7 @@ const TestimonialsSection = () => {
         <div className="max-w-3xl mb-20">
           <span className="eyebrow mb-6 block">Famílias atendidas</span>
           <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-foreground">
-            Relatos que descrevem melhor do que palavras o que entregamos.
+            Relatos das Famílias
           </h2>
         </div>
 
