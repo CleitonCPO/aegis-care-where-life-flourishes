@@ -1,23 +1,6 @@
 import { memo, useEffect, useRef, useState } from "react";
 import aboutImage from "@/assets/about-aegis-premium.jpg";
-
-const pillars = [
-  {
-    title: "Dignidade",
-    description:
-      "Cada decisão de cuidado começa pelo respeito à história, aos hábitos e à individualidade de quem cuidamos.",
-  },
-  {
-    title: "Autonomia",
-    description:
-      "Preservamos a liberdade do cotidiano. O cuidado existe para sustentar a vida que já é vivida, não para substituí-la.",
-  },
-  {
-    title: "Permanência",
-    description:
-      "O lar é o lugar onde a identidade se preserva. Levamos até ele a estrutura assistencial que protege e acolhe.",
-  },
-];
+import { Link } from "react-router-dom";
 
 const AboutSection = memo(() => {
   const [isVisible, setIsVisible] = useState(false);
@@ -54,18 +37,13 @@ const AboutSection = memo(() => {
             className={`text-lg text-muted-foreground leading-[1.8] transition-all duration-[900ms] prose-justified ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
             style={{ transitionDelay: "240ms" }}
           >
-            A Aegis Care é uma estrutura privada de assistência domiciliar dedicada a famílias
-            que entendem o cuidado como continuidade da história, e não como interrupção dela.
-            Atuamos com discrição, coordenação clínica de enfermagem e profissionais selecionados
-            para garantir presença humana, segurança e organização dentro do lar.
+            A Aegis Care é assistência domiciliar humana. Cuidamos de idosos e pessoas com dependência
+            no próprio lar com transparência, participação da família e valorização real de quem cuida.
           </p>
+          <Link to="/quem-somos" className="inline-flex mt-8 border-b border-[hsl(var(--gold))] pb-1 text-foreground font-medium hover:text-[hsl(var(--teal-deep))] transition-colors">Quem somos →</Link>
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          <div
-            className={`lg:col-span-6 transition-all duration-[1100ms] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-            style={{ transitionDelay: "360ms" }}
-          >
+        <div className="max-w-4xl transition-all duration-[1100ms]">
             <div className="relative overflow-hidden rounded-sm shadow-card">
               <img
                 src={aboutImage}
@@ -82,31 +60,6 @@ const AboutSection = memo(() => {
                 Cuidado dentro do lar
               </p>
             </div>
-          </div>
-
-          <div className="lg:col-span-6 lg:pt-8">
-            <div className="space-y-12">
-              {pillars.map((p, i) => (
-                <div
-                  key={p.title}
-                  className={`transition-all duration-[900ms] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-                  style={{ transitionDelay: `${480 + i * 140}ms` }}
-                >
-                  <div className="flex items-baseline gap-6 mb-3">
-                    <span className="font-display text-[hsl(var(--teal-deep))] text-2xl tabular-nums">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="font-display text-2xl md:text-[1.7rem] text-foreground">
-                      {p.title}
-                    </h3>
-                  </div>
-                  <p className="text-muted-foreground leading-[1.85] pl-12 prose-justified">
-                    {p.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

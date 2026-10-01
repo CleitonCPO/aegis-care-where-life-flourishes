@@ -1,28 +1,10 @@
+import { Link } from "react-router-dom";
+
 const differentials = [
-  {
-    title: "Coordenação de enfermagem 24h",
-    text: "Cada caso de cuidado domiciliar de idosos é acompanhado clinicamente por um enfermeiro responsável, com supervisão contínua da equipe em campo.",
-  },
-  {
-    title: "Cuidadores selecionados e sempre atualizados",
-    text: "Processo seletivo com avaliação técnica, comportamental e validação documental, somado a treinamento e reciclagem permanente dos cuidadores de idosos.",
-  },
-  {
-    title: "Planos de 4h, 6h, 8h, 12h, 24h e flexíveis",
-    text: "Escalas de cuidador de idosos em domicílio ajustadas à rotina da família, incluindo períodos diurnos, plantões noturnos, finais de semana e cobertura integral.",
-  },
-  {
-    title: "Comunicação próxima à família",
-    text: "Registros diários em prontuário eletrônico e canais diretos com a coordenação de enfermagem para decisões compartilhadas e acompanhamento em tempo real.",
-  },
-  {
-    title: "Envelhecer em casa com segurança",
-    text: "Toda a estrutura assistencial é desenhada para prevenir quedas, organizar medicações e manter a autonomia do idoso onde a vida sempre aconteceu.",
-  },
-  {
-    title: "Excelência assistencial contínua",
-    text: "Protocolos clínicos, visitas técnicas e revisão constante do plano de cuidado conforme a evolução do assistido, com discrição dentro do lar.",
-  },
+  { title: "Transparência em cada etapa", text: "A família por dentro de tudo." },
+  { title: "Participação da família", text: "A família participa de cada decisão de cuidado." },
+  { title: "Cuidadores valorizados", text: "Cuidadores ouvidos, orientados e valorizados não são números." },
+  { title: "Fundador presente", text: "Conduz pessoalmente a coordenação." },
 ];
 
 const WhyUsSection = () => {
@@ -31,17 +13,16 @@ const WhyUsSection = () => {
       <div className="container-editorial relative z-10">
         <div className="max-w-3xl mb-20 md:mb-28">
           <span className="text-[hsl(var(--turquoise))] text-[0.7rem] tracking-[0.32em] uppercase font-medium mb-6 block">
-            Diferenciais da Aegis Care
+            Aegis Care
           </span>
           <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-white mb-8 font-light">
-            Cuidar bem não é questão de status. É o cuidado certo, executado com método.
+            O que nos diferencia
           </h2>
           <p className="text-lg text-white/75 leading-[1.8] prose-justified">
-            Uma agência de cuidadores de idosos em São Paulo, construída para famílias que
-            esperam segurança, tranquilidade, presença humana e gestão de enfermagem domiciliar em
-            cada detalhe do cotidiano do lar.
+            Não somos os maiores. Buscamos ser os mais verdadeiros.
           </p>
         </div>
+        <Link to="/diferenciais" className="inline-flex mt-12 border-b border-[hsl(var(--gold))] pb-1 text-primary-foreground font-medium hover:text-[hsl(var(--turquoise))] transition-colors">Nosso diferencial →</Link>
 
         <div className="grid md:grid-cols-2 gap-x-16 gap-y-14">
           {differentials.map((item, i) => (

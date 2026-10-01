@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MessageCircle } from "lucide-react";
 import { trackWhatsAppClick } from "@/lib/gtag";
+import { useWhatsAppLink } from "@/lib/region";
 
 const ContactSection = () => {
+  const whatsAppLink = useWhatsAppLink();
   return (
     <section id="contato" className="py-28 md:py-40 bg-background">
       <div className="container-editorial">
@@ -10,11 +12,10 @@ const ContactSection = () => {
           <div className="lg:col-span-7">
             <span className="eyebrow mb-6 block">Conversar</span>
             <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-foreground mb-10">
-              Estamos prontos para escutar a história da sua família.
+              Quer ver quem ama bem cuidado, em casa e perto da família?
             </h2>
             <p className="text-lg text-muted-foreground leading-[1.8] mb-12 max-w-xl prose-justified">
-              Cada atendimento começa por uma conversa atenta. A coordenação da Aegis Care
-              recebe seu contato pessoalmente, com a discrição que o momento exige.
+              Fale com a nossa equipe. Sem compromisso, sem letras miúdas com verdade e acolhimento.
             </p>
 
             <div className="space-y-px bg-border max-w-xl">
@@ -48,7 +49,7 @@ const ContactSection = () => {
             </div>
 
             <a
-              href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20gostaria%20de%20conversar%20sobre%20assist%C3%AAncia%20domiciliar%20para%20meu%20familiar.&type=phone_number&app_absent=0"
+              href={whatsAppLink("https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20gostaria%20de%20conversar%20sobre%20assist%C3%AAncia%20domiciliar%20para%20meu%20familiar.&type=phone_number&app_absent=0")}
               target="_blank"
               rel="noopener noreferrer"
               onClick={trackWhatsAppClick}

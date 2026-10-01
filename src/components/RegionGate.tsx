@@ -7,7 +7,6 @@ import {
   setStoredRegion,
   isCampaignVisit,
   MG_WHATSAPP_URL,
-  MG_PATH,
   type Region,
 } from "@/lib/region";
 
@@ -28,40 +27,29 @@ const RegionGate = () => {
     }
   }, []);
 
-  // Redireciona todos os links de WhatsApp para o número de Minas Gerais
-  useEffect(() => {
-    const rewrite = () => {
-      if (getStoredRegion() !== "MG") return;
-      document
-        .querySelectorAll<HTMLAnchorElement>("a[href*='wa.me'], a[href*='api.whatsapp.com']")
-        .forEach((anchor) => {
-          if (anchor.getAttribute("href") !== MG_WHATSAPP_URL) {
-            anchor.setAttribute("href", MG_WHATSAPP_URL);
-          }
-        });
-    };
-
-    rewrite();
-    const observer = new MutationObserver(() => rewrite());
-    observer.observe(document.body, { childList: true, subtree: true });
-    window.addEventListener("aegis-region-change", rewrite);
-    return () => {
-      observer.disconnect();
-      window.removeEventListener("aegis-region-change", rewrite);
-    };
-  }, []);
-
   const handleChoose = (region: Region) => {
     setStoredRegion(region);
     setOpen(false);
-    // Apenas troca de home: páginas internas mantêm sua função em ambas as regiões.
-    if (region === "MG" && location.pathname === "/") {
-      navigate(MG_PATH);
-    } else if (region === "SP" && location.pathname === MG_PATH) {
+    // A mesma home atende as duas regiões; a escolha só altera o contato.
+    if (location.pathname === "/belo-horizonte") {
       navigate("/");
     }
     window.scrollTo(0, 0);
   };
+
+  useEffect(() => {
+    const routeWhatsApp = (event: MouseEvent) => {
+      if (getStoredRegion() !== "MG") return;
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+      const anchor = target.closest<HTMLAnchorElement>("a[href*='wa.me'], a[href*='api.whatsapp.com']");
+      if (!anchor) return;
+      event.preventDefault();
+      window.open(MG_WHATSAPP_URL, "_blank", "noopener,noreferrer");
+    };
+    document.addEventListener("click", routeWhatsApp, true);
+    return () => document.removeEventListener("click", routeWhatsApp, true);
+  }, []);
 
   if (!open) return null;
 

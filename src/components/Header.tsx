@@ -4,7 +4,7 @@ import { Menu, X, Phone, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-aegis-care-optimized.webp";
 import logoFallback from "@/assets/logo-aegis-care.png";
-import { useRegion, MG_PATH } from "@/lib/region";
+import { useWhatsAppLink } from "@/lib/region";
 
 const baseNavLinks: { href: string; label: string; isRoute?: boolean }[] = [
   { href: "/quem-somos", label: "Quem Somos", isRoute: true },
@@ -20,16 +20,10 @@ const Header = memo(() => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  const { region } = useRegion();
-  const isMG = region === "MG" || location.pathname === MG_PATH;
-  const homePath = isMG ? MG_PATH : "/";
-  const isLightHeader = isScrolled || (location.pathname !== "/" && location.pathname !== MG_PATH);
-  // Em BH, as âncoras apontam para as seções que existem na página de BH.
-  const navLinks = isMG
-    ? baseNavLinks
-        .filter((l) => l.href !== "#faq")
-        .map((l) => (l.href === "#diferenciais" ? { ...l, href: "#o-que-voce-contrata" } : l))
-    : baseNavLinks;
+  const whatsAppLink = useWhatsAppLink();
+  const homePath = "/";
+  const isLightHeader = isScrolled || location.pathname !== "/";
+  const navLinks = baseNavLinks;
 
   useEffect(() => {
     let ticking = false;
@@ -120,7 +114,7 @@ const Header = memo(() => {
 
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
+             href={whatsAppLink("https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0")}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -180,7 +174,7 @@ const Header = memo(() => {
             ))}
             <div className="border-t border-border mt-2 pt-4 flex flex-col gap-3">
               <a
-                href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
+                 href={whatsAppLink("https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0")}
                 target="_blank"
                 rel="noopener noreferrer"
               >
