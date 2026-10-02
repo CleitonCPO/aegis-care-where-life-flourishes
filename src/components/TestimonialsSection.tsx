@@ -1,10 +1,6 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
+import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
@@ -42,17 +38,36 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [selected, setSelected] = useState(0);
+  const [snapCount, setSnapCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+    const update = () => {
+      setSelected(api.selectedScrollSnap());
+      setSnapCount(api.scrollSnapList().length);
+    };
+    update();
+    api.on("select", update);
+    api.on("reInit", update);
+    return () => {
+      api.off("select", update);
+      api.off("reInit", update);
+    };
+  }, [api]);
+
   return (
-    <section id="depoimentos" className="py-28 md:py-40 bg-background overflow-hidden">
+    <section id="depoimentos" className="py-16 md:py-24 bg-background overflow-hidden">
       <div className="container-editorial">
-        <div className="max-w-3xl mb-20">
+        <div className="max-w-3xl mb-12">
           <span className="eyebrow mb-6 block">Famílias atendidas</span>
           <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-foreground">
             Relatos das Famílias
           </h2>
         </div>
 
-        <Carousel opts={{ align: "start", loop: true }} className="w-full">
+        <Carousel opts={{ align: "start", loop: true }} setApi={setApi} className="w-full">
           <CarouselContent className="-ml-6 md:-ml-10">
             {testimonials.map((t, index) => (
               <CarouselItem key={index} className="pl-6 md:pl-10 basis-[88%] sm:basis-1/2 lg:basis-1/3">
@@ -69,9 +84,21 @@ const TestimonialsSection = () => {
             ))}
           </CarouselContent>
 
-          <div className="flex justify-end gap-3 mt-12">
-            <CarouselPrevious className="static translate-y-0 bg-background border border-border hover:bg-[hsl(var(--navy-deep))] hover:text-white hover:border-[hsl(var(--navy-deep))] rounded-sm min-w-[48px] min-h-[48px]" />
-            <CarouselNext className="static translate-y-0 bg-background border border-border hover:bg-[hsl(var(--navy-deep))] hover:text-white hover:border-[hsl(var(--navy-deep))] rounded-sm min-w-[48px] min-h-[48px]" />
+          <div className="flex justify-center gap-1 mt-8" aria-label="Navegação dos relatos">
+            {Array.from({ length: snapCount }, (_, index) => (
+              <Button
+                key={index}
+                type="button"
+                variant="ghost"
+                size="icon"
+                aria-label={`Ir para o relato ${index + 1}`}
+                aria-current={selected === index ? "true" : undefined}
+                onClick={() => api?.scrollTo(index)}
+                className="h-11 w-8"
+              >
+                <span className={`block h-1.5 rounded-full transition-all ${selected === index ? "w-6 bg-primary" : "w-1.5 bg-muted-foreground"}`} />
+              </Button>
+            ))}
           </div>
         </Carousel>
       </div>

@@ -60,11 +60,11 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="faq" className="py-28 md:py-40 bg-[hsl(var(--cream))]">
+    <section id="faq" className="py-16 md:py-24 bg-[hsl(var(--cream))]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <div className="container-editorial">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
           <div className="lg:col-span-4">
             <span className="eyebrow mb-6 block">Perguntas frequentes</span>
             <h2 className="font-display text-3xl md:text-[2.5rem] lg:text-[2.75rem] leading-[1.1] text-foreground mb-6">
