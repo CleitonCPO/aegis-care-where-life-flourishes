@@ -43,9 +43,9 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section id="depoimentos" className="py-28 md:py-40 bg-background overflow-hidden">
+    <section id="depoimentos" className="py-16 md:py-24 bg-background overflow-hidden">
       <div className="container-editorial">
-        <div className="max-w-3xl mb-20">
+        <div className="max-w-3xl mb-12">
           <span className="eyebrow mb-6 block">Famílias atendidas</span>
           <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-foreground">
             Relatos das Famílias

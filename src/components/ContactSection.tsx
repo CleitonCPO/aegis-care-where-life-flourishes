@@ -6,9 +6,9 @@ import { useWhatsAppLink } from "@/lib/region";
 const ContactSection = () => {
   const whatsAppLink = useWhatsAppLink();
   return (
-    <section id="contato" className="py-28 md:py-40 bg-background">
+    <section id="contato" className="py-16 md:py-24 bg-background">
       <div className="container-editorial">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           <div className="lg:col-span-7">
             <span className="eyebrow mb-6 block">Conversar</span>
             <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl leading-[1.1] text-foreground mb-10">

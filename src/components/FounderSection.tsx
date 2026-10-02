@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { memo } from "react";
 import founderImageSrc from "@/assets/cleiton-oliveira-consultorio.jpg";
@@ -7,9 +6,9 @@ const founderImage = founderImageSrc;
 
 const FounderSection = memo(() => {
   return (
-    <section className="py-28 md:py-40 bg-[hsl(var(--cream))]">
+    <section className="py-16 md:py-24 bg-[hsl(var(--cream))]">
       <div className="container-editorial">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center max-w-6xl mx-auto">
           <div className="lg:col-span-5">
             <div className="relative">
               <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-card">
@@ -45,7 +44,6 @@ const FounderSection = memo(() => {
               className="inline-flex items-center gap-3 mt-10 text-[hsl(var(--navy-deep))] font-medium text-xs tracking-[0.25em] uppercase border-b border-[hsl(var(--gold))] pb-1 hover:text-[hsl(var(--teal-deep))] transition-colors group"
             >
               Conheça a história
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>

@@ -9,9 +9,9 @@ const differentials = [
 
 const WhyUsSection = () => {
   return (
-    <section id="diferenciais" className="py-28 md:py-40 relative overflow-hidden gradient-deep">
+    <section id="diferenciais" className="py-16 md:py-24 relative overflow-hidden gradient-deep">
       <div className="container-editorial relative z-10">
-        <div className="max-w-3xl mb-20 md:mb-28">
+        <div className="max-w-3xl mb-10 md:mb-14">
           <span className="text-[hsl(var(--turquoise))] text-[0.7rem] tracking-[0.32em] uppercase font-medium mb-6 block">
             Aegis Care
           </span>
@@ -22,9 +22,7 @@ const WhyUsSection = () => {
             Não somos os maiores. Buscamos ser os mais verdadeiros.
           </p>
         </div>
-        <Link to="/diferenciais" className="inline-flex mt-12 border-b border-[hsl(var(--gold))] pb-1 text-primary-foreground font-medium hover:text-[hsl(var(--turquoise))] transition-colors">Nosso diferencial →</Link>
-
-        <div className="grid md:grid-cols-2 gap-x-16 gap-y-14">
+        <div className="grid md:grid-cols-2 gap-x-16 gap-y-8">
           {differentials.map((item, i) => (
             <div key={item.title} className="border-t border-white/15 pt-8">
               <div className="flex items-center gap-4 mb-4">
@@ -41,6 +39,7 @@ const WhyUsSection = () => {
             </div>
           ))}
         </div>
+        <Link to="/diferenciais" className="inline-flex mt-10 border-b border-[hsl(var(--gold))] pb-1 text-primary-foreground font-medium hover:text-[hsl(var(--turquoise))] transition-colors">Nosso diferencial</Link>
       </div>
     </section>
   );

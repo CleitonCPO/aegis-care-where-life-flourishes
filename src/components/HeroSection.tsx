@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
 import { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useWhatsAppLink } from "@/lib/region";
@@ -15,7 +14,7 @@ const HeroSection = memo(() => {
   }, []);
 
   return (
-    <section className="relative min-h-screen min-h-[100svh] flex items-center overflow-hidden bg-[hsl(var(--navy-deep))]">
+    <section className="relative min-h-[620px] min-h-[85svh] flex items-center overflow-hidden bg-[hsl(var(--navy-deep))]">
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
@@ -31,7 +30,7 @@ const HeroSection = memo(() => {
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--navy-deep))]/60 via-transparent to-transparent" />
       </div>
 
-      <div className="container-editorial relative z-10 pt-32 pb-24">
+      <div className="container-editorial relative z-10 pt-32 pb-20">
         <div className="max-w-2xl">
           <div
             className={`flex items-center gap-4 mb-10 transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"}`}
@@ -78,14 +77,6 @@ const HeroSection = memo(() => {
         </div>
       </div>
 
-      <a
-        href="#sobre"
-        className={`absolute bottom-10 left-1/2 -translate-x-1/2 z-10 transition-opacity duration-1000 ${isLoaded ? "opacity-60" : "opacity-0"}`}
-        style={{ transitionDelay: "1000ms" }}
-        aria-label="Descer"
-      >
-        <ArrowDown className="w-4 h-4 text-white animate-bounce" />
-      </a>
     </section>
   );
 });
