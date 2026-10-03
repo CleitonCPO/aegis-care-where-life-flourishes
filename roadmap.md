@@ -8,4 +8,4 @@
 - [x] Corrigir hierarquia de títulos da página Serviços e confirmar nomes acessíveis no menu e rodapé
 - [x] Unificar as homes de SP e MG, preservando a pergunta e os contatos por região
 - [x] Reescrever as seções da home conforme os textos enviados, sem alterar imagens
-- [ ] Ajustar alinhamento e espaços da home; colocar foto do idoso à esquerda e retirar setas decorativas
+- [x] Ajustar alinhamento e espaços da home; colocar foto do idoso à esquerda e retirar setas decorativas
