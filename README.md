@@ -1,73 +1,150 @@
-# Welcome to your Lovable project
+# Aegis Care Cuidadores
 
-## Project info
+Crie um site 
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+AEGIS CARE
+Cuidar onde a vida foi construída.
+Um cuidado que acolhe a vida
 
-## How can I edit this code?
+Na Aegis Care, acreditamos que envelhecer é um privilégio.
+É sinal de história vivida, de caminhos percorridos, de vínculos criados e de um legado que merece ser respeitado.
 
-There are several ways of editing your application.
+Por isso, nosso cuidado acontece onde a vida floresceu: no lar.
+É ali que estão as memórias, os afetos, as conquistas e a identidade de cada pessoa.
 
-**Use Lovable**
+Cuidamos para que a vida continue sendo vivida com alegria, dignidade, segurança e presença.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Quem Somos
 
-Changes made via Lovable will be committed automatically to this repo.
+A Aegis Care é uma empresa de cuidado domiciliar especializada no atendimento a idosos, criada para famílias que valorizam qualidade de vida, acolhimento e excelência.
 
-**Use your preferred IDE**
+Somos o novo capítulo da Vital Senior Cuidadores – Assistência Humanizada, agora com uma marca ainda mais alinhada à nossa essência: proteger, cuidar e respeitar a história de quem chegou até aqui.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Mais do que assistência, oferecemos tranquilidade, confiança e bem-estar.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Nossa História
 
-Follow these steps:
+Nossa história começou dentro de lares reais, acompanhando vidas reais.
+
+Ao longo dos anos, aprendemos que o cuidado verdadeiro não se limita a técnicas — ele se constrói com escuta, presença, sensibilidade e respeito ao tempo de cada pessoa.
+
+A evolução natural desse caminho nos levou à Aegis Care:
+uma marca que traduz maturidade, solidez e a certeza de que o melhor cuidado é aquele que preserva a alegria de viver.
+
+Fundador
+
+A Aegis Care foi fundada por Cleiton, enfermeiro e empreendedor, movido pela convicção de que o cuidado precisa ser humano, elegante e respeitoso.
+
+Com experiência clínica, gestão de pessoas e atuação direta no cuidado domiciliar, Cleiton construiu a empresa com um olhar sensível para o idoso e estratégico para as famílias — unindo ciência, empatia e visão de futuro.
+
+Nossa Essência
+Missão
+
+Cuidar de pessoas no lugar onde suas histórias foram construídas, promovendo bem-estar, segurança e alegria em cada fase da vida.
+
+Visão
+
+Ser referência em cuidado domiciliar de alto padrão, reconhecida pela excelência humana e técnica.
+
+Valores
+
+Respeito à história de vida
+
+Amor pelo cuidado
+
+Excelência e responsabilidade
+
+Humanização em cada detalhe
+
+Confiança e transparência
+
+Nossos Serviços
+
+Cada pessoa é única. Cada cuidado também.
+
+O que oferecemos
+
+Cuidadores de idosos cuidadosamente selecionados
+
+Acompanhamento domiciliar contínuo ou pontual
+
+Apoio nas atividades do dia a dia
+
+Cuidados pós-operatórios
+
+Supervisão técnica de enfermagem
+
+Planos personalizados conforme o estilo de vida do paciente
+
+Tudo é pensado para preservar autonomia, conforto e alegria.
+
+Por que a Aegis Care
+
+✔ Cuidado dentro do lar
+✔ Atendimento personalizado
+✔ Profissionais qualificados e supervisionados
+✔ Comunicação próxima com a família
+✔ Respeito, leveza e humanidade
+
+Aqui, o cuidado não invade — ele acolhe.
+
+O que dizem as famílias
+
+“A Aegis Care trouxe leveza e tranquilidade para nossa casa. Meu pai voltou a sorrir.”
+⭐⭐⭐⭐⭐
+
+“Sentimos que cuidam da nossa história, não apenas da rotina.”
+⭐⭐⭐⭐⭐
+
+“É cuidado com alma.”
+⭐⭐⭐⭐⭐
+
+Blog – Viver Bem
+
+Nosso blog é um espaço para inspirar:
+
+Envelhecimento ativo e feliz
+
+Qualidade de vida no lar
+
+Relações familiares e cuidado
+
+Saúde, bem-estar e longevidade
+
+Porque viver bem também é parte do cuidado.
+
+Trabalhe Conosco
+
+Se você acredita que cuidar é um privilégio e deseja fazer parte de um time que valoriza a vida, o afeto e o respeito, venha para a Aegis Care.
+
+Aqui, cuidamos de quem cuida.
+
+Contato
+
+📞 Telefone / WhatsApp: (11) 92006-7183
+📧 E-mail: contato@aegiscare.com.br
+
+Entre em contato e descubra como podemos cuidar com carinho, presença e excelência — onde a vida foi construída.
+
+This project was built with [Lovable](https://lovable.dev).
+
+**Live app**: https://aegis-home-haven.lovable.app
+
+## Build with Lovable
+
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/f64c6813-3976-43ff-92ca-6b565de12690).
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+git clone <this-repository-url>
+cd <repository-name>
 npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
