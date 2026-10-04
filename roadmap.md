@@ -9,3 +9,4 @@
 - [x] Unificar as homes de SP e MG, preservando a pergunta e os contatos por região
 - [x] Reescrever as seções da home conforme os textos enviados, sem alterar imagens
 - [x] Ajustar alinhamento e espaços da home; colocar foto do idoso à esquerda e retirar setas decorativas
+- [ ] Atualizar a publicação e conectar aegiscare.com.br e www.aegiscare.com.br sem afetar o e-mail
