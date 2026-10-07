@@ -111,7 +111,7 @@ const TestimonialsSection = () => {
           </h2>
         </div>
 
-        <Carousel opts={{ align: "start", loop: true, duration: reducedMotion ? 0 : 60 }} plugins={[autoplay.current]} setApi={setApi} className="w-full" aria-label="Relatos das famílias" onMouseEnter={() => autoplay.current.stop()} onMouseLeave={() => { if (!paused && !reducedMotion && inView && pageVisible) autoplay.current.play(); }} onFocusCapture={() => { autoplay.current.stop(); setPaused(true); }}>
+        <Carousel opts={{ align: "start", loop: true, duration: reducedMotion ? 0 : 60 }} plugins={[autoplay.current]} setApi={setApi} className="w-full" aria-label="Relatos das famílias" onMouseEnter={() => autoplay.current.stop()} onMouseLeave={() => { if (!paused && !reducedMotion && inView && pageVisible) autoplay.current.play(); }} onFocusCapture={() => autoplay.current.stop()}>
           <CarouselContent className="-ml-6 md:-ml-10" aria-live={paused || reducedMotion ? "polite" : "off"}>
             {testimonials.map((t, index) => (
               <CarouselItem key={index} className="pl-6 md:pl-10 basis-[88%] sm:basis-1/2 lg:basis-1/3">
