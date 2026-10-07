@@ -1,39 +1,30 @@
-import { memo, useEffect, useRef, useState } from "react";
+import { memo } from "react";
 import aboutImage from "@/assets/about-aegis-premium.jpg";
+import aboutMobile from "@/assets/about-aegis-premium-mobile.webp";
+import aboutOptimized from "@/assets/about-aegis-premium-optimized.webp";
 import { Link } from "react-router-dom";
 
 const AboutSection = memo(() => {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: "-80px" }
-    );
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => observer.disconnect();
-  }, []);
+  const isVisible = true;
 
   return (
-    <section id="sobre" ref={sectionRef} className="py-16 md:py-24 bg-background">
+    <section id="sobre" className="py-16 md:py-24 bg-background">
       <div className="container-editorial">
         <div className="grid md:grid-cols-2 gap-10 lg:gap-20 items-center max-w-6xl mx-auto">
           <div className="order-2 md:order-1 transition-all duration-[1100ms]">
             <div className="relative overflow-hidden rounded-sm shadow-card">
+              <picture>
+              <source type="image/webp" srcSet={`${aboutMobile} 768w, ${aboutOptimized} 1080w`} sizes="(min-width: 768px) 45vw, 100vw" />
               <img
                 src={aboutImage}
                 alt="Cuidado domiciliar humanizado em ambiente residencial"
                 className="w-full aspect-[4/5] object-cover"
                 loading="lazy"
+                decoding="async"
                 width={1400}
                 height={1600}
               />
+              </picture>
             </div>
             <div className="mt-4 flex items-center gap-4">
               <span className="h-px w-10 bg-[hsl(var(--gold))]" />

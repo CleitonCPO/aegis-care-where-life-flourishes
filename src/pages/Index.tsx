@@ -47,7 +47,7 @@ const Index = memo(() => {
         <HeroSection />
         <TrustStrip />
         
-        <LazySection rootMargin="400px">
+        <LazySection rootMargin="500px" placeholderClassName="min-h-[1000px] md:min-h-[800px]">
           <Suspense fallback={<SectionFallback />}>
             <AboutSection />
           </Suspense>

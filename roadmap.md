@@ -10,3 +10,6 @@
 - [x] Reescrever as seções da home conforme os textos enviados, sem alterar imagens
 - [x] Ajustar alinhamento e espaços da home; colocar foto do idoso à esquerda e retirar setas decorativas
 - [ ] Atualizar a publicação e conectar aegiscare.com.br e www.aegiscare.com.br sem afetar o e-mail
+- [x] Aplicar movimento suave e discreto sem alterar imagens ou identidade visual
+- [x] Otimizar o carregamento da página inicial no celular
+- [x] Fazer relatos avançarem suavemente com pausa e respeito à redução de movimento

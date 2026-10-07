@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { memo } from "react";
 import founderImageSrc from "@/assets/cleiton-oliveira-consultorio.jpg";
+import founderMobile from "@/assets/cleiton-oliveira-consultorio-mobile.webp";
+import founderOptimized from "@/assets/cleiton-oliveira-consultorio-optimized.webp";
 
 const founderImage = founderImageSrc;
 
@@ -12,6 +14,8 @@ const FounderSection = memo(() => {
           <div className="lg:col-span-5">
             <div className="relative">
               <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-card">
+                <picture>
+                <source type="image/webp" srcSet={`${founderMobile} 768w, ${founderOptimized} 1086w`} sizes="(min-width: 1024px) 38vw, 100vw" />
                 <img
                   src={founderImage}
                   alt="Cleiton Oliveira — fundador da Aegis Care"
@@ -21,6 +25,7 @@ const FounderSection = memo(() => {
                   height={600}
                   decoding="async"
                 />
+                </picture>
               </div>
               <div className="absolute -bottom-4 -left-4 px-5 py-2 bg-[hsl(var(--navy-deep))] text-[hsl(var(--turquoise))] text-[0.65rem] tracking-[0.32em] uppercase">
                 Fundador
