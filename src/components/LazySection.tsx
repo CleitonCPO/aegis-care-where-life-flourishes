@@ -4,9 +4,10 @@ interface LazySectionProps {
   children: ReactNode;
   className?: string;
   rootMargin?: string;
+  placeholderClassName?: string;
 }
 
-const LazySection = memo(({ children, className = "", rootMargin = "200px" }: LazySectionProps) => {
+const LazySection = memo(({ children, className = "", rootMargin = "500px", placeholderClassName = "min-h-[600px]" }: LazySectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -34,7 +35,7 @@ const LazySection = memo(({ children, className = "", rootMargin = "200px" }: La
 
   return (
     <div ref={ref} className={`${className} ${isVisible ? "section-calm" : ""}`}>
-      {isVisible ? children : <div className="min-h-[100px]" aria-hidden="true" />}
+      {isVisible ? children : <div className={placeholderClassName} aria-hidden="true" />}
     </div>
   );
 });

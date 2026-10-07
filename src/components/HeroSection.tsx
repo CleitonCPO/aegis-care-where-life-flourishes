@@ -3,6 +3,8 @@ import { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useWhatsAppLink } from "@/lib/region";
 import heroImage from "@/assets/hero-aegis-premium.jpg";
+import heroMobile from "@/assets/hero-aegis-premium-mobile.webp";
+import heroOptimized from "@/assets/hero-aegis-premium-optimized.webp";
 
 const HeroSection = memo(() => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -16,16 +18,19 @@ const HeroSection = memo(() => {
   return (
     <section className="relative min-h-[620px] min-h-[85svh] flex items-center overflow-hidden bg-[hsl(var(--navy-deep))]">
       <div className="absolute inset-0 z-0">
+        <picture>
+        <source type="image/webp" srcSet={`${heroMobile} 768w, ${heroOptimized} 1440w`} sizes="100vw" />
         <img
           src={heroImage}
           alt="Cuidado domiciliar humanizado para idosos — Aegis Care"
-          className={`w-full h-full object-cover transition-[transform,opacity] duration-[1600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-105"}`}
+          className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
           fetchPriority="high"
           decoding="async"
           width={1920}
           height={1280}
         />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--navy-deep))]/95 via-[hsl(var(--navy-deep))]/70 to-[hsl(var(--navy-deep))]/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--navy-deep))]/60 via-transparent to-transparent" />
       </div>
