@@ -11,6 +11,10 @@ const LazySection = memo(({ children, className = "", rootMargin = "200px" }: La
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (typeof IntersectionObserver === "undefined") {
+      setIsVisible(true);
+      return;
+    }
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -29,7 +33,7 @@ const LazySection = memo(({ children, className = "", rootMargin = "200px" }: La
   }, [rootMargin]);
 
   return (
-    <div ref={ref} className={className}>
+    <div ref={ref} className={`${className} ${isVisible ? "section-calm" : ""}`}>
       {isVisible ? children : <div className="min-h-[100px]" aria-hidden="true" />}
     </div>
   );

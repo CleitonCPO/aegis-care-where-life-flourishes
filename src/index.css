@@ -230,6 +230,11 @@
 }
 
 @layer utilities {
+  .section-calm { animation: calmReveal 900ms var(--ease-premium) both; }
+  @keyframes calmReveal {
+    from { opacity: 0.65; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
   .animate-fade-in { animation: fadeIn 800ms var(--ease-premium) forwards; }
   .animate-slide-up { animation: slideUp 800ms var(--ease-premium) forwards; }
   .animate-rise { animation: rise 900ms var(--ease-premium) forwards; }

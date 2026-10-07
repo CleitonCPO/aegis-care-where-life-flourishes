@@ -1,2 +1,3 @@
 Use `src/pages/Index.tsx` as the single shared homepage for both SP and MG; redirect the old BH path to `/` while the region selection changes contact routing, not homepage content, to avoid divergent experiences.
 Keep a dedicated `/diferenciais` page for the homepage's differentiation CTA so the preview remains concise while the destination explains the commitments.
+Use CSS opacity/transform entrances and Embla Autoplay for testimonials, pausing outside the viewport, on hidden tabs, on interaction and for reduced motion to keep mobile animation inexpensive and accessible.
