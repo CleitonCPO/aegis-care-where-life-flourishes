@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustStrip from "@/components/TrustStrip";
 import LazySection from "@/components/LazySection";
+import ScrollReveal from "@/components/ScrollReveal";
 
 // Lazy load below-the-fold sections
 const FounderSection = lazy(() => import("@/components/FounderSection"));
@@ -54,6 +55,7 @@ const Index = memo(() => {
       <Header />
       <main>
         <HeroSection />
+        <ScrollReveal>
         <TrustStrip />
         
         <LazySection forceVisible={forceSections} rootMargin="500px" placeholderClassName="min-h-[1000px] md:min-h-[800px]">
@@ -97,6 +99,7 @@ const Index = memo(() => {
             <ContactSection />
           </Suspense>
         </LazySection>
+        </ScrollReveal>
       </main>
       
       <LazySection>
