@@ -23,6 +23,18 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        petroleum: {
+          DEFAULT: "hsl(var(--petroleum))",
+          foreground: "hsl(var(--petroleum-foreground))",
+        },
+        emerald: {
+          DEFAULT: "hsl(var(--emerald))",
+          foreground: "hsl(var(--emerald-foreground))",
+        },
+        care: {
+          surface: "hsl(var(--care-surface))",
+          accent: "hsl(var(--care-accent))",
+        },
         cream: {
           DEFAULT: "hsl(var(--cream))",
           dark: "hsl(var(--cream-dark))",
