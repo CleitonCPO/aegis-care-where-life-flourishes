@@ -1,221 +1,141 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
+import { Button } from "@/components/ui/button";
+import { Heart, ShieldCheck, Sprout } from "lucide-react";
+import { useWhatsAppLink } from "@/lib/region";
 import aboutImage from "@/assets/about-aegis-premium.jpg";
+import aboutMobile from "@/assets/about-aegis-premium-mobile.webp";
+import aboutOptimized from "@/assets/about-aegis-premium-optimized.webp";
 import cleitonImg from "@/assets/cleiton-oliveira-consultorio.jpg";
+import cleitonMobile from "@/assets/cleiton-oliveira-consultorio-mobile.webp";
+import cleitonOptimized from "@/assets/cleiton-oliveira-consultorio-optimized.webp";
 
-const cleitonPhoto = cleitonImg;
-
-const pillars = [
-  {
-    title: "Critério clínico",
-    description:
-      "Avaliação individual conduzida por enfermeiros antes de qualquer cuidador entrar em sua casa.",
-  },
-  {
-    title: "Presença humana",
-    description:
-      "Profissionais selecionados a dedo para a história, o ritmo e a personalidade de cada família.",
-  },
-  {
-    title: "Discrição absoluta",
-    description:
-      "Operação silenciosa, organizada e previsível. O lar permanece um lar, nunca um hospital.",
-  },
+const commitments = [
+  "Nunca mentiremos para parecer melhores.",
+  "Nunca cobraremos fora da realidade ou exploraremos a dor de quem confia.",
+  "Nunca trataremos quem cuida como descartável, nem quem é cuidado.",
+  "Nunca deixaremos a família no escuro.",
+  "Nunca colocaremos o lucro acima do cuidado.",
 ];
-
-const standards = [
-  "Avaliação clínica individual",
-  "Supervisão permanente de enfermagem",
-  "Curadoria pessoal de cada profissional",
-  "Comunicação direta com a família",
+const stories = [
+  { icon: Sprout, text: "Uma senhora de 92 anos, com Alzheimer, segue caminhando e mantendo sua autonomia." },
+  { icon: ShieldCheck, text: "Um senhor de 62 anos, com hemiplegia, voltou a andar e saiu da sonda." },
+  { icon: Heart, text: "Uma mulher em depressão voltou a sorrir, e descobriu que cuidadora pode ser amiga para a vida." },
 ];
+const values = ["Justiça", "Transparência", "Humanização", "Empatia", "Cuidado", "Afeto"];
 
 const QuemSomos = () => {
+  const whatsAppLink = useWhatsAppLink();
   return (
     <>
       <Helmet>
-        <title>Quem Somos | Aegis Care</title>
-        <meta
-          name="description"
-          content="Assistência domiciliar privada para famílias que valorizam discrição, critério clínico e continuidade da vida em casa."
-        />
+        <title>Quem somos | Aegis Care</title>
+        <meta name="description" content="Uma empresa de humanos, para humanos. Conheça a origem da Aegis Care, nossa essência e os compromissos que tornam o cuidado em casa mais humano." />
         <link rel="canonical" href="https://www.aegiscare.com.br/quem-somos" />
-        <meta property="og:title" content="Quem Somos | Aegis Care" />
-        <meta property="og:description" content="Assistência domiciliar privada com critério clínico, presença humana e discrição." />
+        <meta property="og:title" content="Quem somos | Aegis Care" />
+        <meta property="og:description" content="Uma empresa de humanos, para humanos. Nossa história, nossos valores e nosso compromisso com a vida no lar." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.aegiscare.com.br/quem-somos" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
-      <div className="min-h-screen bg-background">
+      <div className="care-page min-h-screen bg-background">
         <Header />
-
         <main>
-          {/* HERO — quiet, editorial */}
-          <section className="pt-40 pb-24 md:pt-48 md:pb-32 bg-background">
-            <div className="container-editorial">
-              <div className="max-w-3xl">
-                <span className="eyebrow mb-6 block">A Aegis Care</span>
-                <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.08] text-foreground mb-8">
-                  Uma estrutura privada de cuidado, construída para preservar a vida em casa.
-                </h1>
-                <p className="text-lg text-muted-foreground leading-[1.85] prose-justified max-w-2xl">
-                  Atendemos famílias que entendem o cuidado como continuidade da história, e não como interrupção dela. Discrição, coordenação clínica e profissionais selecionados, dentro do lar.
-                </p>
+          <section className="relative isolate overflow-hidden bg-petroleum text-petroleum-foreground">
+            <picture className="absolute inset-0 -z-20">
+              <source type="image/webp" srcSet={`${aboutMobile} 768w, ${aboutOptimized} 1080w`} sizes="100vw" />
+              <img src={aboutImage} alt="Idoso lendo no próprio lar, acompanhado por uma cuidadora" className="h-full w-full object-cover object-[center_40%]" width={1400} height={1600} loading="eager" fetchPriority="high" />
+            </picture>
+            <div className="care-photo-overlay absolute inset-0 -z-10" />
+            <div className="container-editorial pt-36 pb-20 md:pt-44 md:pb-24">
+              <div className="max-w-2xl animate-fade-in">
+                <span className="block text-care-accent text-xs uppercase tracking-[0.2em] mb-6">Aegis Care</span>
+                <h1 className="font-display text-4xl md:text-6xl text-petroleum-foreground mb-6">Quem somos</h1>
+                <p className="font-display text-2xl md:text-3xl leading-snug max-w-lg">Uma empresa de humanos, para humanos.</p>
+                <span className="block h-px w-16 bg-care-accent mt-10" aria-hidden="true" />
               </div>
             </div>
           </section>
 
-          {/* IMAGE + ESSENCE */}
-          <section className="pb-28 md:pb-40">
-            <div className="container-editorial">
-              <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-                <div className="lg:col-span-7">
-                  <div className="relative overflow-hidden rounded-sm shadow-card">
-                    <img
-                      src={aboutImage}
-                      alt="Cuidado domiciliar humanizado em ambiente residencial"
-                      className="w-full h-[460px] md:h-[600px] object-cover"
-                      loading="eager"
-                      width={1400}
-                      height={1600}
-                    />
+          <ScrollReveal>
+            <section className="py-14 md:py-20 bg-background" aria-labelledby="origem-title">
+              <div className="container-editorial grid md:grid-cols-12 gap-10 lg:gap-16 items-center">
+                <div className="md:col-span-7">
+                  <span className="eyebrow text-emerald block mb-4">Nossa história</span>
+                  <h2 id="origem-title" className="font-display text-3xl md:text-4xl text-petroleum mb-7">A origem da Aegis Care</h2>
+                  <div className="space-y-5 text-base md:text-lg text-muted-foreground leading-relaxed prose-justified">
+                    <p>Tudo começou depois de anos à frente de equipes de cuidado domiciliar. Vimos o lucro falando mais alto que as pessoas: cuidadores tratados como descartáveis, famílias deixadas no escuro, idosos perdendo autonomia por falta de um plano de cuidado de verdade.</p>
+                    <p>Decidimos fazer diferente. Fundamos a Aegis Care para provar que é possível cuidar com critério clínico e coração, com transparência, justiça e afeto em cada etapa.</p>
                   </div>
                 </div>
-                <div className="lg:col-span-5">
-                  <span className="eyebrow-gold eyebrow mb-5 block">Essência</span>
-                  <h2 className="font-display text-3xl md:text-[2.25rem] leading-[1.15] text-foreground mb-6">
-                    O lar é onde a identidade se preserva.
-                  </h2>
-                  <p className="text-muted-foreground leading-[1.85] prose-justified">
-                    Levamos até ele a estrutura assistencial que protege, organiza e acolhe. Cuidamos para que a rotina continue, com segurança, sem perder o que ela tem de mais íntimo.
-                  </p>
-                </div>
+                <figure className="md:col-span-5 max-w-sm w-full mx-auto md:ml-auto">
+                  <picture className="block overflow-hidden rounded-sm border-b-4 border-emerald">
+                    <source type="image/webp" srcSet={`${cleitonMobile} 768w, ${cleitonOptimized} 1086w`} sizes="(min-width: 768px) 33vw, 90vw" />
+                    <img src={cleitonImg} alt="Cleiton Oliveira, fundador da Aegis Care" className="w-full aspect-[4/5] object-cover object-top" loading="lazy" decoding="async" width={480} height={600} />
+                  </picture>
+                  <figcaption className="mt-4 text-sm text-muted-foreground"><span className="block text-petroleum font-medium">Cleiton Oliveira</span>Enfermeiro · Gerontólogo · Fundador</figcaption>
+                </figure>
               </div>
-            </div>
-          </section>
+            </section>
 
-          {/* PRINCÍPIOS */}
-          <section className="py-28 md:py-36 bg-[hsl(var(--cream))]">
-            <div className="container-editorial">
-              <div className="max-w-2xl mb-16 md:mb-20">
-                <span className="eyebrow mb-5 block">Princípios</span>
-                <h2 className="font-display text-3xl md:text-[2.5rem] leading-[1.15] text-foreground">
-                  Três compromissos que definem como cuidamos.
-                </h2>
-              </div>
-              <div className="grid md:grid-cols-3 gap-10 md:gap-14">
-                {pillars.map((p, i) => (
-                  <div key={p.title}>
-                    <div className="flex items-baseline gap-5 mb-4">
-                      <span className="font-display text-[hsl(var(--teal-deep))] text-2xl tabular-nums">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                      <h3 className="font-display text-2xl text-foreground">{p.title}</h3>
-                    </div>
-                    <p className="text-muted-foreground leading-[1.85] pl-10 prose-justified">
-                      {p.description}
-                    </p>
+            <section className="py-14 md:py-20 bg-petroleum text-petroleum-foreground" aria-label="Nossa essência">
+              <div className="container-editorial">
+                <span className="eyebrow block text-care-accent mb-6">Nossa essência</span>
+                <h2 className="font-display text-3xl md:text-4xl leading-snug text-petroleum-foreground max-w-4xl border-l-2 border-care-accent pl-6 md:pl-8">Cuidar é, antes de tudo, manter intacto aquilo que cada vida construiu.</h2>
+                <div className="grid md:grid-cols-2 gap-9 md:gap-16 mt-12">
+                  <div className="border-t border-petroleum-foreground/20 pt-6">
+                    <h3 className="font-display text-2xl text-care-accent mb-4">Missão</h3>
+                    <p className="text-petroleum-foreground/85 leading-relaxed prose-justified">Sustentar a continuidade da vida no lar, com presença humana, critério clínico e respeito profundo pela história de cada pessoa cuidada.</p>
                   </div>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          {/* PADRÕES */}
-          <section className="py-28 md:py-36 bg-background">
-            <div className="container-editorial">
-              <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
-                <div className="lg:col-span-5">
-                  <span className="eyebrow mb-5 block">Como operamos</span>
-                  <h2 className="font-display text-3xl md:text-[2.25rem] leading-[1.15] text-foreground">
-                    Um padrão único, aplicado em cada residência.
-                  </h2>
-                </div>
-                <div className="lg:col-span-7">
-                  <ul className="divide-y divide-border">
-                    {standards.map((s) => (
-                      <li
-                        key={s}
-                        className="py-5 flex items-baseline gap-5 text-foreground font-display text-lg md:text-xl"
-                      >
-                        <span className="h-px w-6 bg-[hsl(var(--gold))]" />
-                        {s}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* FUNDADOR — convite discreto */}
-          <section className="py-28 md:py-36 bg-[hsl(var(--cream))]">
-            <div className="container-editorial">
-              <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center max-w-6xl mx-auto">
-                <div className="lg:col-span-5">
-                  <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-card">
-                    <img
-                      src={cleitonPhoto}
-                      alt="Cleiton Oliveira — fundador da Aegis Care"
-                      className="w-full h-full object-cover object-top"
-                      loading="lazy"
-                      width={480}
-                      height={600}
-                    />
+                  <div className="border-t border-petroleum-foreground/20 pt-6">
+                    <h3 className="font-display text-2xl text-care-accent mb-4">Visão</h3>
+                    <p className="text-petroleum-foreground/85 leading-relaxed prose-justified">Ser referência em assistência domiciliar humana, reconhecida pela excelência clínica, pela transparência e pelo acolhimento que transforma o cuidado em tranquilidade para a família.</p>
                   </div>
                 </div>
-                <div className="lg:col-span-7">
-                  <span className="eyebrow-gold eyebrow mb-5 block">Quem conduz</span>
-                  <h2 className="font-display text-3xl md:text-[2.5rem] leading-[1.12] text-foreground mb-6">
-                    Cleiton Oliveira
-                  </h2>
-                  <p className="text-xs tracking-[0.25em] uppercase text-[hsl(var(--teal-deep))] font-semibold mb-6">
-                    Enfermeiro · Gerontólogo · Fundador
-                  </p>
-                  <p className="text-muted-foreground leading-[1.85] prose-justified mb-8">
-                    Conduz pessoalmente a coordenação assistencial e a seleção de cada profissional que entra em uma casa atendida pela Aegis Care.
-                  </p>
-                  <Link
-                    to="/fundador"
-                    className="inline-flex items-center gap-3 text-[hsl(var(--navy-deep))] text-xs tracking-[0.25em] uppercase font-medium border-b border-[hsl(var(--gold))] pb-1 hover:text-[hsl(var(--teal-deep))] transition-colors group"
-                  >
-                    Conheça a trajetória
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                <div className="mt-10 border-t border-petroleum-foreground/20 pt-7">
+                  <h3 className="text-care-accent font-display text-xl mb-4">Valores</h3>
+                  <p className="flex flex-wrap gap-x-3 gap-y-2 text-base md:text-lg">{values.map((value, index) => <span key={value}>{index > 0 && <span className="text-care-accent mr-3" aria-hidden="true">·</span>}{value}</span>)}</p>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
 
-          {/* CTA — minimal */}
-          <section className="py-28 md:py-36 gradient-deep">
-            <div className="container-editorial text-center max-w-3xl mx-auto">
-              <h2 className="font-display text-3xl md:text-[2.5rem] leading-[1.15] text-primary-foreground mb-6">
-                Sob a égide da Aegis, a história continua em casa.
-              </h2>
-              <p className="text-primary-foreground/75 leading-[1.85] mb-10">
-                Atendemos um número restrito de famílias por vez. Conversamos pessoalmente antes de qualquer proposta.
-              </p>
-              <a
-                href="https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-10 py-4 bg-[hsl(var(--turquoise))] text-[hsl(var(--navy-deep))] text-xs tracking-[0.3em] uppercase font-semibold rounded-sm hover:bg-[hsl(var(--turquoise))]/90 transition-colors"
-              >
-                Conversar com a Aegis
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-          </section>
+            <section className="py-14 md:py-20 bg-care-surface" aria-labelledby="compromissos-title">
+              <div className="container-editorial grid md:grid-cols-12 gap-8 lg:gap-16">
+                <div className="md:col-span-4">
+                  <ShieldCheck className="w-9 h-9 text-emerald mb-5" strokeWidth={1.25} aria-hidden="true" />
+                  <h2 id="compromissos-title" className="font-display text-3xl md:text-4xl text-petroleum">O que nunca faremos</h2>
+                </div>
+                <ol className="md:col-span-8 divide-y divide-emerald/20">
+                  {commitments.map((text, index) => <li key={text} className="flex gap-5 py-5 first:pt-0"><span className="font-display text-emerald text-sm pt-1 tabular-nums" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span><p className="text-petroleum text-lg leading-relaxed">{text}</p></li>)}
+                </ol>
+              </div>
+            </section>
+
+            <section className="py-14 md:py-20 bg-background" aria-labelledby="historias-title">
+              <div className="container-editorial">
+                <span className="eyebrow block text-emerald mb-4">Presença que transforma</span>
+                <h2 id="historias-title" className="font-display text-3xl md:text-4xl text-petroleum mb-10">Histórias que nos orgulham</h2>
+                <div className="grid md:grid-cols-3 gap-8 md:gap-10">
+                  {stories.map(({ icon: Icon, text }) => <article key={text} className="border-t border-emerald/30 pt-6"><Icon className="w-7 h-7 text-emerald mb-5" strokeWidth={1.25} aria-hidden="true" /><p className="font-display text-xl text-petroleum leading-relaxed">{text}</p></article>)}
+                </div>
+              </div>
+            </section>
+
+            <section className="py-14 md:py-16 bg-petroleum text-petroleum-foreground">
+              <div className="container-editorial flex flex-col md:flex-row md:items-center md:justify-between gap-7">
+                <h2 className="font-display text-3xl md:text-4xl text-petroleum-foreground max-w-xl">Quer fazer parte dessa história?</h2>
+                <Button variant="care" size="xl" asChild className="w-fit shrink-0">
+                  <a href={whatsAppLink("https://api.whatsapp.com/send/?phone=5511920067183&text=Ol%C3%A1%20Aegis%20Care%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento%20de%20cuidador%20para%20meu%20familiar.&type=phone_number&app_absent=0")} target="_blank" rel="noopener noreferrer">Falar com a equipe</a>
+                </Button>
+              </div>
+            </section>
+          </ScrollReveal>
         </main>
-
         <Footer />
       </div>
     </>
   );
 };
-
 export default QuemSomos;
