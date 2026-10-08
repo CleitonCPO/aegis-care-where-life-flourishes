@@ -16,7 +16,7 @@ const ContactSection = lazy(() => import("@/components/ContactSection"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 const SectionFallback = memo(() => (
-  <div className="min-h-[200px] flex items-center justify-center">
+  <div data-section-loading className="min-h-[200px] flex items-center justify-center">
     <div className="w-6 h-6 border-2 border-secondary border-t-transparent rounded-full animate-spin" />
   </div>
 ));
@@ -25,20 +25,29 @@ SectionFallback.displayName = 'SectionFallback';
 
 const Index = memo(() => {
   const location = useLocation();
+  const state = location.state as { scrollTo?: string } | null;
+  const targetId = location.hash.slice(1) || state?.scrollTo;
+  const forceSections = Boolean(targetId);
 
   useEffect(() => {
-    const state = location.state as { scrollTo?: string } | null;
-    if (state?.scrollTo) {
-      requestAnimationFrame(() => {
-        const element = document.getElementById(state.scrollTo);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
+    if (!targetId) return;
+    let frame = 0;
+    const scrollWhenReady = () => {
+      const element = document.getElementById(targetId);
+      if (!element || document.querySelector("main [data-section-loading]")) return;
+      observer.disconnect();
+      frame = requestAnimationFrame(() => {
+        const headerHeight = document.querySelector("header")?.getBoundingClientRect().height ?? 80;
+        const top = element.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        window.scrollTo({ top: Math.max(0, top), behavior: reducedMotion ? "auto" : "smooth" });
       });
-      // Clear the state
-      window.history.replaceState({}, document.title);
-    }
-  }, [location.state]);
+    };
+    const observer = new MutationObserver(scrollWhenReady);
+    observer.observe(document.body, { childList: true, subtree: true });
+    scrollWhenReady();
+    return () => { observer.disconnect(); cancelAnimationFrame(frame); };
+  }, [targetId, location.key]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -47,43 +56,43 @@ const Index = memo(() => {
         <HeroSection />
         <TrustStrip />
         
-        <LazySection rootMargin="500px" placeholderClassName="min-h-[1000px] md:min-h-[800px]">
+        <LazySection forceVisible={forceSections} rootMargin="500px" placeholderClassName="min-h-[1000px] md:min-h-[800px]">
           <Suspense fallback={<SectionFallback />}>
             <AboutSection />
           </Suspense>
         </LazySection>
         
-        <LazySection>
+        <LazySection forceVisible={forceSections}>
           <Suspense fallback={<SectionFallback />}>
             <WhyUsSection />
           </Suspense>
         </LazySection>
 
-        <LazySection>
+        <LazySection forceVisible={forceSections}>
           <Suspense fallback={<SectionFallback />}>
             <ServicesSection />
           </Suspense>
         </LazySection>
 
-        <LazySection>
+        <LazySection forceVisible={forceSections}>
           <Suspense fallback={<SectionFallback />}>
             <FounderSection />
           </Suspense>
         </LazySection>
 
-        <LazySection>
+        <LazySection forceVisible={forceSections}>
           <Suspense fallback={<SectionFallback />}>
             <TestimonialsSection />
           </Suspense>
         </LazySection>
         
-        <LazySection>
+        <LazySection forceVisible={forceSections}>
           <Suspense fallback={<SectionFallback />}>
             <FAQSection />
           </Suspense>
         </LazySection>
         
-        <LazySection>
+        <LazySection forceVisible={forceSections}>
           <Suspense fallback={<SectionFallback />}>
             <ContactSection />
           </Suspense>
