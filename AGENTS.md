@@ -2,3 +2,4 @@ Use `src/pages/Index.tsx` as the single shared homepage for both SP and MG; redi
 Keep a dedicated `/diferenciais` page for the homepage's differentiation CTA so the preview remains concise while the destination explains the commitments.
 Use CSS opacity/transform entrances and Embla Autoplay for testimonials, pausing outside the viewport, on hidden tabs, on interaction and for reduced motion to keep mobile animation inexpensive and accessible.
 Serve responsive WebP derivatives of the original homepage photographs with JPEG fallbacks; keep the primary photo immediately visible and reserve space for deferred sections to reduce transfer and scroll shifts.
+Route homepage anchor navigation through URL hashes, render deferred homepage sections for anchor visits, and wait for their suspense content before scrolling with a fixed-header offset so contact and menu links work across routes.

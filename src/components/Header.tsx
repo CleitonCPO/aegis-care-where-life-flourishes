@@ -44,14 +44,7 @@ const Header = memo(() => {
     e.preventDefault();
     const targetId = href.replace("#", "");
     
-    if (location.pathname !== homePath) {
-      navigate(homePath, { state: { scrollTo: targetId } });
-    } else {
-      const element = document.getElementById(targetId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
+    navigate(`${homePath}#${targetId}`);
     setIsMobileMenuOpen(false);
   }, [location.pathname, navigate, homePath]);
 
@@ -136,15 +129,17 @@ const Header = memo(() => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          className="lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center text-foreground touch-manipulation"
+        <Button
+          variant="ghost"
+          size="icon"
+          className={`lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center touch-manipulation ${isLightHeader ? "text-foreground" : "text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"}`}
           onClick={toggleMobileMenu}
           aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={isMobileMenuOpen}
           aria-controls="mobile-menu"
         >
           {isMobileMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
-        </button>
+        </Button>
       </div>
 
       {/* Mobile Menu */}
