@@ -9,6 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        care: "bg-emerald text-emerald-foreground hover:bg-emerald/90 focus-visible:ring-care-accent normal-case tracking-normal",
         default:
           "bg-primary text-primary-foreground hover:bg-[hsl(var(--navy-mid))] shadow-quiet hover:shadow-soft",
         destructive:

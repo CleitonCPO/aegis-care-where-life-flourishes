@@ -50,6 +50,13 @@
     --teal-deep: 192 63% 33%;     /* #1F7087 */
     --teal: 182 47% 45%;          /* #3BA6AA */
     --turquoise: 169 84% 59%;     /* #40EDD0 */
+    --petroleum: 195 65% 19%;
+    --petroleum-foreground: 180 20% 98%;
+    --emerald: 157 52% 30%;
+    --emerald-foreground: 0 0% 100%;
+    --care-surface: 160 22% 96%;
+    --care-accent: 157 46% 74%;
+    --care-image-overlay: linear-gradient(90deg, hsl(var(--petroleum) / 0.94), hsl(var(--petroleum) / 0.70) 55%, hsl(var(--petroleum) / 0.18));
 
     /* Neutrals */
     --cream: 36 33% 97%;
@@ -230,6 +237,8 @@
 }
 
 @layer utilities {
+  .care-photo-overlay { background: var(--care-image-overlay); }
+  .care-page h1, .care-page h2, .care-page h3, .care-page p { letter-spacing: 0; }
   [data-scroll-reveal] {
     opacity: 0;
     transform: translateY(18px);
