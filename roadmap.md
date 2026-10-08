@@ -13,4 +13,4 @@
 - [x] Aplicar movimento suave e discreto sem alterar imagens ou identidade visual
 - [x] Otimizar o carregamento da página inicial no celular
 - [x] Fazer relatos avançarem suavemente com pausa e respeito à redução de movimento
-- [ ] Corrigir e verificar os três alertas de navegação e contraste do menu
+- [x] Corrigir e verificar os três alertas de navegação e contraste do menu
