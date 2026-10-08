@@ -35,7 +35,7 @@ const LazySection = memo(({ children, className = "", rootMargin = "500px", plac
   }, [rootMargin]);
 
   return (
-    <div ref={ref} className={`${className} ${isVisible ? "section-calm" : ""}`}>
+    <div ref={ref} className={className}>
       {isVisible || forceVisible ? children : <div className={placeholderClassName} aria-hidden="true" />}
     </div>
   );
