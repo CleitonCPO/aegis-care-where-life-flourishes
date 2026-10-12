@@ -11,6 +11,9 @@ import cleitonOptimized from "@/assets/cleiton-oliveira-consultorio-optimized.we
 
 const siteUrl = "https://aegis-home-haven.lovable.app";
 const pageUrl = `${siteUrl}/fundador`;
+// Reuse the sitewide entity identifiers so crawlers recognize one founder and organization.
+const founderId = "https://www.aegiscare.com.br/#cleiton-oliveira";
+const organizationId = "https://www.aegiscare.com.br/#organization";
 const title = "Cleiton Oliveira | Enfermeiro e Gerontólogo | Aegis Care";
 const description = "Conheça Cleiton Oliveira, enfermeiro, gerontólogo e fundador da Aegis Care, agência de cuidadores de idosos em SP e MG. Trajetória e compromisso com o cuidado no lar.";
 const beliefs = [
@@ -28,18 +31,18 @@ const structuredData = {
       name: title,
       description,
       inLanguage: "pt-BR",
-      mainEntity: { "@id": `${siteUrl}/#cleiton-oliveira` },
+      mainEntity: { "@id": founderId },
       breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
     },
     {
       "@type": "Person",
-      "@id": `${siteUrl}/#cleiton-oliveira`,
+      "@id": founderId,
       name: "Cleiton Oliveira",
       url: pageUrl,
       jobTitle: "Enfermeiro, Gerontólogo e Fundador da Aegis Care",
       description: "Enfermeiro com especialização em UTI e gerontologia. Fundador da Aegis Care, conduz pessoalmente a coordenação assistencial e a seleção de cuidadores de idosos.",
       knowsAbout: ["Gerontologia", "Cuidado domiciliar", "Cuidadores de idosos", "Autonomia da pessoa idosa", "Coordenação assistencial"],
-      worksFor: { "@type": "Organization", name: "Aegis Care", url: siteUrl },
+      worksFor: { "@id": organizationId },
     },
     {
       "@type": "BreadcrumbList",
