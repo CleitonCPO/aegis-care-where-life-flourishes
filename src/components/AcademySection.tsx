@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import academyLogo from "@/assets/logotipo-academy.svg.asset.json";
 import academyPhoto from "@/assets/academy-profissional.jpg";
 import academyPhotoWebp from "@/assets/academy-profissional.webp";
 import academyPhotoMobile from "@/assets/academy-profissional-mobile.webp";
@@ -26,7 +25,7 @@ const AcademySection = () => (
           </div>
         </div>
       </div>
-      <img src={`https://aegis-home-haven.lovable.app${academyLogo.url}`} alt="Academy Aegis Care" width={864} height={331} loading="lazy" decoding="async" className="academy-watermark" />
+      <img src="/logotipo-academy.svg" alt="Academy Aegis Care" width={864} height={331} loading="lazy" decoding="async" className="academy-watermark" />
     </div>
   </section>
 );
