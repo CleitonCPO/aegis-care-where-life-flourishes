@@ -6,7 +6,7 @@ const AcademySection = () => (
   <section id="academy" aria-labelledby="academy-title" className="bg-academy-surface border-y border-academy-gold/30 py-12 md:py-16">
     <div className="container-editorial grid md:grid-cols-12 gap-8 lg:gap-14 items-center">
       <div className="md:col-span-5">
-        <img src={academyLogo.url} alt="Academy Aegis Care" width={864} height={331} loading="lazy" decoding="async" className="w-64 max-w-full h-auto mb-7" />
+        <img src={`https://aegis-home-haven.lovable.app${academyLogo.url}`} alt="Academy Aegis Care" width={864} height={331} loading="lazy" decoding="async" className="w-64 max-w-full h-auto mb-7" />
         <span className="eyebrow block text-academy-gold mb-4">Curso gratuito</span>
         <h2 id="academy-title" className="font-display text-3xl md:text-4xl text-academy mb-5 tracking-normal">Faça parte da Academy</h2>
         <p className="text-muted-foreground leading-relaxed prose-justified mb-7">Conhecimento também é cuidado. Acesse o curso gratuito da Academy Aegis Care e dê o próximo passo na sua jornada como cuidador.</p>
