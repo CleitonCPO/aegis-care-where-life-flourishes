@@ -1,8 +1,8 @@
 # Aegis Care
 
-> Agência de cuidadores de idosos em São Paulo (Zona Leste). Cuidado domiciliar humanizado, acompanhamento 24h, supervisão de enfermagem.
+> Agência de cuidadores de idosos em São Paulo e Minas Gerais. Cuidado domiciliar humanizado, acompanhamento 24h, supervisão de enfermagem.
 
-A Aegis Care é uma empresa de cuidado domiciliar fundada por Cleiton Oliveira, enfermeiro especializado em UTI e Gerontologia. Atendemos famílias em Tatuapé, Anália Franco, Vila Prudente, Mooca, Belém, Penha e Carrão. Não realizamos procedimentos técnicos de enfermagem; nosso foco é o acompanhamento humanizado por cuidadores qualificados.
+A Aegis Care é uma empresa de cuidado domiciliar fundada por Cleiton Oliveira, enfermeiro especializado em UTI e Gerontologia. Atendemos famílias em Tatuapé, Anália Franco, Vila Prudente, Mooca, Belém, Penha e Carrão, e também em Minas Gerais. Não realizamos procedimentos de enfermagem; nosso foco é o acompanhamento humanizado por cuidadores qualificados.
 
 ## Pages
 

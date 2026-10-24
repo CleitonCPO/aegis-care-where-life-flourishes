@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { Pause, Play } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
@@ -45,6 +45,7 @@ const TestimonialsSection = () => {
   const [snapCount, setSnapCount] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
   const autoplay = useRef(Autoplay({ delay: 8000, playOnInit: false, stopOnInteraction: true, stopOnMouseEnter: true, stopOnFocusIn: true }));
+  const resumeTimer = useRef<number>(0);
   const [paused, setPaused] = useState(false);
   const [inView, setInView] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(true);
@@ -79,12 +80,21 @@ const TestimonialsSection = () => {
     return () => player.stop();
   }, [api, inView, pageVisible, reducedMotion, paused]);
 
+  // Um toque pausa a leitura, mas a rolagem retoma sozinha depois de um tempo de descanso.
+  const pauseForReading = useCallback(() => {
+    setPaused(true);
+    window.clearTimeout(resumeTimer.current);
+    resumeTimer.current = window.setTimeout(() => setPaused(false), 12000);
+  }, []);
+
   useEffect(() => {
     if (!api) return;
-    const pauseForReading = () => setPaused(true);
     api.on("pointerDown", pauseForReading);
-    return () => { api.off("pointerDown", pauseForReading); };
-  }, [api]);
+    return () => {
+      api.off("pointerDown", pauseForReading);
+      window.clearTimeout(resumeTimer.current);
+    };
+  }, [api, pauseForReading]);
 
   useEffect(() => {
     if (!api) return;
@@ -137,7 +147,7 @@ const TestimonialsSection = () => {
                 size="icon"
                 aria-label={`Ir para o relato ${index + 1}`}
                 aria-current={selected === index ? "true" : undefined}
-                onClick={() => { setPaused(true); api?.scrollTo(index); }}
+                onClick={() => { pauseForReading(); api?.scrollTo(index); }}
                 className="h-11 w-8"
               >
                 <span className={`block h-1.5 rounded-full transition-all ${selected === index ? "w-6 bg-primary" : "w-1.5 bg-muted-foreground"}`} />
@@ -151,7 +161,7 @@ const TestimonialsSection = () => {
               aria-label={paused || reducedMotion ? "Reproduzir relatos" : "Pausar relatos"}
               title={reducedMotion ? "Movimento reduzido ativado" : paused ? "Reproduzir relatos" : "Pausar relatos"}
               disabled={reducedMotion}
-              onClick={() => setPaused((value) => !value)}
+              onClick={() => { window.clearTimeout(resumeTimer.current); setPaused((value) => !value); }}
             >
               {paused || reducedMotion ? <Play className="h-4 w-4" /> : <Pause className="h-4 w-4" />}
             </Button>

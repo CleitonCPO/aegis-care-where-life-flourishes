@@ -5,7 +5,7 @@ import cuidadoDomiciliarVsCasaRepouso from "@/assets/blog/cuidado-domiciliar-vs-
 import alimentacaoSaudavelTerceiraIdade from "@/assets/blog/alimentacao-saudavel-terceira-idade.jpg";
 import prevencaoQuedasIdosos from "@/assets/blog/prevencao-quedas-idosos.jpg";
 import cuidadorIdososTatuape from "@/assets/blog/cuidador-idosos-tatuape.jpg";
-import homeCareZonaLeste from "@/assets/blog/home-care-zona-leste-sp.jpg";
+import cuidadoDomiciliarZonaLeste from "@/assets/blog/cuidado-domiciliar-zona-leste-sp.jpg";
 import exerciciosIdososZonaLeste from "@/assets/blog/exercicios-idosos-zona-leste.jpg";
 import cuidadorNoturnoIdoso from "@/assets/blog/cuidador-noturno-idoso.jpg";
 import cuidadorAlzheimerDomiciliar from "@/assets/blog/cuidador-alzheimer-domiciliar.jpg";
@@ -161,7 +161,7 @@ Quedas são eventos preveníveis na maioria dos casos, mas exigem uma abordagem 
 
 Em agosto de 2026, as quatro principais sociedades cardíacas do mundo publicaram a 5ª Definição Universal de Infarto do Miocárdio. A grande mudança está na classificação: em vez de dividir os casos em tipos numerados, o novo documento os organiza em três grupos, infarto primário, secundário e relacionado a procedimento, com base na origem do problema. Para quem cuida de um idoso em casa, o que importa é entender que o diagnóstico nunca dependeu de um único exame, e essa revisão reforça exatamente isso: a troponina alta sozinha não confirma infarto.
 
-**Palavras-chave:** infarto do miocárdio, diagnóstico de infarto em idosos, troponina elevada, cuidado domiciliar cardíaco, cuidador de idoso com doença cardíaca, sinais de infarto em idosos, 5ª Definição Universal de Infarto, assistência domiciliar cardiovascular, home care cardíaco São Paulo, sintomas atípicos de infarto na terceira idade.
+**Palavras-chave:** infarto do miocárdio, diagnóstico de infarto em idosos, troponina elevada, cuidado domiciliar cardíaco, cuidador de idoso com doença cardíaca, sinais de infarto em idosos, 5ª Definição Universal de Infarto, assistência domiciliar cardiovascular, cuidado domiciliar cardíaco em São Paulo, sintomas atípicos de infarto na terceira idade.
 
 ## 1. Por que a troponina alta sozinha não confirma infarto
 
@@ -262,7 +262,7 @@ Para a família que cuida em casa, a mensagem prática é clara: conheça o habi
     id: "17",
     slug: "envelhecimento-populacao-lgbtqiapn-cuidado-domiciliar-inclusivo",
     title: "Envelhecimento da População LGBTQIAPN+: O Que a Ciência Mostra e Como Deve Ser o Cuidado Domiciliar Inclusivo",
-    excerpt: "Envelhecimento LGBTQIAPN+, cuidado domiciliar inclusivo, saúde do idoso LGBT e home care livre de discriminação: revisão da literatura científica recente (2022 a 2026) e o que muda na prática do cuidador profissional em São Paulo.",
+    excerpt: "Envelhecimento LGBTQIAPN+, cuidado domiciliar inclusivo, saúde do idoso LGBT e cuidado domiciliar livre de discriminação: revisão da literatura científica recente (2022 a 2026) e o que muda na prática do cuidador profissional em São Paulo.",
     category: "Saúde",
     author: "Equipe Aegis Care",
     publishedAt: "2026-08-02",
@@ -273,7 +273,7 @@ Para a família que cuida em casa, a mensagem prática é clara: conheça o habi
 
 O envelhecimento da população **LGBTQIAPN+** é um campo de estudo em expansão na gerontologia e na saúde pública. Esta revisão integrativa da literatura científica recente, publicada entre 2022 e 2026, analisa evidências sobre saúde mental, acesso a serviços, doenças crônicas, resiliência e ambientes de cuidado de idosos lésbicas, gays, bissexuais, travestis, transexuais, queer, intersexuais, assexuais, pansexuais e não binários. Os achados apontam desigualdades acumuladas ao longo da vida e, ao mesmo tempo, notável capacidade de adaptação. Para o **cuidado domiciliar de idosos**, a conclusão é direta: o lar, quando o cuidado é conduzido com competência técnica e ausência de julgamento, é o ambiente que melhor preserva a identidade e a autonomia dessa população.
 
-**Palavras-chave:** envelhecimento LGBTQIAPN+, idoso LGBT, cuidado domiciliar inclusivo, home care sem discriminação, saúde do idoso, estresse minoritário, gerontologia, cuidador profissional em São Paulo.
+**Palavras-chave:** envelhecimento LGBTQIAPN+, idoso LGBT, cuidado domiciliar inclusivo, cuidado domiciliar sem discriminação, saúde do idoso, estresse minoritário, gerontologia, cuidador profissional em São Paulo.
 
 ## 1. Por que este tema é relevante agora
 
@@ -328,7 +328,7 @@ Na prática, isso exige do serviço de assistência domiciliar:
 
 ## 5. A posição da Aegis Care
 
-A Aegis Care conduz **atendimento home care particular especializado** em São Paulo com um princípio inegociável: dentro da casa do assistido, quem define a própria história é ele. Nossa **gestão de enfermagem domiciliar especializada** organiza o plano de cuidado a partir da pessoa real, com o nome pelo qual ela deseja ser chamada, os vínculos que ela reconhece e as escolhas que fez ao longo da vida.
+A Aegis Care conduz **atendimento particular com cuidadores de idosos** em São Paulo com um princípio inegociável: dentro da casa do assistido, quem define a própria história é ele. Nossa **gestão de enfermagem domiciliar especializada** organiza o plano de cuidado a partir da pessoa real, com o nome pelo qual ela deseja ser chamada, os vínculos que ela reconhece e as escolhas que fez ao longo da vida.
 
 O acolhimento não é discurso institucional. Ele aparece na seleção criteriosa de cuidadores, na supervisão por enfermeiro habilitado junto ao COREN SP, no registro em prontuário eletrônico em tempo real e na retaguarda de plantão de enfermagem 24h. Envelhecer sob nossa égide significa continuar sendo quem se é, em casa, com dignidade e sem precisar se explicar.
 
@@ -376,7 +376,7 @@ Sim, dentro do que a lei permite e conforme a vontade expressa do assistido. A A
     id: "16",
     slug: "envelhecimento-saudavel-em-casa-cuidador-profissional-essencial",
     title: "Envelhecimento Saudável em Casa: Por Que o Cuidador Profissional Se Tornou Essencial para a Qualidade de Vida do Idoso",
-    excerpt: "Envelhecimento saudável em casa, home care para idosos, cuidador profissional, cuidado domiciliar especializado e qualidade de vida na terceira idade: o que a ciência mostra sobre o papel essencial do cuidador profissional no Brasil.",
+    excerpt: "Envelhecimento saudável em casa, cuidado domiciliar para idosos, cuidador profissional, cuidado domiciliar especializado e qualidade de vida na terceira idade: o que a ciência mostra sobre o papel essencial do cuidador profissional no Brasil.",
     category: "Saúde",
     author: "Equipe Aegis Care",
     publishedAt: "2026-05-12",
@@ -387,7 +387,7 @@ Sim, dentro do que a lei permite e conforme a vontade expressa do assistido. A A
 
 O envelhecimento populacional acelerado no Brasil transformou o **cuidado domiciliar de idosos** em uma necessidade estratégica de saúde pública. Este artigo revisa evidências científicas recentes sobre a transição demográfica brasileira, os desejos dos idosos de permanecerem em seus lares, os desafios enfrentados pelas famílias cuidadoras e o papel do **cuidador profissional** na promoção do **envelhecimento saudável**. A análise integra dados do Instituto Brasileiro de Geografia e Estatística (IBGE), diretrizes da Organização Mundial da Saúde (OMS) e revisões sistemáticas de literatura para demonstrar que o **acompanhamento domiciliar especializado** reduz hospitalizações desnecessárias, previne quedas e melhora a **qualidade de vida do idoso**, enquanto protege a saúde mental da família.
 
-**Palavras-chave:** envelhecimento saudável, cuidados domiciliares, cuidador profissional, qualidade de vida, home care, envelhecimento ativo, cuidado de idosos em casa, assistência domiciliar de enfermagem.
+**Palavras-chave:** envelhecimento saudável, cuidados domiciliares, cuidador profissional, qualidade de vida, cuidado domiciliar, envelhecimento ativo, cuidado de idosos em casa, assistência domiciliar de enfermagem.
 
 ## 1. O Brasil está envelhecendo: números que não podem ser ignorados
 
@@ -399,7 +399,7 @@ Essa transição não é apenas uma estatística: ela reconfigura completamente 
 
 A literatura científica internacional é unânime: a grande maioria dos idosos expressa o desejo de "envelhecer no próprio lugar" (*aging in place*). Esse conceito vai além da simples permanência física no domicílio; envolve **autonomia**, continuidade de vínculos sociais, identidade pessoal e senso de controle sobre a própria vida.
 
-Uma revisão de guarda-chuva (*umbrella review*) publicada em 2025, que analisou mais de 3,1 milhões de participantes em 20 revisões sistemáticas, demonstrou que serviços de **home care** bem estruturados estão associados a melhora da capacidade funcional, redução de readmissões hospitalares e aumento da satisfação dos pacientes. No entanto, a eficácia varia conforme o modelo de entrega, o tipo de intervenção e as características da população atendida, o que reforça a necessidade de **cuidado profissional qualificado**, e não apenas assistência informal.
+Uma revisão de guarda-chuva (*umbrella review*) publicada em 2025, que analisou mais de 3,1 milhões de participantes em 20 revisões sistemáticas, demonstrou que serviços de **cuidado domiciliar** bem estruturados estão associados a melhora da capacidade funcional, redução de readmissões hospitalares e aumento da satisfação dos pacientes. No entanto, a eficácia varia conforme o modelo de entrega, o tipo de intervenção e as características da população atendida, o que reforça a necessidade de **cuidado profissional qualificado**, e não apenas assistência informal.
 
 O modelo de *Home-Based Medical Care* (HBMC), que inclui cuidados primários e paliativos no domicílio, mostrou-se particularmente eficaz: reduziu hospitalizações, visitas emergenciais e admissões em instituições de longa permanência, além de proporcionar alta satisfação dos pacientes e melhor planejamento do cuidado no final da vida.
 
@@ -451,7 +451,7 @@ A inserção de um cuidador profissional não elimina o papel da família, mas r
 
 ## 6. Quando buscar ajuda especializada: sinais de alerta que não devem ser ignorados
 
-A decisão de contratar um **cuidador profissional de idosos** não deve ser vista como derrota ou abandono, mas como uma escolha estratégica baseada em evidências. Alguns indicadores sugerem que o momento de buscar **apoio especializado de home care** chegou:
+A decisão de contratar um **cuidador profissional de idosos** não deve ser vista como derrota ou abandono, mas como uma escolha estratégica baseada em evidências. Alguns indicadores sugerem que o momento de buscar **apoio especializado de cuidadores de idosos** chegou:
 
 - **Declínio funcional acelerado:** dificuldade crescente para realizar AVDs básicas (banho, alimentação, locomoção) ou instrumentais (administrar medicamentos, realizar atividades domésticas).
 - **Sobrecarga manifesta da família:** sintomas de ansiedade, depressão, exaustão ou conflitos familiares recorrentes relacionados ao cuidado.
@@ -459,9 +459,9 @@ A decisão de contratar um **cuidador profissional de idosos** não deve ser vis
 - **Doenças neurodegenerativas:** demências, Alzheimer e Parkinson exigem **cuidados especializados em casa** que poucas famílias estão preparadas para oferecer.
 - **Polimedicação ou complexidade clínica:** idosos com múltiplas comorbidades e uso de vários medicamentos beneficiam-se da supervisão de profissionais treinados.
 
-## 7. Como escolher um serviço seguro de home care: critérios baseados em evidência
+## 7. Como escolher um serviço seguro de cuidado domiciliar: critérios baseados em evidência
 
-A escolha de um **serviço de cuidado domiciliar** deve ser guiada por critérios técnicos, não apenas emocionais ou financeiros. Com base na literatura científica sobre modelos eficazes de home care, sugerimos os seguintes parâmetros:
+A escolha de um **serviço de cuidado domiciliar** deve ser guiada por critérios técnicos, não apenas emocionais ou financeiros. Com base na literatura científica sobre modelos eficazes de cuidado domiciliar, sugerimos os seguintes parâmetros:
 
 ### 7.1 Equipe multidisciplinar
 
@@ -491,7 +491,7 @@ Contudo, o cuidado de qualidade não pode ser construído sobre a exaustão da f
 
 O **cuidador profissional**, especialmente quando inserido em uma equipe multidisciplinar liderada por enfermeiros, não substitui o amor familiar: ele o protege. Ao assumir as demandas técnicas e diárias do cuidado, permite que a família se mantenha como família, preservando vínculos sem sacrificar a saúde de ninguém.
 
-Na **Aegis Care**, esse é o ponto de partida do nosso trabalho. Empresa de **home care liderada por enfermeiros**, oferecemos avaliação clínica individual, plano de cuidado personalizado, supervisão contínua e cuidadores treinados para atuar com segurança, técnica e afeto. Em um mercado onde ainda predominam textos genéricos e desprovidos de respaldo científico, acreditamos que o cuidado que une evidência, empatia e praticidade é o que verdadeiramente transforma a experiência de envelhecer em casa.
+Na **Aegis Care**, esse é o ponto de partida do nosso trabalho. Empresa de **cuidado domiciliar liderado por enfermeiros**, oferecemos avaliação clínica individual, plano de cuidado personalizado, supervisão contínua e cuidadores treinados para atuar com segurança, técnica e afeto. Em um mercado onde ainda predominam textos genéricos e desprovidos de respaldo científico, acreditamos que o cuidado que une evidência, empatia e praticidade é o que verdadeiramente transforma a experiência de envelhecer em casa.
     `,
     references: [
       { name: "IBGE (2024)", url: "https://www.ibge.gov.br/estatisticas/sociais/populacao/9109-projecao-da-populacao.html", description: "Projeções da população: Brasil e Unidades da Federação, Revisão 2024. Rio de Janeiro: IBGE." },
@@ -2001,7 +2001,7 @@ Moradores do **Tatuapé** e região da **Zona Leste** podem contar com a Aegis C
     author: "Equipe Aegis Care",
     publishedAt: "2024-12-18",
     readTime: "8 min",
-    image: homeCareZonaLeste,
+    image: cuidadoDomiciliarZonaLeste,
     content: `
 ## Serviços de Cuidadores de Excelência na Zona Leste
 

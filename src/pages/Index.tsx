@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, memo } from "react";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustStrip from "@/components/TrustStrip";
@@ -53,6 +54,10 @@ const Index = memo(() => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <link rel="canonical" href="https://www.aegiscare.com.br/" />
+        <meta property="og:url" content="https://www.aegiscare.com.br/" />
+      </Helmet>
       <Header />
       <main>
         <HeroSection />
