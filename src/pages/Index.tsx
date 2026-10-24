@@ -12,6 +12,7 @@ const AboutSection = lazy(() => import("@/components/AboutSection"));
 const ServicesSection = lazy(() => import("@/components/ServicesSection"));
 const WhyUsSection = lazy(() => import("@/components/WhyUsSection"));
 const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
+const AcademySection = lazy(() => import("@/components/AcademySection"));
 const FAQSection = lazy(() => import("@/components/FAQSection"));
 const ContactSection = lazy(() => import("@/components/ContactSection"));
 const Footer = lazy(() => import("@/components/Footer"));
@@ -85,6 +86,11 @@ const Index = memo(() => {
         <LazySection forceVisible={forceSections}>
           <Suspense fallback={<SectionFallback />}>
             <TestimonialsSection />
+          </Suspense>
+        </LazySection>
+        <LazySection forceVisible={forceSections} placeholderClassName="min-h-[850px] md:min-h-[450px]">
+          <Suspense fallback={<SectionFallback />}>
+            <AcademySection />
           </Suspense>
         </LazySection>
         
