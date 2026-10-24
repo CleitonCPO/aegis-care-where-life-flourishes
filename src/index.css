@@ -172,6 +172,20 @@
   .academy-copy h2[data-scroll-reveal] { transition-delay: 220ms; }
   .academy-copy p[data-scroll-reveal] { transition-delay: 320ms; }
   .academy-copy a[data-scroll-reveal] { transition-delay: 420ms; }
+  .academy-watermark {
+    position: absolute;
+    left: 1.5rem;
+    bottom: 1.25rem;
+    z-index: 20;
+    width: 5.5rem;
+    height: auto;
+    opacity: 0.45;
+    filter: brightness(0) invert(1);
+    pointer-events: none;
+  }
+  @media (min-width: 768px) {
+    .academy-watermark { width: 7.5rem; left: 2.75rem; bottom: 1.75rem; }
+  }
   @media (max-width: 767px) {
     .academy-stage { min-height: 0; }
     .academy-photo { position: relative; height: 300px; }

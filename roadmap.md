@@ -1,5 +1,6 @@
 # Roadmap
 - [x] Refinar a faixa Academy e verificar animação suave, celular e acesso ao curso
+- [x] Colocar o logotipo da Academy como marca d'água no canto inferior esquerdo e retirar a faixa superior
 - [x] Verificar acesso ao site: prévia e endereço público respondem e exibem a seleção de região
 - [x] Adicionar faixa Academy entre Relatos e FAQ com logotipo, foto e acesso ao curso gratuito
 - [x] Reescrever Serviços conforme a oferta confirmada, preservar páginas individuais e testar navegação e apresentação
