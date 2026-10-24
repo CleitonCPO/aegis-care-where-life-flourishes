@@ -132,12 +132,12 @@ const Servicos = () => (
           <section className="py-14 md:py-20 bg-petroleum text-petroleum-foreground" aria-labelledby="process-title">
             <div className="container-editorial">
               <span className="eyebrow block text-care-accent mb-4">Passo a passo</span>
-              <h2 id="process-title" className="font-display text-3xl md:text-4xl mb-9">Como funciona</h2>
+              <h2 id="process-title" className="font-display text-3xl md:text-4xl text-petroleum-foreground mb-9">Como funciona</h2>
               <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
                 {steps.map((step, index) => (
                   <li key={step.title} className="border-t border-petroleum-foreground/25 pt-5">
                     <div className="flex items-center justify-between mb-5 text-care-accent"><span className="font-display text-2xl">{String(index + 1).padStart(2, "0")}</span><step.icon className="w-5 h-5" strokeWidth={1.5} aria-hidden="true" /></div>
-                    <h3 className="font-display text-xl mb-3">{step.title}</h3>
+                    <h3 className="font-display text-xl text-petroleum-foreground mb-3">{step.title}</h3>
                     <p className="text-petroleum-foreground/85 leading-relaxed">{step.text}</p>
                   </li>
                 ))}
