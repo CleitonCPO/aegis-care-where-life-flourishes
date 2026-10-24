@@ -61,6 +61,9 @@
     --academy-teal: 187 100% 29%;
     --academy-gold: 41 73% 38%;
     --academy-surface: 190 25% 96%;
+    --academy-highlight: 43 74% 73%;
+    --academy-photo-shade: linear-gradient(90deg, hsl(var(--academy) / 0.98) 0%, hsl(var(--academy) / 0.95) 26%, hsl(var(--academy) / 0.68) 46%, hsl(var(--academy) / 0.08) 70%, transparent 100%);
+    --academy-mobile-shade: linear-gradient(180deg, transparent 18%, hsl(var(--academy) / 0.12) 55%, hsl(var(--academy)) 100%);
     --care-image-overlay: linear-gradient(90deg, hsl(var(--petroleum) / 0.94), hsl(var(--petroleum) / 0.70) 55%, hsl(var(--petroleum) / 0.18));
 
     /* Neutrals */
@@ -152,6 +155,33 @@
 }
 
 @layer components {
+  .academy-band h2, .academy-band p, .academy-band .eyebrow { letter-spacing: 0; }
+  .academy-band .academy-kicker { color: hsl(var(--academy-highlight)); }
+  .academy-stage { min-height: 560px; }
+  .academy-photo { position: absolute; inset: 0; }
+  .academy-photo-image {
+    width: 100%; height: 100%; object-fit: cover; object-position: center 42%;
+    transform: scale(1.045);
+    transition: transform 5200ms var(--ease-premium);
+  }
+  .academy-photo.scroll-reveal-visible .academy-photo-image { transform: scale(1); }
+  .academy-shade { background: var(--academy-photo-shade); }
+  .academy-band .academy-course-link { background: hsl(var(--academy-teal)); color: hsl(var(--academy-foreground)); }
+  .academy-band .academy-course-link:hover { background: hsl(var(--academy-foreground)); color: hsl(var(--academy)); }
+  .academy-copy [data-scroll-reveal] { transition-delay: 120ms; }
+  .academy-copy h2[data-scroll-reveal] { transition-delay: 220ms; }
+  .academy-copy p[data-scroll-reveal] { transition-delay: 320ms; }
+  .academy-copy a[data-scroll-reveal] { transition-delay: 420ms; }
+  @media (max-width: 767px) {
+    .academy-stage { min-height: 0; }
+    .academy-photo { position: relative; height: 300px; }
+    .academy-photo-image { object-position: center; }
+    .academy-shade { height: 302px; background: var(--academy-mobile-shade); }
+    .academy-copy { padding-top: 12px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .academy-photo-image { transform: none; transition: none; }
+  }
   .font-display { font-family: var(--font-display); }
   .font-body    { font-family: var(--font-body); }
 

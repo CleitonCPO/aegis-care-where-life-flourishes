@@ -6,3 +6,4 @@ Route homepage anchor navigation through URL hashes, render deferred homepage se
 Keep the Founder page ProfilePage and Person JSON-LD linked to the existing sitewide founder and organization identifiers; let each route own its canonical through Helmet to avoid conflicting homepage canonicals.
 Use the service overview catalog for the Services hub and its structured data, grouping all existing detail-page links without changing the detail routes; this keeps the confirmed offering and discoverability aligned.
 Load the Academy homepage band as a deferred section inside the shared scroll-reveal wrapper, using its own semantic palette and external course link to keep the brand distinct without affecting contact routing.
+Academy photo movement is a one-shot CSS transform triggered by the shared scroll reveal, with responsive WebP sources and reduced-motion fallback to avoid extra observers and continuous mobile animation.
