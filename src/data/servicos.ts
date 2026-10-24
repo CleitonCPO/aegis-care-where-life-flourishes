@@ -105,7 +105,7 @@ export const services: Service[] = [
           "O plano depende da escala e da complexidade do cuidado. Na Aegis Care, tudo é definido após a avaliação de enfermagem, sem custo para a família.",
       },
       {
-        question: "Qual a diferença entre cuidador e técnico de enfermagem?",
+        question: "Qual a diferença entre cuidador de idosos e assistência de enfermagem?",
         answer:
           "O cuidador apoia as atividades de vida diária, como higiene, alimentação, mobilidade e companhia. Procedimentos técnicos, como curativos complexos e medicação injetável, são atribuição da enfermagem. A Aegis Care indica o perfil adequado após a avaliação.",
       },
