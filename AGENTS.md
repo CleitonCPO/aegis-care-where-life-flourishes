@@ -4,3 +4,4 @@ Use the shared ScrollReveal element-level IntersectionObserver for homepage, Abo
 Serve responsive WebP derivatives of the original homepage photographs with JPEG fallbacks; keep the primary photo immediately visible and reserve space for deferred sections to reduce transfer and scroll shifts.
 Route homepage anchor navigation through URL hashes, render deferred homepage sections for anchor visits, and wait for their suspense content before scrolling with a fixed-header offset so contact and menu links work across routes.
 Keep the Founder page ProfilePage and Person JSON-LD linked to the existing sitewide founder and organization identifiers; let each route own its canonical through Helmet to avoid conflicting homepage canonicals.
+Use the service overview catalog for the Services hub and its structured data, grouping all existing detail-page links without changing the detail routes; this keeps the confirmed offering and discoverability aligned.
