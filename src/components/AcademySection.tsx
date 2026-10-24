@@ -26,6 +26,7 @@ const AcademySection = () => (
           </div>
         </div>
       </div>
+      <img src={`https://aegis-home-haven.lovable.app${academyLogo.url}`} alt="Academy Aegis Care" width={864} height={331} loading="lazy" decoding="async" className="academy-watermark" />
     </div>
   </section>
 );
