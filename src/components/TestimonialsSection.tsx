@@ -101,6 +101,20 @@ const TestimonialsSection = () => {
     };
   }, [api]);
 
+  // __DIAG__
+  useEffect(() => {
+    if (!api) return;
+    (window as unknown as { __embla: unknown }).__embla = api;
+    const log = (e: string) => {
+      const w = window as unknown as { __ev?: string[] };
+      w.__ev = w.__ev || [];
+      w.__ev.push(`${e}@${Math.round(performance.now())}`);
+    };
+    const events = ["autoplay:play", "autoplay:stop", "autoplay:timerset", "autoplay:timerstopped", "reInit", "pointerDown", "slideFocusStart", "select"];
+    events.forEach((e) => api.on(e, () => log(e)));
+    return () => events.forEach((e) => api.off(e, () => log(e)));
+  }, [api]);
+
   return (
     <section ref={sectionRef} id="depoimentos" className="py-16 md:py-24 bg-background overflow-hidden">
       <div className="container-editorial">
