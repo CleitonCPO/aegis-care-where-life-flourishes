@@ -56,6 +56,11 @@
     --emerald-foreground: 0 0% 100%;
     --care-surface: 160 22% 96%;
     --care-accent: 157 46% 74%;
+    --academy: 216 96% 21%;
+    --academy-foreground: 0 0% 100%;
+    --academy-teal: 187 100% 29%;
+    --academy-gold: 41 73% 38%;
+    --academy-surface: 190 25% 96%;
     --care-image-overlay: linear-gradient(90deg, hsl(var(--petroleum) / 0.94), hsl(var(--petroleum) / 0.70) 55%, hsl(var(--petroleum) / 0.18));
 
     /* Neutrals */

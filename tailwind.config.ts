@@ -23,6 +23,13 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        academy: {
+          DEFAULT: "hsl(var(--academy))",
+          foreground: "hsl(var(--academy-foreground))",
+          teal: "hsl(var(--academy-teal))",
+          gold: "hsl(var(--academy-gold))",
+          surface: "hsl(var(--academy-surface))",
+        },
         petroleum: {
           DEFAULT: "hsl(var(--petroleum))",
           foreground: "hsl(var(--petroleum-foreground))",

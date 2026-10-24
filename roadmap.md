@@ -1,4 +1,5 @@
 # Roadmap
+- [ ] Adicionar faixa Academy entre Relatos e FAQ com logotipo, foto e acesso ao curso gratuito
 - [x] Reescrever Serviços conforme a oferta confirmada, preservar páginas individuais e testar navegação e apresentação
 - [x] Reescrever a página Fundador com a narrativa aprovada, identificação para Google e IA e verificação visual
 - [x] Pergunta SP/MG em toda atualização da página (sem lembrar escolha)
