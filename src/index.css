@@ -156,7 +156,7 @@
 
 @layer components {
   .academy-band h2, .academy-band p, .academy-band .eyebrow { letter-spacing: 0; }
-  .academy-kicker { color: hsl(var(--academy-highlight)); }
+  .academy-band .academy-kicker { color: hsl(var(--academy-highlight)); }
   .academy-stage { min-height: 560px; }
   .academy-photo { position: absolute; inset: 0; }
   .academy-photo-image {
@@ -166,8 +166,8 @@
   }
   .academy-photo.scroll-reveal-visible .academy-photo-image { transform: scale(1); }
   .academy-shade { background: var(--academy-photo-shade); }
-  .academy-course-link { background: hsl(var(--academy-teal)); color: hsl(var(--academy-foreground)); }
-  .academy-course-link:hover { background: hsl(var(--academy-foreground)); color: hsl(var(--academy)); }
+  .academy-band .academy-course-link { background: hsl(var(--academy-teal)); color: hsl(var(--academy-foreground)); }
+  .academy-band .academy-course-link:hover { background: hsl(var(--academy-foreground)); color: hsl(var(--academy)); }
   .academy-copy [data-scroll-reveal] { transition-delay: 120ms; }
   .academy-copy h2[data-scroll-reveal] { transition-delay: 220ms; }
   .academy-copy p[data-scroll-reveal] { transition-delay: 320ms; }

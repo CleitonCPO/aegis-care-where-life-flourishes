@@ -27,7 +27,7 @@ const AcademySection = () => (
           <div className="border-t border-academy-foreground/20 pt-6 max-w-sm">
             <span className="academy-kicker block text-sm mb-4">Seu próximo passo começa com um curso gratuito.</span>
             <Button asChild variant="academy" size="lg" className="academy-course-link w-full sm:w-auto gap-3 text-sm whitespace-normal h-auto min-h-12 py-3 px-6">
-              <a href="https://www.academy.aegiscare.com.br/" target="_blank" rel="noopener noreferrer">Acessar o curso gratuito<ExternalLink aria-hidden="true" /><span className="sr-only"> (abre em nova aba)</span></a>
+              <a href="https://academy.aegiscare.com.br/" target="_blank" rel="noopener noreferrer">Acessar o curso gratuito<ExternalLink aria-hidden="true" /><span className="sr-only"> (abre em nova aba)</span></a>
             </Button>
           </div>
         </div>
