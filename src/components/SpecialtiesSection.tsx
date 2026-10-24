@@ -11,7 +11,7 @@ const specialties = [
   },
   {
     title: "Reabilitação Pós-Operatória e Convalescença",
-    text: "Atendimento home care particular especializado para o retorno seguro do hospital para casa. A gestão de enfermagem domiciliar especializada organiza medicação, mobilização progressiva, cuidados com curativos e a integração com fisioterapia e equipe médica assistente.",
+    text: "Atendimento particular com cuidadores de idosos para o retorno seguro do hospital para casa. A gestão de enfermagem domiciliar especializada organiza medicação, mobilização progressiva, cuidados com curativos e a integração com fisioterapia e equipe médica assistente.",
     points: [
       "Transição hospital para casa com plano assistencial documentado",
       "Controle de dor, sinais vitais e adesão à prescrição médica",

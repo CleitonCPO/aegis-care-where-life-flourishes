@@ -9,7 +9,7 @@ import cleitonPhoto from "@/assets/cleiton-oliveira-consultorio.jpg";
 import cleitonMobile from "@/assets/cleiton-oliveira-consultorio-mobile.webp";
 import cleitonOptimized from "@/assets/cleiton-oliveira-consultorio-optimized.webp";
 
-const siteUrl = "https://aegis-home-haven.lovable.app";
+const siteUrl = "https://www.aegiscare.com.br";
 const pageUrl = `${siteUrl}/fundador`;
 // Reuse the sitewide entity identifiers so crawlers recognize one founder and organization.
 const founderId = "https://www.aegiscare.com.br/#cleiton-oliveira";

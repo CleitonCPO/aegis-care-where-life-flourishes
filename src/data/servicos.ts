@@ -76,7 +76,7 @@ export const services: Service[] = [
     metaDescription:
       "Cuidador de idosos em domicílio em São Paulo, com avaliação de enfermagem, planos de 4h, 6h, 8h, 12h e 24h, além de escalas flexíveis e supervisão contínua. Solicite um orçamento.",
     keywords:
-      "cuidador de idosos, cuidador de idosos em domicílio, home care para idosos, agência de cuidadores São Paulo, cuidador 24 horas, cuidador 12 horas, cuidador 6 horas, plano de cuidador flexível, cuidado domiciliar de idosos especializado",
+      "cuidador de idosos, cuidador de idosos em domicílio, cuidado domiciliar para idosos, agência de cuidadores São Paulo, cuidador 24 horas, cuidador 12 horas, cuidador 6 horas, plano de cuidador flexível, cuidado domiciliar de idosos especializado",
     forWhom: [
       "Idosos que desejam permanecer em casa com segurança",
       "Famílias que precisam de apoio diurno, noturno ou integral",
@@ -193,7 +193,7 @@ export const services: Service[] = [
     metaDescription:
       "Cuidado domiciliar especializado em Alzheimer e Parkinson: rotina estruturada, estímulo cognitivo e prevenção de quedas em São Paulo.",
     keywords:
-      "cuidador para Alzheimer, cuidador para Parkinson, cuidado domiciliar demência, home care Alzheimer São Paulo, prevenção de quedas idoso",
+      "cuidador para Alzheimer, cuidador para Parkinson, cuidado domiciliar demência, cuidado domiciliar em Alzheimer em São Paulo, prevenção de quedas idoso",
     forWhom: [
       "Idosos com diagnóstico de Alzheimer ou outra demência",
       "Pessoas com doença de Parkinson em qualquer estágio",
@@ -249,7 +249,7 @@ export const services: Service[] = [
     metaDescription:
       "Cuidador para adultos em pós-operatório, reabilitação ou condição neurológica, com apoio à mobilidade e rotina terapêutica em São Paulo.",
     keywords:
-      "cuidador para adultos, cuidador pós-operatório, cuidado domiciliar AVC, home care adulto São Paulo, assistência domiciliar reabilitação",
+      "cuidador para adultos, cuidador pós-operatório, cuidado domiciliar AVC, cuidado domiciliar para adultos em São Paulo, assistência domiciliar reabilitação",
     forWhom: [
       "Adultos em recuperação de cirurgia ou internação",
       "Pessoas com sequelas de AVC ou doenças neurológicas",

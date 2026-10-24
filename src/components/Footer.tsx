@@ -115,7 +115,7 @@ const Footer = () => {
             {" "}· Supervisão de enfermagem habilitada junto ao COREN-SP e especialização em Gerontologia
           </p>
           <p className="text-white/40 text-xs leading-[1.7] tracking-wide md:text-right md:ml-auto md:max-w-xs">
-            Atendimento home care particular especializado em São Paulo · SP
+            Atendimento particular com cuidadores de idosos em São Paulo · SP
           </p>
         </div>
       </div>

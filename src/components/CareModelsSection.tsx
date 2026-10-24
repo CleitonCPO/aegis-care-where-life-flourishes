@@ -26,7 +26,7 @@ const CareModelsSection = () => {
             Transparência sobre plantões, escalas e custo benefício.
           </h2>
           <p className="text-muted-foreground leading-[1.85] prose-justified">
-            No atendimento home care particular especializado, o valor investido depende de três
+            No atendimento particular com cuidadores de idosos, o valor investido depende de três
             variáveis objetivas: o grau de dependência do assistido, a carga horária contratada e a
             qualificação exigida do profissional. Explicamos cada uma delas antes de qualquer proposta.
           </p>

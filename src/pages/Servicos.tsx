@@ -9,7 +9,7 @@ import heroImage from "@/assets/servicos/cuidado-domiciliar-hero.jpg";
 import { services } from "@/data/servicos";
 import { serviceOverview, supervision } from "@/data/serviceOverview";
 
-const siteUrl = "https://aegis-home-haven.lovable.app";
+const siteUrl = "https://www.aegiscare.com.br";
 const pageUrl = `${siteUrl}/servicos`;
 const title = "Cuidadores de Idosos: Serviços e Acompanhamento | Aegis Care";
 const description = "Cuidadores de idosos no lar, em internações, consultas e viagens, com supervisão de enfermagem. Conheça os serviços da Aegis Care em São Paulo e Minas Gerais.";
