@@ -7,3 +7,5 @@ Keep the Founder page ProfilePage and Person JSON-LD linked to the existing site
 Use the service overview catalog for the Services hub and its structured data, grouping all existing detail-page links without changing the detail routes; this keeps the confirmed offering and discoverability aligned.
 Load the Academy homepage band as a deferred section inside the shared scroll-reveal wrapper, using its own semantic palette and external course link to keep the brand distinct without affecting contact routing.
 Academy photo movement is a one-shot CSS transform triggered by the shared scroll reveal, with responsive WebP sources and reduced-motion fallback to avoid extra observers and continuous mobile animation.
+Point canonical, og:url, sitemap, robots and structured-data URLs at the site's own public origin (currently https://www.aegiscare.com.br), never at the project preview host, so search engines attribute content to the real domain.
+The region gate covers the page until a region is chosen, so automated UI checks must dismiss it (choose São Paulo) before interacting with anything beneath it.
